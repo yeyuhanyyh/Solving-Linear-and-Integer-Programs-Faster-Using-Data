@@ -1,0 +1,21 @@
+{
+  "cache_path": "results/timing/cache/figure4_fcnn_baseline_legacy.csv",
+  "cache_sha256": "08CE1BA42E41DCF79CA4EBB8C4E5A83A5D792186135A2DE787700159B4AB3C6B",
+  "key_columns": [
+    "repeat",
+    "case",
+    "n_samples",
+    "K",
+    "full_dimension"
+  ],
+  "note": "These FCNN-c rows are copied byte-for-value from the bundled legacy matched-K timing CSV.",
+  "numpy": "2.4.4",
+  "pandas": "3.0.2",
+  "provenance_id": "legacy_matched_k_fcnn_cache_2026_07_27",
+  "python": "3.14.4",
+  "row_count": 24,
+  "row_filter": "method == \"FCNNc\"",
+  "scipy": "1.17.1",
+  "source_path": "results/timing/figure4_matched_k_timing_raw.csv",
+  "source_sha256": "4B7A1FB1AABB63AF0B70B6EA83514F87859BF8842C7B327EAC578C056E7016CD"
+}

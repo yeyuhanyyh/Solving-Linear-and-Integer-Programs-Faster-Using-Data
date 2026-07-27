@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.pt
+*.pdf
+
+# Intermediate directories created by full reruns.
+results/**/repeat_*/
+results/**/*_runs/
+
+# Regenerated aggregates; figure-specific raw CSV files are tracked.
+results/fresh/timing_repeated.csv
+results/timing/timing_repeated.csv
