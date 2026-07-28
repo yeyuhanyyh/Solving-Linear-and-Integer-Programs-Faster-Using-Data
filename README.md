@@ -77,7 +77,7 @@ to `figures/`.
 
 ## Example Outputs
 
-### Figure 2: Learned Dimension
+### Learned Dimension
 
 ![Figure 2 rank growth](figures/figure2_fresh_rank_growth.png)
 
