@@ -5,7 +5,7 @@
   "rerun_count": 14,
   "independent_comparison_checks": 1222,
   "archived_source_bytes_unchanged": true,
-  "archive_sha256": "1fe93fcc8bf947afdc2985314f8c573c585ed85dacc41ca84ce65edca0478745",
+  "archive_sha256": "87f56b0ec93b17a1c50391cbba9663cce868a372cf93c3108370d2e3648635f4",
   "runner_sha256": "32e163744aa1a228d13e89f20f31f4815324216f0cdb489be92a5522595c2923",
   "observed_probe_runner_sha256": [
     "32e163744aa1a228d13e89f20f31f4815324216f0cdb489be92a5522595c2923",
@@ -285,5 +285,7 @@
       "solver_execution": false,
       "conclusion": "All seven portable outcomes reproduce the archived cost, original gross objective, ratio, Recovery and restriction. Runtime measurements are new and do not replace archived timing evidence."
     }
-  ]
+  ],
+  "observed_precanonical_manifest_sha256": "1fe93fcc8bf947afdc2985314f8c573c585ed85dacc41ca84ce65edca0478745",
+  "line_endings_note": "The portable manifest is recorded with canonical LF endings. Original archived file bytes and individual SHA-256 values are unchanged."
 }
