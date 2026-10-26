@@ -1,3 +1,7 @@
+# Keep the portable source and its guard manifests stable across checkouts.
+ip/*.py text eol=lf
+ip/*.json text eol=lf
+
 # Frozen IP source guards depend on exact bytes, including line endings.
 ip/snapshot/** -text
 ip/provenance/** -text
