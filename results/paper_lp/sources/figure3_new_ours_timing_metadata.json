@@ -1,0 +1,11 @@
+{
+  "purpose": "Figure 3 timing with new compact Ours and the paper's prior-center anchor",
+  "rho": 0.5,
+  "n_train": 40,
+  "timing_repeats": 3,
+  "fixed_data_pool_across_repeats": true,
+  "learning_definition": "prior fit, one compact prior-center anchor LP, one compact full-LP solve per retained sample, and basis computation",
+  "solve_definition": "one SciPy linprog/HiGHS call only",
+  "same_figure3_training_and_test_pools": true,
+  "new_ours_representation": "compact all-inequality LP in original d variables; full-standard slack costs are eliminated analytically"
+}

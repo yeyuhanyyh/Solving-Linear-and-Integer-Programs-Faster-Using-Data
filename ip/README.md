@@ -1,6 +1,6 @@
-# Integer-programming experiments
+# IP experiments
 
-This directory contains the source, synthetic training/test data, frozen fitted models, raw returns and learning-time records for the current manuscript's Tables 3 and 4. It also includes the fixed additional 2,000-update Neural Diving control. The LP release is in the repository root.
+This directory contains the source, synthetic training/test data, frozen fitted models, raw returns and learning-time records for Tables 3 and 4 of **Solving Linear and Integer Programs Faster Using Data**. It also includes the fixed additional 2,000-update Neural Diving control. The LP release is in the repository root.
 
 ## Reproduce the archived tables without training
 

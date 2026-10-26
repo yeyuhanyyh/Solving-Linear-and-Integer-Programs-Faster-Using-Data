@@ -1,0 +1,836 @@
+{
+  "description": "Saved LP timing sources for Tables 1 and 2 of Solving Linear and Integer Programs Faster Using Data. Reaggregated without new experiments.",
+  "manuscript_file": "neurips26_camera_ready.tex",
+  "manuscript_sha256": "a0ad4cc9b89a1eafe857cade1e760640de5fc7785f36cf0da8aa43c5f3379d64",
+  "sources": {
+    "figure3_new_ours_timing_raw.csv": {
+      "source_relative_to_research_root": "decisuon making & optimization/rebuttal_followup_2026-07-26/figure3_new_ours_timing_results_v3/figure3_new_ours_timing_raw.csv",
+      "bytes": 3387,
+      "sha256": "585f44c52c9273cd3190037d17badbc90384a6a48e1f94bce93965079d5c9a67"
+    },
+    "figure3_new_ours_timing_summary.csv": {
+      "source_relative_to_research_root": "decisuon making & optimization/rebuttal_followup_2026-07-26/figure3_new_ours_timing_results_v3/figure3_new_ours_timing_summary.csv",
+      "bytes": 1287,
+      "sha256": "16989562419fcfcb19072345526a7acdd4809e1cc39299cfe9f8e79beffbbd61"
+    },
+    "figure3_new_ours_timing_metadata.json": {
+      "source_relative_to_research_root": "decisuon making & optimization/rebuttal_followup_2026-07-26/figure3_new_ours_timing_results_v3/figure3_new_ours_timing_metadata.json",
+      "bytes": 586,
+      "sha256": "282436623d67693efc5c4f3ec3c78ec29853ad560053feca470111183594ca37"
+    },
+    "figure3_baseline_timing_raw.csv": {
+      "source_relative_to_research_root": "SDD 2/rebuttal_materials_2026-07-25/02_runtime_figure3_figure4/figure3_timing_raw.csv",
+      "bytes": 51761,
+      "sha256": "9880bd49465d72a82886deee730109a123b58bcee9df3ad6da610745da76b59f"
+    },
+    "figure3_sc205_sga_timing_raw.csv": {
+      "source_relative_to_research_root": "SDD 2/rebuttal_materials_2026-07-25/02_runtime_figure3_figure4/figure3_sc205_sga_timing_raw.csv",
+      "bytes": 3582,
+      "sha256": "e94c1bc131dbe725963c9ada4483310b24fca2914f7f6426c5819021e928dcab"
+    },
+    "matched_k_timing_seed_level.csv": {
+      "source_relative_to_research_root": "decisuon making & optimization/rebuttal_followup_2026-07-26/matched_k_fullrank_controlled_sequential_final/matched_k_timing_seed_level.csv",
+      "bytes": 38979,
+      "sha256": "98872eb12f16bf3946383d2625986878760a64c11d438c778d72576070bd1946"
+    },
+    "matched_k_runtime_comparison_mean_sd.csv": {
+      "source_relative_to_research_root": "decisuon making & optimization/rebuttal_followup_2026-07-26/matched_k_fullrank_controlled_sequential_final/matched_k_runtime_comparison_mean_sd.csv",
+      "bytes": 6112,
+      "sha256": "4c5c70ea2d14069d88b34aefb4ebd05c715fa9ff523004737961693c34c9f937"
+    },
+    "matched_k_timing_metadata.json": {
+      "source_relative_to_research_root": "decisuon making & optimization/rebuttal_followup_2026-07-26/matched_k_fullrank_controlled_sequential_final/matched_k_timing_metadata.json",
+      "bytes": 1560,
+      "sha256": "188e2a0b6b679c4244392b980fe5f057b870ae4b80d9b01d526917b051789a27"
+    }
+  },
+  "manuscript_cells": [
+    {
+      "table": "tab:runtime-rho",
+      "instance": "Packing",
+      "method": "Ours",
+      "metric": "learning",
+      "mean": 0.10440969999763183,
+      "sd": 0.006468997637099111,
+      "display_mean": 0.104,
+      "display_sd": 0.006,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "Packing",
+      "method": "DataDrivenProj",
+      "metric": "learning",
+      "mean": 3.3138770666667674,
+      "sd": 0.10550625118083323,
+      "display_mean": 3.314,
+      "display_sd": 0.106,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "Packing",
+      "method": "FCNN",
+      "metric": "learning",
+      "mean": 37.99813926666593,
+      "sd": 0.24739843326438482,
+      "display_mean": 37.998,
+      "display_sd": 0.247,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "Packing",
+      "method": "Full",
+      "metric": "solve",
+      "mean": 3.3809766677829125,
+      "sd": 0.1124862807028931,
+      "display_mean": 3.381,
+      "display_sd": 0.112,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "Packing",
+      "method": "Ours",
+      "metric": "solve",
+      "mean": 2.7198333336855285,
+      "sd": 0.06726502911314344,
+      "display_mean": 2.72,
+      "display_sd": 0.067,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "Packing",
+      "method": "DataDrivenProj",
+      "metric": "solve",
+      "mean": 9.19226944451,
+      "sd": 1.278388290700947,
+      "display_mean": 9.192,
+      "display_sd": 1.278,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "Packing",
+      "method": "FCNN",
+      "metric": "solve",
+      "mean": 5.754605555491834,
+      "sd": 0.34686845731301075,
+      "display_mean": 5.755,
+      "display_sd": 0.347,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "RandomLP A",
+      "method": "Ours",
+      "metric": "learning",
+      "mean": 0.24635413332725875,
+      "sd": 0.0012645643236404746,
+      "display_mean": 0.246,
+      "display_sd": 0.001,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "RandomLP A",
+      "method": "DataDrivenProj",
+      "metric": "learning",
+      "mean": 0.912926866667173,
+      "sd": 0.03894915492214772,
+      "display_mean": 0.913,
+      "display_sd": 0.039,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "RandomLP A",
+      "method": "FCNN",
+      "metric": "learning",
+      "mean": 2.8637480333339536,
+      "sd": 0.010157792519107022,
+      "display_mean": 2.864,
+      "display_sd": 0.01,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "RandomLP A",
+      "method": "Full",
+      "metric": "solve",
+      "mean": 10.789654998128148,
+      "sd": 0.685191978343846,
+      "display_mean": 10.79,
+      "display_sd": 0.685,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "RandomLP A",
+      "method": "Ours",
+      "metric": "solve",
+      "mean": 1.9439583343531317,
+      "sd": 0.0311820751171897,
+      "display_mean": 1.944,
+      "display_sd": 0.031,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "RandomLP A",
+      "method": "DataDrivenProj",
+      "metric": "solve",
+      "mean": 5.227413888961567,
+      "sd": 0.3026938534961345,
+      "display_mean": 5.227,
+      "display_sd": 0.303,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "RandomLP A",
+      "method": "FCNN",
+      "metric": "solve",
+      "mean": 5.655250000093667,
+      "sd": 1.6931814404409693,
+      "display_mean": 5.655,
+      "display_sd": 1.693,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "RandomLP C",
+      "method": "Ours",
+      "metric": "learning",
+      "mean": 0.6899102999983976,
+      "sd": 0.0011593717647977908,
+      "display_mean": 0.69,
+      "display_sd": 0.001,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "RandomLP C",
+      "method": "DataDrivenProj",
+      "metric": "learning",
+      "mean": 1.9548904666662568,
+      "sd": 0.25028898117260145,
+      "display_mean": 1.955,
+      "display_sd": 0.25,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "RandomLP C",
+      "method": "FCNN",
+      "metric": "learning",
+      "mean": 4.929230099999889,
+      "sd": 0.07715579621708912,
+      "display_mean": 4.929,
+      "display_sd": 0.077,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "RandomLP C",
+      "method": "Full",
+      "metric": "solve",
+      "mean": 30.216073333576787,
+      "sd": 0.0816680489685388,
+      "display_mean": 30.216,
+      "display_sd": 0.082,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "RandomLP C",
+      "method": "Ours",
+      "metric": "solve",
+      "mean": 2.8929550001824587,
+      "sd": 0.061718161900814486,
+      "display_mean": 2.893,
+      "display_sd": 0.062,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "RandomLP C",
+      "method": "DataDrivenProj",
+      "metric": "solve",
+      "mean": 11.809169444455133,
+      "sd": 1.427654230727259,
+      "display_mean": 11.809,
+      "display_sd": 1.428,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "RandomLP C",
+      "method": "FCNN",
+      "metric": "solve",
+      "mean": 9.285538889040767,
+      "sd": 2.037882129646375,
+      "display_mean": 9.286,
+      "display_sd": 2.038,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "SC205",
+      "method": "Ours",
+      "metric": "learning",
+      "mean": 0.11012129999774818,
+      "sd": 0.0044223500815251905,
+      "display_mean": 0.11,
+      "display_sd": 0.004,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "SC205",
+      "method": "DataDrivenProj",
+      "metric": "learning",
+      "mean": 6.631938766668706,
+      "sd": 0.09522886683747338,
+      "display_mean": 6.632,
+      "display_sd": 0.095,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "SC205",
+      "method": "FCNN",
+      "metric": "learning",
+      "mean": 18.635125833333404,
+      "sd": 0.24300662207587165,
+      "display_mean": 18.635,
+      "display_sd": 0.243,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "SC205",
+      "method": "Full",
+      "metric": "solve",
+      "mean": 4.273303330410272,
+      "sd": 0.5267708798687065,
+      "display_mean": 4.273,
+      "display_sd": 0.527,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "SC205",
+      "method": "Ours",
+      "metric": "solve",
+      "mean": 4.251463334367145,
+      "sd": 0.21922986804738395,
+      "display_mean": 4.251,
+      "display_sd": 0.219,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "SC205",
+      "method": "DataDrivenProj",
+      "metric": "solve",
+      "mean": 4.739672221451908,
+      "sd": 0.11635461992012909,
+      "display_mean": 4.74,
+      "display_sd": 0.116,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-rho",
+      "instance": "SC205",
+      "method": "FCNN",
+      "metric": "solve",
+      "mean": 2.3362250000849,
+      "sd": 0.23678150320118024,
+      "display_mean": 2.336,
+      "display_sd": 0.237,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "Packing",
+      "method": "Ours",
+      "metric": "learning",
+      "mean": 0.0839933333336375,
+      "sd": 0.005163706018910567,
+      "display_mean": 0.084,
+      "display_sd": 0.005,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "Packing",
+      "method": "FCNN",
+      "metric": "learning",
+      "mean": 40.066365766668845,
+      "sd": 1.7663102792128966,
+      "display_mean": 40.066,
+      "display_sd": 1.766,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "Packing",
+      "method": "Full",
+      "metric": "solve",
+      "mean": 7.208359999155267,
+      "sd": 0.38667560301992615,
+      "display_mean": 7.208,
+      "display_sd": 0.387,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "Packing",
+      "method": "Ours",
+      "metric": "solve",
+      "mean": 3.204123332640467,
+      "sd": 0.1360291651368594,
+      "display_mean": 3.204,
+      "display_sd": 0.136,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "Packing",
+      "method": "FCNN",
+      "metric": "solve",
+      "mean": 11.249113333906234,
+      "sd": 0.9307883046502968,
+      "display_mean": 11.249,
+      "display_sd": 0.931,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "MinCostFlow",
+      "method": "Ours",
+      "metric": "learning",
+      "mean": 0.18894906666537276,
+      "sd": 0.01657675817544923,
+      "display_mean": 0.189,
+      "display_sd": 0.017,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "MinCostFlow",
+      "method": "FCNN",
+      "metric": "learning",
+      "mean": 25.973372700003285,
+      "sd": 5.973045534984569,
+      "display_mean": 25.973,
+      "display_sd": 5.973,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "MinCostFlow",
+      "method": "Full",
+      "metric": "solve",
+      "mean": 12.6158716659119,
+      "sd": 0.49661453189986704,
+      "display_mean": 12.616,
+      "display_sd": 0.497,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "MinCostFlow",
+      "method": "Ours",
+      "metric": "solve",
+      "mean": 1.8895033317675667,
+      "sd": 0.3511518376056242,
+      "display_mean": 1.89,
+      "display_sd": 0.351,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "MinCostFlow",
+      "method": "FCNN",
+      "metric": "solve",
+      "mean": 3.9274449988927334,
+      "sd": 1.025461098123818,
+      "display_mean": 3.927,
+      "display_sd": 1.025,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "RandomLP A",
+      "method": "Ours",
+      "metric": "learning",
+      "mean": 0.276389633329624,
+      "sd": 0.016157735615693402,
+      "display_mean": 0.276,
+      "display_sd": 0.016,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "RandomLP A",
+      "method": "FCNN",
+      "metric": "learning",
+      "mean": 25.984778266666883,
+      "sd": 5.164552547271521,
+      "display_mean": 25.985,
+      "display_sd": 5.165,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "RandomLP A",
+      "method": "Full",
+      "metric": "solve",
+      "mean": 18.761118333350133,
+      "sd": 2.0682828670887385,
+      "display_mean": 18.761,
+      "display_sd": 2.068,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "RandomLP A",
+      "method": "Ours",
+      "metric": "solve",
+      "mean": 2.7891366674642,
+      "sd": 0.47796978373828425,
+      "display_mean": 2.789,
+      "display_sd": 0.478,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "RandomLP A",
+      "method": "FCNN",
+      "metric": "solve",
+      "mean": 6.933278333841933,
+      "sd": 0.9971222768128107,
+      "display_mean": 6.933,
+      "display_sd": 0.997,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "RandomLP B",
+      "method": "Ours",
+      "metric": "learning",
+      "mean": 0.4593368666731597,
+      "sd": 0.021465649523332787,
+      "display_mean": 0.459,
+      "display_sd": 0.021,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "RandomLP B",
+      "method": "FCNN",
+      "metric": "learning",
+      "mean": 29.021614066664675,
+      "sd": 3.528716699809255,
+      "display_mean": 29.022,
+      "display_sd": 3.529,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "RandomLP B",
+      "method": "Full",
+      "metric": "solve",
+      "mean": 31.29546499864467,
+      "sd": 2.157699476419304,
+      "display_mean": 31.295,
+      "display_sd": 2.158,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "RandomLP B",
+      "method": "Ours",
+      "metric": "solve",
+      "mean": 2.7738849998664667,
+      "sd": 0.4645136052686752,
+      "display_mean": 2.774,
+      "display_sd": 0.465,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "RandomLP B",
+      "method": "FCNN",
+      "metric": "solve",
+      "mean": 6.702509999740833,
+      "sd": 1.6663306497002535,
+      "display_mean": 6.703,
+      "display_sd": 1.666,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "RandomLP C",
+      "method": "Ours",
+      "metric": "learning",
+      "mean": 0.8096243999898434,
+      "sd": 0.049834812390436356,
+      "display_mean": 0.81,
+      "display_sd": 0.05,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "RandomLP C",
+      "method": "FCNN",
+      "metric": "learning",
+      "mean": 28.30384456666555,
+      "sd": 3.9197083107813797,
+      "display_mean": 28.304,
+      "display_sd": 3.92,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "RandomLP C",
+      "method": "Full",
+      "metric": "solve",
+      "mean": 48.42341000039593,
+      "sd": 4.036199157201418,
+      "display_mean": 48.423,
+      "display_sd": 4.036,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "RandomLP C",
+      "method": "Ours",
+      "metric": "solve",
+      "mean": 2.7647599992632665,
+      "sd": 0.2972400463707221,
+      "display_mean": 2.765,
+      "display_sd": 0.297,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "RandomLP C",
+      "method": "FCNN",
+      "metric": "solve",
+      "mean": 5.4620266666461,
+      "sd": 0.6355868274401169,
+      "display_mean": 5.462,
+      "display_sd": 0.636,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "RandomLP D",
+      "method": "Ours",
+      "metric": "learning",
+      "mean": 1.1973365000012564,
+      "sd": 0.05617436679291521,
+      "display_mean": 1.197,
+      "display_sd": 0.056,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "RandomLP D",
+      "method": "FCNN",
+      "metric": "learning",
+      "mean": 36.05095256666633,
+      "sd": 5.237870683504763,
+      "display_mean": 36.051,
+      "display_sd": 5.238,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "RandomLP D",
+      "method": "Full",
+      "metric": "solve",
+      "mean": 67.59340333252713,
+      "sd": 1.725926639875893,
+      "display_mean": 67.593,
+      "display_sd": 1.726,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "RandomLP D",
+      "method": "Ours",
+      "metric": "solve",
+      "mean": 3.4333216666709334,
+      "sd": 0.6052744514678478,
+      "display_mean": 3.433,
+      "display_sd": 0.605,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "RandomLP D",
+      "method": "FCNN",
+      "metric": "solve",
+      "mean": 7.718558331786533,
+      "sd": 2.4284166504130154,
+      "display_mean": 7.719,
+      "display_sd": 2.428,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "GROW7",
+      "method": "Ours",
+      "metric": "learning",
+      "mean": 0.37805120000363485,
+      "sd": 0.02049844507360848,
+      "display_mean": 0.378,
+      "display_sd": 0.02,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "GROW7",
+      "method": "FCNN",
+      "metric": "learning",
+      "mean": 60.71407426667186,
+      "sd": 0.6336547055346803,
+      "display_mean": 60.714,
+      "display_sd": 0.634,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "GROW7",
+      "method": "Full",
+      "metric": "solve",
+      "mean": 25.621511666880266,
+      "sd": 1.437998507165204,
+      "display_mean": 25.622,
+      "display_sd": 1.438,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "GROW7",
+      "method": "Ours",
+      "metric": "solve",
+      "mean": 6.8701650008733335,
+      "sd": 0.4314589006724576,
+      "display_mean": 6.87,
+      "display_sd": 0.431,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "GROW7",
+      "method": "FCNN",
+      "metric": "solve",
+      "mean": 16.726843332920268,
+      "sd": 3.412435483041693,
+      "display_mean": 16.727,
+      "display_sd": 3.412,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "SC205",
+      "method": "Ours",
+      "metric": "learning",
+      "mean": 0.11412510000809557,
+      "sd": 0.007175382127208026,
+      "display_mean": 0.114,
+      "display_sd": 0.007,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "SC205",
+      "method": "FCNN",
+      "metric": "learning",
+      "mean": 14.193111833330477,
+      "sd": 0.5784948759893166,
+      "display_mean": 14.193,
+      "display_sd": 0.578,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "SC205",
+      "method": "Full",
+      "metric": "solve",
+      "mean": 7.243071666016431,
+      "sd": 0.3685473590153322,
+      "display_mean": 7.243,
+      "display_sd": 0.369,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "SC205",
+      "method": "Ours",
+      "metric": "solve",
+      "mean": 1.6381600000992333,
+      "sd": 0.094398951692988,
+      "display_mean": 1.638,
+      "display_sd": 0.094,
+      "pass": true
+    },
+    {
+      "table": "tab:runtime-matched-k",
+      "instance": "SC205",
+      "method": "FCNN",
+      "metric": "solve",
+      "mean": 2.7629500000329665,
+      "sd": 0.29666655660747776,
+      "display_mean": 2.763,
+      "display_sd": 0.297,
+      "pass": true
+    }
+  ],
+  "notation": {
+    "Ours": [
+      "OursEstC",
+      "Ours-matched-K"
+    ],
+    "FCNN": [
+      "FCNN-c",
+      "FCNNc",
+      "FCNN-c-adapted-matched-K"
+    ],
+    "DataDrivenProj": [
+      "DataDriven"
+    ]
+  },
+  "table1": {
+    "rho": 0.5,
+    "training_costs_before_filtering": 40,
+    "timing_repeats": 3,
+    "data_variation": "fixed data, timing repetitions",
+    "test_count_ours_and_full": 20,
+    "test_count_archived_baselines": 12,
+    "sc205_shared_projection_runtime_implementation": "SGA"
+  },
+  "table2": {
+    "training_lps": 20,
+    "test_lps_per_seed": 20,
+    "seeds": [
+      17,
+      1000020,
+      2000023
+    ],
+    "same_data_and_formulation_per_seed": true,
+    "reduced_solver_dimension": "K=max(1, raw learned rank)",
+    "fcnn_epochs": 120,
+    "training_projected_lp_solves": 2400,
+    "validation_projected_lp_solves": 726,
+    "warm_start_full_lp_solves": 2
+  },
+  "solver_time_definition": "HiGHS solver-only time, excluding neural forward and per-query matrix construction"
+}

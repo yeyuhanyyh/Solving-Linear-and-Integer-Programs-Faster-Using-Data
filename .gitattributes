@@ -5,3 +5,9 @@ ip/*.json text eol=lf
 # Frozen IP source guards depend on exact bytes, including line endings.
 ip/snapshot/** -text
 ip/provenance/** -text
+
+# Saved LP timing records are verified by their original byte hashes.
+results/paper_lp/sources/** -text
+results/paper_lp/provenance.json text eol=lf
+results/paper_lp/verify_tables.py text eol=lf
+/README.md text eol=lf

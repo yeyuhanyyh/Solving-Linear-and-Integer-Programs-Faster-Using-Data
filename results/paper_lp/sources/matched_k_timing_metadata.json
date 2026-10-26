@@ -1,0 +1,29 @@
+{
+  "purpose": "Reviewer follow-up matched-K timing",
+  "same_ambient_d": true,
+  "same_full_lp_representation": "All methods use the same compact all-inequality formulation in d variables.",
+  "ours_learning": "Unique-optimizer simplification: one compact full-LP solve per training sample, followed by an SVD of optimizer differences.",
+  "fcnn_baseline_scope": "Cost-only FCNN-c adaptation with repeated epochs; not a bit-for-bit reproduction of Iwata and Sakaue.",
+  "sequential_execution": true,
+  "timing_sd": "sample SD across independent data seeds, not machine repeats",
+  "effective_rank_reported": true,
+  "matched_reduced_dimension": "For each case and data seed, both methods use K=max(1, Ours unpadded learned rank); the K=1 floor is disclosed with raw_learned_rank=0.",
+  "training_lps": 20,
+  "heldout_lps_per_seed": 20,
+  "independent_data_seeds": 3,
+  "normal_scale_only": true,
+  "torch_device": "cpu",
+  "lp_backend": "SciPy linprog / HiGHS on CPU",
+  "cuda_available_on_measurement_machine": false,
+  "online_total_definition": "neural forward + per-query reduced matrix/objective build + coordinate/row-scaling preparation + all HiGHS attempts",
+  "full_lp_online_definition": "input preparation + one HiGHS call on the common d-variable formulation",
+  "final_consistency_validation": {
+    "raw_rows": 72,
+    "matched_k_failures": 0,
+    "full_k_not_d_failures": 0,
+    "effective_rank_failures": 0,
+    "heldout_solve_failure_rows": 0,
+    "fallback_rows": 0,
+    "maximum_HiGHS_calls_per_query": 1.0
+  }
+}
