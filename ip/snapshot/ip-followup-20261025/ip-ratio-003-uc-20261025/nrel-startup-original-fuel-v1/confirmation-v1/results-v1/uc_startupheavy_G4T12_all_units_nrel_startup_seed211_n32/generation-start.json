@@ -1,0 +1,8 @@
+{
+  "case_id": "uc_startupheavy_G4T12_all_units_nrel_startup_seed211_n32",
+  "count": 120,
+  "source_freeze_sha256": "a47236f3e39465c1b6053d2c84282facc51ab7e1a281af247735ca6c0979beb3",
+  "rng_namespace": "uc-original-fuel-nrel-startup-g4all-n32-independent-confirmation-v1-20261025",
+  "rng_seed128": 78688479175959905469000041147753946221,
+  "planned_costs_sha256": "84289e87b6a8d4e2a63d38e8da92fed008d8ca3c06eb24d658a9ba98f41f0687"
+}

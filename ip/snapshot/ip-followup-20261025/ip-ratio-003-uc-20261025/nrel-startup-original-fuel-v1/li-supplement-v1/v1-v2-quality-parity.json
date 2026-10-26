@@ -1,0 +1,11 @@
+{
+  "schema": "uc-li-v1-v2-quality-parity-report-v1",
+  "count": 360,
+  "quality_status_or_objective_difference_count": 0,
+  "different_paths": [],
+  "v2_outer_seconds_max": 0.12369100001524203,
+  "formal_version": 2,
+  "no_version_selection_used": true,
+  "v1_preserved": true,
+  "v2_validity_includes_all_original_validation_time": true
+}

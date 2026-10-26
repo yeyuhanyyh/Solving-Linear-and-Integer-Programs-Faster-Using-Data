@@ -1,0 +1,60 @@
+{
+  "guard": {
+    "original_training": {
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1009_n36",
+      "method": "li",
+      "training_array_hash": "5d3cd6a8ad375741e1bf9fd33fa801b41404a393b4532e778bd7e63cf0b2d79e",
+      "source_hashes": {
+        "training.npz": "a62e7039ee0c31a96cba02c414ef84da3311c13aa90ac03d8f7073a81d24c6da",
+        "metadata.json": "f7b51d9e1543dad5173d0f7139c5f50444a7dd189a4600d513406632b410ca97"
+      },
+      "target_K": 32,
+      "pilot_runner_sha256": "d7ff552f55775f90387444e8cbc6290ee371ca94960f7280f42c762c8768e8c2",
+      "runtime_seal_sha256": "d571c6ca71ac7c1b01494d1efb2d81daa18f01ebab3761eb912d287eb3903197",
+      "pilot_protocol_sha256": "445077e38e432b05d0ac837ef709ebe9c0d38e4f3d8baa914570b8f3409363de",
+      "selection_manifest_sha256": "e1c5bc638952fa690137ee572e5c7974e14a418aaa7f214b20819f9a06c1f7a0",
+      "all_shared_source_sha256": {
+        "runtime/adapter.py": "76c50433e395054d2c4e73df7e49144aff1678e14cb252c46149852b043fd636",
+        "runtime/dimension_diagnostics.py": "adcec8c49e24fa373cdf92532e1a3e1c980fd10dea722d1225223f50e398c099",
+        "runtime/experiment_core.py": "7d42aaaa5ade775722899cc11a84b05b00294e6af7ff3e5cf3b3896cf340fdc7",
+        "runtime/mlopt_baseline.py": "ee35123e6212a72c663e3af98baf04fafd9d89b81ea64027934658706b57a068",
+        "runtime/nd_root_lp_features.py": "454a72a202881d3a46347c7105e3522657a721934b8eaf4b38247930498bff5c",
+        "runtime/neural_diving_baseline.py": "a4742d2fb496c7764b51b83bbbe93129d4c39c4da2118a30da085697852793a0",
+        "runtime/portable_adapter.py": "aa2cbdb7a06f5955a8a030401a5ffe3fbe43e13fd3e9719bb68bf569c6e85850",
+        "runtime/preference_baseline.py": "3825e64f3daa34884721cef260895d5e587da4366150f4b3ca17f6594c2ff9ba",
+        "runtime/strategy_match.py": "74ecd5b97480d3d50a5c0c1d5c128c33fc756f016409523d442950d1c6bd0434",
+        "runtime/uc_model.py": "4e0b4b0d24fa1b2e54e3f399569976e1a53f429bd0ff8196976fa0713bacbf38",
+        "shared/train_uc_baselines.py": "f9613f57036869e59d607ba62fa470df62893501183023d2e802f137777f01dd",
+        "shared/uc_adapters.py": "b0f5cbd42a2099289c89cbd0b28bf41a6c2bbeed673af02abf9540862edb9f40"
+      },
+      "cost_map": "signed affine; offset + coefficients @ feature",
+      "development_used_in_training": false,
+      "new_confirmation_created": false
+    },
+    "supplement_training_source_sha256": "606b7174070711f99e9a69ca53694462b3a8c17fcb88ab6bbf920c142c2733b7",
+    "protocol_sha256": "123d676b2d9d6d6694f3c9d56f117cf8e07645d4e8611fdd800c33ac29cfafd1",
+    "method": "li",
+    "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1009_n36",
+    "n_train": 36,
+    "D": 96,
+    "K": 32,
+    "original_shared_trainer_sha256": "f9613f57036869e59d607ba62fa470df62893501183023d2e802f137777f01dd",
+    "original_li_implementation_sha256": "3825e64f3daa34884721cef260895d5e587da4366150f4b3ca17f6594c2ff9ba",
+    "test_information_used_for_selection": false,
+    "later_baseline_supplement": true
+  },
+  "artifact_sha256": {
+    "metadata.json": "a7eefaa067ba14758533307cf2fc74e8c88c03910cbb2f59541f623f42a20f83",
+    "preference-development-pairs.npz": "2428cf7db2c43f273ab6c357220c0462a7cb59ba2dd1cf7ce9244e45310e6c2b",
+    "preference-final-pairs.npz": "6edf8a0faa5d3cfffb574387fa5a4d54720f074af8bf834e7f4d5b55444c8b07",
+    "preference-network.pt": "815ac8b5f97c8a4cd551faf3042a5f8f167d1faa10c443d1e4998ff58a5a25ee",
+    "preference-pair-data.npz": "f678ac2e1c42409e661d2161335bc401d197bee2d5e48695d8ea9067c8e57fb9",
+    "preference-training.json": "d97af741fdffa04cda54f179268050e60aff0a0fbe078a9d75d82c4f8f3174ba",
+    "start.json": "68f2b5e829263cacff163ba5c77f1ba5c6e5653dd1437e3914f4fe4284fb24ee"
+  },
+  "fit_seconds": 417.9696958999848,
+  "fit_cpu_seconds": 412.15625,
+  "sanity_gate_passed": true,
+  "training_label_count": 36,
+  "utc": "2026-10-25T23:16:59.096031+00:00"
+}

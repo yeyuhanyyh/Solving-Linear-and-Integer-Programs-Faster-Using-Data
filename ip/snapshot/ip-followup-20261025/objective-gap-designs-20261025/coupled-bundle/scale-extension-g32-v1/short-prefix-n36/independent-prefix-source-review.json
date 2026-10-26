@@ -1,0 +1,529 @@
+{
+  "status": "PASS_SHORT_PREFIX_SOURCES",
+  "errors": [],
+  "reviewed_utc": "2026-10-25T21:07:47.160033+00:00",
+  "case_checks": [
+    {
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1009_n36",
+      "ancestor_case_id": "coupledbundle_uniformgross_random32_b0.5_seed1009_n69",
+      "physical_seed": 1009,
+      "n_train": 36,
+      "exploration_labels_used": 69,
+      "fields": [
+        {
+          "field": "A_data",
+          "dtype": "float64",
+          "shape": [
+            296
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "A_indices",
+          "dtype": "int32",
+          "shape": [
+            296
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "A_indptr",
+          "dtype": "int32",
+          "shape": [
+            133
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "A_shape",
+          "dtype": "int64",
+          "shape": [
+            2
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "row_lower",
+          "dtype": "float64",
+          "shape": [
+            132
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "row_upper",
+          "dtype": "float64",
+          "shape": [
+            132
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "col_lower",
+          "dtype": "float64",
+          "shape": [
+            96
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "col_upper",
+          "dtype": "float64",
+          "shape": [
+            96
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "integrality",
+          "dtype": "int32",
+          "shape": [
+            96
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "commitment_indices",
+          "dtype": "int64",
+          "shape": [
+            96
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "binary_indices",
+          "dtype": "int64",
+          "shape": [
+            96
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "train_features",
+          "dtype": "float64",
+          "shape": [
+            36,
+            32
+          ],
+          "same_first36_values": true,
+          "unchanged_physical_or_map": false
+        },
+        {
+          "field": "train_costs",
+          "dtype": "float64",
+          "shape": [
+            36,
+            96
+          ],
+          "same_first36_values": true,
+          "unchanged_physical_or_map": false
+        },
+        {
+          "field": "train_solutions",
+          "dtype": "float64",
+          "shape": [
+            36,
+            96
+          ],
+          "same_first36_values": true,
+          "unchanged_physical_or_map": false
+        },
+        {
+          "field": "train_objectives",
+          "dtype": "float64",
+          "shape": [
+            36
+          ],
+          "same_first36_values": true,
+          "unchanged_physical_or_map": false
+        },
+        {
+          "field": "cost_offset",
+          "dtype": "float64",
+          "shape": [
+            96
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "cost_feature_coefficients",
+          "dtype": "float64",
+          "shape": [
+            96,
+            32
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        }
+      ],
+      "all_physical_rows_bounds_domains_and_costmap_unchanged": true,
+      "training_labels_exact_binary": true,
+      "all_training_and_empty_plus_32_singletons_in_exact_affine_slice": true,
+      "training_certificates_identical_first36_records": true,
+      "original_generation_time_not_fabricated": true
+    },
+    {
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1013_n36",
+      "ancestor_case_id": "coupledbundle_uniformgross_random32_b0.5_seed1013_n69",
+      "physical_seed": 1013,
+      "n_train": 36,
+      "exploration_labels_used": 69,
+      "fields": [
+        {
+          "field": "A_data",
+          "dtype": "float64",
+          "shape": [
+            318
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "A_indices",
+          "dtype": "int32",
+          "shape": [
+            318
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "A_indptr",
+          "dtype": "int32",
+          "shape": [
+            144
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "A_shape",
+          "dtype": "int64",
+          "shape": [
+            2
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "row_lower",
+          "dtype": "float64",
+          "shape": [
+            143
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "row_upper",
+          "dtype": "float64",
+          "shape": [
+            143
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "col_lower",
+          "dtype": "float64",
+          "shape": [
+            96
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "col_upper",
+          "dtype": "float64",
+          "shape": [
+            96
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "integrality",
+          "dtype": "int32",
+          "shape": [
+            96
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "commitment_indices",
+          "dtype": "int64",
+          "shape": [
+            96
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "binary_indices",
+          "dtype": "int64",
+          "shape": [
+            96
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "train_features",
+          "dtype": "float64",
+          "shape": [
+            36,
+            32
+          ],
+          "same_first36_values": true,
+          "unchanged_physical_or_map": false
+        },
+        {
+          "field": "train_costs",
+          "dtype": "float64",
+          "shape": [
+            36,
+            96
+          ],
+          "same_first36_values": true,
+          "unchanged_physical_or_map": false
+        },
+        {
+          "field": "train_solutions",
+          "dtype": "float64",
+          "shape": [
+            36,
+            96
+          ],
+          "same_first36_values": true,
+          "unchanged_physical_or_map": false
+        },
+        {
+          "field": "train_objectives",
+          "dtype": "float64",
+          "shape": [
+            36
+          ],
+          "same_first36_values": true,
+          "unchanged_physical_or_map": false
+        },
+        {
+          "field": "cost_offset",
+          "dtype": "float64",
+          "shape": [
+            96
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "cost_feature_coefficients",
+          "dtype": "float64",
+          "shape": [
+            96,
+            32
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        }
+      ],
+      "all_physical_rows_bounds_domains_and_costmap_unchanged": true,
+      "training_labels_exact_binary": true,
+      "all_training_and_empty_plus_32_singletons_in_exact_affine_slice": true,
+      "training_certificates_identical_first36_records": true,
+      "original_generation_time_not_fabricated": true
+    },
+    {
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1019_n36",
+      "ancestor_case_id": "coupledbundle_uniformgross_random32_b0.5_seed1019_n69",
+      "physical_seed": 1019,
+      "n_train": 36,
+      "exploration_labels_used": 69,
+      "fields": [
+        {
+          "field": "A_data",
+          "dtype": "float64",
+          "shape": [
+            314
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "A_indices",
+          "dtype": "int32",
+          "shape": [
+            314
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "A_indptr",
+          "dtype": "int32",
+          "shape": [
+            142
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "A_shape",
+          "dtype": "int64",
+          "shape": [
+            2
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "row_lower",
+          "dtype": "float64",
+          "shape": [
+            141
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "row_upper",
+          "dtype": "float64",
+          "shape": [
+            141
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "col_lower",
+          "dtype": "float64",
+          "shape": [
+            96
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "col_upper",
+          "dtype": "float64",
+          "shape": [
+            96
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "integrality",
+          "dtype": "int32",
+          "shape": [
+            96
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "commitment_indices",
+          "dtype": "int64",
+          "shape": [
+            96
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "binary_indices",
+          "dtype": "int64",
+          "shape": [
+            96
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "train_features",
+          "dtype": "float64",
+          "shape": [
+            36,
+            32
+          ],
+          "same_first36_values": true,
+          "unchanged_physical_or_map": false
+        },
+        {
+          "field": "train_costs",
+          "dtype": "float64",
+          "shape": [
+            36,
+            96
+          ],
+          "same_first36_values": true,
+          "unchanged_physical_or_map": false
+        },
+        {
+          "field": "train_solutions",
+          "dtype": "float64",
+          "shape": [
+            36,
+            96
+          ],
+          "same_first36_values": true,
+          "unchanged_physical_or_map": false
+        },
+        {
+          "field": "train_objectives",
+          "dtype": "float64",
+          "shape": [
+            36
+          ],
+          "same_first36_values": true,
+          "unchanged_physical_or_map": false
+        },
+        {
+          "field": "cost_offset",
+          "dtype": "float64",
+          "shape": [
+            96
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        },
+        {
+          "field": "cost_feature_coefficients",
+          "dtype": "float64",
+          "shape": [
+            96,
+            32
+          ],
+          "same_first36_values": false,
+          "unchanged_physical_or_map": true
+        }
+      ],
+      "all_physical_rows_bounds_domains_and_costmap_unchanged": true,
+      "training_labels_exact_binary": true,
+      "all_training_and_empty_plus_32_singletons_in_exact_affine_slice": true,
+      "training_certificates_identical_first36_records": true,
+      "original_generation_time_not_fabricated": true
+    }
+  ],
+  "new_manifest_sha256": "e1c5bc638952fa690137ee572e5c7974e14a418aaa7f214b20819f9a06c1f7a0",
+  "new_data_seal_sha256": "b143fa8d52af6b7e868269f694d1f35028c2e7955b26d687f5926d853805591f",
+  "ancestor_manifest_sha256": "f434dbee2a3b363fba5827255ee64c3715644e35118d5bdbb8bec8d65ce80c99",
+  "protocol_sha256": "224a3da91874cc9d273f1fb4944385464b82b807d80a8afd2dd8d14591777f56",
+  "old_n69_cohort_unchanged": true,
+  "no_training_or_solving_or_new_sampling_performed": true,
+  "no_weights_models_or_development_bank_read": true,
+  "disclosure": "n36fits use strictly the first36 training examples. Choosing the shared prefix used previously collected69 exploration labels perseed; total offline label effort cannot be presented as36.",
+  "future_test_design": "Twelve cases/four settings use9 physical test banks of120costs, with G32n36/n69 paired. Thus1080distinctcosts,1440casequeries,2880methodreturns; all12models/24roles must freeze before RNG."
+}

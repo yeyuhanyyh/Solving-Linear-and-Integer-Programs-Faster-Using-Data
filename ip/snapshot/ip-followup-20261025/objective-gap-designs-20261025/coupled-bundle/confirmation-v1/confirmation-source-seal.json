@@ -1,0 +1,22 @@
+{
+  "all_model_weight_freeze_is_separate_mandatory_next_step": true,
+  "all_twelve_model_role_semantic_readiness_precheck_passed": true,
+  "confirmation_generated": false,
+  "confirmation_read": false,
+  "independent_review_agents": [
+    "/root/ip_followup_quality_audit",
+    "/root/uc_nd_li_adapter/fresh_wrapper_review"
+  ],
+  "original_v2_driver_unchanged": true,
+  "schema": "coupled-bundle-fresh-source-freeze-v1",
+  "scientific_AST_equivalence_passed": true,
+  "source_only_review_passed": true,
+  "source_sha256": {
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\confirmation-v1\\confirmation-wrapper-self-test-final.json": "7a3c114bc190b5637648522a9fa792cf07640595b8f40f48ba5fc5111e488ac1",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\confirmation-v1\\confirmation_runner.py": "d5805a5f0b214ce7ce078f06046403334878f97f8afdfe2b9890ebd9d514ec51",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\confirmation-v1\\fresh-confirmation-protocol.json": "adc97d04dda07e78de7cec7986deb6eb77c1bdd48560f8fcaf626ab3eb1778f0",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\confirmation-v1\\fresh_bank_cli.py": "62a6557c74bfcc791c74bc462252f3dc8cd7ce67d4e98c2eb5e9f2f4908eab09",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\confirmation-v1\\twelve-case-registry.json": "83a0d2d08d276f8b05c059b79005d7b4e00a665b7bfefc5f46f990d770c965ea",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\confirmation-v1\\verify_evaluator_equivalence.py": "e15becc30605beae3ef261d1e875727a0b92e26e9b2f6814a7264dbdb26f4a48"
+  }
+}

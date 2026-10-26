@@ -1,0 +1,242 @@
+{
+  "cases": {
+    "coupledbundle_uniformgross_random32_b0.5_seed1009_n36": {
+      "D": 96,
+      "G": 32,
+      "K": 32,
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1009_n36",
+      "files": {
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\li\\complete.json": "7fd6e9675f660f1e01e0bad8a583edbb1237f8462366074d40ceef4b328d8d2e",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\li\\metadata.json": "a7eefaa067ba14758533307cf2fc74e8c88c03910cbb2f59541f623f42a20f83",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\li\\preference-development-pairs.npz": "2428cf7db2c43f273ab6c357220c0462a7cb59ba2dd1cf7ce9244e45310e6c2b",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\li\\preference-final-pairs.npz": "6edf8a0faa5d3cfffb574387fa5a4d54720f074af8bf834e7f4d5b55444c8b07",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\li\\preference-network.pt": "815ac8b5f97c8a4cd551faf3042a5f8f167d1faa10c443d1e4998ff58a5a25ee",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\li\\preference-pair-data.npz": "f678ac2e1c42409e661d2161335bc401d197bee2d5e48695d8ea9067c8e57fb9",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\li\\preference-training.json": "d97af741fdffa04cda54f179268050e60aff0a0fbe078a9d75d82c4f8f3174ba",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\li\\start.json": "68f2b5e829263cacff163ba5c77f1ba5c6e5653dd1437e3914f4fe4284fb24ee"
+      },
+      "fit_cpu_seconds": 412.15625,
+      "fit_seconds": 417.9696958999848,
+      "guard": {
+        "D": 96,
+        "K": 32,
+        "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1009_n36",
+        "later_baseline_supplement": true,
+        "method": "li",
+        "n_train": 36,
+        "original_li_implementation_sha256": "3825e64f3daa34884721cef260895d5e587da4366150f4b3ca17f6594c2ff9ba",
+        "original_shared_trainer_sha256": "f9613f57036869e59d607ba62fa470df62893501183023d2e802f137777f01dd",
+        "original_training": {
+          "all_shared_source_sha256": {
+            "runtime/adapter.py": "76c50433e395054d2c4e73df7e49144aff1678e14cb252c46149852b043fd636",
+            "runtime/dimension_diagnostics.py": "adcec8c49e24fa373cdf92532e1a3e1c980fd10dea722d1225223f50e398c099",
+            "runtime/experiment_core.py": "7d42aaaa5ade775722899cc11a84b05b00294e6af7ff3e5cf3b3896cf340fdc7",
+            "runtime/mlopt_baseline.py": "ee35123e6212a72c663e3af98baf04fafd9d89b81ea64027934658706b57a068",
+            "runtime/nd_root_lp_features.py": "454a72a202881d3a46347c7105e3522657a721934b8eaf4b38247930498bff5c",
+            "runtime/neural_diving_baseline.py": "a4742d2fb496c7764b51b83bbbe93129d4c39c4da2118a30da085697852793a0",
+            "runtime/portable_adapter.py": "aa2cbdb7a06f5955a8a030401a5ffe3fbe43e13fd3e9719bb68bf569c6e85850",
+            "runtime/preference_baseline.py": "3825e64f3daa34884721cef260895d5e587da4366150f4b3ca17f6594c2ff9ba",
+            "runtime/strategy_match.py": "74ecd5b97480d3d50a5c0c1d5c128c33fc756f016409523d442950d1c6bd0434",
+            "runtime/uc_model.py": "4e0b4b0d24fa1b2e54e3f399569976e1a53f429bd0ff8196976fa0713bacbf38",
+            "shared/train_uc_baselines.py": "f9613f57036869e59d607ba62fa470df62893501183023d2e802f137777f01dd",
+            "shared/uc_adapters.py": "b0f5cbd42a2099289c89cbd0b28bf41a6c2bbeed673af02abf9540862edb9f40"
+          },
+          "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1009_n36",
+          "cost_map": "signed affine; offset + coefficients @ feature",
+          "development_used_in_training": false,
+          "method": "li",
+          "new_confirmation_created": false,
+          "pilot_protocol_sha256": "445077e38e432b05d0ac837ef709ebe9c0d38e4f3d8baa914570b8f3409363de",
+          "pilot_runner_sha256": "d7ff552f55775f90387444e8cbc6290ee371ca94960f7280f42c762c8768e8c2",
+          "runtime_seal_sha256": "d571c6ca71ac7c1b01494d1efb2d81daa18f01ebab3761eb912d287eb3903197",
+          "selection_manifest_sha256": "e1c5bc638952fa690137ee572e5c7974e14a418aaa7f214b20819f9a06c1f7a0",
+          "source_hashes": {
+            "metadata.json": "f7b51d9e1543dad5173d0f7139c5f50444a7dd189a4600d513406632b410ca97",
+            "training.npz": "a62e7039ee0c31a96cba02c414ef84da3311c13aa90ac03d8f7073a81d24c6da"
+          },
+          "target_K": 32,
+          "training_array_hash": "5d3cd6a8ad375741e1bf9fd33fa801b41404a393b4532e778bd7e63cf0b2d79e"
+        },
+        "protocol_sha256": "123d676b2d9d6d6694f3c9d56f117cf8e07645d4e8611fdd800c33ac29cfafd1",
+        "supplement_training_source_sha256": "606b7174070711f99e9a69ca53694462b3a8c17fcb88ab6bbf920c142c2733b7",
+        "test_information_used_for_selection": false
+      },
+      "n_train": 36,
+      "seed": 1009,
+      "training_directory": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\training-candidates\\random32_b0.5_seed1009\\n36",
+      "training_files": {
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\training-candidates\\random32_b0.5_seed1009\\n36\\affine.json": "218d276684485e4e3288b857fabc57c2782d9283938b8c871586a19d0cc3bdc8",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\training-candidates\\random32_b0.5_seed1009\\n36\\metadata.json": "f7b51d9e1543dad5173d0f7139c5f50444a7dd189a4600d513406632b410ca97",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\training-candidates\\random32_b0.5_seed1009\\n36\\training.npz": "a62e7039ee0c31a96cba02c414ef84da3311c13aa90ac03d8f7073a81d24c6da"
+      }
+    },
+    "coupledbundle_uniformgross_random32_b0.5_seed1013_n36": {
+      "D": 96,
+      "G": 32,
+      "K": 32,
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1013_n36",
+      "files": {
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1013_n36\\li\\complete.json": "b5072aa3df916770a9d7d367aef3cd3023b673ce05718eeece19e53c4d9587b8",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1013_n36\\li\\metadata.json": "6d2e9274f38ac2d0e0dd2cbcd267212f9be4d510192106779e7aa37b864f143c",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1013_n36\\li\\preference-development-pairs.npz": "5d9ab58683d06de90f6a392f08b96c7f5b4b30a74a406d544ab1119c01609bb5",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1013_n36\\li\\preference-final-pairs.npz": "fef78247aa5cac7b557e7444a502cfe3c2d966dd4168143a8019401fbbf18ca3",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1013_n36\\li\\preference-network.pt": "afc88e8e8acd3c688a3f492b8db785e2c68f8653e715c405a1fd7e5a3f451b5b",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1013_n36\\li\\preference-pair-data.npz": "297943d890decad1c105f675e19e959a818ff0f4274f79defad3eff0cbc56339",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1013_n36\\li\\preference-training.json": "d9ae5c2733c8a33ccc04d898327c479f11b1481131395ecc640e4dd790d37692",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1013_n36\\li\\start.json": "930374ef83269160f5d36749212a35d82591995ed919b9bd713b4a7f50a54e2f"
+      },
+      "fit_cpu_seconds": 855.78125,
+      "fit_seconds": 873.1704697000096,
+      "guard": {
+        "D": 96,
+        "K": 32,
+        "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1013_n36",
+        "later_baseline_supplement": true,
+        "method": "li",
+        "n_train": 36,
+        "original_li_implementation_sha256": "3825e64f3daa34884721cef260895d5e587da4366150f4b3ca17f6594c2ff9ba",
+        "original_shared_trainer_sha256": "f9613f57036869e59d607ba62fa470df62893501183023d2e802f137777f01dd",
+        "original_training": {
+          "all_shared_source_sha256": {
+            "runtime/adapter.py": "76c50433e395054d2c4e73df7e49144aff1678e14cb252c46149852b043fd636",
+            "runtime/dimension_diagnostics.py": "adcec8c49e24fa373cdf92532e1a3e1c980fd10dea722d1225223f50e398c099",
+            "runtime/experiment_core.py": "7d42aaaa5ade775722899cc11a84b05b00294e6af7ff3e5cf3b3896cf340fdc7",
+            "runtime/mlopt_baseline.py": "ee35123e6212a72c663e3af98baf04fafd9d89b81ea64027934658706b57a068",
+            "runtime/nd_root_lp_features.py": "454a72a202881d3a46347c7105e3522657a721934b8eaf4b38247930498bff5c",
+            "runtime/neural_diving_baseline.py": "a4742d2fb496c7764b51b83bbbe93129d4c39c4da2118a30da085697852793a0",
+            "runtime/portable_adapter.py": "aa2cbdb7a06f5955a8a030401a5ffe3fbe43e13fd3e9719bb68bf569c6e85850",
+            "runtime/preference_baseline.py": "3825e64f3daa34884721cef260895d5e587da4366150f4b3ca17f6594c2ff9ba",
+            "runtime/strategy_match.py": "74ecd5b97480d3d50a5c0c1d5c128c33fc756f016409523d442950d1c6bd0434",
+            "runtime/uc_model.py": "4e0b4b0d24fa1b2e54e3f399569976e1a53f429bd0ff8196976fa0713bacbf38",
+            "shared/train_uc_baselines.py": "f9613f57036869e59d607ba62fa470df62893501183023d2e802f137777f01dd",
+            "shared/uc_adapters.py": "b0f5cbd42a2099289c89cbd0b28bf41a6c2bbeed673af02abf9540862edb9f40"
+          },
+          "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1013_n36",
+          "cost_map": "signed affine; offset + coefficients @ feature",
+          "development_used_in_training": false,
+          "method": "li",
+          "new_confirmation_created": false,
+          "pilot_protocol_sha256": "445077e38e432b05d0ac837ef709ebe9c0d38e4f3d8baa914570b8f3409363de",
+          "pilot_runner_sha256": "d7ff552f55775f90387444e8cbc6290ee371ca94960f7280f42c762c8768e8c2",
+          "runtime_seal_sha256": "d571c6ca71ac7c1b01494d1efb2d81daa18f01ebab3761eb912d287eb3903197",
+          "selection_manifest_sha256": "e1c5bc638952fa690137ee572e5c7974e14a418aaa7f214b20819f9a06c1f7a0",
+          "source_hashes": {
+            "metadata.json": "54dfa632e31908aab5b589979419d12239fbf9d54df4fed2dbb1b67cc73cd9b7",
+            "training.npz": "4a23ae48594f1cbe447458f814103f5ad3cbe409773b897c99bd029ef314878f"
+          },
+          "target_K": 32,
+          "training_array_hash": "177d0df3775085dde3c57d13ca68174f525f11d2a60bc1f7eda003971f7ca24c"
+        },
+        "protocol_sha256": "123d676b2d9d6d6694f3c9d56f117cf8e07645d4e8611fdd800c33ac29cfafd1",
+        "supplement_training_source_sha256": "606b7174070711f99e9a69ca53694462b3a8c17fcb88ab6bbf920c142c2733b7",
+        "test_information_used_for_selection": false
+      },
+      "n_train": 36,
+      "seed": 1013,
+      "training_directory": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\training-candidates\\random32_b0.5_seed1013\\n36",
+      "training_files": {
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\training-candidates\\random32_b0.5_seed1013\\n36\\affine.json": "916a8d2d332d38b1ab0064e130a8b2eba5778691ddb41a12432a8dd1f915a575",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\training-candidates\\random32_b0.5_seed1013\\n36\\metadata.json": "54dfa632e31908aab5b589979419d12239fbf9d54df4fed2dbb1b67cc73cd9b7",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\training-candidates\\random32_b0.5_seed1013\\n36\\training.npz": "4a23ae48594f1cbe447458f814103f5ad3cbe409773b897c99bd029ef314878f"
+      }
+    },
+    "coupledbundle_uniformgross_random32_b0.5_seed1019_n36": {
+      "D": 96,
+      "G": 32,
+      "K": 32,
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1019_n36",
+      "files": {
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36\\li\\complete.json": "c18770b623dd55c245b40e6ba727e6e9587f7601a6dbb1e6ed02356583f3a523",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36\\li\\metadata.json": "92a9bd80a57fdbd6804908ae22fc62fd2b9064c2a14f8c551af55231fe922961",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36\\li\\preference-development-pairs.npz": "a1cbb1806c242979892386042ec9c765f2e6e0d143cfabd03f7499dd5d7eac14",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36\\li\\preference-final-pairs.npz": "57a4c99481319e7b63971a844134885d11f39df648a102bb24d64c7d3854cfa6",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36\\li\\preference-network.pt": "ca981a7c981a0788b5ef6a6764b904b14f63db4b39a8cd3b1ec7aea226aef8f0",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36\\li\\preference-pair-data.npz": "f54fdc41389ad6fcebbccfcc4745a8fddd8a9a3253d67edb249cd6e2f92fbd59",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36\\li\\preference-training.json": "98a2b105a1cdb9bcc6f70e1310d13979121ea05b9672150d981a1c52d8b90264",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36\\li\\start.json": "2d8f93afa35314241bcb701cd8d21ec78db45f0bd92dc779e225bdb742ec7f75"
+      },
+      "fit_cpu_seconds": 831.375,
+      "fit_seconds": 848.0691600999853,
+      "guard": {
+        "D": 96,
+        "K": 32,
+        "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1019_n36",
+        "later_baseline_supplement": true,
+        "method": "li",
+        "n_train": 36,
+        "original_li_implementation_sha256": "3825e64f3daa34884721cef260895d5e587da4366150f4b3ca17f6594c2ff9ba",
+        "original_shared_trainer_sha256": "f9613f57036869e59d607ba62fa470df62893501183023d2e802f137777f01dd",
+        "original_training": {
+          "all_shared_source_sha256": {
+            "runtime/adapter.py": "76c50433e395054d2c4e73df7e49144aff1678e14cb252c46149852b043fd636",
+            "runtime/dimension_diagnostics.py": "adcec8c49e24fa373cdf92532e1a3e1c980fd10dea722d1225223f50e398c099",
+            "runtime/experiment_core.py": "7d42aaaa5ade775722899cc11a84b05b00294e6af7ff3e5cf3b3896cf340fdc7",
+            "runtime/mlopt_baseline.py": "ee35123e6212a72c663e3af98baf04fafd9d89b81ea64027934658706b57a068",
+            "runtime/nd_root_lp_features.py": "454a72a202881d3a46347c7105e3522657a721934b8eaf4b38247930498bff5c",
+            "runtime/neural_diving_baseline.py": "a4742d2fb496c7764b51b83bbbe93129d4c39c4da2118a30da085697852793a0",
+            "runtime/portable_adapter.py": "aa2cbdb7a06f5955a8a030401a5ffe3fbe43e13fd3e9719bb68bf569c6e85850",
+            "runtime/preference_baseline.py": "3825e64f3daa34884721cef260895d5e587da4366150f4b3ca17f6594c2ff9ba",
+            "runtime/strategy_match.py": "74ecd5b97480d3d50a5c0c1d5c128c33fc756f016409523d442950d1c6bd0434",
+            "runtime/uc_model.py": "4e0b4b0d24fa1b2e54e3f399569976e1a53f429bd0ff8196976fa0713bacbf38",
+            "shared/train_uc_baselines.py": "f9613f57036869e59d607ba62fa470df62893501183023d2e802f137777f01dd",
+            "shared/uc_adapters.py": "b0f5cbd42a2099289c89cbd0b28bf41a6c2bbeed673af02abf9540862edb9f40"
+          },
+          "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1019_n36",
+          "cost_map": "signed affine; offset + coefficients @ feature",
+          "development_used_in_training": false,
+          "method": "li",
+          "new_confirmation_created": false,
+          "pilot_protocol_sha256": "445077e38e432b05d0ac837ef709ebe9c0d38e4f3d8baa914570b8f3409363de",
+          "pilot_runner_sha256": "d7ff552f55775f90387444e8cbc6290ee371ca94960f7280f42c762c8768e8c2",
+          "runtime_seal_sha256": "d571c6ca71ac7c1b01494d1efb2d81daa18f01ebab3761eb912d287eb3903197",
+          "selection_manifest_sha256": "e1c5bc638952fa690137ee572e5c7974e14a418aaa7f214b20819f9a06c1f7a0",
+          "source_hashes": {
+            "metadata.json": "7676c430980b6768cd0a179a30ee0c63cce029ddd582744e4aa4246657d68d71",
+            "training.npz": "7b0d41b698fa6250d84e990e37d8a0177fe39a0606ddc0299a44cd8fa53c95e4"
+          },
+          "target_K": 32,
+          "training_array_hash": "ae77d57ed4d5803ef54fe45c7497bc8251495112228922d0c9387910bc57737e"
+        },
+        "protocol_sha256": "123d676b2d9d6d6694f3c9d56f117cf8e07645d4e8611fdd800c33ac29cfafd1",
+        "supplement_training_source_sha256": "606b7174070711f99e9a69ca53694462b3a8c17fcb88ab6bbf920c142c2733b7",
+        "test_information_used_for_selection": false
+      },
+      "n_train": 36,
+      "seed": 1019,
+      "training_directory": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\training-candidates\\random32_b0.5_seed1019\\n36",
+      "training_files": {
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\training-candidates\\random32_b0.5_seed1019\\n36\\affine.json": "d0ad5d9436295a0da0e87ff4b88e085e5252155bd24fdd120e90d8246cb397db",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\training-candidates\\random32_b0.5_seed1019\\n36\\metadata.json": "7676c430980b6768cd0a179a30ee0c63cce029ddd582744e4aa4246657d68d71",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\training-candidates\\random32_b0.5_seed1019\\n36\\training.npz": "7b0d41b698fa6250d84e990e37d8a0177fe39a0606ddc0299a44cd8fa53c95e4"
+      }
+    }
+  },
+  "chronology": "Li training and selection occurred after stream2 cost generation. Li models are frozen before their first stream2 evaluation. This is a later supplemental baseline, not part of the original15-role pre-sampling freeze.",
+  "frozen": true,
+  "frozen_at_utc": "2026-10-25T23:34:36.050578+00:00",
+  "model_count": 3,
+  "original_stream2_model_freeze_sha256": "b40db9584786810ab1a661ac8d8968f232663bb04bf87f5ff336db5b9b737d26",
+  "schema": "coupled-knapsack-later-Li-supplement-models-v1",
+  "source_sha256": {
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\adapter\\generic-binary-v2\\GENERIC_BINARY_PROTOCOL.md": "445077e38e432b05d0ac837ef709ebe9c0d38e4f3d8baa914570b8f3409363de",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\adapter\\generic-binary-v2\\generic_binary_pilot.py": "d7ff552f55775f90387444e8cbc6290ee371ca94960f7280f42c762c8768e8c2",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\adapter\\generic-binary-v2\\runtime-seal.json": "d571c6ca71ac7c1b01494d1efb2d81daa18f01ebab3761eb912d287eb3903197",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\adapter\\generic-binary-v2\\runtime\\adapter.py": "76c50433e395054d2c4e73df7e49144aff1678e14cb252c46149852b043fd636",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\adapter\\generic-binary-v2\\runtime\\dimension_diagnostics.py": "adcec8c49e24fa373cdf92532e1a3e1c980fd10dea722d1225223f50e398c099",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\adapter\\generic-binary-v2\\runtime\\experiment_core.py": "7d42aaaa5ade775722899cc11a84b05b00294e6af7ff3e5cf3b3896cf340fdc7",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\adapter\\generic-binary-v2\\runtime\\mlopt_baseline.py": "ee35123e6212a72c663e3af98baf04fafd9d89b81ea64027934658706b57a068",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\adapter\\generic-binary-v2\\runtime\\nd_root_lp_features.py": "454a72a202881d3a46347c7105e3522657a721934b8eaf4b38247930498bff5c",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\adapter\\generic-binary-v2\\runtime\\neural_diving_baseline.py": "a4742d2fb496c7764b51b83bbbe93129d4c39c4da2118a30da085697852793a0",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\adapter\\generic-binary-v2\\runtime\\portable_adapter.py": "aa2cbdb7a06f5955a8a030401a5ffe3fbe43e13fd3e9719bb68bf569c6e85850",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\adapter\\generic-binary-v2\\runtime\\preference_baseline.py": "3825e64f3daa34884721cef260895d5e587da4366150f4b3ca17f6594c2ff9ba",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\adapter\\generic-binary-v2\\runtime\\strategy_match.py": "74ecd5b97480d3d50a5c0c1d5c128c33fc756f016409523d442950d1c6bd0434",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\adapter\\generic-binary-v2\\runtime\\uc_model.py": "4e0b4b0d24fa1b2e54e3f399569976e1a53f429bd0ff8196976fa0713bacbf38",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\adapter\\generic-binary-v2\\shared\\train_uc_baselines.py": "f9613f57036869e59d607ba62fa470df62893501183023d2e802f137777f01dd",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\adapter\\generic-binary-v2\\shared\\uc_adapters.py": "b0f5cbd42a2099289c89cbd0b28bf41a6c2bbeed673af02abf9540862edb9f40",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\sealed-cohort-v1\\training-only-manifest.json": "e1c5bc638952fa690137ee572e5c7974e14a418aaa7f214b20819f9a06c1f7a0",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\protocol.json": "123d676b2d9d6d6694f3c9d56f117cf8e07645d4e8611fdd800c33ac29cfafd1",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\train_li_supplement.py": "606b7174070711f99e9a69ca53694462b3a8c17fcb88ab6bbf920c142c2733b7",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-stream2-training-budget-control\\all-five-role-models-freeze.json": "b40db9584786810ab1a661ac8d8968f232663bb04bf87f5ff336db5b9b737d26"
+  },
+  "test_used_for_hyperparameter_or_checkpoint_selection": false
+}

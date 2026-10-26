@@ -1,0 +1,48 @@
+{
+  "created_utc": "2026-10-25T22:14:44.981013+00:00",
+  "setting": {
+    "name": "G4T12_all_units_nrel_startup",
+    "G": 4,
+    "T": 12,
+    "scope": "all_units"
+  },
+  "seeds": [
+    101,
+    211,
+    307
+  ],
+  "training_prefixes": [
+    20,
+    32
+  ],
+  "exploratory_training_label_count": 64,
+  "rank_diagnostic_prefixes": [
+    20,
+    32,
+    40,
+    64
+  ],
+  "development_count": 24,
+  "physical_cost_change": "Keep fuelUniform[22,45], onUniform[80,240], shutdownUniform[5,30]. Set startup=capacity_g*rate_g with rate_g Uniform[22,60] by affine mapping of the original uniform startup draw",
+  "reference_title": "Power Plant Cycling Costs, NREL2012, Table1-2",
+  "reference_url": "https://docs.nrel.gov/docs/fy12osti/55433.pdf",
+  "citation_boundary": "Reported numbers describe a capital-and-maintenance lower-bound component, not complete startup fuel. The Uniform[22,60] synthetic range is inspired by the $/MW scale; no calibrated-plant or empirical-distribution claim",
+  "law": "Independent LogUniform[1/3,3] multipliers, every generator x three four-period blocks, shared by all four cost components",
+  "paired_multipliers": "Same predeclared training/development feature streams as previous G4all screen by namespace alias only; neither old bank nor old returned solutions read",
+  "all_seeds_retained": true,
+  "no_additional_setting_search": true,
+  "global_optimizer_hull_K_not_proven": true,
+  "objective": "Full original optimal totalcost/returned totalcost, no subtraction or arbitrary shift",
+  "source_sha256": {
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\nrel_startup_variant.py": "e31acf73c0d16a5010833586e4073128d8aa657c1e001f21f69eee5283396f96",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\uc_reference_screen.py": "2645039a2606ff8dfaf53741e256b8ec7ce7847c054fb0e735e897cc7170bf7e",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\baseline_helpers.py": "cad89cffdfff790005520be922dcf246b0c3052c34ad78d34a8ddab6ca0b197e",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\code\\controls\\uc_model.py": "4e0b4b0d24fa1b2e54e3f399569976e1a53f429bd0ff8196976fa0713bacbf38",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\code\\controls\\experiment_core.py": "7d42aaaa5ade775722899cc11a84b05b00294e6af7ff3e5cf3b3896cf340fdc7",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\code\\portable_adapter.py": "aa2cbdb7a06f5955a8a030401a5ffe3fbe43e13fd3e9719bb68bf569c6e85850",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\code\\mlopt_baseline.py": "ee35123e6212a72c663e3af98baf04fafd9d89b81ea64027934658706b57a068"
+  },
+  "no_NeuralDiving_or_Li_training": true,
+  "timing_not_isolated": true,
+  "no_confirmation_claim": true
+}

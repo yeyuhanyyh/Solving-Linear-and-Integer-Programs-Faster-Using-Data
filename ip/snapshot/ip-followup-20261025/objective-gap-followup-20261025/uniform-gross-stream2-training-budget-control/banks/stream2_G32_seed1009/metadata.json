@@ -1,0 +1,121 @@
+{
+  "D": 96,
+  "G": 32,
+  "all_15_model_roles_revalidated_before_rng": true,
+  "all_global_guards_revalidated_before_rng": true,
+  "case_bindings": {
+    "coupledbundle_uniformgross_random32_b0.5_seed1009_n36": {
+      "K": 32,
+      "model_role_files": {
+        "mlopt": {
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\mlopt\\complete.json": "019616efeea9c80c49103ab3cc24346e5a18f0137b7e64d21df466ac4db3c70e",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\mlopt\\metadata.json": "19830f8086347e53b83bf2dbb0fd40ecd7b66cd2cd88f680142555325f8354cc",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\mlopt\\model.pkl": "2f35051abc417468e6dd2934c1dcd2fd45b75b3b2c0c5e83581814ab6fa2e71d",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\mlopt\\start.json": "0f43b4ffa62cc1650c446cb3c378153abe5b78543959b836441b214dfde03372"
+        },
+        "neural_diving_continued": {
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\training-budget-control-v1\\continued-models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\complete.json": "884a40aab193468fd14e7b21add48c8283cdf537f7c8135dd088df27fc28a18c",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\training-budget-control-v1\\continued-models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\continued-predictor.pt": "4c9032fb206653beb9e29bee7e6ce43e3f7129067bfe5e906a48f0b33b30a9c8",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\training-budget-control-v1\\continued-models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\metadata.json": "2d59bfe6e6d01ed7716045e6eaa34cbea15fa3418dca7c7b02a2f3efac9b69bb"
+        },
+        "neural_diving_original": {
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\neural_diving\\complete-predictor.pt": "a200ab9408e36d967aa1e8567e3b9e9c9037a530dfdb3984bb82d907bb3a46cb",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\neural_diving\\complete.json": "419b37588bc98e9dc47bfe71b56c84d2341f89c258981a7f465d0de07a149210",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\neural_diving\\metadata.json": "e5ea9a0ac4fc5291d5260943ae26c5f7f155c370219ce7fae886177cac1c0cfc",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\neural_diving\\start.json": "101f3421c8c057bc2f6631ed7d76a7c8c7df26faaedea2e9edfdc4e4c233efc7"
+        },
+        "ours": {
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-case-receipts\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36.json": "ff4c6c395a96d725297d25b54cfe6c049e1304628f7b24be51872f0afeabb3f5",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\complete.json": "807dc4aacb078b00cbd9b0de06a4b087c354647d548638de349d0dbe78b5715c",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train000.json": "61857c9a58fff3f0cfacf76d7f6c9edc2e14a5c5665bb44d0ec5940095ce2a39",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train001.json": "341b052b3e1c6e205fa40f6dc5a4e313e77a9340cdc79269422304dd9fae33f8",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train002.json": "a345c7e344562994c82e074aa77fb3dfc793fe3ad1bb399e5ed8fa8be3898ecf",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train003.json": "b2160fd6bcb0c83f6b6bfa95c988e7eaa10733012a2ce20565b0916c544b89cb",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train004.json": "1458fb7890a6eb75f9ad5e9fdcb9f8ebbb1b331473af4eba30f2ad6e05bd06f3",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train005.json": "7da1456e0333fc2890738fa30995d33da5f9c8b788c79aaa14da25383f0cafd5",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train006.json": "3847a22b02647df7e11183a0e4c1e6df500759612ebbfc61c31a299559c9fd64",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train007.json": "7589dd726e47e4bb33e17361a6d3676b72d78de38639aef220e2508e018fbe14",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train008.json": "3c0b313285c4ef5f1c6a850ac8cf0ed6e6cf4f6c46afabbb80983888f5faff53",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train009.json": "ec38219da14b92f11f3226e337462d868b78c1b6ac9b4b616018a3ddd67ec61c",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train010.json": "8e7a7ef2ac1b919543503fa68a23a8c6d57fc4f07a985eee3e1ff7332d792f5b",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train011.json": "77d7bdffdccc191169e25e80e31f548ac687e283f772679236abfa1d6babc2c2",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train012.json": "0f2250f0645c70644c376decad81b4e7bba6e97364315640c7920144b27d25a2",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train013.json": "a068b90f8466d66de35d2100d28894e96bb739e8940d2d942565a2c86d9a5821",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train014.json": "b46e7b3cbc0ab0a64d4aeac370cf058528a36a8d91f83b639a2a45090b6237c9",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train015.json": "a9d349b32e3328013660a19e3f1661efd31b66a65e21f7568b8d36db33bec89d",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train016.json": "aa48a95d7fd60f37f3567da40887f68ea9384e53829c2db973eb21a7ce097e4e",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train017.json": "b351564b2b6a9536cc391ed3c057337e57b578b17cc01c253868e5eea18411c8",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train018.json": "ac74ddd2b712a037848e9c8fe29f5fc246663f5556e050ca9d25b66df51cff5f",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train019.json": "ce39c32ac44b954fe5d66ec9df17455404e8fa9b5c41156aec59ca5ee321d1ae",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train020.json": "99d486ca42c92bccd6eafff8e87a10311192164e868d535e3bbbfb32fc5d7b3c",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train021.json": "a67cff2adddb356ad8563b2d15aafd2dbb4e902f5817f1e32599b6da682a57d7",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train022.json": "ab6fa8fd00c7f2ce8e6abce66e789185d0f95d5291b13ac06736f1e653f62369",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train023.json": "72aa90a0c097938eeaf41498efdb9a1a153b47bc9e25ae4c878d67f2ba3ed377",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train024.json": "6cf48dabba6e23988c844c75d4f55b95fcd49737ed511d29948de580141c4420",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train025.json": "9b70ff3370e47bc849d83f346ce74141bcbe4a05fb16543cf961c2dc19f43fd2",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train026.json": "a6d3876169913db5293854f62005c6fff6bce7789fb90db1f314b8f207f63b6a",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train027.json": "12ca0940e6c26f855023a3e22961ad65b15dc664fe7880b3b7e8459666d1faef",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train028.json": "c44462757509421cc61ad9e56c38af67a2d2755bf999051b7ba8ef954c429a65",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train029.json": "f3814154ff82a8fbb6aa4a11f72940ed8eb0651617aaaa87f0afdce846b6c77a",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train030.json": "a1c8ca4cde6f9716b514db8d8ca79c21a982ff4a270b76a8851892265b16fa09",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train031.json": "83bb67b2494876fda55b3aa115dbf5f9d143e2aa000ec22b6b337a113930397f",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train032.json": "304a6d19aaf0f654def6f3a1151148ec189951b05b0f0cf725842797f6064cbe",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train033.json": "94c9e911b132b6b177ffb8fe480c28dc432aa351200658378d7b6d7a817db08b",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train034.json": "247e71f6a4eae249b67f2b7dfc2cfb03da3dc52117273270f702aa03c3b6af63",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\training-certificates\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\train035.json": "af598f552db866ae20b7c8180ee7d7f17f513df1bff9deb7812c16f4f831a8fa"
+        },
+        "svm": {
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\svm\\complete.json": "07dd6d4c1f5d69730957a9bf32534ab01b123ff379dfd15c418dbc689e73555c",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\svm\\metadata.json": "f03093557fbd9adfe89e737af1e6fbc033f59f6537c314b75b55666f552899c7",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\svm\\model.pkl": "2d179a638c66f318476a36dea6d2c2c5e6cc65e5fef88a6327de9ec852496bee",
+          "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\svm\\start.json": "3f431fed8348509a7863ae74dbdae75a9b4065f349456995711c643b76792966"
+        }
+      },
+      "n_train": 36,
+      "training_files": {
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\training-candidates\\random32_b0.5_seed1009\\n36\\affine.json": "218d276684485e4e3288b857fabc57c2782d9283938b8c871586a19d0cc3bdc8",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\training-candidates\\random32_b0.5_seed1009\\n36\\metadata.json": "f7b51d9e1543dad5173d0f7139c5f50444a7dd189a4600d513406632b410ca97",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\training-candidates\\random32_b0.5_seed1009\\n36\\training.npz": "a62e7039ee0c31a96cba02c414ef84da3311c13aa90ac03d8f7073a81d24c6da"
+      }
+    }
+  },
+  "case_ids": [
+    "coupledbundle_uniformgross_random32_b0.5_seed1009_n36"
+  ],
+  "confirmation": true,
+  "count": 120,
+  "created_utc": "2026-10-25T22:18:26.561711+00:00",
+  "generator_sha256": "a46554f2790b347ad493e1ba14fcc5dbb4e759b708b8abc0d69d8cbf3395350d",
+  "independently_certified_original_references": true,
+  "method_ids": [
+    "ours",
+    "neural_diving_original",
+    "neural_diving_continued",
+    "svm",
+    "mlopt"
+  ],
+  "model_freeze_sha256": "b40db9584786810ab1a661ac8d8968f232663bb04bf87f5ff336db5b9b737d26",
+  "model_role_count": 15,
+  "model_role_ids": [
+    "ours",
+    "neural_diving_original",
+    "neural_diving_continued",
+    "svm",
+    "mlopt"
+  ],
+  "npz_sha256": "ee84127b83d137edd72ee7f3d2020965808e86f4b6f0bea86d51a2bacfe1a897",
+  "original_reference_generator_sha256": "62a6557c74bfcc791c74bc462252f3dc8cd7ce67d4e98c2eb5e9f2f4908eab09",
+  "phase": "independent_confirmation",
+  "physical_id": "stream2_G32_seed1009",
+  "protocol_sha256": "61dfdc99b545e25354397d0467890e26935dd56a75f50c657e7297226e56ecc7",
+  "reference_certificates_sha256": "8c31d4aa6895dba06ff895ec3727dfd3d3ed1fbd2e87f5a061666d5c81abc1fb",
+  "rng_algorithm": "numpy.random.Generator(numpy.random.PCG64(seed128))",
+  "rng_namespace": "coupled-bundle-independent-uniform-gross-stream2-fixed-budget-v1-20261025",
+  "rng_seed128": 182207914398471973829052970477620874611,
+  "rng_seed_independent_of_training_count_and_models": true,
+  "rng_seed_input": "coupled-bundle-independent-uniform-gross-stream2-fixed-budget-v1-20261025|G=32|physical_seed=1009",
+  "schema": "stream2-shared-physical-confirmation-bank-v1",
+  "seed": 1009,
+  "source_freeze_count": 3,
+  "stream_id": "stream2"
+}

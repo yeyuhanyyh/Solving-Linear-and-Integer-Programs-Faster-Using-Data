@@ -1,0 +1,12 @@
+{
+  "schema": "coupled-extra-baselines-source-seal-v1",
+  "source_sha256": {
+    "coupled_svm_mlopt_driver.py": "6b492cd46f13645b3076a35f6a0769e747443988dd3eda3046243465b57c530a",
+    "run_six_serial.py": "0768259fbd7283cefac67dd9215b1e57edf9d221e24820a1e45047685a1cff0f",
+    "evaluate_existing_development.py": "2b38842f16a07ca0c74246cf24392c9d19c191ac53544d5b87a5d1faf3f80f1e",
+    "svm_mlopt_components.py": "a5bdb00195bd8b6ab76d338850e1ad2d85c786f261d1cd2348a4da7c9d7ebea5",
+    "extra-runtime/hard_knap_mlopt_runtime.py": "4886b0283fbec2e59d23f4901bfcd3c1a9d46fe2fb8a54e515e177e07665a322"
+  },
+  "no_full_neural_fit_started_at_sealing": true,
+  "prior_source_models_records_edited": false
+}

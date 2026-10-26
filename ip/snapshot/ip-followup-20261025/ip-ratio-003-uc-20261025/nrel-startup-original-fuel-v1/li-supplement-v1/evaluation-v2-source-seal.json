@@ -1,0 +1,11 @@
+{
+  "schema": "uc-li-budget-aligned-evaluation-source-seal-v2",
+  "evaluator_sha256": "ef176f0d39ecbe211b344dae17127494bfcad19d80ef3670ffdcb3931d2843e1",
+  "fit_driver_sha256": "b123f38ad9f8585ba9efdc001ad0c9da08df83cb2d2098c847ebfa8d3e9b3903",
+  "original_bank_model_freeze_sha256": "a47236f3e39465c1b6053d2c84282facc51ab7e1a281af247735ca6c0979beb3",
+  "prepared_before_first_Li_bank_prediction": true,
+  "no_checkpoint_or_fit_source_changes": true,
+  "budget_includes": "native prediction/decoding, solve, original CSR/UCphysics/fixing/cost@x checks",
+  "entire_fixed_bank_re_evaluated": 360,
+  "previous_v1_results_preserved_superseded": true
+}

@@ -1,0 +1,773 @@
+{
+  "schema": "independently-checked-two-problem-paper-cells-v1",
+  "status": "PASS",
+  "cell_count": 12,
+  "problems": {
+    "uc": {
+      "rows": [
+        {
+          "problem": "unit_commitment",
+          "method": "Full",
+          "method_key": "full",
+          "n": 32,
+          "common_D": 48,
+          "K_by_seed": [
+            48,
+            48,
+            48
+          ],
+          "seed_order": [
+            101,
+            211,
+            307
+          ],
+          "total": 360,
+          "recovered": 360,
+          "recovery_percent": 100.0,
+          "ratio_N": 360,
+          "objective_ratio": 1.0,
+          "source_files": {
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\independent-confirmation-review.json": "784e2754a485ba5cfa68f49eacd4d5d32040e9046fc0b201b15156ee190cfb91",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\results-v1\\summary.json": "7e741f8341cfb82fa0eff41241ff7ea501a34a29c79cded44e48f1cc7a1435c0",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\global-freeze.json": "a47236f3e39465c1b6053d2c84282facc51ab7e1a281af247735ca6c0979beb3"
+          },
+          "has_learning_stage": false,
+          "schedule": null
+        },
+        {
+          "problem": "unit_commitment",
+          "method": "Ours",
+          "method_key": "ours",
+          "n": 32,
+          "common_D": 48,
+          "K_by_seed": [
+            14,
+            14,
+            17
+          ],
+          "seed_order": [
+            101,
+            211,
+            307
+          ],
+          "total": 360,
+          "recovered": 320,
+          "recovery_percent": 88.88888888888889,
+          "ratio_N": 360,
+          "objective_ratio": 0.999093973110685,
+          "source_files": {
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\independent-confirmation-review.json": "784e2754a485ba5cfa68f49eacd4d5d32040e9046fc0b201b15156ee190cfb91",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\results-v1\\summary.json": "7e741f8341cfb82fa0eff41241ff7ea501a34a29c79cded44e48f1cc7a1435c0",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\global-freeze.json": "a47236f3e39465c1b6053d2c84282facc51ab7e1a281af247735ca6c0979beb3"
+          },
+          "has_learning_stage": true,
+          "schedule": null
+        },
+        {
+          "problem": "unit_commitment",
+          "method": "SVM",
+          "method_key": "svm",
+          "n": 32,
+          "common_D": 48,
+          "K_by_seed": [
+            14,
+            14,
+            17
+          ],
+          "seed_order": [
+            101,
+            211,
+            307
+          ],
+          "total": 360,
+          "recovered": 65,
+          "recovery_percent": 18.055555555555557,
+          "ratio_N": 341,
+          "objective_ratio": 0.9240269723201678,
+          "source_files": {
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\independent-confirmation-review.json": "784e2754a485ba5cfa68f49eacd4d5d32040e9046fc0b201b15156ee190cfb91",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\results-v1\\summary.json": "7e741f8341cfb82fa0eff41241ff7ea501a34a29c79cded44e48f1cc7a1435c0",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\global-freeze.json": "a47236f3e39465c1b6053d2c84282facc51ab7e1a281af247735ca6c0979beb3"
+          },
+          "has_learning_stage": true,
+          "schedule": null
+        },
+        {
+          "problem": "unit_commitment",
+          "method": "Neural Diving",
+          "method_key": "neural_diving",
+          "n": 32,
+          "common_D": 48,
+          "K_by_seed": [
+            14,
+            14,
+            17
+          ],
+          "seed_order": [
+            101,
+            211,
+            307
+          ],
+          "total": 360,
+          "recovered": 268,
+          "recovery_percent": 74.44444444444444,
+          "ratio_N": 359,
+          "objective_ratio": 0.9944915777593201,
+          "source_files": {
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\lp-iclr-revision-audit-20260920\\ip-complete-better-settings-20261025\\uc-nd-raw-checked.json": "ea2b6e6ede4d515499b306cd0a8e633877c5879e915d6876bbd9d435e3d56633",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\nd-supplement-v1\\results\\uc_startupheavy_G4T12_all_units_nrel_startup_seed101_n32\\complete.json": "cc82b1d32dcc8d5a8f04a507ed78a33d8b2d8365af58117605a26afd2e1af4c4",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\results-v1\\uc_startupheavy_G4T12_all_units_nrel_startup_seed101_n32\\confirmation.npz": "1022b19104fb9b29e50e754ba5877ed9e9315ea8e6021b10b563bcb0084e3a9c",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\nd-supplement-v1\\results\\uc_startupheavy_G4T12_all_units_nrel_startup_seed211_n32\\complete.json": "b6c341905f1c4be57d440084cbd19b938a38cc9aa5e9535cec4a76c645a0db23",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\results-v1\\uc_startupheavy_G4T12_all_units_nrel_startup_seed211_n32\\confirmation.npz": "5bc5a833377b6af3e990849c8e090ec68eecddc137f2985e9b2eb0e640344c02",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\nd-supplement-v1\\results\\uc_startupheavy_G4T12_all_units_nrel_startup_seed307_n32\\complete.json": "ebf54f5df8f643f2a19cc3fbc74bf918792531bd6ae754cd234bda5c59fb52e9",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\results-v1\\uc_startupheavy_G4T12_all_units_nrel_startup_seed307_n32\\confirmation.npz": "b980419b7f71e54f0e4488d947c246e03f48d95b4374effe0d44ecaf265eb12e"
+          },
+          "has_learning_stage": true,
+          "schedule": "original"
+        },
+        {
+          "problem": "unit_commitment",
+          "method": "MLOPT",
+          "method_key": "mlopt",
+          "n": 32,
+          "common_D": 48,
+          "K_by_seed": [
+            14,
+            14,
+            17
+          ],
+          "seed_order": [
+            101,
+            211,
+            307
+          ],
+          "total": 360,
+          "recovered": 74,
+          "recovery_percent": 20.555555555555557,
+          "ratio_N": 360,
+          "objective_ratio": 0.9204625723567504,
+          "source_files": {
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\independent-confirmation-review.json": "784e2754a485ba5cfa68f49eacd4d5d32040e9046fc0b201b15156ee190cfb91",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\results-v1\\summary.json": "7e741f8341cfb82fa0eff41241ff7ea501a34a29c79cded44e48f1cc7a1435c0",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\global-freeze.json": "a47236f3e39465c1b6053d2c84282facc51ab7e1a281af247735ca6c0979beb3"
+          },
+          "has_learning_stage": true,
+          "schedule": null
+        },
+        {
+          "problem": "unit_commitment",
+          "method": "Li",
+          "method_key": "li",
+          "n": 32,
+          "common_D": 48,
+          "K_by_seed": [
+            14,
+            14,
+            17
+          ],
+          "seed_order": [
+            101,
+            211,
+            307
+          ],
+          "total": 360,
+          "recovered": 79,
+          "recovery_percent": 21.944444444444443,
+          "ratio_N": 360,
+          "objective_ratio": 0.9060160132503733,
+          "source_files": {
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\lp-iclr-revision-audit-20260920\\ip-complete-better-settings-20261025\\uc-li-v2-raw-checked.json": "a0c3d0f2ad252211696721671de757782fe2b0b653115f34791b22ab9d9e3856",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\li-supplement-v1\\same-bank-results-v2\\uc_startupheavy_G4T12_all_units_nrel_startup_seed101_n32\\complete.json": "cec542ac8b53537d239e81e9df1b3625da75f00d831ca8de1c60db428dd8657d",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\results-v1\\uc_startupheavy_G4T12_all_units_nrel_startup_seed101_n32\\confirmation.npz": "1022b19104fb9b29e50e754ba5877ed9e9315ea8e6021b10b563bcb0084e3a9c",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\li-supplement-v1\\same-bank-results-v2\\uc_startupheavy_G4T12_all_units_nrel_startup_seed211_n32\\complete.json": "a52c572719d739715c20e9984e43dad6843da401dc128deb9b00099a30d554fd",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\results-v1\\uc_startupheavy_G4T12_all_units_nrel_startup_seed211_n32\\confirmation.npz": "5bc5a833377b6af3e990849c8e090ec68eecddc137f2985e9b2eb0e640344c02",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\li-supplement-v1\\same-bank-results-v2\\uc_startupheavy_G4T12_all_units_nrel_startup_seed307_n32\\complete.json": "502b3510e3d9c3dfa90898f7256125ed0f459415bdad9b37da48297a483ef94e",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\results-v1\\uc_startupheavy_G4T12_all_units_nrel_startup_seed307_n32\\confirmation.npz": "b980419b7f71e54f0e4488d947c246e03f48d95b4374effe0d44ecaf265eb12e"
+          },
+          "has_learning_stage": true,
+          "schedule": null
+        }
+      ]
+    },
+    "knapsack": {
+      "rows": [
+        {
+          "problem": "knapsack",
+          "method": "Full",
+          "method_key": "full",
+          "n": 36,
+          "common_D": 96,
+          "K_by_seed": [
+            96,
+            96,
+            96
+          ],
+          "seed_order": [
+            1009,
+            1013,
+            1019
+          ],
+          "total": 360,
+          "recovered": 360,
+          "recovery_percent": 100.0,
+          "ratio_N": 360,
+          "objective_ratio": 1.0,
+          "source_files": {
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-stream2-training-budget-control\\independent-lightweight-check.json": "e1404485b8b16641a020ef0481386392d0dbe1b4a204cd07dbfc6ca10a40d7f5"
+          },
+          "has_learning_stage": false,
+          "schedule": null
+        },
+        {
+          "problem": "knapsack",
+          "method": "Ours",
+          "method_key": "ours",
+          "n": 36,
+          "common_D": 96,
+          "K_by_seed": [
+            32,
+            32,
+            32
+          ],
+          "seed_order": [
+            1009,
+            1013,
+            1019
+          ],
+          "total": 360,
+          "recovered": 360,
+          "recovery_percent": 100.0,
+          "ratio_N": 360,
+          "objective_ratio": 1.0,
+          "source_files": {
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-stream2-training-budget-control\\independent-lightweight-check.json": "e1404485b8b16641a020ef0481386392d0dbe1b4a204cd07dbfc6ca10a40d7f5"
+          },
+          "has_learning_stage": true,
+          "schedule": null
+        },
+        {
+          "problem": "knapsack",
+          "method": "SVM",
+          "method_key": "svm",
+          "n": 36,
+          "common_D": 96,
+          "K_by_seed": [
+            32,
+            32,
+            32
+          ],
+          "seed_order": [
+            1009,
+            1013,
+            1019
+          ],
+          "total": 360,
+          "recovered": 4,
+          "recovery_percent": 1.1111111111111112,
+          "ratio_N": 358,
+          "objective_ratio": 0.8867994272335439,
+          "source_files": {
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-stream2-training-budget-control\\independent-lightweight-check.json": "e1404485b8b16641a020ef0481386392d0dbe1b4a204cd07dbfc6ca10a40d7f5"
+          },
+          "has_learning_stage": true,
+          "schedule": null
+        },
+        {
+          "problem": "knapsack",
+          "method": "Neural Diving",
+          "method_key": "neural_diving",
+          "n": 36,
+          "common_D": 96,
+          "K_by_seed": [
+            32,
+            32,
+            32
+          ],
+          "seed_order": [
+            1009,
+            1013,
+            1019
+          ],
+          "total": 360,
+          "recovered": 52,
+          "recovery_percent": 14.444444444444445,
+          "ratio_N": 359,
+          "objective_ratio": 0.9608707430755559,
+          "source_files": {
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-stream2-training-budget-control\\independent-lightweight-check.json": "e1404485b8b16641a020ef0481386392d0dbe1b4a204cd07dbfc6ca10a40d7f5"
+          },
+          "has_learning_stage": true,
+          "schedule": "original"
+        },
+        {
+          "problem": "knapsack",
+          "method": "MLOPT",
+          "method_key": "mlopt",
+          "n": 36,
+          "common_D": 96,
+          "K_by_seed": [
+            32,
+            32,
+            32
+          ],
+          "seed_order": [
+            1009,
+            1013,
+            1019
+          ],
+          "total": 360,
+          "recovered": 35,
+          "recovery_percent": 9.722222222222221,
+          "ratio_N": 360,
+          "objective_ratio": 0.9534089572881813,
+          "source_files": {
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-stream2-training-budget-control\\independent-lightweight-check.json": "e1404485b8b16641a020ef0481386392d0dbe1b4a204cd07dbfc6ca10a40d7f5"
+          },
+          "has_learning_stage": true,
+          "schedule": null
+        },
+        {
+          "problem": "knapsack",
+          "method": "Li",
+          "method_key": "li",
+          "n": 36,
+          "common_D": 96,
+          "K_by_seed": [
+            32,
+            32,
+            32
+          ],
+          "seed_order": [
+            1009,
+            1013,
+            1019
+          ],
+          "total": 360,
+          "recovered": 51,
+          "recovery_percent": 14.166666666666666,
+          "ratio_N": 360,
+          "objective_ratio": 0.9535398264574422,
+          "source_files": {
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\lp-iclr-revision-audit-20260920\\ip-complete-better-settings-20261025\\knapsack-li-raw-checked.json": "0d4081ff02cf88813fda15c46e5eab8ffcd2d5f7eb97298fb5a8fda4a8bf991a",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\results\\pooled-quality.json": "cc0f7d171e3ee4dbf6fa3a1acea75b9ab544d7ce73c88d3a7ef3c037421e323e",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\results\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\li\\complete.json": "04957f42562287f147d7877d180762776ec4d65a9352cea4a4f24dfea04467db",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-stream2-training-budget-control\\banks\\stream2_G32_seed1009\\confirmation.npz": "ee84127b83d137edd72ee7f3d2020965808e86f4b6f0bea86d51a2bacfe1a897",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\results\\coupledbundle_uniformgross_random32_b0.5_seed1013_n36\\li\\complete.json": "7077eb104af3b78f26e2cc7324e8751c30c4f0564948d49eecd4cbfdf45f4ad8",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-stream2-training-budget-control\\banks\\stream2_G32_seed1013\\confirmation.npz": "4a9c909bda8251705004c4a6014172fcdf8dd51ee3ad1ec3dc69717c85f39921",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\results\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36\\li\\complete.json": "ac90cacae98086d5dde9f36e5e6f4f0b88f0247e58e92e8ae2712a45d1fdaca1",
+            "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-stream2-training-budget-control\\banks\\stream2_G32_seed1019\\confirmation.npz": "188031146d772b4e480f8ee380fc96267ab54fb56c76118ccb59af90b3502cad"
+          },
+          "has_learning_stage": true,
+          "schedule": null
+        }
+      ]
+    }
+  },
+  "cells": [
+    {
+      "problem": "unit_commitment",
+      "method": "Full",
+      "method_key": "full",
+      "n": 32,
+      "common_D": 48,
+      "K_by_seed": [
+        48,
+        48,
+        48
+      ],
+      "seed_order": [
+        101,
+        211,
+        307
+      ],
+      "total": 360,
+      "recovered": 360,
+      "recovery_percent": 100.0,
+      "ratio_N": 360,
+      "objective_ratio": 1.0,
+      "source_files": {
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\independent-confirmation-review.json": "784e2754a485ba5cfa68f49eacd4d5d32040e9046fc0b201b15156ee190cfb91",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\results-v1\\summary.json": "7e741f8341cfb82fa0eff41241ff7ea501a34a29c79cded44e48f1cc7a1435c0",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\global-freeze.json": "a47236f3e39465c1b6053d2c84282facc51ab7e1a281af247735ca6c0979beb3"
+      },
+      "has_learning_stage": false,
+      "schedule": null
+    },
+    {
+      "problem": "unit_commitment",
+      "method": "Ours",
+      "method_key": "ours",
+      "n": 32,
+      "common_D": 48,
+      "K_by_seed": [
+        14,
+        14,
+        17
+      ],
+      "seed_order": [
+        101,
+        211,
+        307
+      ],
+      "total": 360,
+      "recovered": 320,
+      "recovery_percent": 88.88888888888889,
+      "ratio_N": 360,
+      "objective_ratio": 0.999093973110685,
+      "source_files": {
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\independent-confirmation-review.json": "784e2754a485ba5cfa68f49eacd4d5d32040e9046fc0b201b15156ee190cfb91",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\results-v1\\summary.json": "7e741f8341cfb82fa0eff41241ff7ea501a34a29c79cded44e48f1cc7a1435c0",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\global-freeze.json": "a47236f3e39465c1b6053d2c84282facc51ab7e1a281af247735ca6c0979beb3"
+      },
+      "has_learning_stage": true,
+      "schedule": null
+    },
+    {
+      "problem": "unit_commitment",
+      "method": "SVM",
+      "method_key": "svm",
+      "n": 32,
+      "common_D": 48,
+      "K_by_seed": [
+        14,
+        14,
+        17
+      ],
+      "seed_order": [
+        101,
+        211,
+        307
+      ],
+      "total": 360,
+      "recovered": 65,
+      "recovery_percent": 18.055555555555557,
+      "ratio_N": 341,
+      "objective_ratio": 0.9240269723201678,
+      "source_files": {
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\independent-confirmation-review.json": "784e2754a485ba5cfa68f49eacd4d5d32040e9046fc0b201b15156ee190cfb91",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\results-v1\\summary.json": "7e741f8341cfb82fa0eff41241ff7ea501a34a29c79cded44e48f1cc7a1435c0",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\global-freeze.json": "a47236f3e39465c1b6053d2c84282facc51ab7e1a281af247735ca6c0979beb3"
+      },
+      "has_learning_stage": true,
+      "schedule": null
+    },
+    {
+      "problem": "unit_commitment",
+      "method": "Neural Diving",
+      "method_key": "neural_diving",
+      "n": 32,
+      "common_D": 48,
+      "K_by_seed": [
+        14,
+        14,
+        17
+      ],
+      "seed_order": [
+        101,
+        211,
+        307
+      ],
+      "total": 360,
+      "recovered": 268,
+      "recovery_percent": 74.44444444444444,
+      "ratio_N": 359,
+      "objective_ratio": 0.9944915777593201,
+      "source_files": {
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\lp-iclr-revision-audit-20260920\\ip-complete-better-settings-20261025\\uc-nd-raw-checked.json": "ea2b6e6ede4d515499b306cd0a8e633877c5879e915d6876bbd9d435e3d56633",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\nd-supplement-v1\\results\\uc_startupheavy_G4T12_all_units_nrel_startup_seed101_n32\\complete.json": "cc82b1d32dcc8d5a8f04a507ed78a33d8b2d8365af58117605a26afd2e1af4c4",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\results-v1\\uc_startupheavy_G4T12_all_units_nrel_startup_seed101_n32\\confirmation.npz": "1022b19104fb9b29e50e754ba5877ed9e9315ea8e6021b10b563bcb0084e3a9c",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\nd-supplement-v1\\results\\uc_startupheavy_G4T12_all_units_nrel_startup_seed211_n32\\complete.json": "b6c341905f1c4be57d440084cbd19b938a38cc9aa5e9535cec4a76c645a0db23",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\results-v1\\uc_startupheavy_G4T12_all_units_nrel_startup_seed211_n32\\confirmation.npz": "5bc5a833377b6af3e990849c8e090ec68eecddc137f2985e9b2eb0e640344c02",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\nd-supplement-v1\\results\\uc_startupheavy_G4T12_all_units_nrel_startup_seed307_n32\\complete.json": "ebf54f5df8f643f2a19cc3fbc74bf918792531bd6ae754cd234bda5c59fb52e9",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\results-v1\\uc_startupheavy_G4T12_all_units_nrel_startup_seed307_n32\\confirmation.npz": "b980419b7f71e54f0e4488d947c246e03f48d95b4374effe0d44ecaf265eb12e"
+      },
+      "has_learning_stage": true,
+      "schedule": "original"
+    },
+    {
+      "problem": "unit_commitment",
+      "method": "MLOPT",
+      "method_key": "mlopt",
+      "n": 32,
+      "common_D": 48,
+      "K_by_seed": [
+        14,
+        14,
+        17
+      ],
+      "seed_order": [
+        101,
+        211,
+        307
+      ],
+      "total": 360,
+      "recovered": 74,
+      "recovery_percent": 20.555555555555557,
+      "ratio_N": 360,
+      "objective_ratio": 0.9204625723567504,
+      "source_files": {
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\independent-confirmation-review.json": "784e2754a485ba5cfa68f49eacd4d5d32040e9046fc0b201b15156ee190cfb91",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\results-v1\\summary.json": "7e741f8341cfb82fa0eff41241ff7ea501a34a29c79cded44e48f1cc7a1435c0",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\global-freeze.json": "a47236f3e39465c1b6053d2c84282facc51ab7e1a281af247735ca6c0979beb3"
+      },
+      "has_learning_stage": true,
+      "schedule": null
+    },
+    {
+      "problem": "unit_commitment",
+      "method": "Li",
+      "method_key": "li",
+      "n": 32,
+      "common_D": 48,
+      "K_by_seed": [
+        14,
+        14,
+        17
+      ],
+      "seed_order": [
+        101,
+        211,
+        307
+      ],
+      "total": 360,
+      "recovered": 79,
+      "recovery_percent": 21.944444444444443,
+      "ratio_N": 360,
+      "objective_ratio": 0.9060160132503733,
+      "source_files": {
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\lp-iclr-revision-audit-20260920\\ip-complete-better-settings-20261025\\uc-li-v2-raw-checked.json": "a0c3d0f2ad252211696721671de757782fe2b0b653115f34791b22ab9d9e3856",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\li-supplement-v1\\same-bank-results-v2\\uc_startupheavy_G4T12_all_units_nrel_startup_seed101_n32\\complete.json": "cec542ac8b53537d239e81e9df1b3625da75f00d831ca8de1c60db428dd8657d",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\results-v1\\uc_startupheavy_G4T12_all_units_nrel_startup_seed101_n32\\confirmation.npz": "1022b19104fb9b29e50e754ba5877ed9e9315ea8e6021b10b563bcb0084e3a9c",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\li-supplement-v1\\same-bank-results-v2\\uc_startupheavy_G4T12_all_units_nrel_startup_seed211_n32\\complete.json": "a52c572719d739715c20e9984e43dad6843da401dc128deb9b00099a30d554fd",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\results-v1\\uc_startupheavy_G4T12_all_units_nrel_startup_seed211_n32\\confirmation.npz": "5bc5a833377b6af3e990849c8e090ec68eecddc137f2985e9b2eb0e640344c02",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\li-supplement-v1\\same-bank-results-v2\\uc_startupheavy_G4T12_all_units_nrel_startup_seed307_n32\\complete.json": "502b3510e3d9c3dfa90898f7256125ed0f459415bdad9b37da48297a483ef94e",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\results-v1\\uc_startupheavy_G4T12_all_units_nrel_startup_seed307_n32\\confirmation.npz": "b980419b7f71e54f0e4488d947c246e03f48d95b4374effe0d44ecaf265eb12e"
+      },
+      "has_learning_stage": true,
+      "schedule": null
+    },
+    {
+      "problem": "knapsack",
+      "method": "Full",
+      "method_key": "full",
+      "n": 36,
+      "common_D": 96,
+      "K_by_seed": [
+        96,
+        96,
+        96
+      ],
+      "seed_order": [
+        1009,
+        1013,
+        1019
+      ],
+      "total": 360,
+      "recovered": 360,
+      "recovery_percent": 100.0,
+      "ratio_N": 360,
+      "objective_ratio": 1.0,
+      "source_files": {
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-stream2-training-budget-control\\independent-lightweight-check.json": "e1404485b8b16641a020ef0481386392d0dbe1b4a204cd07dbfc6ca10a40d7f5"
+      },
+      "has_learning_stage": false,
+      "schedule": null
+    },
+    {
+      "problem": "knapsack",
+      "method": "Ours",
+      "method_key": "ours",
+      "n": 36,
+      "common_D": 96,
+      "K_by_seed": [
+        32,
+        32,
+        32
+      ],
+      "seed_order": [
+        1009,
+        1013,
+        1019
+      ],
+      "total": 360,
+      "recovered": 360,
+      "recovery_percent": 100.0,
+      "ratio_N": 360,
+      "objective_ratio": 1.0,
+      "source_files": {
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-stream2-training-budget-control\\independent-lightweight-check.json": "e1404485b8b16641a020ef0481386392d0dbe1b4a204cd07dbfc6ca10a40d7f5"
+      },
+      "has_learning_stage": true,
+      "schedule": null
+    },
+    {
+      "problem": "knapsack",
+      "method": "SVM",
+      "method_key": "svm",
+      "n": 36,
+      "common_D": 96,
+      "K_by_seed": [
+        32,
+        32,
+        32
+      ],
+      "seed_order": [
+        1009,
+        1013,
+        1019
+      ],
+      "total": 360,
+      "recovered": 4,
+      "recovery_percent": 1.1111111111111112,
+      "ratio_N": 358,
+      "objective_ratio": 0.8867994272335439,
+      "source_files": {
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-stream2-training-budget-control\\independent-lightweight-check.json": "e1404485b8b16641a020ef0481386392d0dbe1b4a204cd07dbfc6ca10a40d7f5"
+      },
+      "has_learning_stage": true,
+      "schedule": null
+    },
+    {
+      "problem": "knapsack",
+      "method": "Neural Diving",
+      "method_key": "neural_diving",
+      "n": 36,
+      "common_D": 96,
+      "K_by_seed": [
+        32,
+        32,
+        32
+      ],
+      "seed_order": [
+        1009,
+        1013,
+        1019
+      ],
+      "total": 360,
+      "recovered": 52,
+      "recovery_percent": 14.444444444444445,
+      "ratio_N": 359,
+      "objective_ratio": 0.9608707430755559,
+      "source_files": {
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-stream2-training-budget-control\\independent-lightweight-check.json": "e1404485b8b16641a020ef0481386392d0dbe1b4a204cd07dbfc6ca10a40d7f5"
+      },
+      "has_learning_stage": true,
+      "schedule": "original"
+    },
+    {
+      "problem": "knapsack",
+      "method": "MLOPT",
+      "method_key": "mlopt",
+      "n": 36,
+      "common_D": 96,
+      "K_by_seed": [
+        32,
+        32,
+        32
+      ],
+      "seed_order": [
+        1009,
+        1013,
+        1019
+      ],
+      "total": 360,
+      "recovered": 35,
+      "recovery_percent": 9.722222222222221,
+      "ratio_N": 360,
+      "objective_ratio": 0.9534089572881813,
+      "source_files": {
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-stream2-training-budget-control\\independent-lightweight-check.json": "e1404485b8b16641a020ef0481386392d0dbe1b4a204cd07dbfc6ca10a40d7f5"
+      },
+      "has_learning_stage": true,
+      "schedule": null
+    },
+    {
+      "problem": "knapsack",
+      "method": "Li",
+      "method_key": "li",
+      "n": 36,
+      "common_D": 96,
+      "K_by_seed": [
+        32,
+        32,
+        32
+      ],
+      "seed_order": [
+        1009,
+        1013,
+        1019
+      ],
+      "total": 360,
+      "recovered": 51,
+      "recovery_percent": 14.166666666666666,
+      "ratio_N": 360,
+      "objective_ratio": 0.9535398264574422,
+      "source_files": {
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\lp-iclr-revision-audit-20260920\\ip-complete-better-settings-20261025\\knapsack-li-raw-checked.json": "0d4081ff02cf88813fda15c46e5eab8ffcd2d5f7eb97298fb5a8fda4a8bf991a",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\results\\pooled-quality.json": "cc0f7d171e3ee4dbf6fa3a1acea75b9ab544d7ce73c88d3a7ef3c037421e323e",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\results\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\li\\complete.json": "04957f42562287f147d7877d180762776ec4d65a9352cea4a4f24dfea04467db",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-stream2-training-budget-control\\banks\\stream2_G32_seed1009\\confirmation.npz": "ee84127b83d137edd72ee7f3d2020965808e86f4b6f0bea86d51a2bacfe1a897",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\results\\coupledbundle_uniformgross_random32_b0.5_seed1013_n36\\li\\complete.json": "7077eb104af3b78f26e2cc7324e8751c30c4f0564948d49eecd4cbfdf45f4ad8",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-stream2-training-budget-control\\banks\\stream2_G32_seed1013\\confirmation.npz": "4a9c909bda8251705004c4a6014172fcdf8dd51ee3ad1ec3dc69717c85f39921",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\results\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36\\li\\complete.json": "ac90cacae98086d5dde9f36e5e6f4f0b88f0247e58e92e8ae2712a45d1fdaca1",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-stream2-training-budget-control\\banks\\stream2_G32_seed1019\\confirmation.npz": "188031146d772b4e480f8ee380fc96267ab54fb56c76118ccb59af90b3502cad"
+      },
+      "has_learning_stage": true,
+      "schedule": null
+    }
+  ],
+  "source_files": {
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\independent-confirmation-review.json": "784e2754a485ba5cfa68f49eacd4d5d32040e9046fc0b201b15156ee190cfb91",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\lp-iclr-revision-audit-20260920\\ip-complete-better-settings-20261025\\uc-nd-raw-checked.json": "ea2b6e6ede4d515499b306cd0a8e633877c5879e915d6876bbd9d435e3d56633",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\lp-iclr-revision-audit-20260920\\ip-complete-better-settings-20261025\\uc-li-v2-raw-checked.json": "a0c3d0f2ad252211696721671de757782fe2b0b653115f34791b22ab9d9e3856",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-stream2-training-budget-control\\independent-lightweight-check.json": "e1404485b8b16641a020ef0481386392d0dbe1b4a204cd07dbfc6ca10a40d7f5",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\lp-iclr-revision-audit-20260920\\ip-complete-better-settings-20261025\\knapsack-li-raw-checked.json": "0d4081ff02cf88813fda15c46e5eab8ffcd2d5f7eb97298fb5a8fda4a8bf991a"
+  },
+  "metrics": {
+    "recovery": "Original feasible timely value within 1e-6+1e-9*abs(Full); denominator360",
+    "unit_commitment_ratio": "Full original positive total cost / returned original total cost",
+    "knapsack_ratio": "Returned original full gross profit / Full optimal gross profit",
+    "ratio_aggregation": "Arithmetic mean over each method's explicitly reported valid timely ratio_N",
+    "K_scope": "UC commitment u block only, knapsack all original item variables; Full uses the uncompressed common_D",
+    "baseline_adaptations": "Coordinate SVM, common-block complete-predictor Neural Diving, native-top10 MLOPT anchor, native-topk Eq21 Li historical-pattern anchor"
+  },
+  "diagnostics": {
+    "knapsack_ND_additional_2000_steps": {
+      "role": "neural_diving_continued",
+      "method": "Neural Diving (+2000 steps)",
+      "G": 32,
+      "n": 36,
+      "D": 96,
+      "K": 32,
+      "total": 360,
+      "recovered": 41,
+      "recovery_percent": 11.38888888888889,
+      "N": 347,
+      "objective_ratio": 0.9566400072344137,
+      "canonical_completion_ratio": 0.9624604022983331,
+      "invalid_count": 13,
+      "overbudget_count": 0
+    },
+    "paired_knapsack_ND_control": {
+      "scope": "Additional paired-valid ND diagnostic; primary ratio definitions are unchanged.",
+      "N": 346,
+      "original_objective_ratio": 0.9616896371375634,
+      "continued_objective_ratio": 0.9567168983146787,
+      "continued_minus_original": -0.004972738822884699
+    },
+    "used_to_choose_main_ND_row": false
+  },
+  "provenance": {
+    "prior_exploratory_labels": {
+      "unit_commitment": 64,
+      "knapsack": 69
+    },
+    "fit_prefix_labels": {
+      "unit_commitment": 32,
+      "knapsack": 36
+    },
+    "supplemental_UC_ND_and_both_Li_fitted_after_existing_bank_generation": true,
+    "no_heldout_parameter_selection": true,
+    "no_IP_timing_columns": true
+  }
+}

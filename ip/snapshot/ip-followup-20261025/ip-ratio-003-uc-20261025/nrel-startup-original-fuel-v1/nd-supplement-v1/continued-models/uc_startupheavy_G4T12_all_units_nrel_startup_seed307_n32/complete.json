@@ -1,0 +1,52 @@
+{
+  "guard": {
+    "original_guard": {
+      "case_id": "uc_startupheavy_G4T12_all_units_nrel_startup_seed307_n32",
+      "training_fingerprint": "bf5329948be639942d3a5cc9ac7c27fccfeb07ef5f17eed26e24dbf4a62ab919",
+      "training_files": {
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed307\\n32\\training.npz": "53e370d655b6b98c13dcd8d0431b67e22bdb82c3ff214271744c9c9fd3c2a590",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed307\\n32\\metadata.json": "412cc7113b28fb3e08503089b5238e93cac6413acd7984430467c9b5015b3d30",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed307\\n32\\affine.json": "b21ff57c94c531e4dbddc4ec7cbf3ec43db24e3dc6918de6342f75e5154a31fa",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed307\\n32\\baseline-models\\complete.json": "65569b5eda3a00d293fb5632d22bd23e2be3a7ddaf0f5d2e7241b3fabd328b47",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed307\\n32\\baseline-fit-metadata.json": "1d1260544b97b23a6097db9e3cc45a3d983fb0908817fadda91e45b32a636a8b",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed307\\n32\\baseline-models\\svm.pkl": "fbbfd734b5026f777f0204ee02c3f6a2c9e60ec1f97775aafd75a6d1c730160b",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed307\\n32\\baseline-models\\mlopt.pkl": "0b28e14f3ea7b6980b6457294fbddc7af2367f7dedfc25eb247596bf0580cdd5",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed307\\training-reference-certificates.json": "ea61d1645c8a503e7746aedbe7c130ba718b78bd2ac3c1a917f801ac581f36d9"
+      },
+      "source_sha256": {
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\nd-supplement-v1\\train_uc_nd.py": "a967fb3daf122372ff89c918c24c8bb2afbe7bff2764cd646df2e26f8d12b30c",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\confirm_n32.py": "5dfb457bfac7df3a1cef073a99a942a1d29e1985b3bef47e4d1c5db68650f8c1",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\train_uc_baselines.py": "f9613f57036869e59d607ba62fa470df62893501183023d2e802f137777f01dd",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\uc_adapters.py": "b0f5cbd42a2099289c89cbd0b28bf41a6c2bbeed673af02abf9540862edb9f40",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\uc_bundle_frozen\\runtime\\neural_diving_baseline.py": "a4742d2fb496c7764b51b83bbbe93129d4c39c4da2118a30da085697852793a0",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\uc_bundle_frozen\\runtime\\nd_root_lp_features.py": "454a72a202881d3a46347c7105e3522657a721934b8eaf4b38247930498bff5c",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\uc_bundle_frozen\\runtime\\adapter.py": "76c50433e395054d2c4e73df7e49144aff1678e14cb252c46149852b043fd636",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\code\\portable_adapter.py": "aa2cbdb7a06f5955a8a030401a5ffe3fbe43e13fd3e9719bb68bf569c6e85850",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\code\\dimension_diagnostics.py": "adcec8c49e24fa373cdf92532e1a3e1c980fd10dea722d1225223f50e398c099"
+      },
+      "original_global_freeze_sha256": "a47236f3e39465c1b6053d2c84282facc51ab7e1a281af247735ca6c0979beb3",
+      "n_train": 32,
+      "common_u_D": 48,
+      "K": 17,
+      "full_D": 192,
+      "integer_D": 144,
+      "continuous_D": 48,
+      "cost_map": "explicit offset + features @ coefficients.T",
+      "training_only": true,
+      "existing_bank_predates_supplement": true,
+      "no_existing_confirmation_outcome_used_for_selection": true
+    },
+    "original_complete_sha256": "c79f8cdfb0a18412ab015a9430e75e3a48bec3bca40f49246ebc6e1ebe37c5d8",
+    "original_weights_sha256": "a2e48046895852beb90b120f1a90bdca2c0151db36ed45e859e38651cf1193b2",
+    "control_source_sha256": "baf96faf54d90227ef61d28108b2d76eab80f7f9592908d45a0d4e5bcf50e4bc",
+    "steps": 2000
+  },
+  "artifact_sha256": {
+    "continued-predictor.pt": "958a6b4a281d4ccd7d0b11e6b2ad4a54ddadfb4c4f5d90d5bcbd580c44694a8e",
+    "metadata.json": "e4a088912d7c02cf9824e9cf54999abb423ed6efa7cf5dc5b107d7caf73fdee8",
+    "start.json": "747f59416a24ece5e89147819f0fc473b5cf7805d4a7bd1ae261fa10dd42443c"
+  },
+  "optimizer_steps": 2000,
+  "training_only": true,
+  "bank_read": false
+}

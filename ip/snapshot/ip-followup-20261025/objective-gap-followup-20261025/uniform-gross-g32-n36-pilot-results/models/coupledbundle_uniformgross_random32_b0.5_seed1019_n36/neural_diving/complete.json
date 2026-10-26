@@ -1,0 +1,43 @@
+{
+  "guard": {
+    "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1019_n36",
+    "method": "neural_diving",
+    "training_array_hash": "ae77d57ed4d5803ef54fe45c7497bc8251495112228922d0c9387910bc57737e",
+    "source_hashes": {
+      "training.npz": "7b0d41b698fa6250d84e990e37d8a0177fe39a0606ddc0299a44cd8fa53c95e4",
+      "metadata.json": "7676c430980b6768cd0a179a30ee0c63cce029ddd582744e4aa4246657d68d71"
+    },
+    "target_K": 32,
+    "pilot_runner_sha256": "d7ff552f55775f90387444e8cbc6290ee371ca94960f7280f42c762c8768e8c2",
+    "runtime_seal_sha256": "d571c6ca71ac7c1b01494d1efb2d81daa18f01ebab3761eb912d287eb3903197",
+    "pilot_protocol_sha256": "445077e38e432b05d0ac837ef709ebe9c0d38e4f3d8baa914570b8f3409363de",
+    "selection_manifest_sha256": "e1c5bc638952fa690137ee572e5c7974e14a418aaa7f214b20819f9a06c1f7a0",
+    "all_shared_source_sha256": {
+      "runtime/adapter.py": "76c50433e395054d2c4e73df7e49144aff1678e14cb252c46149852b043fd636",
+      "runtime/dimension_diagnostics.py": "adcec8c49e24fa373cdf92532e1a3e1c980fd10dea722d1225223f50e398c099",
+      "runtime/experiment_core.py": "7d42aaaa5ade775722899cc11a84b05b00294e6af7ff3e5cf3b3896cf340fdc7",
+      "runtime/mlopt_baseline.py": "ee35123e6212a72c663e3af98baf04fafd9d89b81ea64027934658706b57a068",
+      "runtime/nd_root_lp_features.py": "454a72a202881d3a46347c7105e3522657a721934b8eaf4b38247930498bff5c",
+      "runtime/neural_diving_baseline.py": "a4742d2fb496c7764b51b83bbbe93129d4c39c4da2118a30da085697852793a0",
+      "runtime/portable_adapter.py": "aa2cbdb7a06f5955a8a030401a5ffe3fbe43e13fd3e9719bb68bf569c6e85850",
+      "runtime/preference_baseline.py": "3825e64f3daa34884721cef260895d5e587da4366150f4b3ca17f6594c2ff9ba",
+      "runtime/strategy_match.py": "74ecd5b97480d3d50a5c0c1d5c128c33fc756f016409523d442950d1c6bd0434",
+      "runtime/uc_model.py": "4e0b4b0d24fa1b2e54e3f399569976e1a53f429bd0ff8196976fa0713bacbf38",
+      "shared/train_uc_baselines.py": "f9613f57036869e59d607ba62fa470df62893501183023d2e802f137777f01dd",
+      "shared/uc_adapters.py": "b0f5cbd42a2099289c89cbd0b28bf41a6c2bbeed673af02abf9540862edb9f40"
+    },
+    "cost_map": "signed affine; offset + coefficients @ feature",
+    "development_used_in_training": false,
+    "new_confirmation_created": false
+  },
+  "artifact_sha256": {
+    "complete-predictor.pt": "b116def58b3eba3e89467479659b0596bbd00358ff9bb62c8ea6c91e15737dd8",
+    "metadata.json": "2ed8085c3f246b65fca17814c50bbf938fd4be04662e48774166854732cf1358",
+    "start.json": "266011d072388321d09037fdcf697936cf4a35aca5e53274a233deff16366cef"
+  },
+  "fit_seconds": 247.1127557999862,
+  "fit_cpu_seconds": 241.78125,
+  "sanity_gate_passed": true,
+  "training_label_count": 36,
+  "utc": "2026-10-25T21:09:07.661534+00:00"
+}

@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "method": "Li",
+  "total": 360,
+  "recovered": 51,
+  "recovery_percent": 14.166666666666666,
+  "ratio_N": 360,
+  "objective_ratio": 0.9535398264574422,
+  "invalid_count": 0,
+  "late_count": 0,
+  "per_seed": [
+    {
+      "seed": 1009,
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1009_n36",
+      "K": 32,
+      "total": 120,
+      "ratio_N": 120,
+      "recovered": 21,
+      "objective_ratio": 0.9642532447101337
+    },
+    {
+      "seed": 1013,
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1013_n36",
+      "K": 32,
+      "total": 120,
+      "ratio_N": 120,
+      "recovered": 10,
+      "objective_ratio": 0.9447301236793074
+    },
+    {
+      "seed": 1019,
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1019_n36",
+      "K": 32,
+      "total": 120,
+      "ratio_N": 120,
+      "recovered": 20,
+      "objective_ratio": 0.9516361109828854
+    }
+  ],
+  "source_sha256": {
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\results\\pooled-quality.json": "cc0f7d171e3ee4dbf6fa3a1acea75b9ab544d7ce73c88d3a7ef3c037421e323e",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\results\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\li\\complete.json": "04957f42562287f147d7877d180762776ec4d65a9352cea4a4f24dfea04467db",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-stream2-training-budget-control\\banks\\stream2_G32_seed1009\\confirmation.npz": "ee84127b83d137edd72ee7f3d2020965808e86f4b6f0bea86d51a2bacfe1a897",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\results\\coupledbundle_uniformgross_random32_b0.5_seed1013_n36\\li\\complete.json": "7077eb104af3b78f26e2cc7324e8751c30c4f0564948d49eecd4cbfdf45f4ad8",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-stream2-training-budget-control\\banks\\stream2_G32_seed1013\\confirmation.npz": "4a9c909bda8251705004c4a6014172fcdf8dd51ee3ad1ec3dc69717c85f39921",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\results\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36\\li\\complete.json": "ac90cacae98086d5dde9f36e5e6f4f0b88f0247e58e92e8ae2712a45d1fdaca1",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-stream2-training-budget-control\\banks\\stream2_G32_seed1019\\confirmation.npz": "188031146d772b4e480f8ee380fc96267ab54fb56c76118ccb59af90b3502cad"
+  },
+  "model_or_solver_execution": false,
+  "independent_reference_check": "Original matrix feasibility/objective and separately implemented MWIS include/exclude DP for every existing reference; no Full IP re-solve."
+}

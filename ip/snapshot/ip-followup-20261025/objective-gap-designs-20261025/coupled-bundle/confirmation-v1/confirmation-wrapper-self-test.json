@@ -1,0 +1,165 @@
+{
+  "confirmation_generated": false,
+  "confirmation_read": false,
+  "legacy_shadow_never_published": true,
+  "models_loaded": false,
+  "original_solver_run": false,
+  "rejected_recomputed_checksum_tampers": [
+    "confirmation",
+    "profit_ratio",
+    "actual_K",
+    "seconds"
+  ],
+  "scientific_evaluation_equivalence": {
+    "execution": "AST parsing only; evaluators not imported or executed",
+    "helper_sha256": "e15becc30605beae3ef261d1e875727a0b92e26e9b2f6814a7264dbdb26f4a48",
+    "new_function": "evaluate_case_confirmation",
+    "new_sha256": "1d6034267254c84ed3694c6fd4f4acedf23d06e12e5e5f8fbd2d9ac4cd86dfca",
+    "new_source": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\confirmation-v1\\confirmation_runner.py",
+    "old_function": "evaluate_development",
+    "old_sha256": "d7ff552f55775f90387444e8cbc6290ee371ca94960f7280f42c762c8768e8c2",
+    "old_source": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\adapter\\generic-binary-v2\\generic_binary_pilot.py",
+    "passed": true,
+    "row_keywords": {
+      "allowed_identity_fields": [
+        "confirmation",
+        "experiment_phase",
+        "guard"
+      ],
+      "changed_keyword_expressions": [],
+      "compared_keyword_count": 23,
+      "equivalent": true,
+      "extra_keywords": [],
+      "ignored_new_identity_fields": [
+        "confirmation",
+        "experiment_phase",
+        "guard"
+      ],
+      "ignored_old_identity_fields": [
+        "confirmation",
+        "experiment_phase",
+        "guard"
+      ],
+      "missing_keywords": [],
+      "new_keywords": [
+        "D",
+        "K",
+        "actual_K",
+        "budget_seconds",
+        "case_id",
+        "cost",
+        "feature",
+        "fixed",
+        "index",
+        "method",
+        "n_train",
+        "objective",
+        "original_feasible",
+        "profit_ratio",
+        "raw",
+        "raw_objective",
+        "recovered",
+        "reference_objective",
+        "restriction_valid",
+        "seconds",
+        "solution",
+        "timely",
+        "valid"
+      ],
+      "old_keywords": [
+        "D",
+        "K",
+        "actual_K",
+        "budget_seconds",
+        "case_id",
+        "cost",
+        "feature",
+        "fixed",
+        "index",
+        "method",
+        "n_train",
+        "objective",
+        "original_feasible",
+        "profit_ratio",
+        "raw",
+        "raw_objective",
+        "recovered",
+        "reference_objective",
+        "restriction_valid",
+        "seconds",
+        "solution",
+        "timely",
+        "valid"
+      ]
+    },
+    "schema": "generic-binary-confirmation-evaluator-static-equivalence-v1",
+    "scientific_block": {
+      "equivalent": true,
+      "first_line_new": 287,
+      "first_line_old": 411,
+      "last_line_new": 307,
+      "last_line_old": 431,
+      "new_ast_sha256": "67bdb22e3fcf6429b670970421a54baa1f5505aff067f6a6effd15438b340d8a",
+      "new_statement_count": 13,
+      "old_ast_sha256": "67bdb22e3fcf6429b670970421a54baa1f5505aff067f6a6effd15438b340d8a",
+      "old_statement_count": 13
+    },
+    "scope": "Per-cost timer-to-row scientific block and row/summary keyword expressions; identity fields excluded only as explicitly listed",
+    "separate_review_required": [
+      "global freeze and source/artifact guards",
+      "bank generation, reference certification and validation",
+      "model initialization and runtime binding before the per-cost block",
+      "resume verification, output separation and orchestration"
+    ],
+    "status": "PASS_STATIC_EQUIVALENCE",
+    "summary_keywords": {
+      "allowed_identity_fields": [
+        "independent_confirmation",
+        "no_claim_of_confirmation",
+        "phase"
+      ],
+      "changed_keyword_expressions": [],
+      "compared_keyword_count": 11,
+      "equivalent": true,
+      "extra_keywords": [],
+      "ignored_new_identity_fields": [
+        "independent_confirmation",
+        "phase"
+      ],
+      "ignored_old_identity_fields": [
+        "no_claim_of_confirmation",
+        "phase"
+      ],
+      "missing_keywords": [],
+      "new_keywords": [
+        "D",
+        "K",
+        "case_id",
+        "count",
+        "method",
+        "n_train",
+        "negative_returned_profit_count",
+        "profit_ratio_mean_valid",
+        "ratio_denominator",
+        "recovery_count",
+        "recovery_percent"
+      ],
+      "old_keywords": [
+        "D",
+        "K",
+        "case_id",
+        "count",
+        "method",
+        "n_train",
+        "negative_returned_profit_count",
+        "profit_ratio_mean_valid",
+        "ratio_denominator",
+        "recovery_count",
+        "recovery_percent"
+      ]
+    }
+  },
+  "status": "PASS",
+  "training_or_development_banks_opened": false,
+  "wrapper_sha256": "1d6034267254c84ed3694c6fd4f4acedf23d06e12e5e5f8fbd2d9ac4cd86dfca"
+}

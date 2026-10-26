@@ -1,0 +1,8 @@
+# Python 3.11+; original current-IP checkpoints were recorded on Python 3.14.4.
+numpy>=2.1
+scipy>=1.14
+sympy>=1.13
+highspy>=1.10
+scikit-learn>=1.5,<1.11
+threadpoolctl>=3.5
+torch>=2.5

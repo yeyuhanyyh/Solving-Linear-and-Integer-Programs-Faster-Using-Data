@@ -1,0 +1,3 @@
+# Frozen IP source guards depend on exact bytes, including line endings.
+ip/snapshot/** -text
+ip/provenance/** -text

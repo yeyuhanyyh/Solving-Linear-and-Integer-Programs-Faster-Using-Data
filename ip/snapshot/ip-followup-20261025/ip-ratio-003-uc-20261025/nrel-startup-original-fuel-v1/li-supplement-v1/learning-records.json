@@ -1,0 +1,289 @@
+{
+  "schema": "uc-li-completed-learning-records-v1",
+  "records": [
+    {
+      "case_id": "uc_startupheavy_G4T12_all_units_nrel_startup_seed101_n32",
+      "training_samples": 32,
+      "trainable_parameters": 385281,
+      "n_development_network_configs": 8,
+      "epochs_per_fit": 1200,
+      "total_final_training_epochs": 2400,
+      "development_setcover_strategies": 25,
+      "final_setcover_strategies": 30,
+      "training_instance_strategy_pairs": 992,
+      "selected_training_preference_pairs": 928,
+      "requested_top_k_grid": [
+        1,
+        3,
+        5,
+        10,
+        30
+      ],
+      "effective_top_k_grid": [
+        1,
+        3,
+        5,
+        10,
+        25
+      ],
+      "selected_top_k": 10,
+      "fit_wall_seconds": 744.0990680000104,
+      "fit_cpu_seconds": 726.6875,
+      "development_selection_seconds": 544.5462791000027,
+      "final_bank_preparation_seconds": 5.3224457000033,
+      "final_optimizer_search_seconds": 194.13633320000372,
+      "final_optimizer_timing": {
+        "total_wall_seconds": 194.13633320000372,
+        "original_grid_trial_count": 2,
+        "additional_learning_rate_trial_count": 1,
+        "additional_learning_rate_trial_wall_seconds": 110.58653040000354,
+        "development_selected_lr_checkpoint_stage_seconds": 22.00216569917393,
+        "incremental_protocol_stage_seconds": 132.58869609917747,
+        "incremental_definition": "Additional LR trials in full plus added post-update evaluation, snapshot, restore and retained-state diagnostics for the development-selected LR; measured stages, not a causal baseline timing comparison"
+      },
+      "configuration": {
+        "seed": 101,
+        "hidden_dim": 128,
+        "attention_layers": 2,
+        "epochs": 1200,
+        "batch_size": 128,
+        "learning_rates": [
+          0.0001,
+          0.001
+        ],
+        "lambda1_values": [
+          0.8,
+          0.9
+        ],
+        "lambda2_values": [
+          0.1,
+          0.2
+        ],
+        "top_k_values": [
+          1,
+          3,
+          5,
+          10,
+          25
+        ],
+        "validation_fraction": 0.2,
+        "weight_decay": 0.01,
+        "lr_decay": 0.9,
+        "lr_decay_epochs": 40,
+        "cover_feasibility_tolerance": 0.0001,
+        "cover_suboptimality_tolerance": 0.0001,
+        "active_tolerance": 1e-07,
+        "feasibility_tolerance": 1e-06,
+        "rank_tolerance": 1e-10,
+        "denominator_floor": 1e-12,
+        "reward_floor": 1e-10,
+        "failed_decode_penalty": 1000000.0,
+        "stationarity_relative_tolerance": 1e-09,
+        "certificate_gap_absolute_tolerance": 1e-07,
+        "certificate_gap_relative_tolerance": 1e-10,
+        "reduced_lp_time_limit": 30.0,
+        "recovery_absolute_tolerance": 1e-06,
+        "recovery_relative_tolerance": 1e-09,
+        "feedforward_multiplier": 2,
+        "device": "cpu",
+        "sanity_minimum_score_spread": 0.0001,
+        "sanity_minimum_relative_loss_improvement": 0.01,
+        "sanity_minimum_non_tie_accuracy": 0.55,
+        "sanity_true_difference_tolerance": 1e-06,
+        "gradient_clip_norm": 5.0
+      },
+      "checkpoint_complete_sha256": "ac730a2b3ebc375a00b691a218977445349090bb906e53fe7b5cf7483b2938a1"
+    },
+    {
+      "case_id": "uc_startupheavy_G4T12_all_units_nrel_startup_seed211_n32",
+      "training_samples": 32,
+      "trainable_parameters": 385281,
+      "n_development_network_configs": 8,
+      "epochs_per_fit": 1200,
+      "total_final_training_epochs": 2400,
+      "development_setcover_strategies": 26,
+      "final_setcover_strategies": 30,
+      "training_instance_strategy_pairs": 992,
+      "selected_training_preference_pairs": 928,
+      "requested_top_k_grid": [
+        1,
+        3,
+        5,
+        10,
+        30
+      ],
+      "effective_top_k_grid": [
+        1,
+        3,
+        5,
+        10,
+        26
+      ],
+      "selected_top_k": 3,
+      "fit_wall_seconds": 435.6430204999924,
+      "fit_cpu_seconds": 429.140625,
+      "development_selection_seconds": 335.9132618000149,
+      "final_bank_preparation_seconds": 1.1569759000267368,
+      "final_optimizer_search_seconds": 98.5212334000098,
+      "final_optimizer_timing": {
+        "total_wall_seconds": 98.5212334000098,
+        "original_grid_trial_count": 2,
+        "additional_learning_rate_trial_count": 1,
+        "additional_learning_rate_trial_wall_seconds": 50.30632719999994,
+        "development_selected_lr_checkpoint_stage_seconds": 12.751800199708669,
+        "incremental_protocol_stage_seconds": 63.05812739970861,
+        "incremental_definition": "Additional LR trials in full plus added post-update evaluation, snapshot, restore and retained-state diagnostics for the development-selected LR; measured stages, not a causal baseline timing comparison"
+      },
+      "configuration": {
+        "seed": 211,
+        "hidden_dim": 128,
+        "attention_layers": 2,
+        "epochs": 1200,
+        "batch_size": 128,
+        "learning_rates": [
+          0.0001,
+          0.001
+        ],
+        "lambda1_values": [
+          0.8,
+          0.9
+        ],
+        "lambda2_values": [
+          0.1,
+          0.2
+        ],
+        "top_k_values": [
+          1,
+          3,
+          5,
+          10,
+          26
+        ],
+        "validation_fraction": 0.2,
+        "weight_decay": 0.01,
+        "lr_decay": 0.9,
+        "lr_decay_epochs": 40,
+        "cover_feasibility_tolerance": 0.0001,
+        "cover_suboptimality_tolerance": 0.0001,
+        "active_tolerance": 1e-07,
+        "feasibility_tolerance": 1e-06,
+        "rank_tolerance": 1e-10,
+        "denominator_floor": 1e-12,
+        "reward_floor": 1e-10,
+        "failed_decode_penalty": 1000000.0,
+        "stationarity_relative_tolerance": 1e-09,
+        "certificate_gap_absolute_tolerance": 1e-07,
+        "certificate_gap_relative_tolerance": 1e-10,
+        "reduced_lp_time_limit": 30.0,
+        "recovery_absolute_tolerance": 1e-06,
+        "recovery_relative_tolerance": 1e-09,
+        "feedforward_multiplier": 2,
+        "device": "cpu",
+        "sanity_minimum_score_spread": 0.0001,
+        "sanity_minimum_relative_loss_improvement": 0.01,
+        "sanity_minimum_non_tie_accuracy": 0.55,
+        "sanity_true_difference_tolerance": 1e-06,
+        "gradient_clip_norm": 5.0
+      },
+      "checkpoint_complete_sha256": "e25b6974e9fbbc555fbc660ab3f2888b919ea169beb08b9eafc44ffb7cd44727"
+    },
+    {
+      "case_id": "uc_startupheavy_G4T12_all_units_nrel_startup_seed307_n32",
+      "training_samples": 32,
+      "trainable_parameters": 385281,
+      "n_development_network_configs": 8,
+      "epochs_per_fit": 1200,
+      "total_final_training_epochs": 2400,
+      "development_setcover_strategies": 25,
+      "final_setcover_strategies": 31,
+      "training_instance_strategy_pairs": 1024,
+      "selected_training_preference_pairs": 960,
+      "requested_top_k_grid": [
+        1,
+        3,
+        5,
+        10,
+        30
+      ],
+      "effective_top_k_grid": [
+        1,
+        3,
+        5,
+        10,
+        25
+      ],
+      "selected_top_k": 5,
+      "fit_wall_seconds": 808.8550345999829,
+      "fit_cpu_seconds": 790.109375,
+      "development_selection_seconds": 630.4486716999963,
+      "final_bank_preparation_seconds": 2.6456171000027098,
+      "final_optimizer_search_seconds": 175.66064079999342,
+      "final_optimizer_timing": {
+        "total_wall_seconds": 175.66064079999342,
+        "original_grid_trial_count": 2,
+        "additional_learning_rate_trial_count": 1,
+        "additional_learning_rate_trial_wall_seconds": 89.12368250000873,
+        "development_selected_lr_checkpoint_stage_seconds": 22.754142200923525,
+        "incremental_protocol_stage_seconds": 111.87782470093225,
+        "incremental_definition": "Additional LR trials in full plus added post-update evaluation, snapshot, restore and retained-state diagnostics for the development-selected LR; measured stages, not a causal baseline timing comparison"
+      },
+      "configuration": {
+        "seed": 307,
+        "hidden_dim": 128,
+        "attention_layers": 2,
+        "epochs": 1200,
+        "batch_size": 128,
+        "learning_rates": [
+          0.0001,
+          0.001
+        ],
+        "lambda1_values": [
+          0.8,
+          0.9
+        ],
+        "lambda2_values": [
+          0.1,
+          0.2
+        ],
+        "top_k_values": [
+          1,
+          3,
+          5,
+          10,
+          25
+        ],
+        "validation_fraction": 0.2,
+        "weight_decay": 0.01,
+        "lr_decay": 0.9,
+        "lr_decay_epochs": 40,
+        "cover_feasibility_tolerance": 0.0001,
+        "cover_suboptimality_tolerance": 0.0001,
+        "active_tolerance": 1e-07,
+        "feasibility_tolerance": 1e-06,
+        "rank_tolerance": 1e-10,
+        "denominator_floor": 1e-12,
+        "reward_floor": 1e-10,
+        "failed_decode_penalty": 1000000.0,
+        "stationarity_relative_tolerance": 1e-09,
+        "certificate_gap_absolute_tolerance": 1e-07,
+        "certificate_gap_relative_tolerance": 1e-10,
+        "reduced_lp_time_limit": 30.0,
+        "recovery_absolute_tolerance": 1e-06,
+        "recovery_relative_tolerance": 1e-09,
+        "feedforward_multiplier": 2,
+        "device": "cpu",
+        "sanity_minimum_score_spread": 0.0001,
+        "sanity_minimum_relative_loss_improvement": 0.01,
+        "sanity_minimum_non_tie_accuracy": 0.55,
+        "sanity_true_difference_tolerance": 1e-06,
+        "gradient_clip_norm": 5.0
+      },
+      "checkpoint_complete_sha256": "a4e01668f73ce48e6aad6e1219051ef9c578306c41dc2a6d37737a41af56165e"
+    }
+  ],
+  "original_training_label_generation_excluded": true,
+  "actual_training_cost_budget_per_case": 32,
+  "legacy_fixed120_adaptation_tag_is_canned_source_text_not_an_actual_budget": true,
+  "native_scientific_sources_changed": false,
+  "official_test_result_version": 2
+}

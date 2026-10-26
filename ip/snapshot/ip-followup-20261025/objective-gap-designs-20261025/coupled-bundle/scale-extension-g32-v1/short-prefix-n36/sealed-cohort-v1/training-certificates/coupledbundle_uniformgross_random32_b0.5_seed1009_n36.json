@@ -1,0 +1,1741 @@
+{
+  "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1009_n36",
+  "training_only": true,
+  "count": 36,
+  "ancestor_training_certificate_sha256": "433370545810bd872a6d203c809f0dfd87ddf31139c5988af15e1dc1cc96f1d4",
+  "original_IP_and_independent_oracle_agree": true,
+  "records": [
+    {
+      "index": 0,
+      "split": "training",
+      "split_index": 0,
+      "enumeration_objective": -29.460673691144304,
+      "original_profit": 29.460673691144304,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -29.460673691144308,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 28,
+          "rows": 52,
+          "nonzeros": 124,
+          "integer_variables": 28
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.009570599999278784,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -32.42955591795244,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0014586000179406255,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.6551724137931034,
+      "LP_relative_integrality_gap": 0.1007744173786686
+    },
+    {
+      "index": 1,
+      "split": "training",
+      "split_index": 1,
+      "enumeration_objective": -28.311918228084004,
+      "original_profit": 28.311918228084004,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -28.311918228084004,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 28,
+          "rows": 54,
+          "nonzeros": 129,
+          "integer_variables": 28
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.008528400008799508,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -32.38212948447665,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0012578000023495406,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.5,
+      "LP_relative_integrality_gap": 0.14376317505590988
+    },
+    {
+      "index": 2,
+      "split": "training",
+      "split_index": 2,
+      "enumeration_objective": -27.478679332833348,
+      "original_profit": 27.478679332833348,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -27.478679332833348,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 27,
+          "rows": 49,
+          "nonzeros": 117,
+          "integer_variables": 27
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.01888469999539666,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -31.21377273406798,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0012673000164795667,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.5,
+      "LP_relative_integrality_gap": 0.1359269619909169
+    },
+    {
+      "index": 3,
+      "split": "training",
+      "split_index": 3,
+      "enumeration_objective": -26.292637163688852,
+      "original_profit": 26.292637163688852,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -26.292637163688852,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 15,
+          "rows": 23,
+          "nonzeros": 48,
+          "integer_variables": 15
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.019911699986550957,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -29.104588015150725,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 87,
+          "rows": 108,
+          "nonzeros": 245,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0012471999798435718,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.8,
+      "LP_relative_integrality_gap": 0.10694822409618483
+    },
+    {
+      "index": 4,
+      "split": "training",
+      "split_index": 4,
+      "enumeration_objective": -30.35154164257562,
+      "original_profit": 30.35154164257562,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -30.35154164257562,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 26,
+          "rows": 45,
+          "nonzeros": 108,
+          "integer_variables": 26
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.009000099991681054,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -32.65608933622859,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.001298299990594387,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.7407407407407407,
+      "LP_relative_integrality_gap": 0.0759285218784494
+    },
+    {
+      "index": 5,
+      "split": "training",
+      "split_index": 5,
+      "enumeration_objective": -26.097878093568994,
+      "original_profit": 26.097878093568994,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -26.097878093568994,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 27,
+          "rows": 49,
+          "nonzeros": 116,
+          "integer_variables": 27
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.010483000020030886,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -30.129031495694534,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0013126000121701509,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.5,
+      "LP_relative_integrality_gap": 0.15446287961314722
+    },
+    {
+      "index": 6,
+      "split": "training",
+      "split_index": 6,
+      "enumeration_objective": -26.650045483934317,
+      "original_profit": 26.650045483934317,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -26.650045483934313,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 18,
+          "rows": 25,
+          "nonzeros": 57,
+          "integer_variables": 18
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.008297799999127164,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -29.46654482560369,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 88,
+          "rows": 114,
+          "nonzeros": 257,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0014298000023700297,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.7407407407407407,
+      "LP_relative_integrality_gap": 0.10568459792563091
+    },
+    {
+      "index": 7,
+      "split": "training",
+      "split_index": 7,
+      "enumeration_objective": -33.38587129412123,
+      "original_profit": 33.38587129412123,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -33.38587129412122,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 28,
+          "rows": 48,
+          "nonzeros": 117,
+          "integer_variables": 28
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.008356500009540468,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -35.26349393802609,
+        "original_violation": 0.0,
+        "integrality_residual": 0.49715909090909083,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0013409000239335,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.6818181818181819,
+      "LP_relative_integrality_gap": 0.05624003721105458
+    },
+    {
+      "index": 8,
+      "split": "training",
+      "split_index": 8,
+      "enumeration_objective": -25.49509728031916,
+      "original_profit": 25.49509728031916,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -25.495097280319158,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 23,
+          "rows": 34,
+          "nonzeros": 82,
+          "integer_variables": 23
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.008543600008124486,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -28.117872090790065,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.001297099981456995,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.8,
+      "LP_relative_integrality_gap": 0.102873692994125
+    },
+    {
+      "index": 9,
+      "split": "training",
+      "split_index": 9,
+      "enumeration_objective": -31.42528637675635,
+      "original_profit": 31.42528637675635,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -31.425286376756354,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 29,
+          "rows": 56,
+          "nonzeros": 134,
+          "integer_variables": 29
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.008200099982786924,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -34.054315144521375,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0012445999891497195,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.5,
+      "LP_relative_integrality_gap": 0.08365965981171075
+    },
+    {
+      "index": 10,
+      "split": "training",
+      "split_index": 10,
+      "enumeration_objective": -30.449288554772167,
+      "original_profit": 30.449288554772167,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -30.449288554772167,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 31,
+          "rows": 63,
+          "nonzeros": 153,
+          "integer_variables": 31
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.018074799998430535,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -34.843616707254114,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0016867000085767359,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.5,
+      "LP_relative_integrality_gap": 0.1443162832713622
+    },
+    {
+      "index": 11,
+      "split": "training",
+      "split_index": 11,
+      "enumeration_objective": -30.372780228691017,
+      "original_profit": 30.372780228691017,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -30.372780228691017,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 25,
+          "rows": 44,
+          "nonzeros": 101,
+          "integer_variables": 25
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.008391400013351813,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -33.71487954786823,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 89,
+          "rows": 123,
+          "nonzeros": 275,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0014984000008553267,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.5,
+      "LP_relative_integrality_gap": 0.11003600243418504
+    },
+    {
+      "index": 12,
+      "split": "training",
+      "split_index": 12,
+      "enumeration_objective": -31.29331118557284,
+      "original_profit": 31.29331118557284,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -31.29331118557284,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 29,
+          "rows": 54,
+          "nonzeros": 128,
+          "integer_variables": 29
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.009226599999237806,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -34.084707335912036,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0013365999911911786,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.7037037037037037,
+      "LP_relative_integrality_gap": 0.08920104791039543
+    },
+    {
+      "index": 13,
+      "split": "training",
+      "split_index": 13,
+      "enumeration_objective": -29.59686879258313,
+      "original_profit": 29.59686879258313,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -29.59686879258313,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 29,
+          "rows": 55,
+          "nonzeros": 132,
+          "integer_variables": 29
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.00822289998177439,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -31.919277851336467,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0015431999927386642,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.5,
+      "LP_relative_integrality_gap": 0.07846806616703063
+    },
+    {
+      "index": 14,
+      "split": "training",
+      "split_index": 14,
+      "enumeration_objective": -29.48710308997404,
+      "original_profit": 29.48710308997404,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -29.48710308997404,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 26,
+          "rows": 48,
+          "nonzeros": 114,
+          "integer_variables": 26
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.008527600002707914,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -31.10367181536629,
+        "original_violation": 0.0,
+        "integrality_residual": 0.47058823529411764,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.001274899987038225,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.9090909090909092,
+      "LP_relative_integrality_gap": 0.054822907508398286
+    },
+    {
+      "index": 15,
+      "split": "training",
+      "split_index": 15,
+      "enumeration_objective": -29.103187649611364,
+      "original_profit": 29.103187649611364,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -29.10318764961136,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 24,
+          "rows": 42,
+          "nonzeros": 102,
+          "integer_variables": 24
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.01193579999380745,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -33.722392087072144,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 89,
+          "rows": 123,
+          "nonzeros": 275,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0012903999886475503,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.5,
+      "LP_relative_integrality_gap": 0.15871816149742154
+    },
+    {
+      "index": 16,
+      "split": "training",
+      "split_index": 16,
+      "enumeration_objective": -28.254869823871818,
+      "original_profit": 28.254869823871818,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -28.25486982387182,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 29,
+          "rows": 53,
+          "nonzeros": 125,
+          "integer_variables": 29
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.01127339998492971,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -33.28503361077182,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.001270500011742115,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.5,
+      "LP_relative_integrality_gap": 0.17802820604928585
+    },
+    {
+      "index": 17,
+      "split": "training",
+      "split_index": 17,
+      "enumeration_objective": -26.517870030987478,
+      "original_profit": 26.517870030987478,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -26.517870030987478,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 27,
+          "rows": 45,
+          "nonzeros": 110,
+          "integer_variables": 27
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.008210300002247095,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -29.276853537440196,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0013738000125158578,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.5,
+      "LP_relative_integrality_gap": 0.10404242509781918
+    },
+    {
+      "index": 18,
+      "split": "training",
+      "split_index": 18,
+      "enumeration_objective": -28.04479299710448,
+      "original_profit": 28.04479299710448,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -28.04479299710448,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 25,
+          "rows": 43,
+          "nonzeros": 93,
+          "integer_variables": 25
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.008328699972480536,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -30.647164322169566,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.001357000001007691,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.5,
+      "LP_relative_integrality_gap": 0.09279338682705808
+    },
+    {
+      "index": 19,
+      "split": "training",
+      "split_index": 19,
+      "enumeration_objective": -29.069971940433312,
+      "original_profit": 29.069971940433312,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -29.069971940433312,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 25,
+          "rows": 44,
+          "nonzeros": 103,
+          "integer_variables": 25
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.008653400000184774,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -32.580338312384036,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0014143000007607043,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.6666666666666665,
+      "LP_relative_integrality_gap": 0.1207557537084571
+    },
+    {
+      "index": 20,
+      "split": "training",
+      "split_index": 20,
+      "enumeration_objective": -26.0362871641748,
+      "original_profit": 26.0362871641748,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -26.0362871641748,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 24,
+          "rows": 36,
+          "nonzeros": 92,
+          "integer_variables": 24
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.019041299994569272,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -29.09333074903919,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 89,
+          "rows": 123,
+          "nonzeros": 275,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0013421000039670616,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.5,
+      "LP_relative_integrality_gap": 0.11741472835922605
+    },
+    {
+      "index": 21,
+      "split": "training",
+      "split_index": 21,
+      "enumeration_objective": -32.679761716064725,
+      "original_profit": 32.679761716064725,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -32.67976171606472,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 32,
+          "rows": 65,
+          "nonzeros": 159,
+          "integer_variables": 32
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.008901199995307252,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -36.900554910192895,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0015536000137217343,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.5,
+      "LP_relative_integrality_gap": 0.1291561802316726
+    },
+    {
+      "index": 22,
+      "split": "training",
+      "split_index": 22,
+      "enumeration_objective": -29.75044629283995,
+      "original_profit": 29.75044629283995,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -29.75044629283995,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 28,
+          "rows": 55,
+          "nonzeros": 132,
+          "integer_variables": 28
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.00858289998723194,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -33.75583550604034,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0013077000039629638,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.5,
+      "LP_relative_integrality_gap": 0.1346329118485987
+    },
+    {
+      "index": 23,
+      "split": "training",
+      "split_index": 23,
+      "enumeration_objective": -26.52802967920894,
+      "original_profit": 26.52802967920894,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -26.52802967920894,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 25,
+          "rows": 42,
+          "nonzeros": 97,
+          "integer_variables": 25
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.008709499990800396,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -28.241626819921702,
+        "original_violation": 0.0,
+        "integrality_residual": 0.4909090909090911,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0013307000044733286,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.9090909090909092,
+      "LP_relative_integrality_gap": 0.06459571862043617
+    },
+    {
+      "index": 24,
+      "split": "training",
+      "split_index": 24,
+      "enumeration_objective": -27.720278169005674,
+      "original_profit": 27.720278169005674,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -27.72027816900567,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 27,
+          "rows": 51,
+          "nonzeros": 113,
+          "integer_variables": 27
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.018009499995969236,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -31.095088456542296,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0012869999918621033,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.5,
+      "LP_relative_integrality_gap": 0.12174518116163899
+    },
+    {
+      "index": 25,
+      "split": "training",
+      "split_index": 25,
+      "enumeration_objective": -28.977230972557457,
+      "original_profit": 28.977230972557457,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -28.977230972557457,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 27,
+          "rows": 44,
+          "nonzeros": 109,
+          "integer_variables": 27
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.017845299997134134,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -33.11633455262681,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.001370299985865131,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.5,
+      "LP_relative_integrality_gap": 0.14283985878392735
+    },
+    {
+      "index": 26,
+      "split": "training",
+      "split_index": 26,
+      "enumeration_objective": -27.121426453117426,
+      "original_profit": 27.121426453117426,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -27.121426453117422,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 22,
+          "rows": 36,
+          "nonzeros": 79,
+          "integer_variables": 22
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.017967699997825548,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -30.60114312316248,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0016493999864906073,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.5,
+      "LP_relative_integrality_gap": 0.1283013884266063
+    },
+    {
+      "index": 27,
+      "split": "training",
+      "split_index": 27,
+      "enumeration_objective": -27.522161717306822,
+      "original_profit": 27.522161717306822,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -27.522161717306822,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 31,
+          "rows": 62,
+          "nonzeros": 152,
+          "integer_variables": 31
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.01087209998513572,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -32.022477678610144,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0012861999857705086,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.5,
+      "LP_relative_integrality_gap": 0.1635160786978945
+    },
+    {
+      "index": 28,
+      "split": "training",
+      "split_index": 28,
+      "enumeration_objective": -28.317260906341566,
+      "original_profit": 28.317260906341566,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -28.317260906341566,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 28,
+          "rows": 50,
+          "nonzeros": 119,
+          "integer_variables": 28
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.02099160000216216,
+        "outer_cpu_seconds": 0.03125,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -32.83029324500575,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.001298599992878735,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.5,
+      "LP_relative_integrality_gap": 0.15937390108425006
+    },
+    {
+      "index": 29,
+      "split": "training",
+      "split_index": 29,
+      "enumeration_objective": -26.856041213905378,
+      "original_profit": 26.856041213905378,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -26.856041213905375,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 25,
+          "rows": 46,
+          "nonzeros": 112,
+          "integer_variables": 25
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.008568799996282905,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -30.766807466677687,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0012737000070046633,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.5,
+      "LP_relative_integrality_gap": 0.14561961018839265
+    },
+    {
+      "index": 30,
+      "split": "training",
+      "split_index": 30,
+      "enumeration_objective": -25.661099157737418,
+      "original_profit": 25.661099157737418,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -25.661099157737414,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 21,
+          "rows": 38,
+          "nonzeros": 80,
+          "integer_variables": 21
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.009025100007420406,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -27.089798971834078,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0014552000211551785,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.5,
+      "LP_relative_integrality_gap": 0.05567570606833784
+    },
+    {
+      "index": 31,
+      "split": "training",
+      "split_index": 31,
+      "enumeration_objective": -29.0701575782104,
+      "original_profit": 29.0701575782104,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -29.0701575782104,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 25,
+          "rows": 48,
+          "nonzeros": 108,
+          "integer_variables": 25
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.008699600002728403,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -31.863791145836764,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 89,
+          "rows": 120,
+          "nonzeros": 269,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.00132460001623258,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.5,
+      "LP_relative_integrality_gap": 0.09609970500195499
+    },
+    {
+      "index": 32,
+      "split": "training",
+      "split_index": 32,
+      "enumeration_objective": -29.066536955404192,
+      "original_profit": 29.066536955404192,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -29.066536955404196,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 26,
+          "rows": 48,
+          "nonzeros": 107,
+          "integer_variables": 26
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.008037400024477392,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -31.617564414373053,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 89,
+          "rows": 120,
+          "nonzeros": 269,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0012926000053994358,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.5,
+      "LP_relative_integrality_gap": 0.08776509781274652
+    },
+    {
+      "index": 33,
+      "split": "training",
+      "split_index": 33,
+      "enumeration_objective": -26.392904390450166,
+      "original_profit": 26.392904390450166,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -26.39290439045017,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 19,
+          "rows": 27,
+          "nonzeros": 58,
+          "integer_variables": 19
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.008724000013899058,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -28.3891585414869,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.001272300025448203,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.9090909090909092,
+      "LP_relative_integrality_gap": 0.07563601646505586
+    },
+    {
+      "index": 34,
+      "split": "training",
+      "split_index": 34,
+      "enumeration_objective": -30.31583517742834,
+      "original_profit": 30.31583517742834,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -30.31583517742834,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 29,
+          "rows": 52,
+          "nonzeros": 126,
+          "integer_variables": 29
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.008547200006432831,
+        "outer_cpu_seconds": 0.015625,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -33.78138999320796,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 90,
+          "rows": 129,
+          "nonzeros": 287,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.001508999994257465,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.6666666666666665,
+      "LP_relative_integrality_gap": 0.11431500387493525
+    },
+    {
+      "index": 35,
+      "split": "training",
+      "split_index": 35,
+      "enumeration_objective": -28.558804353259674,
+      "original_profit": 28.558804353259674,
+      "ip": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -28.558804353259674,
+        "original_violation": 0.0,
+        "integrality_residual": 0.0,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 19,
+          "rows": 31,
+          "nonzeros": 68,
+          "integer_variables": 19
+        },
+        "nodes": 1,
+        "mip_gap": 0.0,
+        "outer_wall_seconds": 0.00868970001465641,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "lp": {
+        "certified": true,
+        "status": "HighsModelStatus.kOptimal",
+        "objective": -30.165379583240885,
+        "original_violation": 0.0,
+        "integrality_residual": 0.5,
+        "presolved": {
+          "status": "HighsPresolveStatus.kReduced",
+          "variables": 89,
+          "rows": 123,
+          "nonzeros": 275,
+          "integer_variables": 0
+        },
+        "nodes": null,
+        "mip_gap": null,
+        "outer_wall_seconds": 0.0015442000003531575,
+        "outer_cpu_seconds": 0.0,
+        "timer_scope": "cold original-model build, presolve, solve and validation; may overlap unrelated baseline training"
+      },
+      "LP_fractional": true,
+      "LP_optimizer_relation_residual": 0.9090909090909092,
+      "LP_relative_integrality_gap": 0.05625498918332124
+    }
+  ],
+  "original_IP_label_certification_wall_seconds": 0.401834299962502,
+  "original_IP_label_certification_cpu_seconds": 0.40625,
+  "original_total_label_generation_wall_seconds": null,
+  "timing_note": "Reused first36 original certificates; whole exploratory cohort contained69 labels. Timings are not isolated"
+}

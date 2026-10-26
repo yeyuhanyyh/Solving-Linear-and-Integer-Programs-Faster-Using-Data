@@ -1,0 +1,28 @@
+{
+  "schema": "coupled-bundle-twelve-case-confirmation-registry-v1",
+  "cohorts": [
+    {
+      "manifest_path": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\primary-cohort-20261025-v2\\training-only-manifest.json",
+      "model_root": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-pilot-results"
+    },
+    {
+      "manifest_path": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\primary-cohort-v1\\training-only-manifest.json",
+      "model_root": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-pilot-results"
+    },
+    {
+      "manifest_path": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\sealed-cohort-v1\\training-only-manifest.json",
+      "model_root": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results"
+    }
+  ],
+  "source_seals": [
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\adapter\\generic-binary-v2\\adapter-seal.json",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\adapter\\generic-binary-v2\\g32-extension-run-v1\\run-seal.json",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\adapter\\generic-binary-v2\\g32-short-prefix-n36-run-v1\\run-seal.json"
+  ],
+  "expected_case_count": 12,
+  "expected_physical_bank_count": 9,
+  "expected_model_roles": 24,
+  "training_prefix_disclosure": "G32 n36 models fit only the first36 labeled costs; selecting that prefix used rank information from69 previously collected exploratory labels. All69-label models are retained.",
+  "no_development_or_winner_selection": true,
+  "all_twelve_cases_confirmed_regardless_of_development_gap": true
+}

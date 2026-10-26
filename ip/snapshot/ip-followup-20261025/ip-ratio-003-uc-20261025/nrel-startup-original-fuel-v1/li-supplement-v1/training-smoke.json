@@ -1,0 +1,44 @@
+{
+  "D": 192,
+  "K": 14,
+  "attention_layers": 2,
+  "case_id": "uc_startupheavy_G4T12_all_units_nrel_startup_seed101_n32",
+  "common_u": 48,
+  "confirmation_bank_accessed": false,
+  "continuous_p": 48,
+  "epochs": 1200,
+  "explicit_affine_map_reproduces_all_32_training_costs": true,
+  "integer_uvw": 144,
+  "n_train": 32,
+  "native_Li_constructor_passed": true,
+  "network_hidden_dim": 128,
+  "neural_fit_performed": false,
+  "original_training_files": {
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed101\\n32\\affine.json": "26ecb98b32511afd5d43f66acca5a5381f12233af2017d5b45bd0a7b8f805e47",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed101\\n32\\baseline-fit-metadata.json": "366ca55468e70fb8981baeda6b6910ef93ac4163acbfe5be28fb34dd8d89baa3",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed101\\n32\\baseline-models\\complete.json": "593088cb2ef360c996f69306d5516677be122b3e637e1babbda1759a79c2032e",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed101\\n32\\baseline-models\\mlopt.pkl": "1c7d5173848fe4e078989e6cf5703a9448ac6d8415cebf6c6365c20ed6ecb9a4",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed101\\n32\\baseline-models\\svm.pkl": "fe0deae23ab618e46eb7a8b4889d5d014ad721780673acf59cb6d97a8b9c2b91",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed101\\n32\\metadata.json": "f39b4521d1e83b2fe15f7b0e38f1e08e4acdfdf12935e7fe513eb28af2210529",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed101\\n32\\training.npz": "22dd4627d5e8c08a1d6f2bee3d1e0db10813c6a18f5f49b48e47e065baa361dd",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed101\\training-reference-certificates.json": "06f424ec5f38dba5e92120700d782e227db21dcf00e6bb52d8213a309b2fc100"
+  },
+  "query_index": 0,
+  "requested_top_k": [
+    1,
+    3,
+    5,
+    10,
+    30
+  ],
+  "schema": "uc-li-one-training-query-smoke-v1",
+  "seed": 101,
+  "source_sha256": {
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\code\\preference_baseline.py": "3825e64f3daa34884721cef260895d5e587da4366150f4b3ca17f6594c2ff9ba",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\confirm_n32.py": "5dfb457bfac7df3a1cef073a99a942a1d29e1985b3bef47e4d1c5db68650f8c1",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\global-freeze.json": "a47236f3e39465c1b6053d2c84282facc51ab7e1a281af247735ca6c0979beb3",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\li-supplement-v1\\uc_li_supplement.py": "b123f38ad9f8585ba9efdc001ad0c9da08df83cb2d2098c847ebfa8d3e9b3903",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\train_uc_baselines.py": "f9613f57036869e59d607ba62fa470df62893501183023d2e802f137777f01dd",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\uc_adapters.py": "b0f5cbd42a2099289c89cbd0b28bf41a6c2bbeed673af02abf9540862edb9f40"
+  }
+}

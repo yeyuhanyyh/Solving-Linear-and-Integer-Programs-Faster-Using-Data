@@ -1,0 +1,11 @@
+{
+  "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1019_n36",
+  "immutable_trainer_sha256": "606b7174070711f99e9a69ca53694462b3a8c17fcb88ab6bbf920c142c2733b7",
+  "maximum_knapsack_workers": 2,
+  "safe_duplicate_barrier": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\fit-logs\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36.log",
+  "scheduler_sha256": "7a8165b61e77576c89aeec9c4812a9859e01384343ef6b32758a4d8a7d9eb344",
+  "scientific_settings_changed": false,
+  "seed": 1019,
+  "started_at_utc": "2026-10-25T23:18:08.438073+00:00",
+  "workers_in_this_process": 1
+}

@@ -1,0 +1,703 @@
+{
+  "schema": "new-uc-small-baselines-complete-v1",
+  "source_binding": {
+    "version": "new-uc-common-u-svm-native-anchor-mlopt-v1-20261025",
+    "helper_source_sha256": "cad89cffdfff790005520be922dcf246b0c3052c34ad78d34a8ddab6ca0b197e",
+    "case_id": "uc_startupheavy_G4T12_all_units_nrel_startup_seed211_n32",
+    "n_train": 32,
+    "target_K": 14,
+    "supplied_dataset_fingerprint": "6222904c5605ea6436bc30dca6b9ac8cc30b0f74ce08b22436de696792c9eda7",
+    "supplied_source_hashes": {
+      "training.npz": "95452831427f52e3f5edd3b63d9141262930e9c80964204fb0bef974ef82b07d",
+      "metadata.json": "3da8814e0db9b542535fd48dd619a3c922bb5621cbecc6f5afbb4afc0fee8719",
+      "affine.json": "46f119cd088498c3ff94331d5dd4b2a2b8782a52b39dcc76a7dc1babfb09f750"
+    },
+    "common_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ],
+    "training_hash": "f277f0c5c30bf767cba22b79cce0d184ce42ad27f6c2f5e88c010c515e80766f",
+    "original_model_hash": "27f8bdd2cc765afdb44b383d7c54675db5167650539997e9ed71f6200aecb384",
+    "base_cost_hash": "80c6d99cd92c0e1891bdacfba6c8ea6602b6f138afd493fd4a7ff0b8f792b969",
+    "physical_metadata_hash": "446d7396f9f484ddccc7c6a4713603707a937a74a2e79bc35047dfb5e7bdc58e",
+    "source_hashes": {
+      "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\code\\portable_adapter.py": "aa2cbdb7a06f5955a8a030401a5ffe3fbe43e13fd3e9719bb68bf569c6e85850",
+      "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\code\\dimension_diagnostics.py": "adcec8c49e24fa373cdf92532e1a3e1c980fd10dea722d1225223f50e398c099",
+      "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\code\\mlopt_baseline.py": "ee35123e6212a72c663e3af98baf04fafd9d89b81ea64027934658706b57a068",
+      "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\code\\controls\\uc_model.py": "4e0b4b0d24fa1b2e54e3f399569976e1a53f429bd0ff8196976fa0713bacbf38",
+      "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\matched-k-supplement-20261010\\code\\svm_match.py": "4324295873b116df85b965efe275d4754f43bac7a3e7cbb7a5c6798881312d67",
+      "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\matched-k-supplement-20261010\\code\\strategy_match.py": "74ecd5b97480d3d50a5c0c1d5c128c33fc756f016409523d442950d1c6bd0434",
+      "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\natural-distribution-pilot-20261012\\covered-geometry-followup\\code\\fast_baselines.py": "d9e36195d8dc7663def225fc87fdac5571f8ee9996a2699df92395c24c8618be",
+      "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\natural-distribution-pilot-20261012\\covered-geometry-followup\\code\\native_anchor.py": "2924cf3204c9ed8cfe89db0f0b05e91f500602f190fd426ce9dd9051e945c972",
+      "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\natural-distribution-pilot-20261012\\covered-geometry-followup\\code\\mlopt_bridge.py": "443e5873cd30b6549a453e5c055caf933ed601aee31e8541335c6e5069f22a68",
+      "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\natural-distribution-pilot-20261012\\covered-geometry-followup\\code\\mlopt_impl.py": "4886b0283fbec2e59d23f4901bfcd3c1a9d46fe2fb8a54e515e177e07665a322"
+    },
+    "original_labels_generation_included": false,
+    "test_information_used": false
+  },
+  "artifact_sha256": {
+    "svm.pkl": "cd7d4b4a908320868b0e901d8f8c6f8cfd95fec146f17dc3bdd9bac2c720780f",
+    "mlopt.pkl": "1924b4024c71d746be8c8fb47e1be2ea9ad5d21f791de7648290a6f02ca4ff55"
+  },
+  "fit_metadata": {
+    "version": "new-uc-common-u-svm-native-anchor-mlopt-v1-20261025",
+    "case_id": "uc_startupheavy_G4T12_all_units_nrel_startup_seed211_n32",
+    "n_train": 32,
+    "full_original_dimension": 192,
+    "common_u_dimension": 48,
+    "target_K": 14,
+    "original_binary_dimension": 144,
+    "source_binding": {
+      "version": "new-uc-common-u-svm-native-anchor-mlopt-v1-20261025",
+      "helper_source_sha256": "cad89cffdfff790005520be922dcf246b0c3052c34ad78d34a8ddab6ca0b197e",
+      "case_id": "uc_startupheavy_G4T12_all_units_nrel_startup_seed211_n32",
+      "n_train": 32,
+      "target_K": 14,
+      "supplied_dataset_fingerprint": "6222904c5605ea6436bc30dca6b9ac8cc30b0f74ce08b22436de696792c9eda7",
+      "supplied_source_hashes": {
+        "training.npz": "95452831427f52e3f5edd3b63d9141262930e9c80964204fb0bef974ef82b07d",
+        "metadata.json": "3da8814e0db9b542535fd48dd619a3c922bb5621cbecc6f5afbb4afc0fee8719",
+        "affine.json": "46f119cd088498c3ff94331d5dd4b2a2b8782a52b39dcc76a7dc1babfb09f750"
+      },
+      "common_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "training_hash": "f277f0c5c30bf767cba22b79cce0d184ce42ad27f6c2f5e88c010c515e80766f",
+      "original_model_hash": "27f8bdd2cc765afdb44b383d7c54675db5167650539997e9ed71f6200aecb384",
+      "base_cost_hash": "80c6d99cd92c0e1891bdacfba6c8ea6602b6f138afd493fd4a7ff0b8f792b969",
+      "physical_metadata_hash": "446d7396f9f484ddccc7c6a4713603707a937a74a2e79bc35047dfb5e7bdc58e",
+      "source_hashes": {
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\code\\portable_adapter.py": "aa2cbdb7a06f5955a8a030401a5ffe3fbe43e13fd3e9719bb68bf569c6e85850",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\code\\dimension_diagnostics.py": "adcec8c49e24fa373cdf92532e1a3e1c980fd10dea722d1225223f50e398c099",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\code\\mlopt_baseline.py": "ee35123e6212a72c663e3af98baf04fafd9d89b81ea64027934658706b57a068",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\code\\controls\\uc_model.py": "4e0b4b0d24fa1b2e54e3f399569976e1a53f429bd0ff8196976fa0713bacbf38",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\matched-k-supplement-20261010\\code\\svm_match.py": "4324295873b116df85b965efe275d4754f43bac7a3e7cbb7a5c6798881312d67",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\matched-k-supplement-20261010\\code\\strategy_match.py": "74ecd5b97480d3d50a5c0c1d5c128c33fc756f016409523d442950d1c6bd0434",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\natural-distribution-pilot-20261012\\covered-geometry-followup\\code\\fast_baselines.py": "d9e36195d8dc7663def225fc87fdac5571f8ee9996a2699df92395c24c8618be",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\natural-distribution-pilot-20261012\\covered-geometry-followup\\code\\native_anchor.py": "2924cf3204c9ed8cfe89db0f0b05e91f500602f190fd426ce9dd9051e945c972",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\natural-distribution-pilot-20261012\\covered-geometry-followup\\code\\mlopt_bridge.py": "443e5873cd30b6549a453e5c055caf933ed601aee31e8541335c6e5069f22a68",
+        "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\natural-distribution-pilot-20261012\\covered-geometry-followup\\code\\mlopt_impl.py": "4886b0283fbec2e59d23f4901bfcd3c1a9d46fe2fb8a54e515e177e07665a322"
+      },
+      "original_labels_generation_included": false,
+      "test_information_used": false
+    },
+    "setup_and_shared_validation": {
+      "wall_seconds": 0.008530200022505596,
+      "cpu_seconds": 0.0
+    },
+    "fit_timer_scope": "learning only; shared setup/training-label generation/certification/model serialization excluded",
+    "training_label_count": 32,
+    "no_external_test_information": true,
+    "device": "cpu",
+    "torch_threads": 1,
+    "svm": {
+      "fit_seconds": 0.1813045000017155,
+      "fit_cpu_seconds": 0.1875,
+      "training_label_count": 32,
+      "neural_parameter_count": 0,
+      "fitted_classifier_count": 48,
+      "raw_metadata": {
+        "method": "Small-sample coordinate-SVM matched-K control",
+        "is_native_algorithm": false,
+        "fit_seconds": 0.17790089998743497,
+        "training_samples": 32,
+        "training_labels": "supplied certified training optimizers",
+        "common_ambient_dimension": 48,
+        "n_features": 12,
+        "constant_coordinate_count": 0,
+        "fitted_classifier_count": 48,
+        "nonconstant_coordinates_with_class_count_below_five": 0,
+        "coordinate_class_counts": [
+          [
+            19,
+            13
+          ],
+          [
+            22,
+            10
+          ],
+          [
+            13,
+            19
+          ],
+          [
+            10,
+            22
+          ],
+          [
+            19,
+            13
+          ],
+          [
+            22,
+            10
+          ],
+          [
+            13,
+            19
+          ],
+          [
+            10,
+            22
+          ],
+          [
+            19,
+            13
+          ],
+          [
+            22,
+            10
+          ],
+          [
+            13,
+            19
+          ],
+          [
+            10,
+            22
+          ],
+          [
+            19,
+            13
+          ],
+          [
+            22,
+            10
+          ],
+          [
+            13,
+            19
+          ],
+          [
+            10,
+            22
+          ],
+          [
+            10,
+            22
+          ],
+          [
+            20,
+            12
+          ],
+          [
+            17,
+            15
+          ],
+          [
+            6,
+            26
+          ],
+          [
+            10,
+            22
+          ],
+          [
+            20,
+            12
+          ],
+          [
+            17,
+            15
+          ],
+          [
+            6,
+            26
+          ],
+          [
+            10,
+            22
+          ],
+          [
+            20,
+            12
+          ],
+          [
+            20,
+            12
+          ],
+          [
+            7,
+            25
+          ],
+          [
+            10,
+            22
+          ],
+          [
+            21,
+            11
+          ],
+          [
+            20,
+            12
+          ],
+          [
+            8,
+            24
+          ],
+          [
+            11,
+            21
+          ],
+          [
+            23,
+            9
+          ],
+          [
+            19,
+            13
+          ],
+          [
+            11,
+            21
+          ],
+          [
+            11,
+            21
+          ],
+          [
+            23,
+            9
+          ],
+          [
+            19,
+            13
+          ],
+          [
+            11,
+            21
+          ],
+          [
+            11,
+            21
+          ],
+          [
+            23,
+            9
+          ],
+          [
+            19,
+            13
+          ],
+          [
+            11,
+            21
+          ],
+          [
+            11,
+            21
+          ],
+          [
+            23,
+            9
+          ],
+          [
+            19,
+            13
+          ],
+          [
+            11,
+            21
+          ]
+        ],
+        "estimator": "StandardScaler followed by linear SVC(C=1, probability=True)",
+        "probability_calibration": "libsvm training-only sigmoid calibration",
+        "scaling": "StandardScaler fitted on the supplied training features",
+        "calibration_caveat": "Tiny classes can yield weak confidence estimates",
+        "random_state": 211,
+        "original_Table1_gate_used": false,
+        "parameter_selection": "fixed protocol; no test information used",
+        "prediction": "class-1 probability MAP; p=0.5 selects 1",
+        "confidence": "max(p,1-p)",
+        "tie_break": "original common-column index",
+        "target_K": "affine rank of the same supplied training optimizers"
+      }
+    },
+    "mlopt": {
+      "fit_seconds": 1.2380951999803074,
+      "fit_cpu_seconds": 1.21875,
+      "training_label_count": 32,
+      "trainable_parameter_count": 3551,
+      "selected_configuration": {
+        "hidden": [
+          32,
+          32,
+          32
+        ],
+        "learning_rate": 0.001,
+        "epochs": 150,
+        "validation_n": 6,
+        "validation_recovered": 0,
+        "validation_feasible": 6,
+        "validation_mean_gap_with_failure_penalty": 0.1521852694909474
+      },
+      "input_dimension": 12,
+      "retained_strategy_count": 31,
+      "neural_fit_grid_count": 8,
+      "final_refit_count": 1,
+      "raw_metadata": {
+        "method": "MLOPT-native-v2-paper-fixed120",
+        "paper": "https://arxiv.org/html/1907.02206v4",
+        "author_source_commit": "48cb9f8b004b648d0c6bbfb586623a6696ebbcca",
+        "config": {
+          "active_tolerance": 1e-07,
+          "feasibility_tolerance": 1e-06,
+          "rank_tolerance": 1e-10,
+          "pruning_alpha": 0.05,
+          "pruning_suboptimality": 0.0001,
+          "pruning_max_iterations": 20,
+          "n_best": 10,
+          "validation_fraction": 0.2,
+          "hidden_candidates": [
+            [
+              32,
+              32,
+              32
+            ],
+            [
+              64,
+              64,
+              64
+            ]
+          ],
+          "learning_rates": [
+            0.001,
+            0.01
+          ],
+          "epoch_candidates": [
+            50,
+            150
+          ],
+          "dropout": 0.1,
+          "batch_size": 32,
+          "seed": 211,
+          "device": "cpu"
+        },
+        "training_cost_budget": 32,
+        "adaptive_exploration_stopping_claimed": false,
+        "source_of_labels": "frozen full original optimizers",
+        "validation_source": "only an internal split of the training costs",
+        "training_indices": [
+          26,
+          12,
+          27,
+          11,
+          10,
+          31,
+          23,
+          15,
+          17,
+          5,
+          16,
+          30,
+          19,
+          20,
+          1,
+          8,
+          14,
+          4,
+          21,
+          3,
+          6,
+          0,
+          24,
+          28,
+          25,
+          2
+        ],
+        "validation_indices": [
+          18,
+          29,
+          22,
+          9,
+          13,
+          7
+        ],
+        "validation_trials": [
+          {
+            "hidden": [
+              32,
+              32,
+              32
+            ],
+            "learning_rate": 0.001,
+            "epochs": 50,
+            "validation_n": 6,
+            "validation_recovered": 0,
+            "validation_feasible": 6,
+            "validation_mean_gap_with_failure_penalty": 0.27670041840142107
+          },
+          {
+            "hidden": [
+              32,
+              32,
+              32
+            ],
+            "learning_rate": 0.001,
+            "epochs": 150,
+            "validation_n": 6,
+            "validation_recovered": 0,
+            "validation_feasible": 6,
+            "validation_mean_gap_with_failure_penalty": 0.1521852694909474
+          },
+          {
+            "hidden": [
+              32,
+              32,
+              32
+            ],
+            "learning_rate": 0.01,
+            "epochs": 50,
+            "validation_n": 6,
+            "validation_recovered": 0,
+            "validation_feasible": 6,
+            "validation_mean_gap_with_failure_penalty": 0.1521852694909474
+          },
+          {
+            "hidden": [
+              32,
+              32,
+              32
+            ],
+            "learning_rate": 0.01,
+            "epochs": 150,
+            "validation_n": 6,
+            "validation_recovered": 0,
+            "validation_feasible": 6,
+            "validation_mean_gap_with_failure_penalty": 0.1521852694909474
+          },
+          {
+            "hidden": [
+              64,
+              64,
+              64
+            ],
+            "learning_rate": 0.001,
+            "epochs": 50,
+            "validation_n": 6,
+            "validation_recovered": 0,
+            "validation_feasible": 6,
+            "validation_mean_gap_with_failure_penalty": 0.24080619969933834
+          },
+          {
+            "hidden": [
+              64,
+              64,
+              64
+            ],
+            "learning_rate": 0.001,
+            "epochs": 150,
+            "validation_n": 6,
+            "validation_recovered": 0,
+            "validation_feasible": 6,
+            "validation_mean_gap_with_failure_penalty": 0.1521852694909474
+          },
+          {
+            "hidden": [
+              64,
+              64,
+              64
+            ],
+            "learning_rate": 0.01,
+            "epochs": 50,
+            "validation_n": 6,
+            "validation_recovered": 0,
+            "validation_feasible": 6,
+            "validation_mean_gap_with_failure_penalty": 0.1521852694909474
+          },
+          {
+            "hidden": [
+              64,
+              64,
+              64
+            ],
+            "learning_rate": 0.01,
+            "epochs": 150,
+            "validation_n": 6,
+            "validation_recovered": 0,
+            "validation_feasible": 6,
+            "validation_mean_gap_with_failure_penalty": 0.1521852694909474
+          }
+        ],
+        "selected_hyperparameters": {
+          "hidden": [
+            32,
+            32,
+            32
+          ],
+          "learning_rate": 0.001,
+          "epochs": 150,
+          "validation_n": 6,
+          "validation_recovered": 0,
+          "validation_feasible": 6,
+          "validation_mean_gap_with_failure_penalty": 0.1521852694909474
+        },
+        "validation_bank": {
+          "n_samples": 26,
+          "n_full_strategies": 25,
+          "n_integer_coordinates": 144,
+          "n_continuous_coordinates": 48,
+          "n_canonical_inequalities": 720,
+          "n_permanent_equalities": 60,
+          "decoder_status_counts": {
+            "decoded": 25
+          },
+          "max_representative_reconstruction_error": 1.7053025658242404e-13,
+          "offline_decoder_seconds": 0.034847900009481236
+        },
+        "validation_pruning": {
+          "iterations": [
+            {
+              "iteration": 0,
+              "alpha": 0.05,
+              "selected": 25,
+              "discarded_samples": 0,
+              "accepted": true,
+              "worst_reassignment_gap": 0.0
+            }
+          ],
+          "candidate_decodes": 0,
+          "n_retained": 25,
+          "fallback_to_unpruned": false
+        },
+        "final_bank": {
+          "n_samples": 32,
+          "n_full_strategies": 31,
+          "n_integer_coordinates": 144,
+          "n_continuous_coordinates": 48,
+          "n_canonical_inequalities": 720,
+          "n_permanent_equalities": 60,
+          "decoder_status_counts": {
+            "decoded": 31
+          },
+          "max_representative_reconstruction_error": 1.7053025658242404e-13,
+          "offline_decoder_seconds": 0.029880699992645532
+        },
+        "final_pruning": {
+          "iterations": [
+            {
+              "iteration": 0,
+              "alpha": 0.05,
+              "selected": 31,
+              "discarded_samples": 0,
+              "accepted": true,
+              "worst_reassignment_gap": 0.0
+            }
+          ],
+          "candidate_decodes": 0,
+          "n_retained": 31,
+          "fallback_to_unpruned": false
+        },
+        "n_retained_strategies": 31,
+        "fit_seconds": 1.2338007000216749,
+        "training_device": "cpu",
+        "prediction_device": "cpu",
+        "native_compression_dimension_parameter": null,
+        "solver_calls_at_prediction": 0,
+        "kkt_regularization": false,
+        "decoder": "integer elimination, pivoted-QR independent rows, cached sparse LU; P=0"
+      }
+    }
+  },
+  "serialization": {
+    "wall_seconds": 0.056491499999538064,
+    "cpu_seconds": 0.0,
+    "scope": "model pickle writes and SHA256 hashing; fit clocks and receipt serialization excluded"
+  },
+  "original_training_label_generation_included": false,
+  "no_confirmation_information_used": true
+}

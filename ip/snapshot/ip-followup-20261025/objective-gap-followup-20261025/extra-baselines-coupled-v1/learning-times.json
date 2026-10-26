@@ -1,0 +1,330 @@
+{
+  "note": "Model fit excludes label generation. Wrapper includes first-use imports; phase clocks separate original eight-grid, validation and final refit. Do not mix warm-started and cold-import clocks.",
+  "roles": [
+    {
+      "D": 96,
+      "K": 32,
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1009_n36",
+      "complete_path": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\svm\\complete.json",
+      "complete_sha256": "07dd6d4c1f5d69730957a9bf32534ab01b123ff379dfd15c418dbc689e73555c",
+      "method": "svm",
+      "model_fit_seconds": 0.31948999999440275,
+      "n_train": 36,
+      "selected_hyperparameters": null,
+      "timing_phases": null,
+      "validation_trials": 0,
+      "wrapper_fit_cpu_seconds": 1.921875,
+      "wrapper_fit_wall_seconds": 9.995125000015832
+    },
+    {
+      "D": 96,
+      "K": 32,
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1009_n36",
+      "complete_path": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\mlopt\\complete.json",
+      "complete_sha256": "019616efeea9c80c49103ab3cc24346e5a18f0137b7e64d21df466ac4db3c70e",
+      "method": "mlopt",
+      "model_fit_seconds": 1.962159899994731,
+      "n_train": 36,
+      "selected_hyperparameters": {
+        "epochs": 50,
+        "hidden": [
+          64,
+          64,
+          64
+        ],
+        "learning_rate": 0.01,
+        "validation_feasible": 7,
+        "validation_mean_gap_with_failure_penalty": 0.05113762848177559,
+        "validation_n": 7,
+        "validation_recovered": 0
+      },
+      "timing_phases": {
+        "development_cpu_seconds": 1.546875,
+        "development_grid_fit_cpu_seconds": 1.53125,
+        "development_grid_fit_wall_seconds": 1.8535360000096262,
+        "development_validation_cpu_seconds": 0.015625,
+        "development_validation_wall_seconds": 0.017977300012717023,
+        "development_wall_seconds": 1.8847160000004806,
+        "final_refit_cpu_seconds": 0.078125,
+        "final_refit_wall_seconds": 0.07724339998094365,
+        "phase_scope": "development includes strategy construction/pruning, eight network fits and validation; final includes new all-n bank/pruning and one selected network refit",
+        "total_fit_cpu_seconds": 1.625,
+        "total_fit_wall_seconds": 1.962159899994731
+      },
+      "validation_trials": 8,
+      "wrapper_fit_cpu_seconds": 4.984375,
+      "wrapper_fit_wall_seconds": 7.621832300006645
+    },
+    {
+      "D": 96,
+      "K": 32,
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1013_n36",
+      "complete_path": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1013_n36\\svm\\complete.json",
+      "complete_sha256": "864ee4f93a9df2706dd9668829f455abd7183b16d85cbe6291ba10e289ce4c93",
+      "method": "svm",
+      "model_fit_seconds": 0.1509115000080783,
+      "n_train": 36,
+      "selected_hyperparameters": null,
+      "timing_phases": null,
+      "validation_trials": 0,
+      "wrapper_fit_cpu_seconds": 0.140625,
+      "wrapper_fit_wall_seconds": 0.1522943000018131
+    },
+    {
+      "D": 96,
+      "K": 32,
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1013_n36",
+      "complete_path": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1013_n36\\mlopt\\complete.json",
+      "complete_sha256": "e278a55ac4f18e60271e9cadb2f5264d1428f12a2f5f4a1ed8c73e39b06876dc",
+      "method": "mlopt",
+      "model_fit_seconds": 0.6935415999905672,
+      "n_train": 36,
+      "selected_hyperparameters": {
+        "epochs": 50,
+        "hidden": [
+          32,
+          32,
+          32
+        ],
+        "learning_rate": 0.001,
+        "validation_feasible": 7,
+        "validation_mean_gap_with_failure_penalty": 0.06256212935277813,
+        "validation_n": 7,
+        "validation_recovered": 0
+      },
+      "timing_phases": {
+        "development_cpu_seconds": 0.625,
+        "development_grid_fit_cpu_seconds": 0.59375,
+        "development_grid_fit_wall_seconds": 0.5941269000177272,
+        "development_validation_cpu_seconds": 0.015625,
+        "development_validation_wall_seconds": 0.018812399997841567,
+        "development_wall_seconds": 0.6221525000000838,
+        "final_refit_cpu_seconds": 0.0625,
+        "final_refit_wall_seconds": 0.0712026999972295,
+        "phase_scope": "development includes strategy construction/pruning, eight network fits and validation; final includes new all-n bank/pruning and one selected network refit",
+        "total_fit_cpu_seconds": 0.6875,
+        "total_fit_wall_seconds": 0.6935415999905672
+      },
+      "validation_trials": 8,
+      "wrapper_fit_cpu_seconds": 0.703125,
+      "wrapper_fit_wall_seconds": 0.6981542999856174
+    },
+    {
+      "D": 96,
+      "K": 32,
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1019_n36",
+      "complete_path": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36\\svm\\complete.json",
+      "complete_sha256": "e2cee2604221a5591347f84540bcde4a538721b05761ed0b41ca646007835205",
+      "method": "svm",
+      "model_fit_seconds": 0.32124190000467934,
+      "n_train": 36,
+      "selected_hyperparameters": null,
+      "timing_phases": null,
+      "validation_trials": 0,
+      "wrapper_fit_cpu_seconds": 1.90625,
+      "wrapper_fit_wall_seconds": 9.990501099993708
+    },
+    {
+      "D": 96,
+      "K": 32,
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1019_n36",
+      "complete_path": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36\\mlopt\\complete.json",
+      "complete_sha256": "c44f7dbd8dcf2b6091986e7f3679f58a167b2afe793e675758682b4255595d90",
+      "method": "mlopt",
+      "model_fit_seconds": 1.9574540999892633,
+      "n_train": 36,
+      "selected_hyperparameters": {
+        "epochs": 50,
+        "hidden": [
+          32,
+          32,
+          32
+        ],
+        "learning_rate": 0.01,
+        "validation_feasible": 7,
+        "validation_mean_gap_with_failure_penalty": 0.040319803457903695,
+        "validation_n": 7,
+        "validation_recovered": 0
+      },
+      "timing_phases": {
+        "development_cpu_seconds": 1.625,
+        "development_grid_fit_cpu_seconds": 1.578125,
+        "development_grid_fit_wall_seconds": 1.8553190999955405,
+        "development_validation_cpu_seconds": 0.03125,
+        "development_validation_wall_seconds": 0.018552299967268482,
+        "development_wall_seconds": 1.8838372000027448,
+        "final_refit_cpu_seconds": 0.078125,
+        "final_refit_wall_seconds": 0.0733503999945242,
+        "phase_scope": "development includes strategy construction/pruning, eight network fits and validation; final includes new all-n bank/pruning and one selected network refit",
+        "total_fit_cpu_seconds": 1.703125,
+        "total_fit_wall_seconds": 1.9574540999892633
+      },
+      "validation_trials": 8,
+      "wrapper_fit_cpu_seconds": 5.0625,
+      "wrapper_fit_wall_seconds": 7.6055440999916755
+    },
+    {
+      "D": 48,
+      "K": 16,
+      "case_id": "coupledbundle_uniformgross_random16_b0.5_seed1009_n37",
+      "complete_path": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random16_b0.5_seed1009_n37\\svm\\complete.json",
+      "complete_sha256": "03a542d3739475101854981ddf3ae25fc2d4bfa7d26924c6f982c2072490ed00",
+      "method": "svm",
+      "model_fit_seconds": 0.25809400001890026,
+      "n_train": 37,
+      "selected_hyperparameters": null,
+      "timing_phases": null,
+      "validation_trials": 0,
+      "wrapper_fit_cpu_seconds": 2.21875,
+      "wrapper_fit_wall_seconds": 3.1982518000004347
+    },
+    {
+      "D": 48,
+      "K": 16,
+      "case_id": "coupledbundle_uniformgross_random16_b0.5_seed1009_n37",
+      "complete_path": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random16_b0.5_seed1009_n37\\mlopt\\complete.json",
+      "complete_sha256": "e9d8f0b6a4d26beed42f764e7fff5cdb3deb0b43a14e6087297258dbf3b7f9a7",
+      "method": "mlopt",
+      "model_fit_seconds": 3.240442400012398,
+      "n_train": 37,
+      "selected_hyperparameters": {
+        "epochs": 50,
+        "hidden": [
+          32,
+          32,
+          32
+        ],
+        "learning_rate": 0.01,
+        "validation_feasible": 7,
+        "validation_mean_gap_with_failure_penalty": 0.032246001824261836,
+        "validation_n": 7,
+        "validation_recovered": 3
+      },
+      "timing_phases": {
+        "development_cpu_seconds": 2.578125,
+        "development_grid_fit_cpu_seconds": 2.53125,
+        "development_grid_fit_wall_seconds": 2.9960616000171285,
+        "development_validation_cpu_seconds": 0.046875,
+        "development_validation_wall_seconds": 0.03160679998109117,
+        "development_wall_seconds": 3.0392768000019714,
+        "final_refit_cpu_seconds": 0.203125,
+        "final_refit_wall_seconds": 0.20088720001513138,
+        "phase_scope": "development includes strategy construction/pruning, eight network fits and validation; final includes new all-n bank/pruning and one selected network refit",
+        "total_fit_cpu_seconds": 2.78125,
+        "total_fit_wall_seconds": 3.240442400012398
+      },
+      "validation_trials": 8,
+      "wrapper_fit_cpu_seconds": 8.171875,
+      "wrapper_fit_wall_seconds": 9.760671700001694
+    },
+    {
+      "D": 48,
+      "K": 16,
+      "case_id": "coupledbundle_uniformgross_random16_b0.5_seed1013_n37",
+      "complete_path": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random16_b0.5_seed1013_n37\\svm\\complete.json",
+      "complete_sha256": "f1cd6f292e6d5f0899b2af1fb879c67f57d99f893342974620a183cda6701724",
+      "method": "svm",
+      "model_fit_seconds": 0.14848360000178218,
+      "n_train": 37,
+      "selected_hyperparameters": null,
+      "timing_phases": null,
+      "validation_trials": 0,
+      "wrapper_fit_cpu_seconds": 0.140625,
+      "wrapper_fit_wall_seconds": 0.1498048000212293
+    },
+    {
+      "D": 48,
+      "K": 16,
+      "case_id": "coupledbundle_uniformgross_random16_b0.5_seed1013_n37",
+      "complete_path": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random16_b0.5_seed1013_n37\\mlopt\\complete.json",
+      "complete_sha256": "c983a5d460cf51d8c05d8d6569baf83e8349330229eb022de3ff66a99aec912d",
+      "method": "mlopt",
+      "model_fit_seconds": 1.7742297000077087,
+      "n_train": 37,
+      "selected_hyperparameters": {
+        "epochs": 150,
+        "hidden": [
+          64,
+          64,
+          64
+        ],
+        "learning_rate": 0.001,
+        "validation_feasible": 7,
+        "validation_mean_gap_with_failure_penalty": 0.02682908436291936,
+        "validation_n": 7,
+        "validation_recovered": 4
+      },
+      "timing_phases": {
+        "development_cpu_seconds": 1.34375,
+        "development_grid_fit_cpu_seconds": 1.21875,
+        "development_grid_fit_wall_seconds": 1.3076803000003565,
+        "development_validation_cpu_seconds": 0.109375,
+        "development_validation_wall_seconds": 0.048859500006074086,
+        "development_wall_seconds": 1.3759513000259176,
+        "final_refit_cpu_seconds": 0.390625,
+        "final_refit_wall_seconds": 0.39789970000856556,
+        "phase_scope": "development includes strategy construction/pruning, eight network fits and validation; final includes new all-n bank/pruning and one selected network refit",
+        "total_fit_cpu_seconds": 1.734375,
+        "total_fit_wall_seconds": 1.7742297000077087
+      },
+      "validation_trials": 8,
+      "wrapper_fit_cpu_seconds": 1.75,
+      "wrapper_fit_wall_seconds": 1.7832926999835763
+    },
+    {
+      "D": 48,
+      "K": 16,
+      "case_id": "coupledbundle_uniformgross_random16_b0.5_seed1019_n37",
+      "complete_path": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random16_b0.5_seed1019_n37\\svm\\complete.json",
+      "complete_sha256": "df4292d35299422e0a7dd1c10c8be11a7ea2028a3727aac38e80d765cbb4d62c",
+      "method": "svm",
+      "model_fit_seconds": 0.2562280000129249,
+      "n_train": 37,
+      "selected_hyperparameters": null,
+      "timing_phases": null,
+      "validation_trials": 0,
+      "wrapper_fit_cpu_seconds": 2.265625,
+      "wrapper_fit_wall_seconds": 3.172126899997238
+    },
+    {
+      "D": 48,
+      "K": 16,
+      "case_id": "coupledbundle_uniformgross_random16_b0.5_seed1019_n37",
+      "complete_path": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random16_b0.5_seed1019_n37\\mlopt\\complete.json",
+      "complete_sha256": "df4cd36405786d5431281527cbfe92ddcdd4f969a86f735b1c348de560a31d8b",
+      "method": "mlopt",
+      "model_fit_seconds": 3.6137097000028007,
+      "n_train": 37,
+      "selected_hyperparameters": {
+        "epochs": 150,
+        "hidden": [
+          64,
+          64,
+          64
+        ],
+        "learning_rate": 0.001,
+        "validation_feasible": 7,
+        "validation_mean_gap_with_failure_penalty": 0.029244302259388733,
+        "validation_n": 7,
+        "validation_recovered": 1
+      },
+      "timing_phases": {
+        "development_cpu_seconds": 2.65625,
+        "development_grid_fit_cpu_seconds": 2.625,
+        "development_grid_fit_wall_seconds": 3.0157384999329224,
+        "development_validation_cpu_seconds": 0.03125,
+        "development_validation_wall_seconds": 0.027476800023578107,
+        "development_wall_seconds": 3.058895299996948,
+        "final_refit_cpu_seconds": 0.546875,
+        "final_refit_wall_seconds": 0.5543902000063099,
+        "phase_scope": "development includes strategy construction/pruning, eight network fits and validation; final includes new all-n bank/pruning and one selected network refit",
+        "total_fit_cpu_seconds": 3.203125,
+        "total_fit_wall_seconds": 3.6137097000028007
+      },
+      "validation_trials": 8,
+      "wrapper_fit_cpu_seconds": 8.546875,
+      "wrapper_fit_wall_seconds": 10.056621499999892
+    }
+  ],
+  "schema": "coupled-extra-baselines-learning-times-v1"
+}

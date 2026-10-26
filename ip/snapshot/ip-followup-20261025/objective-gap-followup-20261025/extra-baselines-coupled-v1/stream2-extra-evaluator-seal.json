@@ -1,0 +1,10 @@
+{
+  "schema": "stream2-extra-evaluator-seal-v1",
+  "evaluator_path": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\evaluate_stream2_extras.py",
+  "evaluator_sha256": "b43f33f5921f31ae9fb3089503f7803d9b915517bc2ede218ab1f5444cfa5cc1",
+  "model_freeze_sha256": "b40db9584786810ab1a661ac8d8968f232663bb04bf87f5ff336db5b9b737d26",
+  "prepared_after_global_model_freeze": true,
+  "no_frozen_method_or_model_changes": true,
+  "bank_read_by_supplemental_evaluator_before_sealing": false,
+  "note": "Models and SVM/MLOPT protocols were included in all15role freeze before RNG. Only this evaluator was prepared later; global freeze and existing sources remain unchanged."
+}

@@ -1,0 +1,10 @@
+{
+  "Li_fitted_after_original_test_generation": true,
+  "evaluator_sha256": "fe1916b4725f034ec07bbc6aabfc2fa226da192587f8c284f77d2cc4adb2d053",
+  "existing_360_reference_check_sha256": "e1404485b8b16641a020ef0481386392d0dbe1b4a204cd07dbfc6ca10a40d7f5",
+  "li_model_freeze_sha256": "c7a2cf8968d685204d1f2f5ae7513dd697865437158d749ff44328221d1af486",
+  "models_frozen_before_Li_evaluation": true,
+  "original_stream2_freeze_sha256": "b40db9584786810ab1a661ac8d8968f232663bb04bf87f5ff336db5b9b737d26",
+  "started_at_utc": "2026-10-25T23:34:43.481521+00:00",
+  "test_used_for_selection": false
+}

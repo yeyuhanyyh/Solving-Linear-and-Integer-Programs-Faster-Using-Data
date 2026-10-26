@@ -1,0 +1,53 @@
+{
+  "schema": "independent-fresh-confirmation-source-review-v1",
+  "status": "PASS_SOURCE_ONLY",
+  "reviewer": "/root/ip_followup_quality_audit",
+  "review_date": "2026-10-25",
+  "scope": "Static source/API/metric review only. No fresh source import or execution, model execution, solver, RNG, or confirmation-bank access was performed by this reviewer.",
+  "source_sha256": {
+    "fresh_bank_cli.py": "62a6557c74bfcc791c74bc462252f3dc8cd7ce67d4e98c2eb5e9f2f4908eab09",
+    "fresh-confirmation-protocol.json": "adc97d04dda07e78de7cec7986deb6eb77c1bdd48560f8fcaf626ab3eb1778f0",
+    "confirmation_runner.py": "d5805a5f0b214ce7ce078f06046403334878f97f8afdfe2b9890ebd9d514ec51",
+    "verify_evaluator_equivalence.py": "e15becc30605beae3ef261d1e875727a0b92e26e9b2f6814a7264dbdb26f4a48"
+  },
+  "protocol_counts": {
+    "cases": 12,
+    "method_roles": 24,
+    "neural_models": 12,
+    "physical_banks": 9,
+    "distinct_original_objectives": 1080,
+    "case_queries": 1440,
+    "method_returns": 2880,
+    "count_per_case": 120
+  },
+  "checks": {
+    "literal_expected_freeze_digest_required_before_runner_import": true,
+    "all_twelve_semantic_and_source_validation_before_rng_or_bank_access": true,
+    "global_gate_repeated_at_physical_bank_boundary": true,
+    "g32_n36_and_n69_share_physical_rng_and_bank": true,
+    "rng_namespace_independent_of_n_models_and_outcomes": true,
+    "same_frozen_uniform_original_gross_profit_law": true,
+    "original_full_rows_domains_and_integrality_retained": true,
+    "cold_full_primal_dual_and_independent_mwis_reference_agreement": true,
+    "mwis_state_cap_includes_zero_state": true,
+    "mwis_wall_cap_includes_state_digest_certification": true,
+    "partial_reference_failures_preserved_without_redraw": true,
+    "generator_and_bank_loader_schema_and_call_compatibility": true,
+    "all_120_reference_record_hashes_and_original_objectives_verified_by_loader": true,
+    "inference_scientific_block_and_23_row_11_summary_assignments_pinned": true,
+    "strict_30_second_validity_and_full_recovery_denominator_preserved": true,
+    "phase_shadow_used_only_in_memory_for_original_record_verifier": true,
+    "single_thread_torch_binding_restored": true,
+    "results_output_disjoint_from_models_and_banks": true
+  },
+  "blocking_findings": [],
+  "limitations_and_required_followup": [
+    "A source-only PASS does not establish successful generation, model convergence, empirical quality, or timing speedup.",
+    "After the root-authorized global freeze and evaluation, audit all nine banks, twelve cases and both methods; a selected subset is insufficient.",
+    "Independently recompute each of the 1080 reference objectives using a separately implemented MWIS algorithm rather than calling the generator helper.",
+    "Keep objective-ratio valid denominators and full recovery denominators explicit, including invalid and late results.",
+    "G32 n36 fitting uses the first 36 of 69 already collected exploratory training labels; do not report total offline label acquisition as 36.",
+    "Original historical training-label generation wall time is unknown; newly measured reference generation is separate and does not support a speedup claim.",
+    "Final all-training-set ND fit diagnostics must be reported separately from the tiny sanity-network gate; do not attribute non-interpolating training outcomes solely to generalization."
+  ]
+}

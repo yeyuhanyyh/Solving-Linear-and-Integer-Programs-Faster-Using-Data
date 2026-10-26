@@ -1,0 +1,32 @@
+{
+  "maximum_knapsack_workers_override": 2,
+  "model_freeze_sha256": "c7a2cf8968d685204d1f2f5ae7513dd697865437158d749ff44328221d1af486",
+  "models": [
+    {
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1009_n36",
+      "checkpoint_sha256": "7fd6e9675f660f1e01e0bad8a583edbb1237f8462366074d40ceef4b328d8d2e",
+      "fit_cpu_seconds": 412.15625,
+      "fit_seconds": 417.9696958999848,
+      "seed": 1009
+    },
+    {
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1013_n36",
+      "checkpoint_sha256": "b5072aa3df916770a9d7d367aef3cd3023b673ce05718eeece19e53c4d9587b8",
+      "fit_cpu_seconds": 855.78125,
+      "fit_seconds": 873.1704697000096,
+      "seed": 1013
+    },
+    {
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1019_n36",
+      "checkpoint_sha256": "c18770b623dd55c245b40e6ba727e6e9587f7601a6dbb1e6ed02356583f3a523",
+      "fit_cpu_seconds": 831.375,
+      "fit_seconds": 848.0691600999853,
+      "seed": 1019
+    }
+  ],
+  "original_protocol_sha256": "123d676b2d9d6d6694f3c9d56f117cf8e07645d4e8611fdd800c33ac29cfafd1",
+  "schedule": "Original serial worker1009\u21921013; separately authorized worker1019. The exclusive1019 log prevents a duplicate serial fit at its safe pre-fit boundary.",
+  "scientific_training_source_unchanged": true,
+  "status": "ALL_THREE_NATIVE_LI_FITS_COMPLETE",
+  "training_source_sha256": "606b7174070711f99e9a69ca53694462b3a8c17fcb88ab6bbf920c142c2733b7"
+}

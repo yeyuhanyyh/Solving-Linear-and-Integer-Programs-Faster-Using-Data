@@ -11,3 +11,9 @@ results/**/*_runs/
 # Regenerated aggregates; figure-specific raw CSV files are tracked.
 results/fresh/timing_repeated.csv
 results/timing/timing_repeated.csv
+
+# Frozen IP checkpoints are part of the reproduction package.
+!ip/snapshot/**/*.pt
+
+# New IP runs do not replace the bundled experiments.
+ip/runs/

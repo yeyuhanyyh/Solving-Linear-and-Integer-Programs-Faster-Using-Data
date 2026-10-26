@@ -1,0 +1,22 @@
+{
+  "all_15_model_roles_revalidated_before_rng": true,
+  "all_case_guards_revalidated_before_rng": true,
+  "case_ids": [
+    "coupledbundle_uniformgross_random32_b0.5_seed1013_n36"
+  ],
+  "created_utc": "2026-10-25T22:18:29.859245+00:00",
+  "guard": {
+    "model_freeze_sha256": "b40db9584786810ab1a661ac8d8968f232663bb04bf87f5ff336db5b9b737d26",
+    "protocol_sha256": "61dfdc99b545e25354397d0467890e26935dd56a75f50c657e7297226e56ecc7"
+  },
+  "method_ids": [
+    "ours",
+    "neural_diving_original",
+    "neural_diving_continued",
+    "svm",
+    "mlopt"
+  ],
+  "physical_id": "stream2_G32_seed1013",
+  "rng_namespace": "coupled-bundle-independent-uniform-gross-stream2-fixed-budget-v1-20261025",
+  "stream_id": "stream2"
+}

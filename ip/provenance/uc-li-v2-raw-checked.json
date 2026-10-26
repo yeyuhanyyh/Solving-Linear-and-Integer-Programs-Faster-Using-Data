@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "method": "Li",
+  "total": 360,
+  "recovered": 79,
+  "recovery_percent": 21.944444444444443,
+  "ratio_N": 360,
+  "objective_ratio": 0.9060160132503733,
+  "invalid_count": 0,
+  "late_count": 0,
+  "per_seed": [
+    {
+      "seed": 101,
+      "case_id": "uc_startupheavy_G4T12_all_units_nrel_startup_seed101_n32",
+      "K": 14,
+      "total": 120,
+      "ratio_N": 120,
+      "recovered": 27,
+      "objective_ratio": 0.9131495805117533
+    },
+    {
+      "seed": 211,
+      "case_id": "uc_startupheavy_G4T12_all_units_nrel_startup_seed211_n32",
+      "K": 14,
+      "total": 120,
+      "ratio_N": 120,
+      "recovered": 18,
+      "objective_ratio": 0.8758684530490868
+    },
+    {
+      "seed": 307,
+      "case_id": "uc_startupheavy_G4T12_all_units_nrel_startup_seed307_n32",
+      "K": 17,
+      "total": 120,
+      "ratio_N": 120,
+      "recovered": 34,
+      "objective_ratio": 0.9290300061902795
+    }
+  ],
+  "source_sha256": {
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\li-supplement-v1\\same-bank-results-v2\\uc_startupheavy_G4T12_all_units_nrel_startup_seed101_n32\\complete.json": "cec542ac8b53537d239e81e9df1b3625da75f00d831ca8de1c60db428dd8657d",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\results-v1\\uc_startupheavy_G4T12_all_units_nrel_startup_seed101_n32\\confirmation.npz": "1022b19104fb9b29e50e754ba5877ed9e9315ea8e6021b10b563bcb0084e3a9c",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\li-supplement-v1\\same-bank-results-v2\\uc_startupheavy_G4T12_all_units_nrel_startup_seed211_n32\\complete.json": "a52c572719d739715c20e9984e43dad6843da401dc128deb9b00099a30d554fd",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\results-v1\\uc_startupheavy_G4T12_all_units_nrel_startup_seed211_n32\\confirmation.npz": "5bc5a833377b6af3e990849c8e090ec68eecddc137f2985e9b2eb0e640344c02",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\li-supplement-v1\\same-bank-results-v2\\uc_startupheavy_G4T12_all_units_nrel_startup_seed307_n32\\complete.json": "502b3510e3d9c3dfa90898f7256125ed0f459415bdad9b37da48297a483ef94e",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\confirmation-v1\\results-v1\\uc_startupheavy_G4T12_all_units_nrel_startup_seed307_n32\\confirmation.npz": "b980419b7f71e54f0e4488d947c246e03f48d95b4374effe0d44ecaf265eb12e"
+  },
+  "model_or_solver_execution": false,
+  "independent_full_reference_recompute": "Reused the previously independently checked identical 360-cost bank; no Full solve repeated.",
+  "chronology": "Supplement fitted after bank generation; only final inference/evaluation uses the existing bank."
+}

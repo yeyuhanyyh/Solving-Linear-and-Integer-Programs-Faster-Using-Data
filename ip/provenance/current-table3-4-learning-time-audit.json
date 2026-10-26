@@ -1,0 +1,414 @@
+{
+  "schema": "current-table3-4-recorded-fitting-times-audit-v1",
+  "status": "PASS_RECORDED_METADATA_ONLY",
+  "created_utc": "2026-10-26T00:30:16.807296+00:00",
+  "manuscript_head_audited": "f004963",
+  "no_training_or_solving_rerun": true,
+  "no_manuscript_changes_by_auditor": true,
+  "uc": {
+    "per_seed": [
+      {
+        "seed": 101,
+        "n": 32,
+        "K": 14,
+        "fit_wall_seconds": {
+          "Ours": 0.017355999996652827,
+          "SVM": 0.08500950000598095,
+          "MLOPT": 0.9495413999829907,
+          "Neural Diving": 208.70254970001406,
+          "Li": 744.0990680000104
+        },
+        "fit_cpu_seconds": {
+          "Ours": null,
+          "SVM": 0.09375,
+          "MLOPT": 0.921875,
+          "Neural Diving": 205.09375,
+          "Li": 726.6875
+        },
+        "sources": {
+          "Ours": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed101\\n32\\affine.json",
+            "field": "fit_seconds",
+            "seconds": 0.017355999996652827
+          },
+          "SVM": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed101\\n32\\baseline-fit-metadata.json",
+            "field": "svm.fit_seconds",
+            "seconds": 0.08500950000598095
+          },
+          "MLOPT": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed101\\n32\\baseline-fit-metadata.json",
+            "field": "mlopt.fit_seconds",
+            "seconds": 0.9495413999829907
+          },
+          "Neural Diving": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\nd-supplement-v1\\models\\uc_startupheavy_G4T12_all_units_nrel_startup_seed101_n32\\metadata.json",
+            "field": "fit_seconds",
+            "seconds": 208.70254970001406
+          },
+          "Li": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\li-supplement-v1\\run-v1\\models\\uc_startupheavy_G4T12_all_units_nrel_startup_seed101_n32\\li\\metadata.json",
+            "field": "fit_seconds",
+            "seconds": 744.0990680000104
+          }
+        },
+        "common_training_label_oracle": {
+          "count": 32,
+          "prefix_wall_seconds": 1.4843257000029553,
+          "prefix_cpu_seconds": 1.453125,
+          "exploratory_count": 64,
+          "all64_wall_seconds": 3.4048779000877403,
+          "source": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed101\\training-reference-certificates.json",
+          "scope": "sum of cold full-IP solve_reference intervals: model construction, solve, core validation and independent UC physics validation; excludes feature/cost sampling and serialization"
+        }
+      },
+      {
+        "seed": 211,
+        "n": 32,
+        "K": 14,
+        "fit_wall_seconds": {
+          "Ours": 0.016366900003049523,
+          "SVM": 0.1813045000017155,
+          "MLOPT": 1.2380951999803074,
+          "Neural Diving": 242.82830500000273,
+          "Li": 435.6430204999924
+        },
+        "fit_cpu_seconds": {
+          "Ours": null,
+          "SVM": 0.1875,
+          "MLOPT": 1.21875,
+          "Neural Diving": 239.1875,
+          "Li": 429.140625
+        },
+        "sources": {
+          "Ours": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed211\\n32\\affine.json",
+            "field": "fit_seconds",
+            "seconds": 0.016366900003049523
+          },
+          "SVM": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed211\\n32\\baseline-fit-metadata.json",
+            "field": "svm.fit_seconds",
+            "seconds": 0.1813045000017155
+          },
+          "MLOPT": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed211\\n32\\baseline-fit-metadata.json",
+            "field": "mlopt.fit_seconds",
+            "seconds": 1.2380951999803074
+          },
+          "Neural Diving": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\nd-supplement-v1\\models\\uc_startupheavy_G4T12_all_units_nrel_startup_seed211_n32\\metadata.json",
+            "field": "fit_seconds",
+            "seconds": 242.82830500000273
+          },
+          "Li": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\li-supplement-v1\\run-v1\\models\\uc_startupheavy_G4T12_all_units_nrel_startup_seed211_n32\\li\\metadata.json",
+            "field": "fit_seconds",
+            "seconds": 435.6430204999924
+          }
+        },
+        "common_training_label_oracle": {
+          "count": 32,
+          "prefix_wall_seconds": 1.9646331999101676,
+          "prefix_cpu_seconds": 1.9375,
+          "exploratory_count": 64,
+          "all64_wall_seconds": 4.293415799940703,
+          "source": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed211\\training-reference-certificates.json",
+          "scope": "sum of cold full-IP solve_reference intervals: model construction, solve, core validation and independent UC physics validation; excludes feature/cost sampling and serialization"
+        }
+      },
+      {
+        "seed": 307,
+        "n": 32,
+        "K": 17,
+        "fit_wall_seconds": {
+          "Ours": 0.015880499995546415,
+          "SVM": 0.12295399999129586,
+          "MLOPT": 1.0108852999983355,
+          "Neural Diving": 256.93541659999755,
+          "Li": 808.8550345999829
+        },
+        "fit_cpu_seconds": {
+          "Ours": null,
+          "SVM": 0.125,
+          "MLOPT": 1.015625,
+          "Neural Diving": 252.6875,
+          "Li": 790.109375
+        },
+        "sources": {
+          "Ours": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed307\\n32\\affine.json",
+            "field": "fit_seconds",
+            "seconds": 0.015880499995546415
+          },
+          "SVM": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed307\\n32\\baseline-fit-metadata.json",
+            "field": "svm.fit_seconds",
+            "seconds": 0.12295399999129586
+          },
+          "MLOPT": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed307\\n32\\baseline-fit-metadata.json",
+            "field": "mlopt.fit_seconds",
+            "seconds": 1.0108852999983355
+          },
+          "Neural Diving": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\nd-supplement-v1\\models\\uc_startupheavy_G4T12_all_units_nrel_startup_seed307_n32\\metadata.json",
+            "field": "fit_seconds",
+            "seconds": 256.93541659999755
+          },
+          "Li": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\li-supplement-v1\\run-v1\\models\\uc_startupheavy_G4T12_all_units_nrel_startup_seed307_n32\\li\\metadata.json",
+            "field": "fit_seconds",
+            "seconds": 808.8550345999829
+          }
+        },
+        "common_training_label_oracle": {
+          "count": 32,
+          "prefix_wall_seconds": 2.2337155000132043,
+          "prefix_cpu_seconds": 2.21875,
+          "exploratory_count": 64,
+          "all64_wall_seconds": 4.525955799996154,
+          "source": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed307\\training-reference-certificates.json",
+          "scope": "sum of cold full-IP solve_reference intervals: model construction, solve, core validation and independent UC physics validation; excludes feature/cost sampling and serialization"
+        }
+      }
+    ],
+    "mean_sample_sd": {
+      "Ours": {
+        "mean_wall_seconds": 0.01653446666508292,
+        "sample_sd_wall_seconds": 0.000751886961574023
+      },
+      "SVM": {
+        "mean_wall_seconds": 0.1297559999996641,
+        "sample_sd_wall_seconds": 0.04850651666662955
+      },
+      "MLOPT": {
+        "mean_wall_seconds": 1.0661739666538779,
+        "sample_sd_wall_seconds": 0.15201464195475914
+      },
+      "Neural Diving": {
+        "mean_wall_seconds": 236.15542376667145,
+        "sample_sd_wall_seconds": 24.799150596612968
+      },
+      "Li": {
+        "mean_wall_seconds": 662.8657076999953,
+        "sample_sd_wall_seconds": 199.4265428331117
+      }
+    }
+  },
+  "knapsack": {
+    "per_seed": [
+      {
+        "seed": 1009,
+        "n": 36,
+        "K": 32,
+        "fit_wall_seconds": {
+          "Ours": 0.1027168000000529,
+          "SVM": 0.31948999999440275,
+          "MLOPT": 1.962159899994731,
+          "Neural Diving": 218.8394145000202,
+          "Li": 417.9696958999848
+        },
+        "fit_cpu_seconds": {
+          "Ours": null,
+          "SVM": 0.28125,
+          "MLOPT": 1.625,
+          "Neural Diving": 213.4375,
+          "Li": 412.15625
+        },
+        "sources": {
+          "Ours": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\training-candidates\\random32_b0.5_seed1009\\n36\\affine.json",
+            "field": "fit_seconds",
+            "seconds": 0.1027168000000529
+          },
+          "SVM": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\svm\\metadata.json",
+            "field": "metadata.fit_seconds",
+            "seconds": 0.31948999999440275
+          },
+          "MLOPT": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\mlopt\\metadata.json",
+            "field": "metadata.fit_seconds",
+            "seconds": 1.962159899994731
+          },
+          "Neural Diving": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\neural_diving\\complete.json",
+            "field": "fit_seconds",
+            "seconds": 218.8394145000202
+          },
+          "Li": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\li\\complete.json",
+            "field": "fit_seconds",
+            "seconds": 417.9696958999848
+          }
+        },
+        "common_training_label_generation_seconds": null
+      },
+      {
+        "seed": 1013,
+        "n": 36,
+        "K": 32,
+        "fit_wall_seconds": {
+          "Ours": 0.12300429999595508,
+          "SVM": 0.1509115000080783,
+          "MLOPT": 0.6935415999905672,
+          "Neural Diving": 252.24342490002164,
+          "Li": 873.1704697000096
+        },
+        "fit_cpu_seconds": {
+          "Ours": null,
+          "SVM": 0.140625,
+          "MLOPT": 0.6875,
+          "Neural Diving": 246.015625,
+          "Li": 855.78125
+        },
+        "sources": {
+          "Ours": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\training-candidates\\random32_b0.5_seed1013\\n36\\affine.json",
+            "field": "fit_seconds",
+            "seconds": 0.12300429999595508
+          },
+          "SVM": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1013_n36\\svm\\metadata.json",
+            "field": "metadata.fit_seconds",
+            "seconds": 0.1509115000080783
+          },
+          "MLOPT": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1013_n36\\mlopt\\metadata.json",
+            "field": "metadata.fit_seconds",
+            "seconds": 0.6935415999905672
+          },
+          "Neural Diving": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1013_n36\\neural_diving\\complete.json",
+            "field": "fit_seconds",
+            "seconds": 252.24342490002164
+          },
+          "Li": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1013_n36\\li\\complete.json",
+            "field": "fit_seconds",
+            "seconds": 873.1704697000096
+          }
+        },
+        "common_training_label_generation_seconds": null
+      },
+      {
+        "seed": 1019,
+        "n": 36,
+        "K": 32,
+        "fit_wall_seconds": {
+          "Ours": 0.11800580000272021,
+          "SVM": 0.32124190000467934,
+          "MLOPT": 1.9574540999892633,
+          "Neural Diving": 247.1127557999862,
+          "Li": 848.0691600999853
+        },
+        "fit_cpu_seconds": {
+          "Ours": null,
+          "SVM": 0.28125,
+          "MLOPT": 1.703125,
+          "Neural Diving": 241.78125,
+          "Li": 831.375
+        },
+        "sources": {
+          "Ours": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\training-candidates\\random32_b0.5_seed1019\\n36\\affine.json",
+            "field": "fit_seconds",
+            "seconds": 0.11800580000272021
+          },
+          "SVM": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36\\svm\\metadata.json",
+            "field": "metadata.fit_seconds",
+            "seconds": 0.32124190000467934
+          },
+          "MLOPT": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36\\mlopt\\metadata.json",
+            "field": "metadata.fit_seconds",
+            "seconds": 1.9574540999892633
+          },
+          "Neural Diving": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36\\neural_diving\\complete.json",
+            "field": "fit_seconds",
+            "seconds": 247.1127557999862
+          },
+          "Li": {
+            "path": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36\\li\\complete.json",
+            "field": "fit_seconds",
+            "seconds": 848.0691600999853
+          }
+        },
+        "common_training_label_generation_seconds": null
+      }
+    ],
+    "mean_sample_sd": {
+      "Ours": {
+        "mean_wall_seconds": 0.11457563333290939,
+        "sample_sd_wall_seconds": 0.010569777507494825
+      },
+      "SVM": {
+        "mean_wall_seconds": 0.2638811333357201,
+        "sample_sd_wall_seconds": 0.09783849359555719
+      },
+      "MLOPT": {
+        "mean_wall_seconds": 1.5377185333248538,
+        "sample_sd_wall_seconds": 0.7310824558274418
+      },
+      "Neural Diving": {
+        "mean_wall_seconds": 239.39853173334268,
+        "sample_sd_wall_seconds": 17.988577414949667
+      },
+      "Li": {
+        "mean_wall_seconds": 713.0697752333266,
+        "sample_sd_wall_seconds": 255.87215861210362
+      }
+    }
+  },
+  "common_scope": "All listed fit times exclude original full-IP training-label generation. They are post-label fitting/model-selection intervals, not total end-to-end learning or IP solve times. Models exactly those used in new Tables3and4; original ND schedule only.",
+  "method_timer_scope": {
+    "Ours": "experiment_core.fit_affine internal interval includes exact RREF/leftmost basis columns, nullspace normals, rational-to-numerical normalization and training containment checks; excludes label production, wrapper array preparation and serialization; CPU not measured separately",
+    "SVM": "UC outer interval includes coordinate-SVM fit plus threadpoolcontext and lazy sklearn import; knapsack metadata.fit_seconds excludes first imports. Both include scaler/classifiers/internal probability calibration; exclude label generation",
+    "MLOPT": "Eight architecture/lr/epoch trials, training-internal validation and selected all-n refit including strategy-bank construction/pruning. UC outer fit interval; knapsack internal metadata.fit_seconds. Excludes original label generation and final artifact serialization",
+    "Neural Diving": "Root-LP feature preparation, bothwidth sanity/selection, all-n finalrefit/readiness. Original complete-predictor schedule only, no extra2000-update control. Excludes original labels and model serialization",
+    "Li": "Pair/strategy preparation, original eight-development-grid search/top-k selection, both final LR fits, readiness and model saving. Excludes original label generation"
+  },
+  "limitations": [
+    "Concurrent one-thread CPU workers, shared-device contention unmeasured, Windows Intel Family6Model186 Torch2.11CPU; not an isolated hardware benchmark.",
+    "Timer scopes differ slightly, including import/model-save overhead; no precise cross-method training speedup factor is supported.",
+    "Ours fit interval alone is post-label representation computation; do not call it entire learning time.",
+    "Knapsack original label generation total is unrecorded. Original labels were reused and separately recertified; verification intervals must not substitute for label generation.",
+    "UC full64 exploratory oracle time is distinct from32-label fitting prefix; both are retained.",
+    "Selection and fitting use training-only validation; recorded fit times are complete search costs, not only selected final neural net optimization."
+  ],
+  "source_sha256": {
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed101\\n32\\affine.json": "26ecb98b32511afd5d43f66acca5a5381f12233af2017d5b45bd0a7b8f805e47",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed101\\n32\\baseline-fit-metadata.json": "366ca55468e70fb8981baeda6b6910ef93ac4163acbfe5be28fb34dd8d89baa3",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\nd-supplement-v1\\models\\uc_startupheavy_G4T12_all_units_nrel_startup_seed101_n32\\metadata.json": "413036d67964cc28cab9138b0aa34f78c46f047db44bc37213304d9c02f4313b",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\li-supplement-v1\\run-v1\\models\\uc_startupheavy_G4T12_all_units_nrel_startup_seed101_n32\\li\\metadata.json": "42593b0179b8585d544c30fbe9297da7c7f00086face95a784ef6a9a7e951873",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed101\\training-reference-certificates.json": "06f424ec5f38dba5e92120700d782e227db21dcf00e6bb52d8213a309b2fc100",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed211\\n32\\affine.json": "46f119cd088498c3ff94331d5dd4b2a2b8782a52b39dcc76a7dc1babfb09f750",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed211\\n32\\baseline-fit-metadata.json": "45780a69d972f0c6b83e6865ec6a89b12915370bc1f3a8c45d5ad12990361a9c",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\nd-supplement-v1\\models\\uc_startupheavy_G4T12_all_units_nrel_startup_seed211_n32\\metadata.json": "78d6581c87584aa3ad124c18e80a0891185129b49529bea18c8211fc385ded63",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\li-supplement-v1\\run-v1\\models\\uc_startupheavy_G4T12_all_units_nrel_startup_seed211_n32\\li\\metadata.json": "217d7095c9a9efd6f89b4fec9e3f4a4643ea30310658557999b50b85dfd82298",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed211\\training-reference-certificates.json": "df88b52e8a0012721885a6dacf959174758c49de5064b42c667c21be27d2542b",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed307\\n32\\affine.json": "b21ff57c94c531e4dbddc4ec7cbf3ec43db24e3dc6918de6342f75e5154a31fa",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed307\\n32\\baseline-fit-metadata.json": "1d1260544b97b23a6097db9e3cc45a3d983fb0908817fadda91e45b32a636a8b",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\nd-supplement-v1\\models\\uc_startupheavy_G4T12_all_units_nrel_startup_seed307_n32\\metadata.json": "bfa91ce06c4597fe198c59cffddbfdb2da1589a864d542cc2c29e11a76715353",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\li-supplement-v1\\run-v1\\models\\uc_startupheavy_G4T12_all_units_nrel_startup_seed307_n32\\li\\metadata.json": "c3cc55a88466dcc9a5e0c1841c4410cb04d67196d7fd3e2d5014d2bf186fbee3",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\run-v1\\settings\\G4T12_all_units_nrel_startup_seed307\\training-reference-certificates.json": "ea61d1645c8a503e7746aedbe7c130ba718b78bd2ac3c1a917f801ac581f36d9",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\training-candidates\\random32_b0.5_seed1009\\n36\\affine.json": "218d276684485e4e3288b857fabc57c2782d9283938b8c871586a19d0cc3bdc8",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\svm\\metadata.json": "f03093557fbd9adfe89e737af1e6fbc033f59f6537c314b75b55666f552899c7",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\mlopt\\metadata.json": "19830f8086347e53b83bf2dbb0fd40ecd7b66cd2cd88f680142555325f8354cc",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\neural_diving\\complete.json": "419b37588bc98e9dc47bfe71b56c84d2341f89c258981a7f465d0de07a149210",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\li\\complete.json": "7fd6e9675f660f1e01e0bad8a583edbb1237f8462366074d40ceef4b328d8d2e",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\training-candidates\\random32_b0.5_seed1013\\n36\\affine.json": "916a8d2d332d38b1ab0064e130a8b2eba5778691ddb41a12432a8dd1f915a575",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1013_n36\\svm\\metadata.json": "de3dedcfc29158d4b196caae79d85534d1ddb1aa9f51e7ca0b0ce0920db6997a",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1013_n36\\mlopt\\metadata.json": "c2b0a0297d784b7c7ee5e7691ca2ff5c73e1b02f05081ee5345eba24f9e415bc",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1013_n36\\neural_diving\\complete.json": "aa566864baf345cc33396f352a2a3f4ccb4d8cb4c57e07fa4a2bf8098208bbc3",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1013_n36\\li\\complete.json": "b5072aa3df916770a9d7d367aef3cd3023b673ce05718eeece19e53c4d9587b8",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\training-candidates\\random32_b0.5_seed1019\\n36\\affine.json": "d0ad5d9436295a0da0e87ff4b88e085e5252155bd24fdd120e90d8246cb397db",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36\\svm\\metadata.json": "f57cb627138ecc1cab577521ffd0f0b82a4cd725302c0e1ee6c12ab0fa8a38ad",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\extra-baselines-coupled-v1\\results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36\\mlopt\\metadata.json": "e0e17e38d809cf8290e62c83594fa221cf413f6490c742c50bfcebcbf66b22ba",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results\\models\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36\\neural_diving\\complete.json": "3a3bc468b59e3ba8c731eb3ca5523179f79b4e67f99ef2c6ec3bffb286688895",
+    "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\li-supplement-v1\\models\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36\\li\\complete.json": "c18770b623dd55c245b40e6ba727e6e9587f7601a6dbb1e6ed02356583f3a523"
+  }
+}

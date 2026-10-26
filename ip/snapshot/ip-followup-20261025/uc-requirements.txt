@@ -1,0 +1,8 @@
+# Install CUDA-enabled torch from the official PyTorch wheel index appropriate
+# for the rented host; do not accidentally install a CPU-only torch build.
+numpy>=2.1
+scipy>=1.14
+torch>=2.5
+highspy>=1.10
+scikit-learn>=1.5
+threadpoolctl>=3.5

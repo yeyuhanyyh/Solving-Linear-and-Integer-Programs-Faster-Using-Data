@@ -1,0 +1,84 @@
+{
+  "cases": [
+    {
+      "D": 96,
+      "K": 32,
+      "ND_feature_shape": [
+        1,
+        228,
+        28
+      ],
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1009_n36",
+      "explicit_signed_affine_map_passed": true,
+      "feature_dimension": 32,
+      "n": 36,
+      "original_IP_certified": true,
+      "primary_schema_assertor_evidence": {
+        "case_schema": "coupled-bundle-uniform-gross-v1",
+        "global_conflict_edges": 100,
+        "local_formulation": "capacity",
+        "local_row_count": 32
+      },
+      "recomputed_checksum_false_ratio_rejected": true,
+      "rows": 132,
+      "training_cost_index": 0
+    },
+    {
+      "D": 96,
+      "K": 32,
+      "ND_feature_shape": [
+        1,
+        239,
+        28
+      ],
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1013_n36",
+      "explicit_signed_affine_map_passed": true,
+      "feature_dimension": 32,
+      "n": 36,
+      "original_IP_certified": true,
+      "primary_schema_assertor_evidence": {
+        "case_schema": "coupled-bundle-uniform-gross-v1",
+        "global_conflict_edges": 111,
+        "local_formulation": "capacity",
+        "local_row_count": 32
+      },
+      "recomputed_checksum_false_ratio_rejected": true,
+      "rows": 143,
+      "training_cost_index": 0
+    },
+    {
+      "D": 96,
+      "K": 32,
+      "ND_feature_shape": [
+        1,
+        237,
+        28
+      ],
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1019_n36",
+      "explicit_signed_affine_map_passed": true,
+      "feature_dimension": 32,
+      "n": 36,
+      "original_IP_certified": true,
+      "primary_schema_assertor_evidence": {
+        "case_schema": "coupled-bundle-uniform-gross-v1",
+        "global_conflict_edges": 109,
+        "local_formulation": "capacity",
+        "local_row_count": 32
+      },
+      "recomputed_checksum_false_ratio_rejected": true,
+      "rows": 141,
+      "training_cost_index": 0
+    }
+  ],
+  "confirmation_read": false,
+  "development_opened": false,
+  "driver_sha256": "d7ff552f55775f90387444e8cbc6290ee371ca94960f7280f42c762c8768e8c2",
+  "manifest_sha256": "e1c5bc638952fa690137ee572e5c7974e14a418aaa7f214b20819f9a06c1f7a0",
+  "models_trained": [],
+  "new_costs_sampled": false,
+  "protocol_sha256": "445077e38e432b05d0ac837ef709ebe9c0d38e4f3d8baa914570b8f3409363de",
+  "publication_no_overwrite_test_passed": true,
+  "runtime_scientific_sources_modified": false,
+  "smoke_source_sha256": "6b2fd20d4dd02a5d90e6eeaebc129a5ed3a382024ce38c829f358aed2546f574",
+  "status": "PASS"
+}

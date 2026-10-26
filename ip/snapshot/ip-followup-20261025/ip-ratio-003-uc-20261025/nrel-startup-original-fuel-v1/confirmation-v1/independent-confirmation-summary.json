@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "review": "Independent arithmetic, original ranged-row feasibility and separately implemented UC physics; no reference solve, model load or retraining.",
+  "full_audit_file": "independent-confirmation-review.json",
+  "full_audit_sha256": "784e2754a485ba5cfa68f49eacd4d5d32040e9046fc0b201b15156ee190cfb91",
+  "global_freeze_sha256": "a47236f3e39465c1b6053d2c84282facc51ab7e1a281af247735ca6c0979beb3",
+  "instances": {"generators": 4, "periods": 12, "original_variables": 192, "original_binary_variables": 144, "continuous_dispatch_variables": 48},
+  "learning": {"fit_costs_per_seed": 32, "previously_collected_exploratory_labels_per_seed": 64, "common_dimension_scope": "48 commitment u coordinates; v/w remain binary and dispatch is reoptimized", "K_by_seed": {"101": 14, "211": 14, "307": 17}, "population_optimizer_hull_rank_proven": false},
+  "confirmation": {"seeds": [101, 211, 307], "new_costs_per_seed": 120, "original_Full_references": 360, "method_returns": 1080},
+  "ratio_definition": "Full optimal original total cost / returned original total cost; pooled arithmetic mean over valid timely returns, higher is better. No objective shift is used.",
+  "cells": [
+    {"method": "Ours", "recovery_count": 320, "recovery_N": 360, "recovery_percent": 88.88888888888889, "objective_ratio": 0.999093973110685, "ratio_N": 360, "invalid": 0, "late": 0},
+    {"method": "SVM", "recovery_count": 65, "recovery_N": 360, "recovery_percent": 18.055555555555557, "objective_ratio": 0.9240269723201678, "ratio_N": 341, "invalid": 19, "late": 0},
+    {"method": "MLOPT", "recovery_count": 74, "recovery_N": 360, "recovery_percent": 20.555555555555557, "objective_ratio": 0.9204625723567504, "ratio_N": 360, "invalid": 0, "late": 0}
+  ],
+  "paired_valid_difference_ours_minus_baseline": [
+    {"baseline": "SVM", "N": 341, "ours_ratio_on_same_subset": 0.9991624127455342, "baseline_ratio_on_same_subset": 0.9240269723201681, "mean_difference": 0.07513544042536623},
+    {"baseline": "MLOPT", "N": 360, "ours_ratio_on_same_subset": 0.9990939731106852, "baseline_ratio_on_same_subset": 0.9204625723567504, "mean_difference": 0.07863140075393465}
+  ],
+  "per_seed_ratios": [
+    {"seed": 101, "Ours": 0.9983600322846848, "SVM": 0.9306181476991439, "SVM_ratio_N": 114, "MLOPT": 0.9387571595440486, "MLOPT_ratio_N": 120},
+    {"seed": 211, "Ours": 0.9997566466636189, "SVM": 0.9126073795143018, "SVM_ratio_N": 114, "MLOPT": 0.8992150145795946, "MLOPT_ratio_N": 120},
+    {"seed": 307, "Ours": 0.9991652403837517, "SVM": 0.9288981191048183, "SVM_ratio_N": 113, "MLOPT": 0.9234155429466082, "MLOPT_ratio_N": 120}
+  ],
+  "scope": "K-matched coordinate SVM and native-top-ten MLOPT-anchor adaptations. This confirmation contains no Neural Diving or Li comparison. NREL motivates only a capital/maintenance lower-bound charge scale; the synthetic construction is not calibrated plant data. Concurrent confirmation timings do not establish speedups."
+}

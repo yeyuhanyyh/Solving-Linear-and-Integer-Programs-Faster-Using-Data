@@ -1,0 +1,33 @@
+{
+  "training_input": false,
+  "confirmation": false,
+  "attachments": [
+    {
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1009_n36",
+      "ancestor_case_id": "coupledbundle_uniformgross_random32_b0.5_seed1009_n69",
+      "source": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\run-v1\\references\\random32_b0.5_seed1009\\exploratory-development-reference.npz",
+      "destination": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\training-candidates\\random32_b0.5_seed1009\\n36\\development.npz",
+      "sha256": "7df849bb170827883d9507e51c9ea0ed41c733a26afc92104459bef81c27e775",
+      "count": 48,
+      "purpose": "Existing paired development attachment; never a fitting input"
+    },
+    {
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1013_n36",
+      "ancestor_case_id": "coupledbundle_uniformgross_random32_b0.5_seed1013_n69",
+      "source": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\run-v1\\references\\random32_b0.5_seed1013\\exploratory-development-reference.npz",
+      "destination": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\training-candidates\\random32_b0.5_seed1013\\n36\\development.npz",
+      "sha256": "a0314c7132a6d51dbfecddd150a60d3b1beb482f773c500a1d6112c852d38485",
+      "count": 48,
+      "purpose": "Existing paired development attachment; never a fitting input"
+    },
+    {
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1019_n36",
+      "ancestor_case_id": "coupledbundle_uniformgross_random32_b0.5_seed1019_n69",
+      "source": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\run-v1\\references\\random32_b0.5_seed1019\\exploratory-development-reference.npz",
+      "destination": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\training-candidates\\random32_b0.5_seed1019\\n36\\development.npz",
+      "sha256": "ac113a1cb17ec7af142148276423a3391d37012d6b433de7f29f73dc7b183058",
+      "count": 48,
+      "purpose": "Existing paired development attachment; never a fitting input"
+    }
+  ]
+}

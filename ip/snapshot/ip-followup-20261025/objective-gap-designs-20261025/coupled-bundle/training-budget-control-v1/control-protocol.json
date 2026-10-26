@@ -1,0 +1,57 @@
+{
+  "schema": "fixed-extra-ND-optimization-budget-v1",
+  "G": 32,
+  "n_train": 36,
+  "physical_seeds": [
+    1009,
+    1013,
+    1019
+  ],
+  "optimizer_steps": 2000,
+  "batch_size": 16,
+  "gradient_clip": 5.0,
+  "learning_rates": [
+    0.001,
+    0.0001
+  ],
+  "learning_rate_boundary_step": 1000,
+  "manifest_path": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\sealed-cohort-v1\\training-only-manifest.json",
+  "original_model_root": "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-followup-20261025\\uniform-gross-g32-n36-pilot-results",
+  "original_source_seals": [
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\adapter\\generic-binary-v2\\g32-short-prefix-n36-run-v1\\run-seal.json"
+  ],
+  "initialization": "Original selected complete-predictor final weights; preserve selected architecture, width, normalization and root-LP features",
+  "optimizer": "Original Adam API and defaults, fresh empty optimizer state; reset is disclosed, not a resumed optimizer state",
+  "batching": "Original shuffled epoch convention: batch16,16,4 over all36 costs, repeated until exactly2000 optimizer updates",
+  "diagnostics_steps": [
+    0,
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000,
+    1100,
+    1200,
+    1300,
+    1400,
+    1500,
+    1600,
+    1700,
+    1800,
+    1900,
+    2000
+  ],
+  "final_checkpoint": "Only the fixed checkpoint after update2000; no best checkpoint or validation/test selection",
+  "training_only": true,
+  "development_or_confirmation_read": false,
+  "partial_resume": "No mid-run resume. Failed attempts retained and deterministic restart uses original weights plus fixed case-derived batch seed.",
+  "prior_exploratory_training_labels_collected_per_seed": 69,
+  "continued_fit_label_count": 36,
+  "resource_plan": "At most4 single-thread CPU workers in the root-coordinated shared queue; no cloud",
+  "validation_plan": "After all3 final controlled checkpoints are frozen, use a new independent paired second stream for Ours, originalND and continuedND. No first-stream outcome selects a checkpoint."
+}

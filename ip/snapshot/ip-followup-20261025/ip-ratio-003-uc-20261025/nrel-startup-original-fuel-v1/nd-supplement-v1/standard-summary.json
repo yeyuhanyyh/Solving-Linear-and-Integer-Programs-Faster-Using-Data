@@ -1,0 +1,157 @@
+{
+  "method": "Neural Diving",
+  "n_train": 32,
+  "D": 192,
+  "common_u_D": 48,
+  "K": [
+    14,
+    14,
+    17
+  ],
+  "total": 360,
+  "recovered": 268,
+  "recovery_percent": 74.44444444444444,
+  "objective_ratio": 0.9944915777593201,
+  "N": 359,
+  "overbudget_count": 0,
+  "per_seed": [
+    {
+      "seed": 101,
+      "case_id": "uc_startupheavy_G4T12_all_units_nrel_startup_seed101_n32",
+      "method": "Neural Diving",
+      "count": 120,
+      "K": 14,
+      "recovered": 79,
+      "recovery_percent": 65.83333333333333,
+      "objective_ratio": 0.9928007608492081,
+      "N": 120,
+      "overbudget_count": 0,
+      "bank_predates_ND_supplement": true,
+      "fit_seconds": 208.70254970001406,
+      "fit_CPU_seconds": 205.09375,
+      "selected_width": 64,
+      "parameter_count": 151298,
+      "selected_refit_epochs": 25,
+      "training_diagnostics": {
+        "full_nll_per_integer": 0.08024655282497406,
+        "marginal_entropy_floor": 0.0,
+        "excess_nll": 0.08024655282497406,
+        "expected_map_bit_error": 0.0271267369389534,
+        "blocks": {
+          "u": {
+            "full_nll_per_integer": 0.17592662572860718,
+            "expected_map_bit_error": 0.0579427070915699
+          },
+          "v": {
+            "full_nll_per_integer": 0.034021977335214615,
+            "expected_map_bit_error": 0.014322916977107525
+          },
+          "w": {
+            "full_nll_per_integer": 0.030791068449616432,
+            "expected_map_bit_error": 0.009114583022892475
+          }
+        }
+      },
+      "source_complete": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\nd-supplement-v1\\results\\uc_startupheavy_G4T12_all_units_nrel_startup_seed101_n32\\complete.json"
+    },
+    {
+      "seed": 211,
+      "case_id": "uc_startupheavy_G4T12_all_units_nrel_startup_seed211_n32",
+      "method": "Neural Diving",
+      "count": 120,
+      "K": 14,
+      "recovered": 95,
+      "recovery_percent": 79.16666666666667,
+      "objective_ratio": 0.9946493591643543,
+      "N": 120,
+      "overbudget_count": 0,
+      "bank_predates_ND_supplement": true,
+      "fit_seconds": 242.82830500000273,
+      "fit_CPU_seconds": 239.1875,
+      "selected_width": 64,
+      "parameter_count": 151298,
+      "selected_refit_epochs": 67,
+      "training_diagnostics": {
+        "full_nll_per_integer": 0.021596699953079224,
+        "marginal_entropy_floor": 0.0,
+        "excess_nll": 0.021596699953079224,
+        "expected_map_bit_error": 0.0065104165114462376,
+        "blocks": {
+          "u": {
+            "full_nll_per_integer": 0.045007020235061646,
+            "expected_map_bit_error": 0.013671875
+          },
+          "v": {
+            "full_nll_per_integer": 0.007054738700389862,
+            "expected_map_bit_error": 0.0026041667442768812
+          },
+          "w": {
+            "full_nll_per_integer": 0.012728352099657059,
+            "expected_map_bit_error": 0.0032552082557231188
+          }
+        }
+      },
+      "source_complete": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\nd-supplement-v1\\results\\uc_startupheavy_G4T12_all_units_nrel_startup_seed211_n32\\complete.json"
+    },
+    {
+      "seed": 307,
+      "case_id": "uc_startupheavy_G4T12_all_units_nrel_startup_seed307_n32",
+      "method": "Neural Diving",
+      "count": 120,
+      "K": 17,
+      "recovered": 94,
+      "recovery_percent": 78.33333333333333,
+      "objective_ratio": 0.9960374959157011,
+      "N": 119,
+      "overbudget_count": 0,
+      "bank_predates_ND_supplement": true,
+      "fit_seconds": 256.93541659999755,
+      "fit_CPU_seconds": 252.6875,
+      "selected_width": 32,
+      "parameter_count": 41858,
+      "selected_refit_epochs": 134,
+      "training_diagnostics": {
+        "full_nll_per_integer": 0.05154676362872124,
+        "marginal_entropy_floor": 0.0,
+        "excess_nll": 0.05154676362872124,
+        "expected_map_bit_error": 0.0186631940305233,
+        "blocks": {
+          "u": {
+            "full_nll_per_integer": 0.10363852977752686,
+            "expected_map_bit_error": 0.0338541679084301
+          },
+          "v": {
+            "full_nll_per_integer": 0.015394434332847595,
+            "expected_map_bit_error": 0.0071614584885537624
+          },
+          "w": {
+            "full_nll_per_integer": 0.035607341676950455,
+            "expected_map_bit_error": 0.014973958022892475
+          }
+        }
+      },
+      "source_complete": "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\ip-ratio-003-uc-20261025\\nrel-startup-original-fuel-v1\\nd-supplement-v1\\results\\uc_startupheavy_G4T12_all_units_nrel_startup_seed307_n32\\complete.json"
+    }
+  ],
+  "architecture": {
+    "graph_layers": 6,
+    "feature_dimension": 28,
+    "width_candidates": [
+      32,
+      64
+    ],
+    "integer_outputs": 144,
+    "matched_fixing_scope": "u only:48-K fixed; v/w binary and p continuous retained"
+  },
+  "training": {
+    "label_count_per_seed": 32,
+    "labels": "same certified optimal full UC solutions as existing methods",
+    "pool_adaptation": "singleton certified-optimum pool, complete predictor only",
+    "full_original_schedule": true,
+    "existing_bank_used_for_selection": false,
+    "excluded_label_generation_time": true,
+    "timing_isolated": false
+  },
+  "sequence": "Original bank predates ND supplement; complete training and new three-model sidecar freeze precede all ND predictions. Fixed2000 control rules were also frozen before ND test predictions.",
+  "sidecar_freeze_sha256": "8a3a8e3e2f6db01758b65cca263033cdcee985f5ec1f6a30abd57e7c1c509626"
+}

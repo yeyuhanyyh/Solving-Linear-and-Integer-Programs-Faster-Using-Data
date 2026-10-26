@@ -1,0 +1,127 @@
+{
+  "schema": "fixed2000-control-completed-all-three-seeds-v1",
+  "all_three_complete": true,
+  "source_seal_sha256": "da5d05fadf4399a60e38cd374a10efbf9526e8c496ac1a1bd748dadb6c7cc496",
+  "rows": [
+    {
+      "seed": 1009,
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1009_n36",
+      "hidden_size": 32,
+      "optimizer_steps": 2000,
+      "initial": {
+        "blocks": {
+          "x": {
+            "expected_map_bit_error": 0.1657986044883728,
+            "full_nll_per_integer": 0.34719493985176086
+          }
+        },
+        "excess_nll": 0.34719496965408325,
+        "expected_map_bit_error": 0.1657986044883728,
+        "full_nll_per_integer": 0.34719496965408325,
+        "marginal_entropy_floor": 0.0
+      },
+      "final": {
+        "blocks": {
+          "x": {
+            "expected_map_bit_error": 0.004050925839692354,
+            "full_nll_per_integer": 0.01552415732294321
+          }
+        },
+        "excess_nll": 0.01552415918558836,
+        "expected_map_bit_error": 0.004050925839692354,
+        "full_nll_per_integer": 0.01552415918558836,
+        "marginal_entropy_floor": 0.0
+      },
+      "wall_seconds": 79.23342939998838,
+      "CPU_seconds": 78.015625,
+      "training_count": 36,
+      "all_original_hashes_unchanged": true,
+      "checkpoint_files": {
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\training-budget-control-v1\\continued-models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\complete.json": "884a40aab193468fd14e7b21add48c8283cdf537f7c8135dd088df27fc28a18c",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\training-budget-control-v1\\continued-models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\continued-predictor.pt": "4c9032fb206653beb9e29bee7e6ce43e3f7129067bfe5e906a48f0b33b30a9c8",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\training-budget-control-v1\\continued-models\\coupledbundle_uniformgross_random32_b0.5_seed1009_n36\\metadata.json": "2d59bfe6e6d01ed7716045e6eaa34cbea15fa3418dca7c7b02a2f3efac9b69bb"
+      }
+    },
+    {
+      "seed": 1013,
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1013_n36",
+      "hidden_size": 64,
+      "optimizer_steps": 2000,
+      "initial": {
+        "blocks": {
+          "x": {
+            "expected_map_bit_error": 0.1605902761220932,
+            "full_nll_per_integer": 0.33961594104766846
+          }
+        },
+        "excess_nll": 0.3396158814430237,
+        "expected_map_bit_error": 0.1605902761220932,
+        "full_nll_per_integer": 0.3396158814430237,
+        "marginal_entropy_floor": 0.0
+      },
+      "final": {
+        "blocks": {
+          "x": {
+            "expected_map_bit_error": 0.0011574074160307646,
+            "full_nll_per_integer": 0.010742872022092342
+          }
+        },
+        "excess_nll": 0.010742873884737492,
+        "expected_map_bit_error": 0.0011574074160307646,
+        "full_nll_per_integer": 0.010742873884737492,
+        "marginal_entropy_floor": 0.0
+      },
+      "wall_seconds": 135.60734020001837,
+      "CPU_seconds": 133.65625,
+      "training_count": 36,
+      "all_original_hashes_unchanged": true,
+      "checkpoint_files": {
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\training-budget-control-v1\\continued-models\\coupledbundle_uniformgross_random32_b0.5_seed1013_n36\\complete.json": "01b04b1718c90da1d2585845470e7c93e199723cab15f7f682343f091bc8ef8e",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\training-budget-control-v1\\continued-models\\coupledbundle_uniformgross_random32_b0.5_seed1013_n36\\continued-predictor.pt": "d4fa5bf23e984f2513bd27999f16abbad461d4611bb645dca307b3918d30ea8a",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\training-budget-control-v1\\continued-models\\coupledbundle_uniformgross_random32_b0.5_seed1013_n36\\metadata.json": "934b8d034d2c6494bb799b9cc2b74ba630176f7418379a4292125ff907c35249"
+      }
+    },
+    {
+      "seed": 1019,
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1019_n36",
+      "hidden_size": 64,
+      "optimizer_steps": 2000,
+      "initial": {
+        "blocks": {
+          "x": {
+            "expected_map_bit_error": 0.1649305522441864,
+            "full_nll_per_integer": 0.3346005082130432
+          }
+        },
+        "excess_nll": 0.334600567817688,
+        "expected_map_bit_error": 0.1649305522441864,
+        "full_nll_per_integer": 0.334600567817688,
+        "marginal_entropy_floor": 0.0
+      },
+      "final": {
+        "blocks": {
+          "x": {
+            "expected_map_bit_error": 0.0147569440305233,
+            "full_nll_per_integer": 0.03293940797448158
+          }
+        },
+        "excess_nll": 0.03293940797448158,
+        "expected_map_bit_error": 0.0147569440305233,
+        "full_nll_per_integer": 0.03293940797448158,
+        "marginal_entropy_floor": 0.0
+      },
+      "wall_seconds": 134.5219069000159,
+      "CPU_seconds": 132.4375,
+      "training_count": 36,
+      "all_original_hashes_unchanged": true,
+      "checkpoint_files": {
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\training-budget-control-v1\\continued-models\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36\\complete.json": "907953122ab936ec78cadfd683db7b3e33a90b8319eca15203cce8cd7dc1146d",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\training-budget-control-v1\\continued-models\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36\\continued-predictor.pt": "be8cb04343229cac6d0bd6e28c4f5dffbbc36001315cc24f4fbcda7ff8c5212d",
+        "D:\\C盘迁移归档\\桌面大文件夹\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\training-budget-control-v1\\continued-models\\coupledbundle_uniformgross_random32_b0.5_seed1019_n36\\metadata.json": "762a0f5c901a45dfd2bbdb39d13cb2b04d652233e33358e06db70f02b822aefd"
+      }
+    }
+  ],
+  "validation_or_test_read": false,
+  "checkpoint_selection": "final step2000 only",
+  "schedule": "three single-thread CPU processes concurrently; wall time is not an isolated benchmark"
+}

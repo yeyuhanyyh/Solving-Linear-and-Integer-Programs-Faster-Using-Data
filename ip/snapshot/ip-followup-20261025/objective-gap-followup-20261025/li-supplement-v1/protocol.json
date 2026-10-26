@@ -1,0 +1,20 @@
+{
+  "schema": "coupled-knapsack-G32-n36-later-Li-supplement-v1",
+  "physical_seeds": [1009,1013,1019],
+  "G": 32, "D": 96, "n_train": 36, "K": 32,
+  "maximum_fit_workers": 1, "threads_per_worker": 1,
+  "shared_trainer": "generic-binary-v2/shared/train_uc_baselines.py:train_one(case,'li',out,bundle,'cpu')",
+  "native_epochs": 1200, "native_hidden_dim": 128, "native_attention_layers": 2,
+  "learning_rates": [0.0001,0.001], "lambda1_values": [0.8,0.9], "lambda2_values": [0.1,0.2],
+  "requested_top_k_values": [1,3,5,10,30],
+  "top_k_effective_rule": "Original shared trainer clips and deduplicates candidate counts by the training-only development SetCover count.",
+  "validation": "Original20% split within the36 training samples; all36 used in native final refits. No external development or test costs are used in selection.",
+  "inference": "Retain native chosen top-k and Eq21 winner, then the existing shared proposer fixes64 original coordinates by weighted agreement, leaving K32.",
+  "original_training_label_generation_rerun": false,
+  "stream2_test_count_per_seed": 120,
+  "stream2_reused_existing_bank": true,
+  "chronology": "This supplemental Li baseline is trained after stream2 costs were generated and evaluated by earlier methods. The fixed original grids and training-only model selection are unchanged; Li checkpoints are frozen before Li evaluation. Do not describe this as pre-sampling frozen Li.",
+  "no_test_based_selection": true,
+  "all_seeds_retained": true,
+  "no_paper_or_old_source_edits": true
+}

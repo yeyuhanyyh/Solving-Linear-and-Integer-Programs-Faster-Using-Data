@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-10-25T21:02:49.026082+00:00",
+  "G": 32,
+  "n_train": 36,
+  "seeds": [
+    1009,
+    1013,
+    1019
+  ],
+  "selection_basis": "All-three-seed exact training-prefix rank; no development/neural/fresh result used",
+  "exploration_cost_disclosure": "Prefix length was chosen after collecting69 labels per seed. New model fitting uses only36; the exploratory label cost is not erased",
+  "unchanged_ancestor_cohort": true,
+  "no_optimization_or_neural_fit_or_new_sampling": true,
+  "paired_development": "Same existing48 physical-case costs as n69; attached separately and excluded from fitting",
+  "paired_confirmation": "Future n36/n69 evaluation must share the same120 new physical-case costs, after all12 models freeze",
+  "source_sha256": {
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\short-prefix-n36\\export_short_prefix.py": "f5529f5f0cef4ddffeb98d334cd55617743a243df23516dab6aa42a347824e78",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\scale-extension-g32-v1\\primary-cohort-v1\\training-only-manifest.json": "f434dbee2a3b363fba5827255ee64c3715644e35118d5bdbb8bec8d65ce80c99",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\training-prefix-exact-audit-20261025\\summary.json": "cea585eb9b53403c25c539a81ec9ed219659c2ce3f0858b4b7e0d415b7657919",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\code\\controls\\experiment_core.py": "7d42aaaa5ade775722899cc11a84b05b00294e6af7ff3e5cf3b3896cf340fdc7",
+    "D:\\C\u76d8\u8fc1\u79fb\u5f52\u6863\\\u684c\u9762\u5927\u6587\u4ef6\u5939\\research\\ip-paper-baselines-v2-20261009\\ip-followup-20261025\\objective-gap-designs-20261025\\coupled-bundle\\transfer_primary_uniform.py": "4a66510f1afd34ab53cb3d6a20b89b9ba9413f5a3c14d0ed587d9d8f7817bb18"
+  }
+}
