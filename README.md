@@ -12,13 +12,19 @@ $$
 
 Here $\mathcal X$ is the fixed, bounded feasible set and $c$ is the cost vector. We learn an affine space $x=x_0+Uz$, where $x_0$ is a reference solution and the columns of $U$ are learned directions. For each new cost, we solve for the reduced variables $z$ while keeping the original constraints, including the integer requirements for IPs.
 
-**Exact compression.** An affine restriction preserves every optimal solution for every cost in the specified cost set if and only if it contains all solutions that can be optimal for those costs. The smallest such space is their affine hull. Its dimension determines how far the problem can be compressed without losing any optimizer.
+> **Theorem (Exact compression).**
+>
+> An affine restriction preserves every optimal solution for every cost in the specified cost set if and only if it contains all solutions that can be optimal for those costs. The smallest such space is their affine hull. Its dimension determines how far the problem can be compressed without losing any optimizer.
 
-**Learning from data.** The algorithm starts from a solution that is optimal for an allowed cost, chosen independently of the training data. It adds directions until the affine space contains every optimizer of each training problem. For LPs, let $d^\star$ be the minimum dimension above. After $n$ independent training costs drawn from a distribution on the specified cost set, the algorithm learns at most $d^\star$ directions. With probability at least $1-\delta$ over the training data, its probability of failing to preserve all optimizers for a new independent cost from that distribution is at most
+<!-- Separate theorem blocks. -->
 
-$$
-\frac{4}{n}\left(6d^\star+\log\frac{e}{\delta}\right).
-$$
+> **Theorem (Learning guarantee).**
+>
+> The algorithm starts from a solution that is optimal for an allowed cost, chosen independently of the training data. It adds directions until the affine space contains every optimizer of each training problem. For LPs, let $d^\star$ be the minimum dimension above. After $n$ independent training costs drawn from a distribution on the specified cost set, the algorithm learns at most $d^\star$ directions. With probability at least $1-\delta$ over the training data, its probability of failing to preserve all optimizers for a new independent cost from that distribution is at most
+>
+> $$
+> \frac{4}{n}\left(6d^\star+\log\frac{e}{\delta}\right).
+> $$
 
 Thus, the bound decreases as $1/n$ and depends on the dimension needed for optimal decisions. The same guarantee holds for IPs using their corresponding minimum affine dimension. When the optimizer is unique almost surely, learning reduces to independent training solves followed by a basis computation.
 
