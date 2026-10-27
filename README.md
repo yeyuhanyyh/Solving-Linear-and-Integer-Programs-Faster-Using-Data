@@ -4,19 +4,21 @@ Research code and experimental results for the paper by **Yuhan Ye and Omar Benn
 
 ## Problem setting and main results
 
-We study repeated LPs with a fixed nonempty bounded polytope $\mathcal X\subseteq\mathbb R^d$ and costs $c$ in a nonempty convex set $\mathcal C\subseteq\mathbb R^d$:
+We study linear programs (LPs) with a fixed nonempty bounded feasible polytope $\mathcal X\subseteq\mathbb R^d$ and varying cost vectors $c$ in a nonempty convex set $\mathcal C\subseteq\mathbb R^d$:
 
 $$
 \min_{x\in\mathcal X}c^\top x.
 $$
 
-Following the paper, define
+Let $\mathcal X^\star(c)$ be the set of optimal solutions for cost $c$, and let $\mathcal X^\star(\mathcal C)$ collect these solutions over all allowed costs:
 
 $$
 \mathcal X^\star(c):=\operatorname*{argmin}_{x\in\mathcal X}c^\top x,
 \qquad
 \mathcal X^\star(\mathcal C):=\bigcup_{c\in\mathcal C}\mathcal X^\star(c),
 $$
+
+For a set $S\subseteq\mathbb R^d$, define
 
 $$
 \operatorname{dir}(S):=\operatorname{span}\lbrace x-y:x,y\in S\rbrace,
@@ -32,20 +34,22 @@ $$
 > \iff \mathcal X^\star(\mathcal C)\subseteq V.
 > $$
 >
-> Equivalently,
+> The restriction is exact if and only if
 >
 > $$
 > \operatorname{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr)\subseteq\operatorname{dir}(V),
 > \qquad V\cap\mathcal X^\star(\mathcal C)\ne\varnothing.
 > $$
 >
-> The minimum dimension is $d^\star$, attained by $V=x_0+\operatorname{dir}(\mathcal X^\star(\mathcal C))$ for any $x_0\in\mathcal X^\star(\mathcal C)$.
+> Among exact affine restrictions, the minimum dimension is $d^\star$, attained by $V=x_0+\operatorname{dir}(\mathcal X^\star(\mathcal C))$ for any $x_0\in\mathcal X^\star(\mathcal C)$.
 
-Exact compression keeps every solution that can be optimal for the allowed costs. Only directions along which these solutions differ need to be retained.
+Exact compression retains all potentially optimal solutions using only the directions along which they differ.
 
-For $V=x_0+\operatorname{range}(U)$, write $\mathsf{Exact}(U,x_0,c)$ when the optimizer-set equality above holds at cost $c$.
+Write the restriction as $x=x_0+Uz$, where $x_0$ is a reference solution, the columns of $U$ are learned directions, and $z$ contains the reduced variables. Here $\operatorname{range}(U)$ is the column space of $U$, and feasibility requires $x_0+Uz\in\mathcal X$. Define $\mathsf{Exact}(U,x_0,c)$ by $\mathcal X^\star(c)\subseteq x_0+\operatorname{range}(U)$.
 
-> **Theorem (Learning guarantee).** Let $n\ge1$ and $c_1,\ldots,c_n\overset{\mathrm{i.i.d.}}{\sim}P_c$, with $P_c$ supported on $\mathcal C$. Fix $x_0\in\mathcal X^\star(\mathcal C)$ independently of these samples. The paper's LP learning algorithm, with deterministic choices, returns $U_n$ satisfying
+The learner starts with an empty $U$ and processes each training cost in turn. If an optimal vertex $x$ lies outside $x_0+\operatorname{range}(U)$, it appends $x-x_0$ to $U$. It repeats this step until the space contains all optimizers for that cost, then moves to the next cost.
+
+> **Theorem (Learning guarantee).** Let $n\ge1$ and $c_1,\ldots,c_n\overset{\mathrm{i.i.d.}}{\sim}P_c$, with $P_c$ supported on $\mathcal C$. Fix $x_0\in\mathcal X^\star(\mathcal C)$ independently of these samples. With deterministic choices, the learner above returns a matrix $U_n$ after the $n$ training costs, satisfying
 >
 > $$
 > \operatorname{range}(U_n)\subseteq\operatorname{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr),
@@ -67,7 +71,7 @@ For $V=x_0+\operatorname{range}(U)$, write $\mathsf{Exact}(U,x_0,c)$ when the op
 
 The failure bound decreases as $1/n$ and depends on the decision-relevant dimension $d^\star$. When optimizers are unique almost surely, the training solves can run in parallel, followed by a basis computation.
 
-**IP extension.** For nonempty $\mathcal X_I=\mathcal X\cap\mathbb Z^d$, the same statements hold with $\mathcal X_I$, $\mathcal X_I^\star$, and $d_I^\star:=\dim\operatorname{dir}(\mathcal X_I^\star(\mathcal C))$ in place of their LP counterparts, using the paper's IP learner. The compressed formulation retains $x_0+Uz\in\mathbb Z^d$.
+**Integer programs (IPs).** Let $\mathcal X_I=\mathcal X\cap\mathbb Z^d\ne\varnothing$. Define $\mathcal X_I^\star(c)$ and $\mathcal X_I^\star(\mathcal C)$ as above, optimizing over $\mathcal X_I$. The two theorems apply with these optimizer sets and $d_I^\star:=\dim\operatorname{dir}(\mathcal X_I^\star(\mathcal C))$. The learner uses integer optimizers in place of LP vertices, and the compressed problem retains $x_0+Uz\in\mathbb Z^d$.
 
 The experiments below compare solution quality, learning time, and LP solve time. They cover synthetic LPs, Netlib benchmarks, unit commitment, and knapsack.
 
@@ -98,6 +102,8 @@ These commands use the Python standard library. The repository includes source c
 | $d$ | Number of variables in the original LP after preprocessing |
 | $K$ | Number of variables in the reduced LP. For IPs, see the explanation before Tables 3 and 4 |
 
+Here $K$ is the compression size used in an experiment, while $d^\star$ is the theoretical minimum for exact compression over $\mathcal C$.
+
 **Ours** is our affine compression method. **Full** solves the original problem. **OursExact**, used in the supplementary LP experiments, is our method when the set of possible costs is known.
 
 We implement the following baselines based on the cited papers:
@@ -109,7 +115,7 @@ We implement the following baselines based on the cited papers:
 | LP | **Rand** | A random subset of variables | [Akchen and Mišić (2024)](https://doi.org/10.1287/opre.2020.0494) |
 | IP | **SVM** | Values for selected integer variables, which are then fixed | [Xavier, Qiu, and Ahmed (2021)](https://doi.org/10.1287/ijoc.2020.0976) |
 | IP | **Neural Diving** | Partial integer assignments predicted by a neural network | [Nair et al. (2020)](https://arxiv.org/abs/2012.13349) |
-| IP | **MLOPT** | Which strategy from previously solved problems to use | [Bertsimas and Stellato (2022)](https://doi.org/10.1287/ijoc.2022.1181) |
+| IP | **MLOPT** | Which reduced formulation from previously solved problems to use | [Bertsimas and Stellato (2022)](https://doi.org/10.1287/ijoc.2022.1181) |
 | IP | **Preference Learning** | How to rank reduced formulations by their solution quality and feasibility | [Li et al. (2025)](https://ojs.aaai.org/index.php/AAAI/article/view/34916) |
 
 The [LP timing protocol](results/paper_lp/README.md) and [IP documentation](ip/README.md) explain the implementations, training settings, and changes made to compare methods at the same compression level.
@@ -148,7 +154,7 @@ We run each experiment with three independently sampled datasets, each containin
 
 **Learning time (s)**
 
-| Instance | $d$ | $K$ by seed | Ours | FCNN |
+| Instance | $d$ | $K$ by run | Ours | FCNN |
 |---|---:|---:|---:|---:|
 | Packing | 360 | (19,19,19) | 0.084 ± 0.005 | 40.066 ± 1.766 |
 | MinCostFlow | 360 | (3,1,1) | 0.189 ± 0.017 | 25.973 ± 5.973 |
@@ -181,7 +187,7 @@ The original LP package also includes the following plots and raw results. Use t
 | Experiment | Plot | Raw results | Runner ID |
 |---|---|---|---|
 | Objective ratio versus $\rho$ | [Outside-mass sweep](figures/figure3_fresh_legacy_execution.png) | [CSV](results/fresh/figure3_timing_raw.csv) | `figure3` |
-| Objective ratio versus $n$, with $K\in\{10,20,30,50\}$ | [Training-sample comparison](figures/figure4_fresh_legacy_execution.png) | [CSV](results/fresh/figure4_timing_raw.csv) | `figure4` |
+| Objective ratio versus $n$, with $K\in\lbrace10,20,30,50\rbrace$ | [Training-sample comparison](figures/figure4_fresh_legacy_execution.png) | [CSV](results/fresh/figure4_timing_raw.csv) | `figure4` |
 | Learned dimension versus $n$ | [Dimension growth](figures/figure2_fresh_rank_growth.png) | [CSV](results/fresh/figure2_rank_growth_raw.csv) | `figure2` |
 
 For the LP plots, objective ratio is the returned objective divided by the Full objective. The code expresses these LPs as maximization problems. The outside-mass plot uses the saved standard errors for its bands. The training-sample plot uses sample standard deviations across held-out LPs. These plots are regenerated outputs of the archived LP package.
