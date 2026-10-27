@@ -13,7 +13,7 @@ $$
 Let $\mathcal X^\star(c)$ be the set of optimal solutions for cost $c$, and let $\mathcal X^\star(\mathcal C)$ collect these solutions over all allowed costs:
 
 $$
-\mathcal X^\star(c):=\operatorname*{argmin}_{x\in\mathcal X}c^\top x,
+\mathcal X^\star(c):=\mathrm{argmin}_{x\in\mathcal X}c^\top x,
 \qquad
 \mathcal X^\star(\mathcal C):=\bigcup_{c\in\mathcal C}\mathcal X^\star(c),
 $$
@@ -21,15 +21,15 @@ $$
 For a set $S\subseteq\mathbb R^d$, define
 
 $$
-\operatorname{dir}(S):=\operatorname{span}\lbrace x-y:x,y\in S\rbrace,
+\mathrm{dir}(S):=\mathrm{span}\lbrace x-y:x,y\in S\rbrace,
 \qquad
-d^\star:=\dim\operatorname{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr).
+d^\star:=\dim\mathrm{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr).
 $$
 
 > **Theorem (Exact compression).** Let $V\subseteq\mathbb R^d$ be an affine space. Then
 >
 > $$
-> \left[\operatorname*{argmin}_{x\in\mathcal X\cap V}c^\top x
+> \left[\mathrm{argmin}_{x\in\mathcal X\cap V}c^\top x
 > =\mathcal X^\star(c)\quad\forall c\in\mathcal C\right]
 > \iff \mathcal X^\star(\mathcal C)\subseteq V.
 > $$
@@ -37,23 +37,23 @@ $$
 > The restriction is exact if and only if
 >
 > $$
-> \operatorname{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr)\subseteq\operatorname{dir}(V),
+> \mathrm{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr)\subseteq\mathrm{dir}(V),
 > \qquad V\cap\mathcal X^\star(\mathcal C)\ne\varnothing.
 > $$
 >
-> Among exact affine restrictions, the minimum dimension is $d^\star$, attained by $V=x_0+\operatorname{dir}(\mathcal X^\star(\mathcal C))$ for any $x_0\in\mathcal X^\star(\mathcal C)$.
+> Among exact affine restrictions, the minimum dimension is $d^\star$, attained by $V=x_0+\mathrm{dir}(\mathcal X^\star(\mathcal C))$ for any $x_0\in\mathcal X^\star(\mathcal C)$.
 
 Exact compression retains all potentially optimal solutions using only the directions along which they differ.
 
-Write the restriction as $x=x_0+Uz$, where $x_0$ is a reference solution, the columns of $U$ are learned directions, and $z$ contains the reduced variables. Here $\operatorname{range}(U)$ is the column space of $U$, and feasibility requires $x_0+Uz\in\mathcal X$. Define $\mathsf{Exact}(U,x_0,c)$ by $\mathcal X^\star(c)\subseteq x_0+\operatorname{range}(U)$.
+Write the restriction as $x=x_0+Uz$, where $x_0$ is a reference solution, the columns of $U$ are learned directions, and $z$ contains the reduced variables. Here $\mathrm{range}(U)$ is the column space of $U$, and feasibility requires $x_0+Uz\in\mathcal X$. Define $\mathsf{Exact}(U,x_0,c)$ by $\mathcal X^\star(c)\subseteq x_0+\mathrm{range}(U)$.
 
-The learner starts with an empty $U$ and processes each training cost in turn. If an optimal vertex $x$ lies outside $x_0+\operatorname{range}(U)$, it appends $x-x_0$ to $U$. It repeats this step until the space contains all optimizers for that cost, then moves to the next cost.
+The learner starts with an empty $U$ and processes each training cost in turn. If an optimal vertex $x$ lies outside $x_0+\mathrm{range}(U)$, it appends $x-x_0$ to $U$. It repeats this step until the space contains all optimizers for that cost, then moves to the next cost.
 
 > **Theorem (Learning guarantee).** Let $n\ge1$ and $c_1,\ldots,c_n\overset{\mathrm{i.i.d.}}{\sim}P_c$, with $P_c$ supported on $\mathcal C$. Fix $x_0\in\mathcal X^\star(\mathcal C)$ independently of these samples. With deterministic choices, the learner above returns a matrix $U_n$ after the $n$ training costs, satisfying
 >
 > $$
-> \operatorname{range}(U_n)\subseteq\operatorname{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr),
-> \qquad \operatorname{rank}(U_n)\le d^\star,
+> \mathrm{range}(U_n)\subseteq\mathrm{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr),
+> \qquad \mathrm{rank}(U_n)\le d^\star,
 > $$
 >
 > $$
@@ -71,7 +71,7 @@ The learner starts with an empty $U$ and processes each training cost in turn. I
 
 The failure bound decreases as $1/n$ and depends on the decision-relevant dimension $d^\star$. When optimizers are unique almost surely, the training solves can run in parallel, followed by a basis computation.
 
-**Integer programs (IPs).** Let $\mathcal X_I=\mathcal X\cap\mathbb Z^d\ne\varnothing$. Define $\mathcal X_I^\star(c)$ and $\mathcal X_I^\star(\mathcal C)$ as above, optimizing over $\mathcal X_I$. The two theorems apply with these optimizer sets and $d_I^\star:=\dim\operatorname{dir}(\mathcal X_I^\star(\mathcal C))$. The learner uses integer optimizers in place of LP vertices, and the compressed problem retains $x_0+Uz\in\mathbb Z^d$.
+**Integer programs (IPs).** Let $\mathcal X_I=\mathcal X\cap\mathbb Z^d\ne\varnothing$. Define $\mathcal X_I^\star(c)$ and $\mathcal X_I^\star(\mathcal C)$ as above, optimizing over $\mathcal X_I$. The two theorems apply with these optimizer sets and $d_I^\star:=\dim\mathrm{dir}(\mathcal X_I^\star(\mathcal C))$. The learner uses integer optimizers in place of LP vertices, and the compressed problem retains $x_0+Uz\in\mathbb Z^d$.
 
 The experiments below compare solution quality, learning time, and LP solve time. They cover synthetic LPs, Netlib benchmarks, unit commitment, and knapsack.
 
