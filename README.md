@@ -1,7 +1,28 @@
 # Solving Linear and Integer Programs Faster Using Data
 
 Research code and experimental results for the paper by **Yuhan Ye and Omar Bennouna**.
-We learn affine restrictions for LPs and IPs that share a feasible region and have varying objective coefficients.
+
+## Problem setting and main results
+
+We study linear programs (LPs) and integer programs (IPs) that are solved repeatedly with the same constraints and different costs:
+
+$$
+\min_{x\in\mathcal X} c^\top x.
+$$
+
+Here $\mathcal X$ is the fixed, bounded feasible set and $c$ is the cost vector. We learn an affine space $x=x_0+Uz$, where $x_0$ is a reference solution and the columns of $U$ are learned directions. For each new cost, we solve for the reduced variables $z$ while keeping the original constraints, including the integer requirements for IPs.
+
+**Exact compression.** An affine restriction preserves every optimal solution for every cost in the specified cost set if and only if it contains all solutions that can be optimal for those costs. The smallest such space is their affine hull. Its dimension determines how far the problem can be compressed without losing any optimizer.
+
+**Learning from data.** The algorithm starts from a solution that is optimal for an allowed cost, chosen independently of the training data. It adds directions until the affine space contains every optimizer of each training problem. For LPs, let $d^\star$ be the minimum dimension above. After $n$ independent training costs drawn from a distribution on the specified cost set, the algorithm learns at most $d^\star$ directions. With probability at least $1-\delta$ over the training data, its probability of failing to preserve all optimizers for a new independent cost from that distribution is at most
+
+$$
+\frac{4}{n}\left(6d^\star+\log\frac{e}{\delta}\right).
+$$
+
+Thus, the bound decreases as $1/n$ and depends on the dimension needed for optimal decisions. The same guarantee holds for IPs using their corresponding minimum affine dimension. When the optimizer is unique almost surely, learning reduces to independent training solves followed by a basis computation.
+
+The experiments below compare solution quality, learning time, and LP solve time. They cover synthetic LPs, Netlib benchmarks, unit commitment, and knapsack.
 
 ## Getting started
 
@@ -22,31 +43,37 @@ python ip/validate_results.py
 
 These commands use the Python standard library. The repository includes source code, synthetic data, fitted models, individual test records, and the recorded learning times.
 
-## Notation and methods
+## Reading the results
 
-The notation and displayed method names below follow the current manuscript.
-
-| Symbol | Meaning in the experiments |
+| Symbol | Meaning |
 |---|---|
-| $c$ | Objective cost vector |
-| $x_0+Uz$ | Learned affine restriction, with anchor $x_0$ and basis $U$ |
-| $d$ | Original LP dimension after preprocessing |
-| $n$ | Number of training costs. Table 1 counts costs before prior filtering |
-| $K$ | Reduced LP variable count. For IPs, the learned affine dimension or the number of common integer coordinates left free by a baseline |
-| $D$ | Size of the integer block being compressed: 48 for UC and 96 for knapsack |
-| $\rho$ | Target probability mass excluded by the estimated cost prior $\widehat{\mathcal C}$ |
+| $n$ | Number of training examples |
+| $d$ | Number of variables in the original LP after preprocessing |
+| $K$ | Number of variables in the reduced LP. For IPs, see the explanation before Tables 3 and 4 |
 
-**Ours** is our affine compression method. The LP baselines are **DataDrivenProj** (a shared learned projection), **FCNN** (a cost-dependent neural projection), and **Rand** (random variable selection). **OursExact** denotes the known-prior method in the supplementary LP experiments. **Full** solves the original formulation.
+**Ours** is our affine compression method. **Full** solves the original problem. **OursExact**, used in the supplementary LP experiments, is our method when the set of possible costs is known.
 
-The IP baselines are **SVM**, **Neural Diving**, **MLOPT**, and **Preference Learning**. Their implementations, training settings, and dimension-matching rules are described in [the IP documentation](ip/README.md). Archived code and data retain their original internal identifiers.
+We implement the following baselines based on the cited papers:
+
+| Problem | Method | What it learns or selects | Reference |
+|---|---|---|---|
+| LP | **DataDrivenProj** | One projection matrix shared across costs | [Sakaue and Oki (2024)](https://proceedings.nips.cc/paper_files/paper/2024/hash/1780db9272f81961459f4906036ebc6f-Abstract-Conference.html) |
+| LP | **FCNN** | A neural network that generates a projection for each cost vector | [Iwata and Sakaue (2025)](https://proceedings.mlr.press/v267/iwata25a.html) |
+| LP | **Rand** | A random subset of variables | [Akchen and Mišić (2024)](https://doi.org/10.1287/opre.2020.0494) |
+| IP | **SVM** | Values for selected integer variables, which are then fixed | [Xavier, Qiu, and Ahmed (2021)](https://doi.org/10.1287/ijoc.2020.0976) |
+| IP | **Neural Diving** | Partial integer assignments predicted by a neural network | [Nair et al. (2020)](https://arxiv.org/abs/2012.13349) |
+| IP | **MLOPT** | Which strategy from previously solved problems to use | [Bertsimas and Stellato (2022)](https://doi.org/10.1287/ijoc.2022.1181) |
+| IP | **Preference Learning** | How to rank reduced formulations by their solution quality and feasibility | [Li et al. (2025)](https://ojs.aaai.org/index.php/AAAI/article/view/34916) |
+
+The [LP timing protocol](results/paper_lp/README.md) and [IP documentation](ip/README.md) explain the implementations, training settings, and changes made to compare methods at the same compression level.
 
 ## LP results
 
-The following timings reproduce Tables 1 and 2 of the current manuscript. Learning time is in seconds. LP solve time is the HiGHS solver time in milliseconds. The [saved records and verification script](results/paper_lp/) retain the separate preparation and prediction measurements.
+The following timings reproduce Tables 1 and 2 of the manuscript. Learning time measures training in seconds. LP solve time measures the time HiGHS spends solving a test LP, in milliseconds. Prediction and preparation times are recorded separately in the [saved results](results/paper_lp/).
 
-### Table 1: outside-mass comparison
+### Table 1: learning within a selected cost region
 
-Here $\rho=0.5$ and $n=40$ before prior filtering. All compressed methods use the same $K$ for each instance. Entries are means ± sample standard deviations over three timing repetitions on fixed data.
+We start with 40 training LPs and learn within a selected region of the cost distribution. The parameter $\rho=0.5$ sets the target probability mass outside that region to one half. For each problem, Ours, DataDrivenProj, and FCNN produce LPs with the same number of variables, shown as $K$. We repeat the timing measurements three times using the same data and report the average ± standard deviation.
 
 **Learning time (s)**
 
@@ -66,11 +93,11 @@ Here $\rho=0.5$ and $n=40$ before prior filtering. All compressed methods use th
 | RandomLP C | 30.216 ± 0.082 | 2.893 ± 0.062 | 11.809 ± 1.428 | 9.286 ± 2.038 |
 | SC205 | 4.273 ± 0.527 | 4.251 ± 0.219 | 4.740 ± 0.116 | 2.336 ± 0.237 |
 
-The Ours/Full follow-up uses 20 test LPs, while the archived baseline records use 12. The [protocol](results/paper_lp/README.md) identifies the source runs and the DataDrivenProj implementation.
+The recorded tests use 20 LPs for Ours and Full, and 12 for the projection baselines. See the [timing protocol](results/paper_lp/README.md) for details.
 
-### Table 2: matched-dimension comparison
+### Table 2: comparison at the same number of reduced variables
 
-Both methods use $n=20$ training LPs and 20 test LPs per seed. Each $K$ triple gives the reduced dimensions for the three independent seeds. Entries are means ± sample standard deviations across those seeds.
+We run each experiment with three independently sampled datasets, each containing 20 training LPs and 20 test LPs. Within each run, Ours and FCNN use the same data and produce LPs with the same number of variables. The three $K$ values correspond to these three runs. We report the average timing ± standard deviation across the runs.
 
 **Learning time (s)**
 
@@ -102,7 +129,7 @@ On these eight instances, Ours learns **30.1–477.0× faster than FCNN**. Its r
 
 ### Accuracy and dimension plots
 
-The original LP package also provides the following plots and raw results. The scripts retain their original artifact IDs.
+The original LP package also includes the following plots and raw results. Use the runner ID in the commands below to rerun an experiment.
 
 | Experiment | Plot | Raw results | Runner ID |
 |---|---|---|---|
@@ -114,11 +141,13 @@ For the LP plots, objective ratio is the returned objective divided by the Full 
 
 ## IP results
 
-Each problem uses three physical instances and 120 test costs per instance, giving **360 tests**. The UC model has 144 binary variables and 48 continuous variables. Its compression concerns the 48 on/off variables. The knapsack model has 96 binary variables, all included in the compression.
+We test unit commitment (UC) and knapsack on three problem instances each, using 120 test costs per instance, for **360 tests per problem**. UC has 144 binary variables and 48 continuous variables. We compress its 48 on/off decisions. Knapsack has 96 binary decisions, all of which are compressed.
+
+For Ours, $K$ is the dimension of the learned affine space. We set each baseline to leave $K$ decisions unfixed in the same group of variables. The other decisions in that group are fixed using its predictions.
 
 ### Table 3: unit commitment with block-varying costs
 
-Here $n=32$. Each compression baseline uses the same $K$ as Ours for each instance.
+Each instance uses 32 training examples. Ours learns dimensions of 14, 14, and 17 for the three instances, and each baseline leaves that many on/off decisions unfixed.
 
 | Method | $K$ | Recovery (%) | Objective ratio | Learning time (s) |
 |---|---:|---:|---:|---:|
@@ -131,7 +160,7 @@ Here $n=32$. Each compression baseline uses the same $K$ as Ours for each instan
 
 ### Table 4: knapsack with conflicting upgrades
 
-Here $n=36$ and $K=32$ for every compressed method.
+Each instance uses 36 training examples. Ours learns a 32-dimensional affine space, and each baseline leaves 32 item decisions unfixed.
 
 | Method | $K$ | Recovery (%) | Objective ratio | Learning time (s) |
 |---|---:|---:|---:|---:|
@@ -144,9 +173,11 @@ Here $n=36$ and $K=32$ for every compressed method.
 
 Ours achieves higher recovery rates and objective ratios than the other compression methods on both problems. It also learns much faster than Neural Diving and Preference Learning.
 
-**Recovery (%)** is the percentage of all 360 tests that return an original-feasible solution within 30 seconds and recover the optimal value within the stated numerical tolerance. **Objective ratio** is Full optimal cost divided by returned cost for UC, and returned profit divided by Full optimal profit for knapsack. Higher is better, with 1 denoting optimality. Ratio means use feasible solutions returned within the time limit.
+**Recovery (%)** measures how often a method returns the original optimal value. It counts all 360 tests and requires a solution that satisfies the original constraints and is returned within 30 seconds. The numerical tolerance is specified in the [IP documentation](ip/README.md).
 
-**Learning time (s)** starts after computing the shared training optima. It includes model fitting, model selection, and refitting. Entries are means ± sample standard deviations across the three instances. The [IP directory](ip/) also contains the additional 2,000-update Neural Diving experiment, frozen checkpoints, and per-test records.
+**Objective ratio** measures solution quality. It is optimal cost / returned cost for UC and returned profit / optimal profit for knapsack. Higher is better, and 1 means optimal. We average this ratio over feasible solutions returned within the time limit.
+
+**Learning time (s)** measures model fitting, model selection, and refitting after the shared training problems have been solved. We report the average ± standard deviation across the three problem instances. All standard deviations in these tables use the sample standard deviation. The [IP directory](ip/) also contains an experiment with 2,000 additional Neural Diving training updates, saved models, and individual test results.
 
 ## Running the experiments
 
