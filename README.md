@@ -2,6 +2,8 @@
 
 Research code and experimental results for the paper by **Yuhan Ye and Omar Bennouna**.
 
+Many applications repeatedly solve linear or integer programs with the same constraints but changing objective coefficients. Our idea is to restrict optimization to an affine space containing the optimal solutions that can arise over a chosen cost region, and reuse this space for future solves. We characterize the smallest such space and develop algorithms that learn a compressed formulation from sampled costs, with guarantees on the probability of preserving the full optimizer set for a new cost. Choosing the cost region lets us balance the size of the compressed problem against the probability of preserving optimality.
+
 ## Problem setting and main results
 
 We study linear programs (LPs) with a fixed nonempty bounded feasible polytope $\mathcal X\subseteq\mathbb R^d$ and varying cost vectors $c$ in a nonempty convex set $\mathcal C\subseteq\mathbb R^d$:
