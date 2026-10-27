@@ -4,29 +4,70 @@ Research code and experimental results for the paper by **Yuhan Ye and Omar Benn
 
 ## Problem setting and main results
 
-We study linear programs (LPs) and integer programs (IPs) that are solved repeatedly with the same constraints and different costs:
+We study repeated LPs with a fixed nonempty bounded polytope $\mathcal X\subseteq\mathbb R^d$ and costs $c$ in a nonempty convex set $\mathcal C\subseteq\mathbb R^d$:
 
 $$
-\min_{x\in\mathcal X} c^\top x.
+\min_{x\in\mathcal X}c^\top x.
 $$
 
-Here $\mathcal X$ is the fixed, bounded feasible set and $c$ is the cost vector. We learn an affine space $x=x_0+Uz$, where $x_0$ is a reference solution and the columns of $U$ are learned directions. For each new cost, we solve for the reduced variables $z$ while keeping the original constraints, including the integer requirements for IPs.
+Following the paper, define
 
-> **Theorem (Exact compression).**
->
-> An affine restriction preserves every optimal solution for every cost in the specified cost set if and only if it contains all solutions that can be optimal for those costs. The smallest such space is their affine hull. Its dimension determines how far the problem can be compressed without losing any optimizer.
+$$
+\mathcal X^\star(c):=\operatorname*{argmin}_{x\in\mathcal X}c^\top x,
+\qquad
+\mathcal X^\star(\mathcal C):=\bigcup_{c\in\mathcal C}\mathcal X^\star(c),
+$$
 
-<!-- Separate theorem blocks. -->
+$$
+\operatorname{dir}(S):=\operatorname{span}\lbrace x-y:x,y\in S\rbrace,
+\qquad
+d^\star:=\dim\operatorname{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr).
+$$
 
-> **Theorem (Learning guarantee).**
->
-> The algorithm starts from a solution that is optimal for an allowed cost, chosen independently of the training data. It adds directions until the affine space contains every optimizer of each training problem. For LPs, let $d^\star$ be the minimum dimension above. After $n$ independent training costs drawn from a distribution on the specified cost set, the algorithm learns at most $d^\star$ directions. With probability at least $1-\delta$ over the training data, its probability of failing to preserve all optimizers for a new independent cost from that distribution is at most
+> **Theorem (Exact compression).** Let $V\subseteq\mathbb R^d$ be an affine space. Then
 >
 > $$
-> \frac{4}{n}\left(6d^\star+\log\frac{e}{\delta}\right).
+> \left[\operatorname*{argmin}_{x\in\mathcal X\cap V}c^\top x
+> =\mathcal X^\star(c)\quad\forall c\in\mathcal C\right]
+> \iff \mathcal X^\star(\mathcal C)\subseteq V.
 > $$
+>
+> Equivalently,
+>
+> $$
+> \operatorname{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr)\subseteq\operatorname{dir}(V),
+> \qquad V\cap\mathcal X^\star(\mathcal C)\ne\varnothing.
+> $$
+>
+> The minimum dimension is $d^\star$, attained by $V=x_0+\operatorname{dir}(\mathcal X^\star(\mathcal C))$ for any $x_0\in\mathcal X^\star(\mathcal C)$.
 
-Thus, the bound decreases as $1/n$ and depends on the dimension needed for optimal decisions. The same guarantee holds for IPs using their corresponding minimum affine dimension. When the optimizer is unique almost surely, learning reduces to independent training solves followed by a basis computation.
+Exact compression keeps every solution that can be optimal for the allowed costs. Only directions along which these solutions differ need to be retained.
+
+For $V=x_0+\operatorname{range}(U)$, write $\mathsf{Exact}(U,x_0,c)$ when the optimizer-set equality above holds at cost $c$.
+
+> **Theorem (Learning guarantee).** Let $n\ge1$ and $c_1,\ldots,c_n\overset{\mathrm{i.i.d.}}{\sim}P_c$, with $P_c$ supported on $\mathcal C$. Fix $x_0\in\mathcal X^\star(\mathcal C)$ independently of these samples. The paper's LP learning algorithm, with deterministic choices, returns $U_n$ satisfying
+>
+> $$
+> \operatorname{range}(U_n)\subseteq\operatorname{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr),
+> \qquad \operatorname{rank}(U_n)\le d^\star,
+> $$
+>
+> $$
+> \mathsf{Exact}(U_n,x_0,c_i)\qquad(i=1,\ldots,n).
+> $$
+>
+> For every $\delta\in(0,1)$, with probability at least $1-\delta$ over the training sample,
+>
+> $$
+> \mathbb P_{c\sim P_c}\left[\mathsf{Exact}(U_n,x_0,c)\right]
+> \ge 1-\frac{4}{n}\left(6d^\star+\log\frac{e}{\delta}\right),
+> $$
+>
+> where the test cost $c\sim P_c$ is independent of the training sample.
+
+The failure bound decreases as $1/n$ and depends on the decision-relevant dimension $d^\star$. When optimizers are unique almost surely, the training solves can run in parallel, followed by a basis computation.
+
+**IP extension.** For nonempty $\mathcal X_I=\mathcal X\cap\mathbb Z^d$, the same statements hold with $\mathcal X_I$, $\mathcal X_I^\star$, and $d_I^\star:=\dim\operatorname{dir}(\mathcal X_I^\star(\mathcal C))$ in place of their LP counterparts, using the paper's IP learner. The compressed formulation retains $x_0+Uz\in\mathbb Z^d$.
 
 The experiments below compare solution quality, learning time, and LP solve time. They cover synthetic LPs, Netlib benchmarks, unit commitment, and knapsack.
 
