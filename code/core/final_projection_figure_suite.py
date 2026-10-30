@@ -1573,8 +1573,29 @@ def netlib_cases(base_root: Path) -> List[CaseSpec]:
                 "costonly_hidden_dim": 16,
             },
         ),
-        ("scagr25", "SCAGR25", 1300, {}),
-        ("stair", "STAIR", 1400, {"sample_radius_frac": 0.02, "netlib_cost_rank": 1, "netlib_basis_mode": "ray"}),
+        (
+            "scagr25",
+            "SCAGR25",
+            1300,
+            {
+                "sample_mode": "factor_gaussian",
+                "factor_scale_frac": 0.70,
+                "factor_decay": 0.82,
+            },
+        ),
+        (
+            "stair",
+            "STAIR",
+            1400,
+            {
+                "sample_mode": "factor_gaussian",
+                "factor_scale_frac": 0.70,
+                "factor_decay": 0.82,
+                "sample_radius_frac": 0.02,
+                "netlib_cost_rank": 10,
+                "netlib_basis_mode": "topabs",
+            },
+        ),
     ]
     out = []
     for stem, title, seed_offset, extra in names:
