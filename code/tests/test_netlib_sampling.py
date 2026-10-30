@@ -2,12 +2,13 @@
 
 Run with ``python -m unittest discover -s code/tests -p test_netlib_sampling.py``.
 These checks generate three tiny objective samples per case. They neither read
-Netlib data nor solve LPs. The basis test mocks MPS loading; the sampler test
-mocks only nominal-prior selection.
+Netlib data nor solve LPs. Basis tests mock MPS loading and coordinate-bound
+solves; the sampler test mocks only nominal-prior selection.
 """
 
 from pathlib import Path
 import sys
+from types import SimpleNamespace
 import unittest
 from unittest import mock
 
@@ -67,36 +68,140 @@ class NetlibGaussianSamplingTests(unittest.TestCase):
         self.assertEqual(base.sample_mode, "multiplicative_factor")
         self.assertEqual(base.factor_scale_frac, 0.13)
         self.assertEqual(base.factor_decay, 0.41)
-        self.assertEqual(suite.case_namespace(base, cases["stair"]).netlib_basis_mode, "topabs")
+        self.assertEqual(suite.case_namespace(base, cases["stair"]).netlib_basis_mode, "bounded_topabs")
 
     def test_netlib_builder_constructs_all_requested_cost_directions(self):
         for name, (rank, _, _) in self.CASES.items():
             with self.subTest(case=name):
                 case = self.cases()[name]
                 args = suite.case_namespace(suite.default_namespace(), case)
-                n_vars = rank + 2
-                # Distinct magnitudes avoid ambiguity in the top-absolute-cost
-                # ordering. Only MPS loading is replaced; basis construction is real.
+                n_vars = rank + 3
+                # Distinct magnitudes avoid ambiguity in coordinate ordering.
+                # STAIR's highest-priority coordinate is unbounded and the next
+                # is fixed. Neither may pad the requested varying cost rank.
                 rewards = np.arange(1.0, n_vars + 1.0)
+                inequalities = np.eye(n_vars)
+                if name == "stair":
+                    inequalities[:, -1] = 0.0
+                equalities = np.zeros((2 if name == "stair" else 1, n_vars))
+                equalities[0, 0] = 1.0
+                equality_rhs = np.zeros(equalities.shape[0])
+                feasible_anchor = np.zeros(n_vars)
+                if name == "stair":
+                    equalities[1, -2] = 1.0
+                    equality_rhs[1] = 0.5
+                    feasible_anchor[-2] = 0.5
                 data = {
                     "reward_base": rewards,
-                    "A_ineq": np.eye(n_vars),
+                    "A_ineq": inequalities,
                     "b_ineq": np.ones(n_vars),
-                    "A_eq": np.empty((0, n_vars)),
-                    "b_eq": np.empty(0),
-                    "x0": np.zeros(n_vars),
+                    "A_eq": equalities,
+                    "b_eq": equality_rhs,
+                    "x0": feasible_anchor,
                 }
-                with mock.patch.object(suite, "load_mps_fixed_feasible_data", return_value=data) as loader:
+                visited = []
+
+                def coordinate_max(c, **kwargs):
+                    c = np.asarray(c)
+                    coordinate = int(np.argmax(np.abs(c)))
+                    sign = float(c[coordinate])
+                    self.assertIn(sign, [-1.0, 1.0])
+                    np.testing.assert_array_equal(c, sign * np.eye(n_vars)[coordinate])
+                    np.testing.assert_array_equal(kwargs["A_ub"], inequalities)
+                    np.testing.assert_array_equal(kwargs["b_ub"], data["b_ineq"])
+                    np.testing.assert_array_equal(kwargs["A_eq"], equalities)
+                    np.testing.assert_array_equal(kwargs["b_eq"], data["b_eq"])
+                    bounds = kwargs.get("bounds", (0, None))
+                    if isinstance(bounds, tuple):
+                        bounds = [bounds] * n_vars
+                    self.assertEqual(list(bounds), [(0.0, None)] * n_vars)
+                    visited.append((coordinate, sign))
+                    if coordinate == n_vars - 1:
+                        self.assertEqual(sign, -1.0)
+                        return SimpleNamespace(success=False, status=3, fun=None, x=None, message="unbounded")
+                    value = 0.5 if coordinate == n_vars - 2 else (1.0 if sign < 0 else 0.0)
+                    return SimpleNamespace(success=True, status=0, fun=sign * value, x=None, message="optimal")
+
+                with mock.patch.object(suite, "load_mps_fixed_feasible_data", return_value=data) as loader, \
+                     mock.patch.object(suite, "linprog", side_effect=coordinate_max) as coordinate_solver:
                     problem = suite.make_netlib_problem(case, args, np.random.default_rng(17))
                 loader.assert_called_once_with(case.mps_path)
                 self.assertEqual(problem.U_reward.shape, (n_vars, rank))
                 self.assertEqual(np.linalg.matrix_rank(problem.U_reward), rank)
                 self.assertEqual(problem.metadata["netlib_basis_rank"], rank)
-                self.assertEqual(problem.metadata["netlib_basis_mode"], "topabs")
-                expected_indices = np.arange(n_vars - 1, n_vars - rank - 1, -1)
+                if name == "stair":
+                    self.assertEqual(problem.metadata["netlib_basis_mode"], "bounded_topabs")
+                    expected_indices = np.arange(n_vars - 3, n_vars - rank - 3, -1)
+                    expected_visits = [(n_vars - 1, -1.0), (n_vars - 2, -1.0), (n_vars - 2, 1.0)]
+                    expected_visits += [(j, sign) for j in expected_indices.tolist() for sign in (-1.0, 1.0)]
+                    self.assertEqual(visited, expected_visits)
+                else:
+                    self.assertEqual(problem.metadata["netlib_basis_mode"], "topabs")
+                    expected_indices = np.arange(n_vars - 1, n_vars - rank - 1, -1)
+                    coordinate_solver.assert_not_called()
                 np.testing.assert_array_equal(problem.metadata["netlib_topabs_indices"], expected_indices)
                 np.testing.assert_array_equal(np.argmax(np.abs(problem.U_reward), axis=0), expected_indices)
                 np.testing.assert_allclose(problem.U_reward.T @ problem.U_reward, np.eye(rank), atol=1e-14)
+                np.testing.assert_array_equal(problem.A_ineq, inequalities)
+                np.testing.assert_array_equal(problem.b_ineq, data["b_ineq"])
+                np.testing.assert_array_equal(problem.A_eq, equalities)
+                np.testing.assert_array_equal(problem.b_eq, data["b_eq"])
+                self.assertIsNone(problem.ub)
+
+    def test_bounded_basis_rejects_failed_or_nonfinite_bound_checks(self):
+        vec = np.array([4.0, -9.0, 3.0])
+        args = (vec, 2, np.eye(3), np.ones(3), np.empty((0, 3)), np.empty(0))
+        failures = [
+            SimpleNamespace(success=False, status=2, fun=None, message="infeasible"),
+            SimpleNamespace(success=False, status=4, fun=None, message="numerical failure"),
+            SimpleNamespace(success=True, status=0, fun=np.inf, message="nonfinite optimum"),
+            SimpleNamespace(success=True, status=0, fun=np.nan, message="nonfinite optimum"),
+        ]
+        for result in failures:
+            for phase in ("maximum", "minimum"):
+                with self.subTest(status=result.status, objective=result.fun, phase=phase):
+                    responses = [result] if phase == "maximum" else [
+                        SimpleNamespace(success=True, status=0, fun=-1.0, message="optimal"), result,
+                    ]
+                    with mock.patch.object(suite, "linprog", side_effect=responses) as solver:
+                        with self.assertRaises(RuntimeError):
+                            suite.bounded_topabs_coordinate_basis(*args)
+                    self.assertEqual(solver.call_count, len(responses))
+
+    def test_bounded_basis_rejects_insufficient_bounded_coordinates(self):
+        def coordinate_max(c, **kwargs):
+            coordinate = int(np.argmax(np.abs(c)))
+            if coordinate == 0:
+                value = -1.0 if c[coordinate] < 0 else 0.0
+                return SimpleNamespace(success=True, status=0, fun=value, message="optimal")
+            return SimpleNamespace(success=False, status=3, fun=None, message="unbounded")
+
+        with mock.patch.object(suite, "linprog", side_effect=coordinate_max) as solver:
+            with self.assertRaises(RuntimeError):
+                suite.bounded_topabs_coordinate_basis(
+                    np.array([4.0, -9.0, 3.0]), 2,
+                    np.eye(3), np.ones(3), np.empty((0, 3)), np.empty(0),
+                )
+        self.assertEqual(solver.call_count, 4)
+
+    def test_bounded_basis_does_not_count_numerically_fixed_coordinates(self):
+        def bounds_for_coordinate(c, **kwargs):
+            coordinate = int(np.argmax(np.abs(c)))
+            sign = float(c[coordinate])
+            if coordinate == 0:
+                value = 1.0 + 1e-10 if sign < 0 else 1.0
+            else:
+                value = 1.0 if sign < 0 else 0.0
+            return SimpleNamespace(success=True, status=0, fun=sign * value, message="optimal")
+
+        with mock.patch.object(suite, "linprog", side_effect=bounds_for_coordinate) as solver:
+            basis, indices = suite.bounded_topabs_coordinate_basis(
+                np.array([9.0, 8.0]), 1,
+                np.eye(2), np.ones(2), np.empty((0, 2)), np.empty(0),
+            )
+        np.testing.assert_array_equal(indices, [1])
+        np.testing.assert_array_equal(basis, [[0.0], [1.0]])
+        self.assertEqual(solver.call_count, 4)
 
     @staticmethod
     def toy_problem(rank):

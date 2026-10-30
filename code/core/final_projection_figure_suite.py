@@ -831,6 +831,55 @@ def topabs_coordinate_basis(vec: np.ndarray, rank: int) -> Tuple[np.ndarray, np.
     return U, idx
 
 
+def bounded_topabs_coordinate_basis(
+    vec: np.ndarray,
+    rank: int,
+    A_ineq: np.ndarray,
+    b_ineq: np.ndarray,
+    A_eq: np.ndarray,
+    b_eq: np.ndarray,
+) -> Tuple[np.ndarray, np.ndarray]:
+    """Select varying coordinates with finite bounds on the original feasible set.
+
+    Gaussian factors have both signs. Restricting them to bounded coordinates
+    keeps their objective contribution bounded without adding variable bounds.
+    """
+    vec = np.asarray(vec, dtype=float).reshape(-1)
+    if not 1 <= rank <= vec.size:
+        raise ValueError("The requested cost rank must be between 1 and the variable count.")
+    selected = []
+    for j in np.argsort(-np.abs(vec)):
+        objective = np.zeros(vec.size)
+        objective[j] = -1.0
+        arguments = dict(
+            A_ub=A_ineq if len(b_ineq) else None,
+            b_ub=b_ineq if len(b_ineq) else None,
+            A_eq=A_eq if len(b_eq) else None,
+            b_eq=b_eq if len(b_eq) else None,
+            bounds=[(0.0, None)] * vec.size,
+            method="highs",
+        )
+        maximum = linprog(objective, **arguments)
+        if maximum.status == 3:
+            continue
+        if not maximum.success or not np.isfinite(maximum.fun):
+            raise RuntimeError(f"Could not bound Netlib coordinate {j}: {maximum.message}")
+        minimum = linprog(-objective, **arguments)
+        if not minimum.success or not np.isfinite(minimum.fun):
+            raise RuntimeError(f"Could not bound Netlib coordinate {j}: {minimum.message}")
+        if np.isclose(-maximum.fun, minimum.fun, rtol=1e-8, atol=1e-8):
+            continue
+        selected.append(int(j))
+        if len(selected) == rank:
+            break
+    if len(selected) != rank:
+        raise RuntimeError(f"Only {len(selected)} varying bounded cost coordinates; requested {rank}.")
+    indices = np.asarray(selected, dtype=int)
+    basis = np.zeros((vec.size, rank))
+    basis[indices, np.arange(rank)] = 1.0
+    return basis, indices
+
+
 def local_edge_reward_basis(problem: OriginalFixedXProblem, rank: int) -> Tuple[np.ndarray, np.ndarray]:
     rank = int(rank)
     if rank <= 0:
@@ -872,6 +921,12 @@ def make_netlib_problem(case: CaseSpec, args: argparse.Namespace, rng: np.random
     basis_mode = str(getattr(args, "netlib_basis_mode", "topabs")).lower()
     if basis_mode == "topabs":
         U_reward, top_idx = topabs_coordinate_basis(reward_center, rank)
+        basis_meta = {"netlib_topabs_indices": top_idx}
+    elif basis_mode == "bounded_topabs":
+        U_reward, top_idx = bounded_topabs_coordinate_basis(
+            reward_center, rank,
+            data["A_ineq"], data["b_ineq"], data["A_eq"], data["b_eq"],
+        )
         basis_meta = {"netlib_topabs_indices": top_idx}
     elif basis_mode == "local_edge":
         temp_problem = OriginalFixedXProblem(
@@ -1593,7 +1648,7 @@ def netlib_cases(base_root: Path) -> List[CaseSpec]:
                 "factor_decay": 0.82,
                 "sample_radius_frac": 0.02,
                 "netlib_cost_rank": 10,
-                "netlib_basis_mode": "topabs",
+                "netlib_basis_mode": "bounded_topabs",
             },
         ),
     ]

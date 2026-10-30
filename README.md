@@ -261,7 +261,7 @@ python benchmark_runtime.py --scope all --repeats 3 --force
 
 Their outputs remain in `results/timing/`. The current manuscript timing tables are rebuilt from the separate saved records in `results/paper_lp/`. Full neural retraining can take several hours on a CPU.
 
-SCAGR25 and STAIR use additive Gaussian cost perturbations. STAIR uses 10 coordinate cost directions. Before radial clipping, factor $j$ has standard deviation $\sigma_j=0.70R_i(0.82)^{j-1}$, where $R_i$ is the sampling radius. The perturbation is projected onto the radius-$R_i$ ball when needed. The bundled historical results use the earlier sampling configuration. For new runs of these cases, choose a fresh output directory or use `--force` to avoid reusing those cached results.
+SCAGR25 and STAIR use additive Gaussian cost perturbations. STAIR uses 10 coordinate cost directions. Coordinate minimization and maximization LPs select variables that can vary and have finite upper bounds on the original feasible set. Before radial clipping, factor $j$ has standard deviation $\sigma_j=0.70R_i(0.82)^{j-1}$, where $R_i$ is the sampling radius. The perturbation is projected onto the radius-$R_i$ ball when needed. The bundled historical results use the earlier sampling configuration. For new runs of these cases, choose a fresh output directory or use `--force` to avoid reusing those cached results.
 
 Run the sampler checks with:
 
