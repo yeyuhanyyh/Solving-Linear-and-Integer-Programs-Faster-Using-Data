@@ -35,18 +35,19 @@ $$
 
 Let $V\subseteq\mathbb R^d$ be an affine space. Then
 
-```math
-\left[\mathrm{argmin}_{x\in\mathcal X\cap V}c^\top x
-=\mathcal X^\star(c)\quad\forall c\in\mathcal C\right]
-\iff \mathcal X^\star(\mathcal C)\subseteq V.
-```
+<div align="center">
+
+$\displaystyle \left[\mathrm{argmin}_{x\in\mathcal X\cap V}c^\top x =\mathcal X^\star(c)\quad\forall c\in\mathcal C\right] \iff \mathcal X^\star(\mathcal C)\subseteq V.$
+
+</div>
 
 The restriction is exact if and only if
 
-```math
-\mathrm{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr)\subseteq\mathrm{dir}(V),
-\qquad V\cap\mathcal X^\star(\mathcal C)\ne\varnothing.
-```
+<div align="center">
+
+$\displaystyle \mathrm{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr)\subseteq\mathrm{dir}(V), \qquad V\cap\mathcal X^\star(\mathcal C)\ne\varnothing.$
+
+</div>
 
 Among exact affine restrictions, the minimum dimension is $d^\star$, attained by $V=x_0+\mathrm{dir}(\mathcal X^\star(\mathcal C))$ for any $x_0\in\mathcal X^\star(\mathcal C)$.
 
@@ -66,21 +67,19 @@ The learner starts with an empty $U$ and processes each training cost in turn. I
 
 Let $n\ge1$ and draw $c_1,\ldots,c_n$ independently from a distribution $P_c$ supported on $\mathcal C$. Fix $x_0\in\mathcal X^\star(\mathcal C)$ independently of these samples. With deterministic choices, the learner above returns a matrix $U_n$ after the $n$ training costs, satisfying
 
-```math
-\begin{gathered}
-\mathrm{range}(U_n)\subseteq\mathrm{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr),
-\qquad \mathrm{rank}(U_n)\le d^\star,
-\\
-\mathsf{Exact}(U_n,x_0,c_i)\qquad(i=1,\ldots,n).
-\end{gathered}
-```
+<div align="center">
+
+$\displaystyle \begin{gathered} \mathrm{range}(U_n)\subseteq\mathrm{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr), \qquad \mathrm{rank}(U_n)\le d^\star, \\ \mathsf{Exact}(U_n,x_0,c_i)\qquad(i=1,\ldots,n). \end{gathered}$
+
+</div>
 
 For every $\delta\in(0,1)$, with probability at least $1-\delta$ over the training sample,
 
-```math
-\mathbb P_{c\sim P_c}\left[\mathsf{Exact}(U_n,x_0,c)\right]
-\ge 1-\frac{4}{n}\left(6d^\star+\log\frac{e}{\delta}\right),
-```
+<div align="center">
+
+$\displaystyle \mathbb P_{c\sim P_c}\left[\mathsf{Exact}(U_n,x_0,c)\right] \ge 1-\frac{4}{n}\left(6d^\star+\log\frac{e}{\delta}\right),$
+
+</div>
 
 where the test cost $c\sim P_c$ is independent of the training sample.
 
