@@ -6,6 +6,9 @@ ip/*.json text eol=lf
 ip/snapshot/** -text
 ip/provenance/** -text
 
+# Current IP source/data guards also require exact bytes on every platform.
+ip/current/** -text
+
 # Saved LP timing records are verified by their original byte hashes.
 results/paper_lp/sources/** -text
 results/paper_lp/provenance.json text eol=lf

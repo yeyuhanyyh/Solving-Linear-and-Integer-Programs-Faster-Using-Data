@@ -1,0 +1,300 @@
+{
+  "schema": "raw-validated-current-ip-paper-results-v1",
+  "status": "PASS",
+  "checks": 58335,
+  "errors": [],
+  "tables": {
+    "unit_commitment": [
+      {
+        "method": "Full",
+        "K_by_instance": [
+          48,
+          48,
+          48
+        ],
+        "tests": 360,
+        "recovered": 360,
+        "recovery_percent": 100.0,
+        "ratio_valid_returns": 360,
+        "objective_ratio": 1.0,
+        "learning_time_seconds": null,
+        "learning_time_sample_sd_seconds": null,
+        "learning_time_by_instance": null
+      },
+      {
+        "method": "Ours",
+        "K_by_instance": [
+          14,
+          14,
+          17
+        ],
+        "tests": 360,
+        "recovered": 320,
+        "recovery_percent": 88.88888888888889,
+        "ratio_valid_returns": 360,
+        "objective_ratio": 0.9990939731106852,
+        "learning_time_seconds": 0.01653446666508292,
+        "learning_time_sample_sd_seconds": 0.000751886961574023,
+        "learning_time_by_instance": [
+          0.017355999996652827,
+          0.016366900003049523,
+          0.015880499995546415
+        ]
+      },
+      {
+        "method": "SVM",
+        "K_by_instance": [
+          14,
+          14,
+          17
+        ],
+        "tests": 360,
+        "recovered": 65,
+        "recovery_percent": 18.055555555555557,
+        "ratio_valid_returns": 341,
+        "objective_ratio": 0.9240269723201681,
+        "learning_time_seconds": 0.1297559999996641,
+        "learning_time_sample_sd_seconds": 0.04850651666662955,
+        "learning_time_by_instance": [
+          0.08500950000598095,
+          0.1813045000017155,
+          0.12295399999129586
+        ]
+      },
+      {
+        "method": "Neural Diving",
+        "K_by_instance": [
+          14,
+          14,
+          17
+        ],
+        "tests": 360,
+        "recovered": 268,
+        "recovery_percent": 74.44444444444444,
+        "ratio_valid_returns": 359,
+        "objective_ratio": 0.9944915777593201,
+        "learning_time_seconds": 236.15542376667145,
+        "learning_time_sample_sd_seconds": 24.799150596612968,
+        "learning_time_by_instance": [
+          208.70254970001406,
+          242.82830500000273,
+          256.93541659999755
+        ]
+      },
+      {
+        "method": "MLOPT",
+        "K_by_instance": [
+          14,
+          14,
+          17
+        ],
+        "tests": 360,
+        "recovered": 74,
+        "recovery_percent": 20.555555555555557,
+        "ratio_valid_returns": 360,
+        "objective_ratio": 0.9204625723567504,
+        "learning_time_seconds": 1.0661739666538779,
+        "learning_time_sample_sd_seconds": 0.15201464195475914,
+        "learning_time_by_instance": [
+          0.9495413999829907,
+          1.2380951999803074,
+          1.0108852999983355
+        ]
+      },
+      {
+        "method": "Preference Learning",
+        "K_by_instance": [
+          14,
+          14,
+          17
+        ],
+        "tests": 360,
+        "recovered": 79,
+        "recovery_percent": 21.944444444444443,
+        "ratio_valid_returns": 360,
+        "objective_ratio": 0.9060160132503732,
+        "learning_time_seconds": 662.8657076999953,
+        "learning_time_sample_sd_seconds": 199.4265428331117,
+        "learning_time_by_instance": [
+          744.0990680000104,
+          435.6430204999924,
+          808.8550345999829
+        ]
+      }
+    ],
+    "knapsack": [
+      {
+        "method": "Full",
+        "K_by_instance": [
+          96,
+          96,
+          96
+        ],
+        "tests": 360,
+        "recovered": 360,
+        "recovery_percent": 100.0,
+        "ratio_valid_returns": 360,
+        "objective_ratio": 1.0,
+        "learning_time_seconds": null,
+        "learning_time_sample_sd_seconds": null,
+        "learning_time_by_instance": null
+      },
+      {
+        "method": "Ours",
+        "K_by_instance": [
+          32,
+          32,
+          32
+        ],
+        "tests": 360,
+        "recovered": 360,
+        "recovery_percent": 100.0,
+        "ratio_valid_returns": 360,
+        "objective_ratio": 1.0,
+        "learning_time_seconds": 0.11457563333290939,
+        "learning_time_sample_sd_seconds": 0.010569777507494825,
+        "learning_time_by_instance": [
+          0.1027168000000529,
+          0.12300429999595508,
+          0.11800580000272021
+        ]
+      },
+      {
+        "method": "SVM",
+        "K_by_instance": [
+          32,
+          32,
+          32
+        ],
+        "tests": 360,
+        "recovered": 4,
+        "recovery_percent": 1.1111111111111112,
+        "ratio_valid_returns": 358,
+        "objective_ratio": 0.886799427233544,
+        "learning_time_seconds": 0.2638811333357201,
+        "learning_time_sample_sd_seconds": 0.09783849359555719,
+        "learning_time_by_instance": [
+          0.31948999999440275,
+          0.1509115000080783,
+          0.32124190000467934
+        ]
+      },
+      {
+        "method": "Neural Diving",
+        "K_by_instance": [
+          32,
+          32,
+          32
+        ],
+        "tests": 360,
+        "recovered": 52,
+        "recovery_percent": 14.444444444444445,
+        "ratio_valid_returns": 359,
+        "objective_ratio": 0.960870743075556,
+        "learning_time_seconds": 239.39853173334268,
+        "learning_time_sample_sd_seconds": 17.988577414949667,
+        "learning_time_by_instance": [
+          218.8394145000202,
+          252.24342490002164,
+          247.1127557999862
+        ]
+      },
+      {
+        "method": "MLOPT",
+        "K_by_instance": [
+          32,
+          32,
+          32
+        ],
+        "tests": 360,
+        "recovered": 35,
+        "recovery_percent": 9.722222222222221,
+        "ratio_valid_returns": 360,
+        "objective_ratio": 0.9534089572881813,
+        "learning_time_seconds": 1.5377185333248538,
+        "learning_time_sample_sd_seconds": 0.7310824558274418,
+        "learning_time_by_instance": [
+          1.962159899994731,
+          0.6935415999905672,
+          1.9574540999892633
+        ]
+      },
+      {
+        "method": "Preference Learning",
+        "K_by_instance": [
+          32,
+          32,
+          32
+        ],
+        "tests": 360,
+        "recovered": 51,
+        "recovery_percent": 14.166666666666666,
+        "ratio_valid_returns": 360,
+        "objective_ratio": 0.9535398264574422,
+        "learning_time_seconds": 713.0697752333266,
+        "learning_time_sample_sd_seconds": 255.87215861210362,
+        "learning_time_by_instance": [
+          417.9696958999848,
+          873.1704697000096,
+          848.0691600999853
+        ]
+      }
+    ]
+  },
+  "continued_neural_diving_control": {
+    "unit_commitment": {
+      "additional_optimizer_updates": 2000,
+      "total_test_costs": 360,
+      "paired_valid_returns": 349,
+      "original_objective_ratio": 0.9949276565065241,
+      "continued_objective_ratio": 0.9933906094401909,
+      "aggregation": "Same costs where both versions returned valid timely solutions; no selection by objective value",
+      "final_training_diagnostics_by_instance": [
+        {
+          "seed": 101,
+          "final_training_bit_error": 0.0
+        },
+        {
+          "seed": 211,
+          "final_training_bit_error": 0.0
+        },
+        {
+          "seed": 307,
+          "final_training_bit_error": 0.0
+        }
+      ]
+    },
+    "knapsack": {
+      "additional_optimizer_updates": 2000,
+      "total_test_costs": 360,
+      "paired_valid_returns": 346,
+      "original_objective_ratio": 0.9616896371375634,
+      "continued_objective_ratio": 0.9567168983146788,
+      "aggregation": "Same costs where both versions returned valid timely solutions; no selection by objective value",
+      "final_training_diagnostics_by_instance": [
+        {
+          "seed": 1009,
+          "final_training_bit_error": 0.004050925839692354
+        },
+        {
+          "seed": 1013,
+          "final_training_bit_error": 0.0011574074160307646
+        },
+        {
+          "seed": 1019,
+          "final_training_bit_error": 0.0147569440305233
+        }
+      ]
+    }
+  },
+  "recorded_source_files": 4009,
+  "source_list_sha256": "da28e29b9aeb8dcc58e57c751a72fc7849fac8f130299ea4c532ae1dcaa32f1a",
+  "metrics": {
+    "recovery": "All 360 test costs, original feasible return within 30 seconds, absolute objective error <=1e-6+1e-9*abs(Full).",
+    "unit_commitment_ratio": "Full original positive total cost / returned original total cost.",
+    "knapsack_ratio": "Returned original gross profit / Full optimal gross profit, including all basic-item values.",
+    "ratio_mean": "Arithmetic mean over each method's feasible, restriction-valid returns within 30 seconds; counts are recorded for auditability.",
+    "learning_time": "Post-label fitting, model selection and refitting. Arithmetic mean and sample standard deviation across three recorded instance timings. Shared training-optimum generation excluded."
+  },
+  "validation_scope": "Reads frozen NPZ numeric arrays and JSON records only. Recomputes primal constraints, bounds, integrality, affine/fixing restrictions, cost-map inputs, c dot x, metric decisions and timing aggregation. Reuses recorded Full reference bank; no new global optimality proof or solver/training execution."
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "grouped-knapsack-frozen-test-bank-v1",
+  "seeds": [
+    1009,
+    1013,
+    1019
+  ],
+  "count_per_seed": 120,
+  "total": 360,
+  "files": {
+    "testing/seed1009/confirmation.npz": "ee84127b83d137edd72ee7f3d2020965808e86f4b6f0bea86d51a2bacfe1a897",
+    "testing/seed1009/metadata.json": "977723bc43cbf08368cbe658373ce3fc3e6f97e39454f0830131a02601c85e70",
+    "testing/seed1009/reference-certificates.json": "8c31d4aa6895dba06ff895ec3727dfd3d3ed1fbd2e87f5a061666d5c81abc1fb",
+    "testing/seed1013/confirmation.npz": "4a9c909bda8251705004c4a6014172fcdf8dd51ee3ad1ec3dc69717c85f39921",
+    "testing/seed1013/metadata.json": "a6bee1a7ee1641d7c5d072eb7c771aa3d156fcc16f3e32514eb77f2c1262e46b",
+    "testing/seed1013/reference-certificates.json": "edd74eee753927c3280c53e2aedb4b57888b2ce451f7b33f1f002aa09b0425b4",
+    "testing/seed1019/confirmation.npz": "188031146d772b4e480f8ee380fc96267ab54fb56c76118ccb59af90b3502cad",
+    "testing/seed1019/metadata.json": "081453740098f3fac5b5addab0113427633e41fcfb2c18254caa227e8188e637",
+    "testing/seed1019/reference-certificates.json": "f6c22b1fd452e553808629d09c1451e02569798f4a9790d57d7c01420ab25344"
+  },
+  "test_data_excluded_from_training_upload": true,
+  "all_original_references_preserved": true
+}

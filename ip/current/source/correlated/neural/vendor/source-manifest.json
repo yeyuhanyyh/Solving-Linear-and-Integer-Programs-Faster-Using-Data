@@ -1,0 +1,42 @@
+[
+  {
+    "name": "adapter.py",
+    "sha256": "76c50433e395054d2c4e73df7e49144aff1678e14cb252c46149852b043fd636",
+    "original_root": "D:/C盘迁移归档/桌面大文件夹/research/ip-paper-baselines-v2-20261009"
+  },
+  {
+    "name": "dimension_diagnostics.py",
+    "sha256": "adcec8c49e24fa373cdf92532e1a3e1c980fd10dea722d1225223f50e398c099",
+    "original_root": "D:/C盘迁移归档/桌面大文件夹/research/ip-paper-baselines-v2-20261009"
+  },
+  {
+    "name": "mlopt_baseline.py",
+    "sha256": "ee35123e6212a72c663e3af98baf04fafd9d89b81ea64027934658706b57a068",
+    "original_root": "D:/C盘迁移归档/桌面大文件夹/research/ip-paper-baselines-v2-20261009"
+  },
+  {
+    "name": "nd_root_lp_features.py",
+    "sha256": "454a72a202881d3a46347c7105e3522657a721934b8eaf4b38247930498bff5c",
+    "original_root": "D:/C盘迁移归档/桌面大文件夹/research/ip-paper-baselines-v2-20261009"
+  },
+  {
+    "name": "neural_diving_baseline.py",
+    "sha256": "a4742d2fb496c7764b51b83bbbe93129d4c39c4da2118a30da085697852793a0",
+    "original_root": "D:/C盘迁移归档/桌面大文件夹/research/ip-paper-baselines-v2-20261009"
+  },
+  {
+    "name": "portable_adapter.py",
+    "sha256": "aa2cbdb7a06f5955a8a030401a5ffe3fbe43e13fd3e9719bb68bf569c6e85850",
+    "original_root": "D:/C盘迁移归档/桌面大文件夹/research/ip-paper-baselines-v2-20261009"
+  },
+  {
+    "name": "preference_baseline.py",
+    "sha256": "3825e64f3daa34884721cef260895d5e587da4366150f4b3ca17f6594c2ff9ba",
+    "original_root": "D:/C盘迁移归档/桌面大文件夹/research/ip-paper-baselines-v2-20261009"
+  },
+  {
+    "name": "strategy_match.py",
+    "sha256": "74ecd5b97480d3d50a5c0c1d5c128c33fc756f016409523d442950d1c6bd0434",
+    "original_root": "D:/C盘迁移归档/桌面大文件夹/research/ip-paper-baselines-v2-20261009"
+  }
+]

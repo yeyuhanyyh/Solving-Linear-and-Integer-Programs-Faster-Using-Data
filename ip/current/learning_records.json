@@ -1,0 +1,928 @@
+[
+  {
+    "problem": "uc",
+    "n": 512,
+    "method": "Ours",
+    "seed": 86001,
+    "fit_seconds": [
+      0.008778341666666667
+    ],
+    "source": "UC timing derivation",
+    "scope": "Mean of three warm fresh single-thread CPU exact affine fits, data/dependencies already loaded; export excluded."
+  },
+  {
+    "problem": "uc",
+    "n": 512,
+    "method": "Neural Diving",
+    "seed": 86001,
+    "fit_seconds": [
+      86.11960616684519
+    ],
+    "source": "UC timing derivation",
+    "scope": "Recorded epoch/architecture selection plus final refit, minus all separately timed validation matched-IP calls. Excludes root-LP feature computation, discarded diagnostic runs and export. Arithmetic extraction from the same old GPU checkpoint, not a new run."
+  },
+  {
+    "problem": "uc",
+    "n": 512,
+    "method": "Preference Learning",
+    "seed": 86001,
+    "fit_seconds": [
+      172.37746994872577
+    ],
+    "source": "UC timing derivation",
+    "scope": "Original internal fitting clock minus all development/final strategy decode wall calls, including KKT checks and actual reduced LP solves. Includes fitting/model selection, reward tensor preparation and a small unseparated reward-cache write. Final export excluded. Conservative arithmetic extraction, not a new run."
+  },
+  {
+    "problem": "uc",
+    "n": 512,
+    "method": "SVM",
+    "seed": 86001,
+    "fit_seconds": [
+      4.225056899987976,
+      4.168112100000144,
+      4.148116099997424
+    ],
+    "source": "strict-K SVM fit records",
+    "scope": "Five-fold reliability estimates and final linear SVM fits"
+  },
+  {
+    "problem": "uc",
+    "n": 512,
+    "method": "MLOPT",
+    "seed": 86001,
+    "fit_seconds": [
+      55.687555200012866,
+      39.69100480002817,
+      45.638731400016695
+    ],
+    "source": "case14-n512",
+    "scope": "CPU model selection, strategy construction and fitting"
+  },
+  {
+    "problem": "correlated",
+    "n": 32,
+    "method": "MLOPT",
+    "seed": 41001,
+    "fit_seconds": [
+      1.5467570999753661,
+      1.6565518000279553,
+      2.000577299972065
+    ],
+    "source": "knapsack-41001-n32",
+    "scope": "CPU model selection, strategy construction and fitting"
+  },
+  {
+    "problem": "correlated",
+    "n": 64,
+    "method": "MLOPT",
+    "seed": 41001,
+    "fit_seconds": [
+      3.422995000029914,
+      10.51937180000823,
+      5.058341600000858
+    ],
+    "source": "knapsack-41001-n64",
+    "scope": "CPU model selection, strategy construction and fitting"
+  },
+  {
+    "problem": "correlated",
+    "n": 128,
+    "method": "MLOPT",
+    "seed": 41001,
+    "fit_seconds": [
+      4.59993680001935,
+      3.84079039999051,
+      4.066179100016598
+    ],
+    "source": "knapsack-41001-n128",
+    "scope": "CPU model selection, strategy construction and fitting"
+  },
+  {
+    "problem": "correlated",
+    "n": 256,
+    "method": "MLOPT",
+    "seed": 41001,
+    "fit_seconds": [
+      9.346482199965976,
+      7.310107099998277,
+      6.004526900011115
+    ],
+    "source": "knapsack-41001-n256",
+    "scope": "CPU model selection, strategy construction and fitting"
+  },
+  {
+    "problem": "correlated",
+    "n": 32,
+    "method": "MLOPT",
+    "seed": 41002,
+    "fit_seconds": [
+      0.7221207999973558,
+      0.7272086999728344,
+      0.729208100005053
+    ],
+    "source": "knapsack-41002-n32",
+    "scope": "CPU model selection, strategy construction and fitting"
+  },
+  {
+    "problem": "correlated",
+    "n": 64,
+    "method": "MLOPT",
+    "seed": 41002,
+    "fit_seconds": [
+      1.2875298999715596,
+      1.3292537999805063,
+      1.595628300041426
+    ],
+    "source": "knapsack-41002-n64",
+    "scope": "CPU model selection, strategy construction and fitting"
+  },
+  {
+    "problem": "correlated",
+    "n": 128,
+    "method": "MLOPT",
+    "seed": 41002,
+    "fit_seconds": [
+      2.694506400031969,
+      2.7702110999962315,
+      2.5691846999689005
+    ],
+    "source": "knapsack-41002-n128",
+    "scope": "CPU model selection, strategy construction and fitting"
+  },
+  {
+    "problem": "correlated",
+    "n": 256,
+    "method": "MLOPT",
+    "seed": 41002,
+    "fit_seconds": [
+      4.472488400002476,
+      4.447565000038594,
+      4.63071779999882
+    ],
+    "source": "knapsack-41002-n256",
+    "scope": "CPU model selection, strategy construction and fitting"
+  },
+  {
+    "problem": "correlated",
+    "n": 32,
+    "method": "MLOPT",
+    "seed": 41003,
+    "fit_seconds": [
+      0.871515000006184,
+      0.8908853000029922,
+      0.7952501000254415
+    ],
+    "source": "knapsack-41003-n32",
+    "scope": "CPU model selection, strategy construction and fitting"
+  },
+  {
+    "problem": "correlated",
+    "n": 64,
+    "method": "MLOPT",
+    "seed": 41003,
+    "fit_seconds": [
+      1.5134913999936543,
+      1.4435122000286356,
+      1.4541422000038438
+    ],
+    "source": "knapsack-41003-n64",
+    "scope": "CPU model selection, strategy construction and fitting"
+  },
+  {
+    "problem": "correlated",
+    "n": 128,
+    "method": "MLOPT",
+    "seed": 41003,
+    "fit_seconds": [
+      3.2547688000486232,
+      3.018887700047344,
+      3.2997531999717467
+    ],
+    "source": "knapsack-41003-n128",
+    "scope": "CPU model selection, strategy construction and fitting"
+  },
+  {
+    "problem": "correlated",
+    "n": 256,
+    "method": "MLOPT",
+    "seed": 41003,
+    "fit_seconds": [
+      7.428673999966122,
+      9.349533800035715,
+      6.202347000013106
+    ],
+    "source": "knapsack-41003-n256",
+    "scope": "CPU model selection, strategy construction and fitting"
+  },
+  {
+    "problem": "grouped",
+    "n": 36,
+    "method": "Ours",
+    "seed": 1009,
+    "fit_seconds": [
+      0.008220600022468716,
+      0.0056437000166624784,
+      0.005348500038962811
+    ],
+    "source": "ip_fit_alignment_20261103/grouped/fits-cpu-v1/seed1009/ours/fit.json",
+    "scope": "Fitting after shared training optima, excluding export"
+  },
+  {
+    "problem": "grouped",
+    "n": 36,
+    "method": "SVM",
+    "seed": 1009,
+    "fit_seconds": [
+      0.8744011999806389,
+      0.8364425000036135,
+      0.8458079999545589
+    ],
+    "source": "ip_fit_alignment_20261103/grouped/fits-cpu-v1/seed1009/svm/fit.json",
+    "scope": "Fitting after shared training optima, excluding export"
+  },
+  {
+    "problem": "grouped",
+    "n": 36,
+    "method": "MLOPT",
+    "seed": 1009,
+    "fit_seconds": [
+      0.6583074000081979,
+      0.6505596999777481,
+      0.6360216999892145
+    ],
+    "source": "ip_fit_alignment_20261103/grouped/fits-cpu-v1/seed1009/mlopt/fit.json",
+    "scope": "Fitting after shared training optima, excluding export"
+  },
+  {
+    "problem": "grouped",
+    "n": 36,
+    "method": "Neural Diving",
+    "seed": 1009,
+    "fit_seconds": [
+      13.920658783055842
+    ],
+    "source": "ip_fit_alignment_20261103/downloads/20261104T020913Z-731a7eeb/results/fits/seed1009/neural_diving/fit.json",
+    "scope": "Fitting after shared training optima, excluding export"
+  },
+  {
+    "problem": "grouped",
+    "n": 36,
+    "method": "Preference Learning",
+    "seed": 1009,
+    "fit_seconds": [
+      125.41354976105504
+    ],
+    "source": "ip_fit_alignment_20261103/downloads/20261104T020913Z-731a7eeb/results/fits/seed1009/preference/fit.json",
+    "scope": "Fitting after shared training optima, excluding export"
+  },
+  {
+    "problem": "grouped",
+    "n": 36,
+    "method": "Ours",
+    "seed": 1013,
+    "fit_seconds": [
+      0.0076157000148668885,
+      0.008444900042377412,
+      0.007746499963104725
+    ],
+    "source": "ip_fit_alignment_20261103/grouped/fits-cpu-v1/seed1013/ours/fit.json",
+    "scope": "Fitting after shared training optima, excluding export"
+  },
+  {
+    "problem": "grouped",
+    "n": 36,
+    "method": "SVM",
+    "seed": 1013,
+    "fit_seconds": [
+      0.8469528999994509,
+      0.8538991000386886,
+      0.8769117000047117
+    ],
+    "source": "ip_fit_alignment_20261103/grouped/fits-cpu-v1/seed1013/svm/fit.json",
+    "scope": "Fitting after shared training optima, excluding export"
+  },
+  {
+    "problem": "grouped",
+    "n": 36,
+    "method": "MLOPT",
+    "seed": 1013,
+    "fit_seconds": [
+      0.7253479000064544,
+      0.6543705000076443,
+      0.6626888000173494
+    ],
+    "source": "ip_fit_alignment_20261103/grouped/fits-cpu-v1/seed1013/mlopt/fit.json",
+    "scope": "Fitting after shared training optima, excluding export"
+  },
+  {
+    "problem": "grouped",
+    "n": 36,
+    "method": "Neural Diving",
+    "seed": 1013,
+    "fit_seconds": [
+      17.749963769922033
+    ],
+    "source": "ip_fit_alignment_20261103/downloads/20261104T020913Z-731a7eeb/results/fits/seed1013/neural_diving/fit.json",
+    "scope": "Fitting after shared training optima, excluding export"
+  },
+  {
+    "problem": "grouped",
+    "n": 36,
+    "method": "Preference Learning",
+    "seed": 1013,
+    "fit_seconds": [
+      121.24662100686692
+    ],
+    "source": "ip_fit_alignment_20261103/downloads/20261104T020913Z-731a7eeb/results/fits/seed1013/preference/fit.json",
+    "scope": "Fitting after shared training optima, excluding export"
+  },
+  {
+    "problem": "grouped",
+    "n": 36,
+    "method": "Ours",
+    "seed": 1019,
+    "fit_seconds": [
+      0.007033800007775426,
+      0.007160800043493509,
+      0.007282000035047531
+    ],
+    "source": "ip_fit_alignment_20261103/grouped/fits-cpu-v1/seed1019/ours/fit.json",
+    "scope": "Fitting after shared training optima, excluding export"
+  },
+  {
+    "problem": "grouped",
+    "n": 36,
+    "method": "SVM",
+    "seed": 1019,
+    "fit_seconds": [
+      0.8448143000132404,
+      0.8467347999685444,
+      0.8470988000044599
+    ],
+    "source": "ip_fit_alignment_20261103/grouped/fits-cpu-v1/seed1019/svm/fit.json",
+    "scope": "Fitting after shared training optima, excluding export"
+  },
+  {
+    "problem": "grouped",
+    "n": 36,
+    "method": "MLOPT",
+    "seed": 1019,
+    "fit_seconds": [
+      0.6376715999795124,
+      0.6395630000042729,
+      0.6409238000051118
+    ],
+    "source": "ip_fit_alignment_20261103/grouped/fits-cpu-v1/seed1019/mlopt/fit.json",
+    "scope": "Fitting after shared training optima, excluding export"
+  },
+  {
+    "problem": "grouped",
+    "n": 36,
+    "method": "Neural Diving",
+    "seed": 1019,
+    "fit_seconds": [
+      7.842789525864646
+    ],
+    "source": "ip_fit_alignment_20261103/downloads/20261104T020913Z-731a7eeb/results/fits/seed1019/neural_diving/fit.json",
+    "scope": "Fitting after shared training optima, excluding export"
+  },
+  {
+    "problem": "grouped",
+    "n": 36,
+    "method": "Preference Learning",
+    "seed": 1019,
+    "fit_seconds": [
+      119.34563500015065
+    ],
+    "source": "ip_fit_alignment_20261103/downloads/20261104T020913Z-731a7eeb/results/fits/seed1019/preference/fit.json",
+    "scope": "Fitting after shared training optima, excluding export"
+  },
+  {
+    "problem": "correlated",
+    "n": 32,
+    "method": "Ours",
+    "seed": 41001,
+    "fit_seconds": [
+      0.003920666660026957
+    ],
+    "source": "41001/n32/ours",
+    "scope": "CPU exact affine fit"
+  },
+  {
+    "problem": "correlated",
+    "n": 32,
+    "method": "SVM",
+    "seed": 41001,
+    "fit_seconds": [
+      0.2840776333323447
+    ],
+    "source": "41001/n32/strict_svm",
+    "scope": "CPU five-fold reliability estimates and final SVM fitting"
+  },
+  {
+    "problem": "correlated",
+    "n": 32,
+    "method": "Neural Diving",
+    "seed": 41001,
+    "fit_seconds": [
+      112.74716684501618
+    ],
+    "source": "41001/n32/neural_diving_repaired",
+    "scope": "GPU architecture/epoch selection and final refit"
+  },
+  {
+    "problem": "correlated",
+    "n": 32,
+    "method": "Preference Learning",
+    "seed": 41001,
+    "fit_seconds": [
+      131.03711318096612
+    ],
+    "source": "41001/n32/preference_learning",
+    "scope": "GPU internal fitting and model selection"
+  },
+  {
+    "problem": "correlated",
+    "n": 32,
+    "method": "Ours",
+    "seed": 41002,
+    "fit_seconds": [
+      0.0014037999984187384
+    ],
+    "source": "41002/n32/ours",
+    "scope": "CPU exact affine fit"
+  },
+  {
+    "problem": "correlated",
+    "n": 32,
+    "method": "SVM",
+    "seed": 41002,
+    "fit_seconds": [
+      0.042526333335748255
+    ],
+    "source": "41002/n32/strict_svm",
+    "scope": "CPU five-fold reliability estimates and final SVM fitting"
+  },
+  {
+    "problem": "correlated",
+    "n": 32,
+    "method": "Neural Diving",
+    "seed": 41002,
+    "fit_seconds": [
+      110.97220228996594
+    ],
+    "source": "41002/n32/neural_diving_repaired",
+    "scope": "GPU architecture/epoch selection and final refit"
+  },
+  {
+    "problem": "correlated",
+    "n": 32,
+    "method": "Preference Learning",
+    "seed": 41002,
+    "fit_seconds": [
+      0.5494774869875982
+    ],
+    "source": "41002/n32/preference_learning",
+    "scope": "GPU internal fitting and model selection"
+  },
+  {
+    "problem": "correlated",
+    "n": 32,
+    "method": "Ours",
+    "seed": 41003,
+    "fit_seconds": [
+      0.004346233331792367
+    ],
+    "source": "41003/n32/ours",
+    "scope": "CPU exact affine fit"
+  },
+  {
+    "problem": "correlated",
+    "n": 32,
+    "method": "SVM",
+    "seed": 41003,
+    "fit_seconds": [
+      0.3043550333338014
+    ],
+    "source": "41003/n32/strict_svm",
+    "scope": "CPU five-fold reliability estimates and final SVM fitting"
+  },
+  {
+    "problem": "correlated",
+    "n": 32,
+    "method": "Neural Diving",
+    "seed": 41003,
+    "fit_seconds": [
+      87.70814919716213
+    ],
+    "source": "41003/n32/neural_diving_repaired",
+    "scope": "GPU architecture/epoch selection and final refit"
+  },
+  {
+    "problem": "correlated",
+    "n": 32,
+    "method": "Preference Learning",
+    "seed": 41003,
+    "fit_seconds": [
+      128.15939827996772
+    ],
+    "source": "41003/n32/preference_learning",
+    "scope": "GPU internal fitting and model selection"
+  },
+  {
+    "problem": "correlated",
+    "n": 64,
+    "method": "Ours",
+    "seed": 41001,
+    "fit_seconds": [
+      0.008894466664060019
+    ],
+    "source": "41001/n64/ours",
+    "scope": "CPU exact affine fit"
+  },
+  {
+    "problem": "correlated",
+    "n": 64,
+    "method": "SVM",
+    "seed": 41001,
+    "fit_seconds": [
+      0.3392029666671685
+    ],
+    "source": "41001/n64/strict_svm",
+    "scope": "CPU five-fold reliability estimates and final SVM fitting"
+  },
+  {
+    "problem": "correlated",
+    "n": 64,
+    "method": "Neural Diving",
+    "seed": 41001,
+    "fit_seconds": [
+      109.8212007349357
+    ],
+    "source": "41001/n64/neural_diving_repaired",
+    "scope": "GPU architecture/epoch selection and final refit"
+  },
+  {
+    "problem": "correlated",
+    "n": 64,
+    "method": "Preference Learning",
+    "seed": 41001,
+    "fit_seconds": [
+      128.09464186197147
+    ],
+    "source": "41001/n64/preference_learning",
+    "scope": "GPU internal fitting and model selection"
+  },
+  {
+    "problem": "correlated",
+    "n": 64,
+    "method": "Ours",
+    "seed": 41002,
+    "fit_seconds": [
+      0.0021224666658478477
+    ],
+    "source": "41002/n64/ours",
+    "scope": "CPU exact affine fit"
+  },
+  {
+    "problem": "correlated",
+    "n": 64,
+    "method": "SVM",
+    "seed": 41002,
+    "fit_seconds": [
+      0.05248899999908948
+    ],
+    "source": "41002/n64/strict_svm",
+    "scope": "CPU five-fold reliability estimates and final SVM fitting"
+  },
+  {
+    "problem": "correlated",
+    "n": 64,
+    "method": "Neural Diving",
+    "seed": 41002,
+    "fit_seconds": [
+      116.47894237702712
+    ],
+    "source": "41002/n64/neural_diving_repaired",
+    "scope": "GPU architecture/epoch selection and final refit"
+  },
+  {
+    "problem": "correlated",
+    "n": 64,
+    "method": "Preference Learning",
+    "seed": 41002,
+    "fit_seconds": [
+      0.8154487460851669
+    ],
+    "source": "41002/n64/preference_learning",
+    "scope": "GPU internal fitting and model selection"
+  },
+  {
+    "problem": "correlated",
+    "n": 64,
+    "method": "Ours",
+    "seed": 41003,
+    "fit_seconds": [
+      0.010503966666874476
+    ],
+    "source": "41003/n64/ours",
+    "scope": "CPU exact affine fit"
+  },
+  {
+    "problem": "correlated",
+    "n": 64,
+    "method": "SVM",
+    "seed": 41003,
+    "fit_seconds": [
+      0.4042875333301102
+    ],
+    "source": "41003/n64/strict_svm",
+    "scope": "CPU five-fold reliability estimates and final SVM fitting"
+  },
+  {
+    "problem": "correlated",
+    "n": 64,
+    "method": "Neural Diving",
+    "seed": 41003,
+    "fit_seconds": [
+      114.67504066694528
+    ],
+    "source": "41003/n64/neural_diving_repaired",
+    "scope": "GPU architecture/epoch selection and final refit"
+  },
+  {
+    "problem": "correlated",
+    "n": 64,
+    "method": "Preference Learning",
+    "seed": 41003,
+    "fit_seconds": [
+      129.62891766696703
+    ],
+    "source": "41003/n64/preference_learning",
+    "scope": "GPU internal fitting and model selection"
+  },
+  {
+    "problem": "correlated",
+    "n": 128,
+    "method": "Ours",
+    "seed": 41001,
+    "fit_seconds": [
+      0.016937166670686565
+    ],
+    "source": "41001/n128/ours",
+    "scope": "CPU exact affine fit"
+  },
+  {
+    "problem": "correlated",
+    "n": 128,
+    "method": "SVM",
+    "seed": 41001,
+    "fit_seconds": [
+      0.4533751999939947
+    ],
+    "source": "41001/n128/strict_svm",
+    "scope": "CPU five-fold reliability estimates and final SVM fitting"
+  },
+  {
+    "problem": "correlated",
+    "n": 128,
+    "method": "Neural Diving",
+    "seed": 41001,
+    "fit_seconds": [
+      129.92922842106782
+    ],
+    "source": "41001/n128/neural_diving_repaired",
+    "scope": "GPU architecture/epoch selection and final refit"
+  },
+  {
+    "problem": "correlated",
+    "n": 128,
+    "method": "Preference Learning",
+    "seed": 41001,
+    "fit_seconds": [
+      129.90746620600112
+    ],
+    "source": "41001/n128/preference_learning",
+    "scope": "GPU internal fitting and model selection"
+  },
+  {
+    "problem": "correlated",
+    "n": 128,
+    "method": "Ours",
+    "seed": 41002,
+    "fit_seconds": [
+      0.004941966665986304
+    ],
+    "source": "41002/n128/ours",
+    "scope": "CPU exact affine fit"
+  },
+  {
+    "problem": "correlated",
+    "n": 128,
+    "method": "SVM",
+    "seed": 41002,
+    "fit_seconds": [
+      0.13418023333360907
+    ],
+    "source": "41002/n128/strict_svm",
+    "scope": "CPU five-fold reliability estimates and final SVM fitting"
+  },
+  {
+    "problem": "correlated",
+    "n": 128,
+    "method": "Neural Diving",
+    "seed": 41002,
+    "fit_seconds": [
+      124.35016586002894
+    ],
+    "source": "41002/n128/neural_diving_repaired",
+    "scope": "GPU architecture/epoch selection and final refit"
+  },
+  {
+    "problem": "correlated",
+    "n": 128,
+    "method": "Preference Learning",
+    "seed": 41002,
+    "fit_seconds": [
+      133.4164144579554
+    ],
+    "source": "41002/n128/preference_learning",
+    "scope": "GPU internal fitting and model selection"
+  },
+  {
+    "problem": "correlated",
+    "n": 128,
+    "method": "Ours",
+    "seed": 41003,
+    "fit_seconds": [
+      0.016938199997336294
+    ],
+    "source": "41003/n128/ours",
+    "scope": "CPU exact affine fit"
+  },
+  {
+    "problem": "correlated",
+    "n": 128,
+    "method": "SVM",
+    "seed": 41003,
+    "fit_seconds": [
+      0.4131355333326307
+    ],
+    "source": "41003/n128/strict_svm",
+    "scope": "CPU five-fold reliability estimates and final SVM fitting"
+  },
+  {
+    "problem": "correlated",
+    "n": 128,
+    "method": "Neural Diving",
+    "seed": 41003,
+    "fit_seconds": [
+      119.49846753594466
+    ],
+    "source": "41003/n128/neural_diving_repaired",
+    "scope": "GPU architecture/epoch selection and final refit"
+  },
+  {
+    "problem": "correlated",
+    "n": 128,
+    "method": "Preference Learning",
+    "seed": 41003,
+    "fit_seconds": [
+      134.7010370339267
+    ],
+    "source": "41003/n128/preference_learning",
+    "scope": "GPU internal fitting and model selection"
+  },
+  {
+    "problem": "correlated",
+    "n": 256,
+    "method": "Ours",
+    "seed": 41001,
+    "fit_seconds": [
+      0.03203919999456654
+    ],
+    "source": "41001/n256/ours",
+    "scope": "CPU exact affine fit"
+  },
+  {
+    "problem": "correlated",
+    "n": 256,
+    "method": "SVM",
+    "seed": 41001,
+    "fit_seconds": [
+      0.7931101666666412
+    ],
+    "source": "41001/n256/strict_svm",
+    "scope": "CPU five-fold reliability estimates and final SVM fitting"
+  },
+  {
+    "problem": "correlated",
+    "n": 256,
+    "method": "Neural Diving",
+    "seed": 41001,
+    "fit_seconds": [
+      165.4028019210091
+    ],
+    "source": "41001/n256/neural_diving_repaired",
+    "scope": "GPU architecture/epoch selection and final refit"
+  },
+  {
+    "problem": "correlated",
+    "n": 256,
+    "method": "Preference Learning",
+    "seed": 41001,
+    "fit_seconds": [
+      239.26966151606757
+    ],
+    "source": "41001/n256/preference_learning",
+    "scope": "GPU internal fitting and model selection"
+  },
+  {
+    "problem": "correlated",
+    "n": 256,
+    "method": "Ours",
+    "seed": 41002,
+    "fit_seconds": [
+      0.005705533330910839
+    ],
+    "source": "41002/n256/ours",
+    "scope": "CPU exact affine fit"
+  },
+  {
+    "problem": "correlated",
+    "n": 256,
+    "method": "SVM",
+    "seed": 41002,
+    "fit_seconds": [
+      0.07131879999845599
+    ],
+    "source": "41002/n256/strict_svm",
+    "scope": "CPU five-fold reliability estimates and final SVM fitting"
+  },
+  {
+    "problem": "correlated",
+    "n": 256,
+    "method": "Neural Diving",
+    "seed": 41002,
+    "fit_seconds": [
+      152.1480099130422
+    ],
+    "source": "41002/n256/neural_diving_repaired",
+    "scope": "GPU architecture/epoch selection and final refit"
+  },
+  {
+    "problem": "correlated",
+    "n": 256,
+    "method": "Preference Learning",
+    "seed": 41002,
+    "fit_seconds": [
+      242.9818918389501
+    ],
+    "source": "41002/n256/preference_learning",
+    "scope": "GPU internal fitting and model selection"
+  },
+  {
+    "problem": "correlated",
+    "n": 256,
+    "method": "Ours",
+    "seed": 41003,
+    "fit_seconds": [
+      0.035338533334045984
+    ],
+    "source": "41003/n256/ours",
+    "scope": "CPU exact affine fit"
+  },
+  {
+    "problem": "correlated",
+    "n": 256,
+    "method": "SVM",
+    "seed": 41003,
+    "fit_seconds": [
+      0.762225733337497
+    ],
+    "source": "41003/n256/strict_svm",
+    "scope": "CPU five-fold reliability estimates and final SVM fitting"
+  },
+  {
+    "problem": "correlated",
+    "n": 256,
+    "method": "Neural Diving",
+    "seed": 41003,
+    "fit_seconds": [
+      195.31786815309897
+    ],
+    "source": "41003/n256/neural_diving_repaired",
+    "scope": "GPU architecture/epoch selection and final refit"
+  },
+  {
+    "problem": "correlated",
+    "n": 256,
+    "method": "Preference Learning",
+    "seed": 41003,
+    "fit_seconds": [
+      238.69073774805292
+    ],
+    "source": "41003/n256/preference_learning",
+    "scope": "GPU internal fitting and model selection"
+  }
+]

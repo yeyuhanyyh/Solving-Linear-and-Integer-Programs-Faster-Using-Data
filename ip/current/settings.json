@@ -1,0 +1,106 @@
+{
+  "manuscript_commit": "a886c72cb8780ee495649920058f141bb4405e0d",
+  "tables": {
+    "3": {
+      "problem": "uc",
+      "name": "Unit commitment",
+      "seeds": [
+        86001
+      ],
+      "n": [
+        512
+      ],
+      "validation": 64,
+      "tests_per_instance": 256,
+      "D": 180,
+      "K": [
+        19
+      ],
+      "variables": 2844,
+      "constraints": 2544,
+      "binary_variables": 540,
+      "source": "UnitCommitment.jl v0.4.3 matpower/case14/2017-02-01",
+      "cost_law": "Per-generator on/fuel/startup costs Uniform[0,1000]/[0,50]/[0,10000], rounded to two decimals, constant over 36 hours"
+    },
+    "4": {
+      "problem": "grouped",
+      "name": "Grouped knapsack",
+      "seeds": [
+        1009,
+        1013,
+        1019
+      ],
+      "n": [
+        36
+      ],
+      "tests_per_instance": 120,
+      "D": 96,
+      "K": [
+        32,
+        32,
+        32
+      ],
+      "cost_law": "32 upgrade values Uniform[0.1,2.5]; two basic items per group each have value0.25; fixed group capacities and conflicts"
+    },
+    "5": {
+      "problem": "correlated",
+      "name": "Correlated knapsack",
+      "seeds": [
+        41001,
+        41002,
+        41003
+      ],
+      "n": [
+        32,
+        64,
+        128,
+        256
+      ],
+      "tests_per_instance": 100,
+      "D": 100,
+      "K": {
+        "32": [
+          29,
+          1,
+          31
+        ],
+        "64": [
+          33,
+          1,
+          33
+        ],
+        "128": [
+          35,
+          1,
+          37
+        ],
+        "256": [
+          40,
+          1,
+          41
+        ]
+      },
+      "cost_law": "Fixed weights integerUniform[1,1000], capacity floor(sum(weights)/2); profit=weight+100+integerUniform[-2,2]"
+    }
+  },
+  "recovery_tolerance": "1e-6 + 1e-9 * abs(original optimum)",
+  "relative_ratio": "sum(returned-anchor)/sum(optimum-anchor)",
+  "ordinary_ratio": "mean(returned profit/optimal profit) over valid grouped-knapsack returns",
+  "time_limits_seconds": {
+    "uc": 30,
+    "grouped": 30,
+    "correlated": 20
+  },
+  "learning_time": "After supplied training costs and optimal solutions; excludes shared training IP solves",
+  "devices": {
+    "cpu": [
+      "Ours",
+      "SVM",
+      "MLOPT"
+    ],
+    "uc_neural": "RTX 4090",
+    "knapsack_neural": "RTX PRO 4500"
+  },
+  "sources_are_local_adaptations": true,
+  "neural_diving_candidates": 1
+}

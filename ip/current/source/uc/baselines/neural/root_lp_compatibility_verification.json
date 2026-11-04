@@ -1,0 +1,41 @@
+{
+  "schema": "root-lp-highs-warning-compatibility-v1",
+  "date_utc": "2026-10-30",
+  "pre_fit": true,
+  "cause": "Full UC.jl matrix loading returned kWarning for 9360 coefficients with magnitude4.18985e-19..2.08062e-15 ignored by the existing HiGHS default threshold1e-9. Vendor incorrectly rejected any status other than kOk.",
+  "fix": "Accept model-load kWarning, reject kError, require complete row/column dimensions, record status and source/loaded nonzero counts.",
+  "unchanged": [
+    "original matrix and bounds used for KKT certificate",
+    "tolerances",
+    "root LP definition",
+    "features",
+    "architecture",
+    "loss",
+    "batch size",
+    "training schedule",
+    "data and splits"
+  ],
+  "checks": {
+    "tiny_warning_error_dimension_regressions": {
+      "passed": 3,
+      "seconds": 0.005
+    },
+    "existing_neural_integration": {
+      "passed": 5,
+      "seconds": 3.09
+    },
+    "realistic_local_work": "Model loading only, no realistic optimization or training"
+  },
+  "changed_sha256": {
+    "vendor/nd_root_lp_features.py": "5a8079f5a5a68023bd9dd2a6ccf80b127ed4715e6e3cac5543e4e52ef5b94e49",
+    "neural_support.py": "731a37e3c156b6c13e64c72aefc1b502aa82ee5f0c2c8cb016787fd293d7f8e0",
+    "source_provenance.json": "a93c47d6619c4a1be925359cce0867c84f88034130c51865afcb4e1744a60d92",
+    "test_root_lp_compatibility.py": "fb77c086da3c6f92007709a606b3b5c6f4d23799c6721ee7632a58c65d2d3443",
+    "README.md": "34fd776b95470a816e6db26fc54b839da0cb0c6d8c6596aeb26341c3d6c655ca"
+  },
+  "original_vendor_sha256": "454a72a202881d3a46347c7105e3522657a721934b8eaf4b38247930498bff5c",
+  "preserved_archives": [
+    "uc-case14-main-v1.zip",
+    "uc-case14-main-v2.zip"
+  ]
+}

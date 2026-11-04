@@ -1,0 +1,89 @@
+{
+  "schema": "grouped-knapsack-fitting-alignment-v1",
+  "training_only": true,
+  "seeds": [
+    1009,
+    1013,
+    1019
+  ],
+  "cases": {
+    "1009": {
+      "seed": 1009,
+      "n_train": 36,
+      "D": 96,
+      "K": 32,
+      "features": 32,
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1009_n36",
+      "files": {
+        "training/seed1009/training.npz": "a62e7039ee0c31a96cba02c414ef84da3311c13aa90ac03d8f7073a81d24c6da",
+        "training/seed1009/metadata.json": "f7b51d9e1543dad5173d0f7139c5f50444a7dd189a4600d513406632b410ca97",
+        "training/seed1009/affine.json": "218d276684485e4e3288b857fabc57c2782d9283938b8c871586a19d0cc3bdc8"
+      },
+      "baseline_seed": 28995616
+    },
+    "1013": {
+      "seed": 1013,
+      "n_train": 36,
+      "D": 96,
+      "K": 32,
+      "features": 32,
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1013_n36",
+      "files": {
+        "training/seed1013/training.npz": "4a23ae48594f1cbe447458f814103f5ad3cbe409773b897c99bd029ef314878f",
+        "training/seed1013/metadata.json": "54dfa632e31908aab5b589979419d12239fbf9d54df4fed2dbb1b67cc73cd9b7",
+        "training/seed1013/affine.json": "916a8d2d332d38b1ab0064e130a8b2eba5778691ddb41a12432a8dd1f915a575"
+      },
+      "baseline_seed": 1820626118
+    },
+    "1019": {
+      "seed": 1019,
+      "n_train": 36,
+      "D": 96,
+      "K": 32,
+      "features": 32,
+      "case_id": "coupledbundle_uniformgross_random32_b0.5_seed1019_n36",
+      "files": {
+        "training/seed1019/training.npz": "7b0d41b698fa6250d84e990e37d8a0177fe39a0606ddc0299a44cd8fa53c95e4",
+        "training/seed1019/metadata.json": "7676c430980b6768cd0a179a30ee0c63cce029ddd582744e4aa4246657d68d71",
+        "training/seed1019/affine.json": "d0ad5d9436295a0da0e87ff4b88e085e5252155bd24fdd120e90d8246cb397db"
+      },
+      "baseline_seed": 2110657721
+    }
+  },
+  "source_sha256": {
+    "source/generic/runtime/adapter.py": "76c50433e395054d2c4e73df7e49144aff1678e14cb252c46149852b043fd636",
+    "source/generic/runtime/dimension_diagnostics.py": "adcec8c49e24fa373cdf92532e1a3e1c980fd10dea722d1225223f50e398c099",
+    "source/generic/runtime/experiment_core.py": "7d42aaaa5ade775722899cc11a84b05b00294e6af7ff3e5cf3b3896cf340fdc7",
+    "source/generic/runtime/mlopt_baseline.py": "ee35123e6212a72c663e3af98baf04fafd9d89b81ea64027934658706b57a068",
+    "source/generic/runtime/nd_root_lp_features.py": "454a72a202881d3a46347c7105e3522657a721934b8eaf4b38247930498bff5c",
+    "source/generic/runtime/neural_diving_baseline.py": "a4742d2fb496c7764b51b83bbbe93129d4c39c4da2118a30da085697852793a0",
+    "source/generic/runtime/portable_adapter.py": "aa2cbdb7a06f5955a8a030401a5ffe3fbe43e13fd3e9719bb68bf569c6e85850",
+    "source/generic/runtime/preference_baseline.py": "3825e64f3daa34884721cef260895d5e587da4366150f4b3ca17f6594c2ff9ba",
+    "source/generic/runtime/strategy_match.py": "74ecd5b97480d3d50a5c0c1d5c128c33fc756f016409523d442950d1c6bd0434",
+    "source/generic/runtime/uc_model.py": "4e0b4b0d24fa1b2e54e3f399569976e1a53f429bd0ff8196976fa0713bacbf38",
+    "source/generic/shared/train_uc_baselines.py": "f9613f57036869e59d607ba62fa470df62893501183023d2e802f137777f01dd",
+    "source/generic/shared/uc_adapters.py": "b0f5cbd42a2099289c89cbd0b28bf41a6c2bbeed673af02abf9540862edb9f40",
+    "source/generic/generic_binary_pilot.py": "d7ff552f55775f90387444e8cbc6290ee371ca94960f7280f42c762c8768e8c2",
+    "source/generic/runtime-seal.json": "d571c6ca71ac7c1b01494d1efb2d81daa18f01ebab3761eb912d287eb3903197",
+    "source/extra/svm_mlopt_components.py": "a5bdb00195bd8b6ab76d338850e1ad2d85c786f261d1cd2348a4da7c9d7ebea5",
+    "source/extra/extra-runtime/hard_knap_mlopt_runtime.py": "4886b0283fbec2e59d23f4901bfcd3c1a9d46fe2fb8a54e515e177e07665a322",
+    "source/strict/strict_svm.py": "57f8efde3a8a2ae8530f1a81c0964b2cee598982b0935247a5b0412be495a682",
+    "source/strict/native_source.py": "2b47312f3c2b922b8736d0e63ad2b6174cc7017e518909649f907f557727cecb",
+    "source/strict/accepted_subset.py": "ad6f9933634747cb5fe7f6a20f71904edf945439143c0adc5fe704546cd5124e",
+    "source/exact_affine_common.py": "5bea4573d238517c28b8e5e2c0ba801f20601711ea1180d3e84b365b4a023171"
+  },
+  "all_shared_optima_reused": true,
+  "old_outputs_unchanged": true,
+  "primary_SVM": "Same strict-K OOF SVM as new UC/random knapsack; old calibrated SVM retained only in original audit.",
+  "primary_Ours": "Same exact integer-basis routine as new UC/random knapsack, affine model prepared inside fit.",
+  "devices": {
+    "ours": "cpu",
+    "svm": "cpu",
+    "mlopt": "cpu",
+    "neural_diving": "cuda",
+    "preference": "cuda"
+  },
+  "all_methods_target_K": 32,
+  "original_training_samples": 36,
+  "timing": "Fit only; data/dependency load, shared optimum generation, checkpoint export and test solving excluded. ND epoch/architecture selection plus final refit excludes graph/root LP and discarded sanity gate. Other fit APIs retain their training preparation."
+}

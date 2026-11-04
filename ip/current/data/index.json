@@ -1,0 +1,97 @@
+{
+  "conditions": {
+    "case14-n512": {
+      "family": "case14",
+      "n_train": 512,
+      "K": 19,
+      "bank": "data/case14-train.npz",
+      "seed": 86001
+    },
+    "knapsack-41001-n32": {
+      "family": "knapsack",
+      "n_train": 32,
+      "K": 29,
+      "bank": "data/knapsack-41001.npz",
+      "seed": 41001
+    },
+    "knapsack-41001-n64": {
+      "family": "knapsack",
+      "n_train": 64,
+      "K": 33,
+      "bank": "data/knapsack-41001.npz",
+      "seed": 41001
+    },
+    "knapsack-41001-n128": {
+      "family": "knapsack",
+      "n_train": 128,
+      "K": 35,
+      "bank": "data/knapsack-41001.npz",
+      "seed": 41001
+    },
+    "knapsack-41001-n256": {
+      "family": "knapsack",
+      "n_train": 256,
+      "K": 40,
+      "bank": "data/knapsack-41001.npz",
+      "seed": 41001
+    },
+    "knapsack-41002-n32": {
+      "family": "knapsack",
+      "n_train": 32,
+      "K": 1,
+      "bank": "data/knapsack-41002.npz",
+      "seed": 41002
+    },
+    "knapsack-41002-n64": {
+      "family": "knapsack",
+      "n_train": 64,
+      "K": 1,
+      "bank": "data/knapsack-41002.npz",
+      "seed": 41002
+    },
+    "knapsack-41002-n128": {
+      "family": "knapsack",
+      "n_train": 128,
+      "K": 1,
+      "bank": "data/knapsack-41002.npz",
+      "seed": 41002
+    },
+    "knapsack-41002-n256": {
+      "family": "knapsack",
+      "n_train": 256,
+      "K": 1,
+      "bank": "data/knapsack-41002.npz",
+      "seed": 41002
+    },
+    "knapsack-41003-n32": {
+      "family": "knapsack",
+      "n_train": 32,
+      "K": 31,
+      "bank": "data/knapsack-41003.npz",
+      "seed": 41003
+    },
+    "knapsack-41003-n64": {
+      "family": "knapsack",
+      "n_train": 64,
+      "K": 33,
+      "bank": "data/knapsack-41003.npz",
+      "seed": 41003
+    },
+    "knapsack-41003-n128": {
+      "family": "knapsack",
+      "n_train": 128,
+      "K": 37,
+      "bank": "data/knapsack-41003.npz",
+      "seed": 41003
+    },
+    "knapsack-41003-n256": {
+      "family": "knapsack",
+      "n_train": 256,
+      "K": 41,
+      "bank": "data/knapsack-41003.npz",
+      "seed": 41003
+    }
+  },
+  "training_only": true,
+  "no_test_arrays": true
+}

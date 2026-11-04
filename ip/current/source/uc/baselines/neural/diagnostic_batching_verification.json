@@ -1,0 +1,38 @@
+{
+  "schema": "nd-bounded-diagnostics-v1",
+  "date_utc": "2026-10-30",
+  "pre_formal_neural_fit": true,
+  "cause": "Former _full_diagnostics evaluated all64 validation or256/512 training costs in one graph forward, although gradient training was correctly batch16. This untested evaluation path could exceed24GiB.",
+  "change": "Independent-example inference chunks no larger than the unchanged config.batch_size. Each metric averages all costs using chunk_size/total_count, preserving unequal final chunks, original pool weights and global entropy floor. Gradient batching/loss/model/optimizer/selection population and rules unchanged.",
+  "floating_point_note": "Mathematically identical reductions; floating-point summation order can differ. Mixed-pool uneven-chunk regression agrees within2e-7.",
+  "audit": {
+    "formal_gradient": "_train_epoch uses config.batch_size (16).",
+    "formal_validation_and_refit_diagnostics": "All call patched _full_diagnostics.",
+    "architecture_solver_validation_and_queries": "Single-cost forward.",
+    "native_selective_mask_validation": "Unused by this explicitly complete-only formal adapter; its unbatched vendor path remains outside the executed protocol.",
+    "optional_1200_step_overfit_QA": "Excluded from formal fits; its fixed8-example gradient probe is not run.",
+    "li_full_n": "One-strategy real case; separately measured full-N evaluation with optimizer state by resource probe."
+  },
+  "probe_change": "Each width precomputes full training rootLP cache, takes unchanged batch16 gradient/Adam step, preserves optimizer/gradient state, and executes complete diagnostic calls on64 andN training costs. No heldout costs opened. Maximum actual forward size measured by hooks; all rows required.",
+  "checks": {
+    "neural_unit_integration": {
+      "passed": 10,
+      "seconds": 3.352
+    },
+    "equivalence": "Actual small GCN with nonuniform weighted multiple-label pools, permuted11costs, batches3/3/3/2, all block metrics, untouched parameters/gradients.",
+    "full_path": "Real small67-example instance profile checks both64/67 diagnostic paths and max16 forwards."
+  },
+  "changed_sha256": {
+    "vendor/neural_diving_baseline.py": "b6ad002a13b505b1cf89e267db9fe423d9ac07c4801dedae2d5c4d59d1c12d08",
+    "profile_resources.py": "20900278a53e742ff1f4eb737a04f4e4405ef3914117bcda53643aa6d649f852",
+    "nd_training.py": "03d3c811e0711097a403eb3577b3e3a96c65253a90f573d883be700f7bd3149b",
+    "source_provenance.json": "b713400b4ac669609a6efacc24bf4d5b9274457ffd157786421e6e815601327a",
+    "README.md": "e319b2fe0cc562817503e18de8857695d3c31afd65843ba838802c435a03b252",
+    "test_diagnostic_batching.py": "ce4f8bc5abaa13d83d86e26a3d5ece49196328e860471ffb27564018636dc0de"
+  },
+  "preserved_archives": [
+    "uc-case14-main-v1.zip",
+    "uc-case14-main-v2.zip",
+    "uc-case14-main-v3.zip"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "scope": "Implementation integration checks only; no realistic UC fitting or benchmark run",
+  "python": "D:/C盘迁移归档/桌面大文件夹/research/ip-comparison-20260924/.venv/Scripts/python.exe",
+  "test_command": "python test_neural_adapters.py",
+  "test_count": 5,
+  "test_result": "passed",
+  "last_test_wall_seconds": 3.413,
+  "covered": [
+    "Malformed physical labels rejected",
+    "External validation optima excluded from Li strategy bank and final training rows",
+    "Neural Diving selection, final-refit indices and normalization use correct banks",
+    "Matched commitment dimension K=0,1,2",
+    "Li checkpoint reload preserves predictions",
+    "Factored Li input map preserves forward outputs, parameter gradients and input gradients",
+    "Li actual inequality LP releases a previously active continuous bound",
+    "Late ND validation returns retain diagnostics but are excluded from quality scoring",
+    "Framework-owned complete.json does not interfere with neural-complete.json loading",
+    "JSON configuration dictionaries accepted at the API boundary",
+    "Formal ND fitting never calls the optional1200-step overfit QA loop"
+  ],
+  "resource_probe_smoke": {
+    "scope": "One CPU gradient step on a synthetic four-variable model with two training labels",
+    "success": true,
+    "root_lp_features_enabled": true,
+    "width": 32,
+    "batch_size": 2,
+    "parameter_count": 41858,
+    "one_gradient_step_seconds": 0.0071852,
+    "usable_trained_checkpoint_saved": false,
+    "does_not_estimate_full_uc_runtime": true
+  },
+  "frozen_source_compilation": "passed",
+  "realistic_uc_training_executed_locally": false,
+  "nd_extra_overfit_steps_in_formal_fit": 0,
+  "optional_overfit_qa_charged_to_learning_time": false,
+  "cloud_provider_actions": false
+}

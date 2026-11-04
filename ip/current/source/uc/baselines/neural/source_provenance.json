@@ -1,0 +1,28 @@
+{
+  "source_root": "D:/C\u76d8\u8fc1\u79fb\u5f52\u6863/\u684c\u9762\u5927\u6587\u4ef6\u5939/research/ip-paper-baselines-v2-20261009",
+  "vendored_byte_identical_files": {
+    "neural-diving-v2-method.md": "e10d9ec5325f1d2491198883918d8f5979fd941fb12adb0fdd13a2d7fb7983c6",
+    "preference-method.md": "64f77f11fa48756cbd4c7feac425e36b4e1a5a19d032ad4ea050d65cb34fbe8c",
+    "preference_baseline.py": "3825e64f3daa34884721cef260895d5e587da4366150f4b3ca17f6594c2ff9ba",
+    "prior_train_uc_baselines.py": "f9613f57036869e59d607ba62fa470df62893501183023d2e802f137777f01dd",
+    "prior_uc_adapters.py": "b0f5cbd42a2099289c89cbd0b28bf41a6c2bbeed673af02abf9540862edb9f40",
+    "strategy_match.py": "74ecd5b97480d3d50a5c0c1d5c128c33fc756f016409523d442950d1c6bd0434"
+  },
+  "derived_files": {
+    "nd_training.py": "03d3c811e0711097a403eb3577b3e3a96c65253a90f573d883be700f7bd3149b",
+    "li_training.py": "699597a771534b69659aecd6fd8cee46206e829206011c55cd1b33f0d7749d2e"
+  },
+  "orchestration_change": "Separate shared external validation; final learner sees N training rows only. No loss, architecture, strategy definition or native decoder changes.",
+  "vendored_compatibility_patches": {
+    "nd_root_lp_features.py": {
+      "original_sha256": "454a72a202881d3a46347c7105e3522657a721934b8eaf4b38247930498bff5c",
+      "sha256": "5a8079f5a5a68023bd9dd2a6ccf80b127ed4715e6e3cac5543e4e52ef5b94e49",
+      "change": "2026-10-30 pre-fit compatibility: accept HiGHS model-load kWarning, reject kError, verify full dimensions, record source/loaded nonzeros. Original-matrix continuous KKT certification, tolerances, root-LP definition and feature construction unchanged. Frozen learner-v1/v2 archives preserved."
+    },
+    "neural_diving_baseline.py": {
+      "original_sha256": "a4742d2fb496c7764b51b83bbbe93129d4c39c4da2118a30da085697852793a0",
+      "sha256": "b6ad002a13b505b1cf89e267db9fe423d9ac07c4801dedae2d5c4d59d1c12d08",
+      "change": "2026-10-30 before formal fits: no-gradient full diagnostics evaluate the same costs in chunks no larger than the unchanged gradient batch. Aggregate all metrics weighted by cost count; retain original pool weights and entropy floor. No network, gradient, optimizer, schedule, selection rule or sample changes."
+    }
+  }
+}

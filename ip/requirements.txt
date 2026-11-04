@@ -1,4 +1,5 @@
-# Python 3.11+; original current-IP checkpoints were recorded on Python 3.14.4.
+# Python 3.11+. Recorded fits used Python 3.12/3.14 and CPU/CUDA PyTorch.
+# Install a CUDA-enabled PyTorch build for the reported neural fitting setup.
 numpy>=2.1
 scipy>=1.14
 sympy>=1.13

@@ -90,11 +90,11 @@ Verify and rebuild the reported LP and IP tables without installing a solver or 
 
 ```bash
 python results/paper_lp/verify_tables.py
-python ip/run.py verify-artifacts
+python ip/run.py verify
 python ip/validate_results.py
 ```
 
-These commands use the Python standard library. The repository includes source code, synthetic data, fitted models, individual test records, and the recorded learning times.
+These commands use the Python standard library. The repository includes source code, benchmark and synthetic inputs, individual test records, and recorded learning times. Historical fitted checkpoints are also retained.
 
 ## Reading the results
 
@@ -102,7 +102,7 @@ These commands use the Python standard library. The repository includes source c
 |---|---|
 | $n$ | Number of training examples |
 | $d$ | Number of variables in the original LP after preprocessing |
-| $K$ | Number of variables in the reduced LP. For IPs, see the explanation before Tables 3 and 4 |
+| $K$ | Number of variables in the reduced LP. For IPs, see the explanation before Tables 3–5 |
 
 Here $K$ is the compression size used in an experiment, while $d^\star$ is the theoretical minimum for exact compression over $\mathcal C$.
 
@@ -196,43 +196,67 @@ For the LP plots, objective ratio is the returned objective divided by the Full 
 
 ## IP results
 
-We test unit commitment (UC) and knapsack on three problem instances each, using 120 test costs per instance, for **360 tests per problem**. UC has 144 binary variables and 48 continuous variables. We compress its 48 on/off decisions. Knapsack has 96 binary decisions, all of which are compressed.
+The current IP experiments use a public unit-commitment benchmark, grouped knapsack, and correlated knapsack. The tables below match Appendix C.3. All methods are calibrated to the same reduced dimension $K$ on the same binary variables. $K$ is the dimension of the added affine restriction, before applying the original constraints. A baseline that only fixes coordinates leaves $K$ of those coordinates unfixed.
 
-For Ours, $K$ is the dimension of the learned affine space. We set each baseline to leave $K$ decisions unfixed in the same group of variables. The other decisions in that group are fixed using its predictions.
+UC uses 512 training costs, 64 separate validation costs, and 256 test costs. Grouped knapsack uses three instances with 36 training and 120 test costs each. Correlated knapsack uses three instances with nested training sets of 32, 64, 128, and 256 costs and 100 test costs each. Its three $K$ entries correspond to the three instances in seed order.
 
-### Table 3: unit commitment with block-varying costs
+### Table 3: Unit commitment
 
-Each instance uses 32 training examples. Ours learns dimensions of 14, 14, and 17 for the three instances, and each baseline leaves that many on/off decisions unfixed.
+| $n$ | Method | $K$ | Recovery (%) | Relative ratio | Learning time (s) |
+|---:|---|---:|---:|---:|---:|
+| — | Full | 180 | 100.00 | 1.000000 | — |
+| 512 | Ours | 19 | 98.44 | 0.999952 | 0.0088 |
+| 512 | SVM | 19 | 97.66 | 0.999818 | 4.18 |
+| 512 | MLOPT | 19 | 93.75 | 0.997785 | 47.01 |
+| 512 | Neural Diving | 19 | 73.05 | 0.923578 | 86.12 |
+| 512 | Preference Learning | 19 | 43.36 | 0.763776 | 172.38 |
 
-| Method | $K$ | Recovery (%) | Objective ratio | Learning time (s) |
-|---|---:|---:|---:|---:|
-| Full | 48 | 100.00 | 1.000000 | --- |
-| Ours | 14–17 | 88.89 | 0.999094 | 0.0165 ± 0.0008 |
-| SVM | 14–17 | 18.06 | 0.924027 | 0.130 ± 0.049 |
-| Neural Diving | 14–17 | 74.44 | 0.994492 | 236.2 ± 24.8 |
-| MLOPT | 14–17 | 20.56 | 0.920463 | 1.066 ± 0.152 |
-| Preference Learning | 14–17 | 21.94 | 0.906016 | 662.9 ± 199.4 |
+### Table 4: Grouped knapsack
 
-### Table 4: knapsack with conflicting upgrades
+| $n$ | Method | $K$ | Recovery (%) | Objective ratio | Learning time (s) |
+|---:|---|---:|---:|---:|---:|
+| — | Full | 96 | 100.00 | 1.000000 | — |
+| 36 | Ours | 32 | 100.00 | 1.000000 | 0.0072 |
+| 36 | SVM | 32 | 1.39 | 0.898644 | 0.8526 |
+| 36 | MLOPT | 32 | 9.72 | 0.953409 | 0.6562 |
+| 36 | Neural Diving | 32 | 10.83 | 0.948165 | 13.17 |
+| 36 | Preference Learning | 32 | 15.00 | 0.952625 | 122.00 |
 
-Each instance uses 36 training examples. Ours learns a 32-dimensional affine space, and each baseline leaves 32 item decisions unfixed.
+### Table 5: Correlated knapsack
 
-| Method | $K$ | Recovery (%) | Objective ratio | Learning time (s) |
-|---|---:|---:|---:|---:|
-| Full | 96 | 100.00 | 1.000000 | --- |
-| Ours | 32 | 100.00 | 1.000000 | 0.1146 ± 0.0106 |
-| SVM | 32 | 1.11 | 0.886799 | 0.264 ± 0.098 |
-| Neural Diving | 32 | 14.44 | 0.960871 | 239.4 ± 18.0 |
-| MLOPT | 32 | 9.72 | 0.953409 | 1.538 ± 0.731 |
-| Preference Learning | 32 | 14.17 | 0.953540 | 713.1 ± 255.9 |
+| $n$ | Method | $K$ | Recovery (%) | Relative ratio | Learning time (s) |
+|---:|---|---:|---:|---:|---:|
+| — | Full | 100 | 100.00 | 1.000000 | — |
+| 32 | Ours | (29,1,31) | 94.00 | 0.990033 | 0.0032 |
+| 32 | SVM | (29,1,31) | 86.33 | 0.971049 | 0.2103 |
+| 32 | MLOPT | (29,1,31) | 89.33 | 0.982914 | 1.10 |
+| 32 | Neural Diving | (29,1,31) | 91.67 | 0.983863 | 103.81 |
+| 32 | Preference Learning | (29,1,31) | 86.00 | 0.972947 | 86.58 |
+| 64 | Ours | (33,1,33) | 96.67 | 0.995254 | 0.0072 |
+| 64 | SVM | (33,1,33) | 92.33 | 0.983389 | 0.2653 |
+| 64 | MLOPT | (33,1,33) | 96.33 | 0.994779 | 3.07 |
+| 64 | Neural Diving | (33,1,33) | 91.67 | 0.897010 | 113.66 |
+| 64 | Preference Learning | (33,1,33) | 86.33 | 0.976270 | 86.18 |
+| 128 | Ours | (35,1,37) | 98.67 | 0.998102 | 0.0129 |
+| 128 | SVM | (35,1,37) | 95.00 | 0.989084 | 0.3336 |
+| 128 | MLOPT | (35,1,37) | 98.33 | 0.997152 | 3.35 |
+| 128 | Neural Diving | (35,1,37) | 93.33 | 0.964404 | 124.59 |
+| 128 | Preference Learning | (35,1,37) | 89.33 | 0.973422 | 132.67 |
+| 256 | Ours | (40,1,41) | 99.67 | 0.999525 | 0.0244 |
+| 256 | SVM | (40,1,41) | 97.00 | 0.992406 | 0.5422 |
+| 256 | MLOPT | (40,1,41) | 99.33 | 0.999051 | 6.58 |
+| 256 | Neural Diving | (40,1,41) | 94.67 | 0.966303 | 170.96 |
+| 256 | Preference Learning | (40,1,41) | 93.00 | 0.984813 | 240.31 |
 
-Ours achieves higher recovery rates and objective ratios than the other compression methods on both problems. It also learns much faster than Neural Diving and Preference Learning.
+**Recovery (%)** is the fraction of all planned tests where the returned solution is feasible for the original problem and attains its optimal value within `1e-6 + 1e-9*abs(original optimum)`.
 
-**Recovery (%)** measures how often a method returns the original optimal value. It counts all 360 tests and requires a solution that satisfies the original constraints and is returned within 30 seconds. The numerical tolerance is specified in the [IP documentation](ip/README.md).
+For UC and correlated knapsack, **Relative ratio** is `sum(returned value - anchor value) / sum(optimal value - anchor value)`. The common anchor is the complete optimal solution at the first training cost, evaluated at each test cost. This reports the fraction of possible improvement over that anchor. It is a ratio of sums, not an average of per-test ratios. For grouped knapsack, **Objective ratio** is the mean returned profit / optimal profit over feasible returns. Higher is better for both metrics. Result files retain the denominators and all failed returns.
 
-**Objective ratio** measures solution quality. It is optimal cost / returned cost for UC and returned profit / optimal profit for knapsack. Higher is better, and 1 means optimal. We average this ratio over feasible solutions returned within the time limit.
+Learning time covers the computation used to learn the compression after the training costs and corresponding optimal solutions are provided. For neural methods, this includes choosing model settings and training the network. For our method, it covers Algorithm 2 excluding the training IP solves. We exclude these solves because all methods use their solutions. Ours, SVM, and MLOPT use one CPU thread. Neural Diving and Preference Learning use an RTX 4090 for UC and an RTX PRO 4500 for both knapsack settings. Times are averages of the recorded fits, as detailed in [ip/README.md](ip/README.md).
 
-**Learning time (s)** measures model fitting, model selection, and refitting after the shared training problems have been solved. We report the average ± standard deviation across the three problem instances. All standard deviations in these tables use the sample standard deviation. The [IP directory](ip/) also contains an experiment with 2,000 additional Neural Diving training updates, saved models, and individual test results.
+Ours has the highest recovery and objective ratios among the compression methods in these experiments. Notably, its learning time is much shorter than that of the neural baselines. These tables do not report IP solving-time or speedup comparisons.
+
+The [current IP archive](ip/current/) contains all 30 learned-method rows, 9,080 test observations, fitting records, numerical inputs, and the corresponding source code. Earlier synthetic UC and knapsack runs remain in the [historical archive](ip/LEGACY.md).
 
 ## Running the experiments
 
@@ -271,22 +295,22 @@ python -m unittest discover -s code/tests -p 'test_netlib_sampling.py' -v
 
 ### IP code
 
-Install the IP dependencies and evaluate a frozen model:
+Recompute and check current tables without numerical libraries:
+
+```bash
+python ip/run.py verify
+```
+
+Run small solver checks using current data:
 
 ```bash
 python -m pip install -r ip/requirements.txt
-python ip/run.py evaluate --problem uc --seed 101 --method neural-diving --limit 1
-python ip/run.py evaluate --problem knapsack --seed 1009 --method preference-learning --limit 1
+python ip/run.py smoke --problem uc --method ours --output ip/runs/uc-smoke
+python ip/run.py smoke --problem grouped --method svm --output ip/runs/grouped-smoke
+python ip/run.py smoke --problem correlated --seed 41001 --n 32 --method ours --output ip/runs/correlated-smoke
 ```
 
-Fit a new model from the supplied training optimizers:
-
-```bash
-python ip/run.py train --problem uc --seed 101 --method ours
-python ip/run.py train --problem knapsack --seed 1009 --method svm
-```
-
-New runs are saved under `ip/runs/`. Complete training and evaluation instructions are in [ip/README.md](ip/README.md).
+Every output directory must be new. Fitting/evaluation commands and baseline adaptations are described in [ip/README.md](ip/README.md).
 
 ## Repository layout
 
