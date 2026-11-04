@@ -69,7 +69,8 @@ Let $n\ge1$ and draw $c_1,\ldots,c_n$ independently from a distribution $P_c$ su
 
 <div align="center">
 
-$\displaystyle \begin{gathered} \mathrm{range}(U_n)\subseteq\mathrm{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr), \qquad \mathrm{rank}(U_n)\le d^\star, \\ \mathsf{Exact}(U_n,x_0,c_i)\qquad(i=1,\ldots,n). \end{gathered}$
+$\displaystyle \mathrm{range}(U_n)\subseteq\mathrm{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr), \qquad \mathrm{rank}(U_n)\le d^\star,$<br>
+$\displaystyle \mathsf{Exact}(U_n,x_0,c_i)\qquad(i=1,\ldots,n).$
 
 </div>
 
