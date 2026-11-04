@@ -2,8 +2,6 @@
 
 Research code and experimental results for [our paper][paper] by **Yuhan Ye and Omar Bennouna**.
 
-Numbered references below follow the current manuscript (November 3, 2026). The linked arXiv preprint is an earlier version.
-
 Many applications repeatedly solve linear or integer programs with the same constraints but changing objective coefficients. Our idea is to restrict optimization to an affine space containing the optimal solutions that can arise over a chosen cost region, and reuse this space for future solves. We characterize the smallest such space and develop algorithms that learn a compressed formulation from sampled costs, with guarantees on the probability of preserving the full optimizer set for a new cost. Choosing the cost region lets us balance the size of the compressed problem against the probability of preserving optimality.
 
 ## Problem setting and main results
