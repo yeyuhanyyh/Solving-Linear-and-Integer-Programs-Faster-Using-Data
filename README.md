@@ -28,7 +28,10 @@ $$
 d^\star:=\dim\mathrm{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr).
 $$
 
-### Theorem (Exact compression)
+<table>
+<tr><td>
+
+#### Theorem (Exact compression)
 
 Let $V\subseteq\mathbb R^d$ be an affine space. Then
 
@@ -47,13 +50,19 @@ $$
 
 Among exact affine restrictions, the minimum dimension is $d^\star$, attained by $V=x_0+\mathrm{dir}(\mathcal X^\star(\mathcal C))$ for any $x_0\in\mathcal X^\star(\mathcal C)$.
 
+</td></tr>
+</table>
+
 Exact compression retains all potentially optimal solutions using only the directions along which they differ.
 
 Write the restriction as $x=x_0+Uz$, where $x_0$ is a reference solution, the columns of $U$ are learned directions, and $z$ contains the reduced variables. Here $\mathrm{range}(U)$ is the column space of $U$, and feasibility requires $x_0+Uz\in\mathcal X$. Define $\mathsf{Exact}(U,x_0,c)$ by $\mathcal X^\star(c)\subseteq x_0+\mathrm{range}(U)$.
 
 The learner starts with an empty $U$ and processes each training cost in turn. If an optimal vertex $x$ lies outside $x_0+\mathrm{range}(U)$, it appends $x-x_0$ to $U$. It repeats this step until the space contains all optimizers for that cost, then moves to the next cost.
 
-### Theorem (Learning guarantee)
+<table>
+<tr><td>
+
+#### Theorem (Learning guarantee)
 
 Let $n\ge1$ and draw $c_1,\ldots,c_n$ independently from a distribution $P_c$ supported on $\mathcal C$. Fix $x_0\in\mathcal X^\star(\mathcal C)$ independently of these samples. With deterministic choices, the learner above returns a matrix $U_n$ after the $n$ training costs, satisfying
 
@@ -74,6 +83,9 @@ $$
 $$
 
 where the test cost $c\sim P_c$ is independent of the training sample.
+
+</td></tr>
+</table>
 
 The failure bound decreases as $1/n$ and depends on the decision-relevant dimension $d^\star$. When optimizers are unique almost surely, the training solves can run in parallel, followed by a basis computation.
 
