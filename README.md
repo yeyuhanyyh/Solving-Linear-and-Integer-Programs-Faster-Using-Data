@@ -1,6 +1,8 @@
 # Solving Linear and Integer Programs Faster Using Data
 
-Research code and experimental results for the paper by **Yuhan Ye and Omar Bennouna**.
+Research code and experimental results for [our paper][paper] by **Yuhan Ye and Omar Bennouna**.
+
+Numbered references below follow the current manuscript (November 3, 2026). The linked arXiv preprint is an earlier version.
 
 Many applications repeatedly solve linear or integer programs with the same constraints but changing objective coefficients. Our idea is to restrict optimization to an affine space containing the optimal solutions that can arise over a chosen cost region, and reuse this space for future solves. We characterize the smallest such space and develop algorithms that learn a compressed formulation from sampled costs, with guarantees on the probability of preserving the full optimizer set for a new cost. Choosing the cost region lets us balance the size of the compressed problem against the probability of preserving optimality.
 
@@ -28,10 +30,12 @@ $$
 d^\star:=\dim\mathrm{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr).
 $$
 
+<a name="theorem-exact-compression"></a>
+
 <table>
 <tr><td>
 
-#### Theorem (Exact compression)
+#### Exact compression ([Proposition 2 in the paper][paper])
 
 Let $V\subseteq\mathbb R^d$ be an affine space. Then
 
@@ -58,12 +62,14 @@ Exact compression retains all potentially optimal solutions using only the direc
 
 Write the restriction as $x=x_0+Uz$, where $x_0$ is a reference solution, the columns of $U$ are learned directions, and $z$ contains the reduced variables. Here $\mathrm{range}(U)$ is the column space of $U$, and feasibility requires $x_0+Uz\in\mathcal X$. Define $\mathsf{Exact}(U,x_0,c)$ by $\mathcal X^\star(c)\subseteq x_0+\mathrm{range}(U)$.
 
-The learner starts with an empty $U$ and processes each training cost in turn. If an optimal vertex $x$ lies outside $x_0+\mathrm{range}(U)$, it appends $x-x_0$ to $U$. It repeats this step until the space contains all optimizers for that cost, then moves to the next cost.
+[Algorithm 1 in the paper][paper] starts with an empty $U$ and processes each training cost in turn. If an optimal vertex $x$ lies outside $x_0+\mathrm{range}(U)$, it appends $x-x_0$ to $U$. It repeats this step until the space contains all optimizers for that cost, then moves to the next cost.
+
+<a name="theorem-learning-guarantee"></a>
 
 <table>
 <tr><td>
 
-#### Theorem (Learning guarantee)
+#### Learning guarantee ([Theorem 5 in the paper][paper])
 
 Let $n\ge1$ and draw $c_1,\ldots,c_n$ independently from a distribution $P_c$ supported on $\mathcal C$. Fix $x_0\in\mathcal X^\star(\mathcal C)$ independently of these samples. With deterministic choices, the learner above returns a matrix $U_n$ after the $n$ training costs, satisfying
 
@@ -87,9 +93,9 @@ where the test cost $c\sim P_c$ is independent of the training sample.
 </td></tr>
 </table>
 
-The failure bound decreases as $1/n$ and depends on the decision-relevant dimension $d^\star$. When optimizers are unique almost surely, the training solves can run in parallel, followed by a basis computation.
+The failure bound decreases as $1/n$ and depends on the decision-relevant dimension $d^\star$. When optimizers are unique almost surely, the training solves can run in parallel, followed by a basis computation ([Section 3.2 in the paper][paper]).
 
-**Integer programs (IPs).** Let $\mathcal X_I=\mathcal X\cap\mathbb Z^d\ne\varnothing$. Define $\mathcal X_I^\star(c)$ and $\mathcal X_I^\star(\mathcal C)$ as above, optimizing over $\mathcal X_I$. The two theorems apply with these optimizer sets and $d_I^\star:=\dim\mathrm{dir}(\mathcal X_I^\star(\mathcal C))$. The learner uses integer optimizers in place of LP vertices, and the compressed problem retains $x_0+Uz\in\mathbb Z^d$.
+**Integer programs (IPs).** Let $\mathcal X_I=\mathcal X\cap\mathbb Z^d\ne\varnothing$. Define $\mathcal X_I^\star(c)$ and $\mathcal X_I^\star(\mathcal C)$ as above, optimizing over $\mathcal X_I$. The corresponding IP results are [Proposition 15 (Appendix C.1)][paper] and [Theorem 16 (Appendix C.2)][paper], with these optimizer sets and $d_I^\star:=\dim\mathrm{dir}(\mathcal X_I^\star(\mathcal C))$. [Algorithm 2 (Appendix C.2)][paper] uses integer optimizers in place of LP vertices, and the compressed problem retains $x_0+Uz\in\mathbb Z^d$.
 
 The experiments below compare solution quality, learning time, and LP solve time. They cover synthetic LPs, Netlib benchmarks, unit commitment, and knapsack.
 
@@ -140,11 +146,11 @@ The [LP timing protocol](results/paper_lp/README.md) and [IP documentation](ip/R
 
 ## LP results
 
-The following timings reproduce Tables 1 and 2 of the manuscript. Learning time measures training in seconds. LP solve time measures the time HiGHS spends solving a test LP, in milliseconds. Prediction and preparation times are recorded separately in the [saved results](results/paper_lp/).
+The following timings reproduce [Tables 1 and 2 in Section 4 of the paper][paper]. Learning time measures training in seconds. LP solve time measures the time HiGHS spends solving a test LP, in milliseconds. Prediction and preparation times are recorded separately in the [saved results](results/paper_lp/).
 
 ### Table 1: learning within a selected cost region
 
-We start with 40 training LPs and learn within a selected region of the cost distribution. The parameter $\rho=0.5$ sets the target probability mass outside that region to one half. For each problem, Ours, DataDrivenProj, and FCNN produce LPs with the same number of variables, shown as $K$. We repeat the timing measurements three times using the same data and report the average ± standard deviation.
+We start with 40 training LPs and learn within a selected region of the cost distribution, as described in [Section 3.3 of the paper][paper]. The parameter $\rho=0.5$ sets the target probability mass outside that region to one half. For each problem, Ours, DataDrivenProj, and FCNN produce LPs with the same number of variables, shown as $K$. We repeat the timing measurements three times using the same data and report the average ± standard deviation.
 
 **Learning time (s)**
 
@@ -212,7 +218,7 @@ For the LP plots, objective ratio is the returned objective divided by the Full 
 
 ## IP results
 
-The current IP experiments use a public unit-commitment benchmark, grouped knapsack, and correlated knapsack. The tables below match Appendix C.3. All methods are calibrated to the same reduced dimension $K$ on the same binary variables. $K$ is the dimension of the added affine restriction, before applying the original constraints. A baseline that only fixes coordinates leaves $K$ of those coordinates unfixed.
+The current IP experiments use a public unit-commitment benchmark, grouped knapsack, and correlated knapsack. The tables below reproduce [Tables 3–5 in Appendix C.3 of the paper][paper]. All methods are calibrated to the same reduced dimension $K$ on the same binary variables. $K$ is the dimension of the added affine restriction, before applying the original constraints. A baseline that only fixes coordinates leaves $K$ of those coordinates unfixed.
 
 UC uses 512 training costs, 64 separate validation costs, and 256 test costs. Grouped knapsack uses three instances with 36 training and 120 test costs each. Correlated knapsack uses three instances with nested training sets of 32, 64, 128, and 256 costs and 100 test costs each. Its three $K$ entries correspond to the three instances in seed order.
 
@@ -268,7 +274,7 @@ UC uses 512 training costs, 64 separate validation costs, and 256 test costs. Gr
 
 For UC and correlated knapsack, **Relative ratio** is `sum(returned value - anchor value) / sum(optimal value - anchor value)`. The common anchor is the complete optimal solution at the first training cost, evaluated at each test cost. This reports the fraction of possible improvement over that anchor. It is a ratio of sums, not an average of per-test ratios. For grouped knapsack, **Objective ratio** is the mean returned profit / optimal profit over feasible returns. Higher is better for both metrics. Result files retain the denominators and all failed returns.
 
-Learning time covers the computation used to learn the compression after the training costs and corresponding optimal solutions are provided. For neural methods, this includes choosing model settings and training the network. For our method, it covers Algorithm 2 excluding the training IP solves. We exclude these solves because all methods use their solutions. Ours, SVM, and MLOPT use one CPU thread. Neural Diving and Preference Learning use an RTX 4090 for UC and an RTX PRO 4500 for both knapsack settings. Times are averages of the recorded fits, as detailed in [ip/README.md](ip/README.md).
+Learning time covers the computation used to learn the compression after the training costs and corresponding optimal solutions are provided. For neural methods, this includes choosing model settings and training the network. For our method, it covers [Algorithm 2][paper] excluding the training IP solves. We exclude these solves because all methods use their solutions. Ours, SVM, and MLOPT use one CPU thread. Neural Diving and Preference Learning use an RTX 4090 for UC and an RTX PRO 4500 for both knapsack settings. Times are averages of the recorded fits, as detailed in [ip/README.md](ip/README.md).
 
 Ours has the highest recovery and objective ratios among the compression methods in these experiments. Notably, its learning time is much shorter than that of the neural baselines. These tables do not report IP solving-time or speedup comparisons.
 
@@ -342,3 +348,5 @@ Every output directory must be new. Fitting/evaluation commands and baseline ada
 | `ip/` | IP code, data, models, results, and documentation |
 
 The software license is in [LICENSE](LICENSE). Benchmark data provenance is documented in [DATA_NOTICE.md](DATA_NOTICE.md).
+
+[paper]: https://arxiv.org/abs/2605.25635

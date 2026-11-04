@@ -1,6 +1,6 @@
 # Integer-programming experiments
 
-This directory accompanies the current Appendix C.3: unit commitment (Table 3), grouped knapsack (Table 4), and correlated knapsack (Table 5). Current source, inputs and recorded results are under `current/`. The older synthetic UC experiment and older fitted models remain available through [LEGACY.md](LEGACY.md).
+This directory accompanies [Appendix C.3 of our paper][paper]: unit commitment (Table 3), grouped knapsack (Table 4), and correlated knapsack (Table 5). Numbering follows the current manuscript (November 3, 2026). The linked arXiv preprint is an earlier version. Current source, inputs and recorded results are under `current/`. The older synthetic UC experiment and older fitted models remain available through [LEGACY.md](LEGACY.md).
 
 ## Reproduce the tables
 
@@ -34,7 +34,7 @@ Only the Python standard library is required. These commands check file hashes a
 
 ## Baselines and matching the dimension
 
-Ours uses Algorithm 2. All methods use the same training costs and supplied optimal solutions. For each instance, all compression methods are calibrated to the same reduced dimension $K$ for the same binary variables. $K$ is the dimension of the added affine restriction. The original constraints and integrality requirements remain in the reduced problem.
+Ours uses [Algorithm 2 (Appendix C.2) in the paper][paper]. All methods use the same training costs and supplied optimal solutions. For each instance, all compression methods are calibrated to the same reduced dimension $K$ for the same binary variables. $K$ is the dimension of the added affine restriction. The original constraints and integrality requirements remain in the reduced problem.
 
 * **SVM** follows the prediction approach of [Xavier, Qiu and Ahmed (2021)](https://doi.org/10.1287/ijoc.2020.0976). Linear classifiers predict binary values from cost features. For UC, they also predict whether consecutive on/off variables are equal. Five-fold predictions estimate the reliability of each proposed fixing or equality. Features are standardized within each fold, and the linear SVC uses `C=1`. Unanimous relations and proposals meeting the paper's acceptance thresholds rank first. We add consistent, independent equations until their rank is $D-K$. Lower-ranked proposals are used if needed to reach that dimension. This last step is our dimension-matching adaptation of the paper's acceptance policy.
 * **MLOPT** follows [Bertsimas and Stellato](https://arxiv.org/abs/1907.02206). It trains a classifier to predict strategies extracted from training optima. A strategy records integer values and active constraints. Its MLP has three ReLU layers of width 32 or 64, dropout 0.1, batch size 32, and Adam with learning rate 0.001 or 0.01 for 50 or 150 epochs. It considers up to ten predicted strategies. A one-strategy bank uses a constant classifier.
@@ -57,7 +57,7 @@ Values are total costs for UC and profits for knapsack. For UC, numerator and de
 
 For grouped knapsack, we report the mean `returned profit / optimal profit` over valid returns. Recovery still uses all 360 tests. The current valid-return counts are 360 for Ours, MLOPT, and Preference Learning, 355 for SVM, and 282 for Neural Diving. The saved observations include every failure.
 
-Learning time covers the computation used to learn the compression after the training costs and corresponding optimal solutions are provided. For neural methods, this includes choosing model settings and training the network. For our method, it covers Algorithm 2 excluding the training IP solves. We exclude these solves because all methods use their solutions.
+Learning time covers the computation used to learn the compression after the training costs and corresponding optimal solutions are provided. For neural methods, this includes choosing model settings and training the network. For our method, it covers [Algorithm 2][paper] excluding the training IP solves. We exclude these solves because all methods use their solutions.
 
 Ours, SVM, and MLOPT use one CPU thread. Neural Diving and Preference Learning use an RTX 4090 for UC and an RTX PRO 4500 for both knapsack settings. CPU timing uses three fresh fits per instance. Neural fitting uses the saved GPU fit per instance. Tables report means across instances after averaging CPU repeats. These are recorded fitting times on those devices, not estimates of the minimum time each algorithm must require. The exact component arithmetic is retained in `current/timing/` and `current/learning_records.json`.
 
@@ -139,3 +139,5 @@ The numerical banks avoid requiring Julia or regenerating training labels. They 
 | 256 | MLOPT | (40,1,41) | 99.33 | 0.999051 | 6.58 |
 | 256 | Neural Diving | (40,1,41) | 94.67 | 0.966303 | 170.96 |
 | 256 | Preference Learning | (40,1,41) | 93.00 | 0.984813 | 240.31 |
+
+[paper]: https://arxiv.org/abs/2605.25635
