@@ -150,7 +150,7 @@ The following timings reproduce [Tables 1 and 2 in Section 4 of the paper][paper
 
 ### Table 1: learning within a selected cost region
 
-We start with 40 training LPs and learn within a selected region of the cost distribution, as described in [Section 3.3 of the paper][paper]. The parameter $\rho=0.5$ sets the target probability mass outside that region to one half. For each problem, Ours, DataDrivenProj, and FCNN produce LPs with the same number of variables, shown as $K$. We repeat the timing measurements three times using the same data and report the average ± standard deviation.
+We start with 40 training LPs and use $\rho=0.5$ as the target probability outside the selected cost region ([Section 3.3 of the paper][paper]). All compressed methods use the same $K$. Timings are means ± sample standard deviations over three repeats on fixed data.
 
 **Learning time (s)**
 
@@ -174,7 +174,7 @@ The recorded tests use 20 LPs for Ours and Full, and 12 for the projection basel
 
 ### Table 2: comparison at the same number of reduced variables
 
-We run each experiment with three independently sampled datasets, each containing 20 training LPs and 20 test LPs. Within each run, Ours and FCNN use the same data and produce LPs with the same number of variables. The three $K$ values correspond to these three runs. We report the average timing ± standard deviation across the runs.
+Each of three independent runs uses 20 training LPs and 20 test LPs, shared by Ours and FCNN. The methods use the same $K$ within each run. The $K$ triples give the three reduced dimensions. Timings are means ± sample standard deviations across runs.
 
 **Learning time (s)**
 
@@ -206,7 +206,7 @@ On these eight instances, Ours learns **30.1–477.0× faster than FCNN**. Its r
 
 ### Accuracy and dimension plots
 
-The original LP package also includes the following plots and raw results. Use the runner ID in the commands below to rerun an experiment.
+Archived LP plots and raw results are linked below. Use the runner ID with the commands in [Running the experiments](#running-the-experiments).
 
 | Experiment | Plot | Raw results | Runner ID |
 |---|---|---|---|
@@ -214,7 +214,7 @@ The original LP package also includes the following plots and raw results. Use t
 | Objective ratio versus $n$, with $K\in\lbrace10,20,30,50\rbrace$ | [Training-sample comparison](figures/figure4_fresh_legacy_execution.png) | [CSV](results/fresh/figure4_timing_raw.csv) | `figure4` |
 | Learned dimension versus $n$ | [Dimension growth](figures/figure2_fresh_rank_growth.png) | [CSV](results/fresh/figure2_rank_growth_raw.csv) | `figure2` |
 
-For the LP plots, objective ratio is the returned objective divided by the Full objective. The code expresses these LPs as maximization problems. The outside-mass plot uses the saved standard errors for its bands. The training-sample plot uses sample standard deviations across held-out LPs. These plots are regenerated outputs of the archived LP package.
+These plots use maximization objectives, with objective ratio equal to the returned value divided by the Full value. The [LP experiment notes](code/experiments/README.md) describe sampling and error bars.
 
 ## IP results
 
@@ -270,15 +270,15 @@ UC uses 512 training costs, 64 separate validation costs, and 256 test costs. Gr
 | 256 | Neural Diving | (40,1,41) | 94.67 | 0.966303 | 170.96 |
 | 256 | Preference Learning | (40,1,41) | 93.00 | 0.984813 | 240.31 |
 
-**Recovery (%)** is the fraction of all planned tests where the returned solution is feasible for the original problem and attains its optimal value within `1e-6 + 1e-9*abs(original optimum)`.
+**Recovery (%)** is the percentage of all tests that return a feasible solution with the original optimal value, up to numerical tolerance.
 
-For UC and correlated knapsack, **Relative ratio** is `sum(returned value - anchor value) / sum(optimal value - anchor value)`. The common anchor is the complete optimal solution at the first training cost, evaluated at each test cost. This reports the fraction of possible improvement over that anchor. It is a ratio of sums, not an average of per-test ratios. For grouped knapsack, **Objective ratio** is the mean returned profit / optimal profit over feasible returns. Higher is better for both metrics. Result files retain the denominators and all failed returns.
+For UC and correlated knapsack, **Relative ratio** measures the improvement over a common anchor as `sum(returned value - anchor value) / sum(optimal value - anchor value)`. The anchor is the optimal solution at the first training cost, evaluated at each test cost. For grouped knapsack, **Objective ratio** is the mean returned profit / optimal profit over feasible returns. Higher is better for both metrics. Exact definitions are in the [IP experiment details](ip/EXPERIMENTS.md#metrics-and-learning-time).
 
-Learning time covers the computation used to learn the compression after the training costs and corresponding optimal solutions are provided. For neural methods, this includes choosing model settings and training the network. For our method, it covers [Algorithm 2][paper] excluding the training IP solves. We exclude these solves because all methods use their solutions. Ours, SVM, and MLOPT use one CPU thread. Neural Diving and Preference Learning use an RTX 4090 for UC and an RTX PRO 4500 for both knapsack settings. Times are averages of the recorded fits, as detailed in [ip/README.md](ip/README.md).
+Learning time covers the computation used to learn the compression after the training costs and corresponding optimal solutions are provided. For neural methods, this includes choosing model settings and training the network. For our method, it covers [Algorithm 2][paper] excluding the training IP solves. We exclude these solves because all methods use their solutions. Ours, SVM, and MLOPT use one CPU thread. Neural Diving and Preference Learning use an RTX 4090 for UC and an RTX PRO 4500 for both knapsack settings. Timing details are in the [IP experiment notes](ip/EXPERIMENTS.md#metrics-and-learning-time).
 
-Ours has the highest recovery and objective ratios among the compression methods in these experiments. Notably, its learning time is much shorter than that of the neural baselines. These tables do not report IP solving-time or speedup comparisons.
+Ours has the highest recovery and objective ratios among the compression methods in these experiments. Notably, its learning time is much shorter than that of the neural baselines.
 
-The [current IP archive](ip/current/) contains all 30 learned-method rows, 9,080 test observations, fitting records, numerical inputs, and the corresponding source code. Earlier synthetic UC and knapsack runs remain in the [historical archive](ip/LEGACY.md).
+Data, source code, and full-precision results are in [ip/current/](ip/current/). The [IP guide](ip/README.md) explains how to run new experiments.
 
 ## Running the experiments
 
@@ -307,13 +307,7 @@ python benchmark_runtime.py --scope all --repeats 3 --force
 
 Their outputs remain in `results/timing/`. The current manuscript timing tables are rebuilt from the separate saved records in `results/paper_lp/`. Full neural retraining can take several hours on a CPU.
 
-SCAGR25 and STAIR use additive Gaussian cost perturbations. STAIR uses 10 coordinate cost directions. Coordinate minimization and maximization LPs select variables that can vary and have finite upper bounds on the original feasible set. Before radial clipping, factor $j$ has standard deviation $\sigma_j=0.70R_i(0.82)^{j-1}$, where $R_i$ is the sampling radius. The perturbation is projected onto the radius-$R_i$ ball when needed. The bundled historical results use the earlier sampling configuration. For new runs of these cases, choose a fresh output directory or use `--force` to avoid reusing those cached results.
-
-Run the sampler checks with:
-
-```bash
-python -m unittest discover -s code/tests -p 'test_netlib_sampling.py' -v
-```
+See the [LP experiment notes](code/experiments/README.md) for sampling settings and notes on archived runs.
 
 ### IP code
 
