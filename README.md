@@ -15,17 +15,19 @@ $$
 Let $\mathcal X^\star(c)$ be the set of optimal solutions for cost $c$, and let $\mathcal X^\star(\mathcal C)$ collect these solutions over all allowed costs:
 
 $$
-\mathcal X^\star(c):=\mathrm{argmin}_{x\in\mathcal X}c^\top x,
-\qquad
-\mathcal X^\star(\mathcal C):=\bigcup_{c\in\mathcal C}\mathcal X^\star(c),
+\begin{aligned}
+\mathcal X^\star(c)&:=\mathrm{argmin}_{x\in\mathcal X}c^\top x,\\
+\mathcal X^\star(\mathcal C)&:=\bigcup_{c\in\mathcal C}\mathcal X^\star(c),
+\end{aligned}
 $$
 
 For a set $S\subseteq\mathbb R^d$, define
 
 $$
-\mathrm{dir}(S):=\mathrm{span}\lbrace x-y:x,y\in S\rbrace,
-\qquad
-d^\star:=\dim\mathrm{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr).
+\begin{aligned}
+\mathrm{dir}(S)&:=\mathrm{span}\lbrace x-y:x,y\in S\rbrace,\\
+d^\star&:=\dim\mathrm{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr).
+\end{aligned}
 $$
 
 <a name="theorem-exact-compression"></a>
@@ -35,13 +37,24 @@ $$
 > Let $V\subseteq\mathbb R^d$ be an affine space. Then
 >
 > ```math
-> \displaystyle \left[\mathrm{argmin}_{x\in\mathcal X\cap V}c^\top x =\mathcal X^\star(c)\quad\forall c\in\mathcal C\right] \iff \mathcal X^\star(\mathcal C)\subseteq V.
+> \begin{gathered}
+> \left[
+> \begin{gathered}
+> \mathrm{argmin}_{x\in\mathcal X\cap V}c^\top x =\mathcal X^\star(c)\\
+> \forall c\in\mathcal C
+> \end{gathered}
+> \right]\\
+> \iff \mathcal X^\star(\mathcal C)\subseteq V.
+> \end{gathered}
 > ```
 >
 > The restriction is exact if and only if
 >
 > ```math
-> \displaystyle \mathrm{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr)\subseteq\mathrm{dir}(V), \qquad V\cap\mathcal X^\star(\mathcal C)\ne\varnothing.
+> \begin{gathered}
+> \mathrm{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr)\subseteq\mathrm{dir}(V),\\
+> V\cap\mathcal X^\star(\mathcal C)\ne\varnothing.
+> \end{gathered}
 > ```
 >
 > Among exact affine restrictions, the minimum dimension is $d^\star$, attained by $V=x_0+\mathrm{dir}(\mathcal X^\star(\mathcal C))$ for any $x_0\in\mathcal X^\star(\mathcal C)$.
@@ -59,7 +72,10 @@ Write the restriction as $x=x_0+Uz$, where $x_0$ is a reference solution, the co
 > Let $n\ge1$ and draw $c_1,\ldots,c_n$ independently from a distribution $P_c$ supported on $\mathcal C$. Fix $x_0\in\mathcal X^\star(\mathcal C)$ independently of these samples. With deterministic choices, the learner above returns a matrix $U_n$ after the $n$ training costs, satisfying
 >
 > ```math
-> \displaystyle \mathrm{range}(U_n)\subseteq\mathrm{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr), \qquad \mathrm{rank}(U_n)\le d^\star,
+> \begin{gathered}
+> \mathrm{range}(U_n)\subseteq\mathrm{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr),\\
+> \mathrm{rank}(U_n)\le d^\star,
+> \end{gathered}
 > ```
 >
 > ```math
@@ -69,7 +85,10 @@ Write the restriction as $x=x_0+Uz$, where $x_0$ is a reference solution, the co
 > For every $\delta\in(0,1)$, with probability at least $1-\delta$ over the training sample,
 >
 > ```math
-> \displaystyle \mathbb P_{c\sim P_c}\left[\mathsf{Exact}(U_n,x_0,c)\right] \ge 1-\frac{4}{n}\left(6d^\star+\log\frac{e}{\delta}\right),
+> \begin{gathered}
+> \mathbb P_{c\sim P_c}\left[\mathsf{Exact}(U_n,x_0,c)\right]\\
+> \ge 1-\frac{4}{n}\left(6d^\star+\log\frac{e}{\delta}\right),
+> \end{gathered}
 > ```
 >
 > where the test cost $c\sim P_c$ is independent of the training sample.
