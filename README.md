@@ -30,31 +30,21 @@ $$
 
 <a name="theorem-exact-compression"></a>
 
-<table>
-<tr><td>
-
-#### Exact compression ([Proposition 2 in the paper][paper])
-
-Let $V\subseteq\mathbb R^d$ be an affine space. Then
-
-<div align="center">
-
-$\displaystyle \left[\mathrm{argmin}_{x\in\mathcal X\cap V}c^\top x =\mathcal X^\star(c)\quad\forall c\in\mathcal C\right] \iff \mathcal X^\star(\mathcal C)\subseteq V.$
-
-</div>
-
-The restriction is exact if and only if
-
-<div align="center">
-
-$\displaystyle \mathrm{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr)\subseteq\mathrm{dir}(V), \qquad V\cap\mathcal X^\star(\mathcal C)\ne\varnothing.$
-
-</div>
-
-Among exact affine restrictions, the minimum dimension is $d^\star$, attained by $V=x_0+\mathrm{dir}(\mathcal X^\star(\mathcal C))$ for any $x_0\in\mathcal X^\star(\mathcal C)$.
-
-</td></tr>
-</table>
+> #### Exact compression ([Proposition 2 in the paper][paper])
+>
+> Let $V\subseteq\mathbb R^d$ be an affine space. Then
+>
+> ```math
+> \displaystyle \left[\mathrm{argmin}_{x\in\mathcal X\cap V}c^\top x =\mathcal X^\star(c)\quad\forall c\in\mathcal C\right] \iff \mathcal X^\star(\mathcal C)\subseteq V.
+> ```
+>
+> The restriction is exact if and only if
+>
+> ```math
+> \displaystyle \mathrm{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr)\subseteq\mathrm{dir}(V), \qquad V\cap\mathcal X^\star(\mathcal C)\ne\varnothing.
+> ```
+>
+> Among exact affine restrictions, the minimum dimension is $d^\star$, attained by $V=x_0+\mathrm{dir}(\mathcal X^\star(\mathcal C))$ for any $x_0\in\mathcal X^\star(\mathcal C)$.
 
 Exact compression retains all potentially optimal solutions using only the directions along which they differ.
 
@@ -64,32 +54,25 @@ Write the restriction as $x=x_0+Uz$, where $x_0$ is a reference solution, the co
 
 <a name="theorem-learning-guarantee"></a>
 
-<table>
-<tr><td>
-
-#### Learning guarantee ([Theorem 5 in the paper][paper])
-
-Let $n\ge1$ and draw $c_1,\ldots,c_n$ independently from a distribution $P_c$ supported on $\mathcal C$. Fix $x_0\in\mathcal X^\star(\mathcal C)$ independently of these samples. With deterministic choices, the learner above returns a matrix $U_n$ after the $n$ training costs, satisfying
-
-<div align="center">
-
-$\displaystyle \mathrm{range}(U_n)\subseteq\mathrm{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr), \qquad \mathrm{rank}(U_n)\le d^\star,$<br>
-$\displaystyle \mathsf{Exact}(U_n,x_0,c_i)\qquad(i=1,\ldots,n).$
-
-</div>
-
-For every $\delta\in(0,1)$, with probability at least $1-\delta$ over the training sample,
-
-<div align="center">
-
-$\displaystyle \mathbb P_{c\sim P_c}\left[\mathsf{Exact}(U_n,x_0,c)\right] \ge 1-\frac{4}{n}\left(6d^\star+\log\frac{e}{\delta}\right),$
-
-</div>
-
-where the test cost $c\sim P_c$ is independent of the training sample.
-
-</td></tr>
-</table>
+> #### Learning guarantee ([Theorem 5 in the paper][paper])
+>
+> Let $n\ge1$ and draw $c_1,\ldots,c_n$ independently from a distribution $P_c$ supported on $\mathcal C$. Fix $x_0\in\mathcal X^\star(\mathcal C)$ independently of these samples. With deterministic choices, the learner above returns a matrix $U_n$ after the $n$ training costs, satisfying
+>
+> ```math
+> \displaystyle \mathrm{range}(U_n)\subseteq\mathrm{dir}\bigl(\mathcal X^\star(\mathcal C)\bigr), \qquad \mathrm{rank}(U_n)\le d^\star,
+> ```
+>
+> ```math
+> \displaystyle \mathsf{Exact}(U_n,x_0,c_i)\qquad(i=1,\ldots,n).
+> ```
+>
+> For every $\delta\in(0,1)$, with probability at least $1-\delta$ over the training sample,
+>
+> ```math
+> \displaystyle \mathbb P_{c\sim P_c}\left[\mathsf{Exact}(U_n,x_0,c)\right] \ge 1-\frac{4}{n}\left(6d^\star+\log\frac{e}{\delta}\right),
+> ```
+>
+> where the test cost $c\sim P_c$ is independent of the training sample.
 
 The failure bound decreases as $1/n$ and depends on the decision-relevant dimension $d^\star$. When optimizers are unique almost surely, the training solves can run in parallel, followed by a basis computation ([Section 3.2 in the paper][paper]).
 
